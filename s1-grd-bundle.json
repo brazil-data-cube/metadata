@@ -1,0 +1,104 @@
+{
+    "id": 2000,
+    "name": "sentinel-1-grd-bundle",
+    "title": "Sentinel-1 - Level-1 - Interferometric Wide Swath Ground Range Detected High Resolution",
+    "description": "Copernicus Sentinel-1 Level-1 Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model. This dataset contains interferometric wide swath ground range detected high resolution data available over Brazil.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-1",
+        "sar",
+        "c-band",
+        "level-1",
+        "grd",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "sar",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "summaries": {
+        "platform": [
+            "sentinel-1a",
+            "sentinel-1b"
+        ],
+        "constellation": [
+            "sentinel-1"
+        ],
+        "sar:product_type": [
+            "GRD"
+        ],
+        "sar:polarizations": [
+            [
+                "VV"
+            ],
+            [
+                "VH"
+            ]
+        ],
+        "sar:frequency_band": [
+            "C"
+        ],
+        "s1:processing_level": [
+            "1"
+        ],
+        "sar:instrument_mode": [
+            "IW"
+        ],
+        "sar:center_frequency": [
+            5.405
+        ],
+        "sar:observation_direction": [
+            "right"
+        ]
+    },
+    "item_assets": {
+        "asset": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/",
+            "https://inthub2.copernicus.eu"
+        ]
+    }
+}
