@@ -1,44 +1,57 @@
 {
   "name": "mod13q1",
-  "title": "MOD13Q1.060",
+  "title": "MOD13Q1 - v6 - Cloud Optimized GeoTIFF",
   "description": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6.0 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.",
   "temporal_composition_schema": {
-      "step": "16",
-      "unit": "day",
-      "schema": "cyclic",
-      "cycle": {
-          "step": 1,
-          "unit": "year"
-      }
+    "step": "16",
+    "unit": "day",
+    "schema": "cyclic",
+    "cycle": {
+      "step": 1,
+      "unit": "year"
+    }
   },
   "composition_function": null,
   "grid_ref_sys": "STG",
   "collection_type": "cube",
   "metadata": {
     "providers": [
-        {
-            "name": "National Aeronautics and Space Administration (NASA)",
-            "roles": [
-                "producer",
-                "licensor"
-            ],
-            "url": "https://modis.gsfc.nasa.gov/"
-        },
-        {
-            "name": "National Institute for Space Research (INPE)",
-            "roles": [
-                "host"
-            ],
-            "url": "https://data.inpe.br/big/"
+      {
+        "name": "National Aeronautics and Space Administration (NASA)",
+        "roles": [
+          "producer",
+          "licensor"
+        ],
+        "url": "https://modis.gsfc.nasa.gov/"
+      },
+      {
+        "name": "National Institute for Space Research (INPE)",
+        "roles": [
+          "host",
+          "processor",
+          "producer"
+        ],
+        "url": "https://data.inpe.br/big/",
+        "processing:lineage": "Generation of MOD13Q1 in Cloud Optimized GeoTIFF",
+        "processing:level": "L3",
+        "processing:facility": "BDC/BIG",
+        "processing:software": {
+          "bdc-collection-builder": "1.0",
+          "rio-cogeo": "3.0"
         }
+      }
     ],
     "license": {
-        "type": "proprietary",
-        "uri": "https://modaps.modaps.eosdis.nasa.gov/services/faq/LAADS_Data-Use_Citation_Policies.pdf"
+      "type": "proprietary",
+      "uri": "https://modaps.modaps.eosdis.nasa.gov/services/faq/LAADS_Data-Use_Citation_Policies.pdf"
     },
     "platform": {
-      "code": ["TERRA"],
-      "instruments": ["MODIS"]
+      "code": [
+        "TERRA"
+      ],
+      "instruments": [
+        "MODIS"
+      ]
     }
   },
   "keywords": [
@@ -63,7 +76,7 @@
       "nodata": -1000,
       "scale": 0.0001,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -79,7 +92,7 @@
       "nodata": -1000,
       "scale": 0.0001,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -95,7 +108,7 @@
       "nodata": -1000,
       "scale": 0.0001,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -111,7 +124,7 @@
       "nodata": -1000,
       "scale": 0.0001,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -127,7 +140,7 @@
       "nodata": -3000,
       "scale": 0.0001,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -143,7 +156,7 @@
       "nodata": -3000,
       "scale": 0.0001,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -159,7 +172,7 @@
       "nodata": 65535,
       "scale": 1,
       "data_type": "uint16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -175,7 +188,7 @@
       "nodata": -10000,
       "scale": 0.01,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -191,7 +204,7 @@
       "nodata": -10000,
       "scale": 0.01,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -204,10 +217,10 @@
       "description": "Relative azimuth angle of VI pixel",
       "min_value": -18000,
       "max_value": 18000,
-      "nodata": -10000,
+      "nodata": -4000,
       "scale": 0.01,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -223,7 +236,7 @@
       "nodata": -1,
       "scale": 1,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -236,10 +249,10 @@
       "description": "Quality reliability of VI pixel",
       "min_value": 0,
       "max_value": 3,
-      "nodata": -1,
+      "nodata": 255,
       "scale": 1,
       "data_type": "int16",
-      "mime_type": "application/x-hdf",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "resolution_x": 231.656358263,
       "resolution_y": 231.656358263,
       "resolution_unit": "Meter",
@@ -247,9 +260,92 @@
       "full_width_half_max": null
     }
   ],
-  "assets": {
-    "asset": {
-      "type": "application/x-hdf",
+  "summaries": {
+    "platform": [
+      "terra"
+    ],
+    "constellation": [
+      "modis"
+    ],
+    "instruments": [
+      "modis"
+    ],
+    "gsd": [
+      231.656358263
+    ],
+    "view:off_nadir": [
+      0
+    ]
+  },
+  "item_assets": {
+    "red_reflectance": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "NIR_reflectance": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "blue_reflectance": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "MIR_reflectance": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "NDVI": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "EVI": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "VI_Quality": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "view_zenith_angle": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "sun_zenith_angle": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "relative_azimuth_angle": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "composite_day_of_the_year": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    },
+    "pixel_reliability": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"
       ]
