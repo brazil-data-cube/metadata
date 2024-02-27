@@ -1,0 +1,382 @@
+{
+    "id": 13,
+    "name": "LANDSAT-16D",
+    "title": "Data Cube Landsat - Level-2 - LCF 16 days",
+    "description": "Earth Observation Data Cube generated from Landsat Level-2 product over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 30 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 16 days using the Least Cloud Cover First (LCF) best pixel approach.",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 16,
+        "unit": "day"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": "BDC_MD_V2",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on Landsat in Cloud Optimized GeoTIFF",
+                "processing:level": "L2",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "https://www.usgs.gov/legal",
+            "uri": ""
+        }
+    },
+    "keywords": [
+        "data cube",
+        "landsat",
+        "bottom of atmosphere reflectance",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "coastal",
+            "common_name": "coastal",
+            "description": "Coastal/Aerosol (Operational Land Imager)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 0.44,
+            "full_width_half_max": 0.02
+        },
+        {
+            "name": "blue",
+            "common_name": "blue",
+            "data_type": "uint16",
+            "description": "Visible blue (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "green",
+            "common_name": "green",
+            "data_type": "uint16",
+            "description": "Visible green (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "data_type": "uint16",
+            "description": "Visible red (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 0.65,
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "nir08",
+            "common_name": "nir08",
+            "data_type": "uint16",
+            "description": "Near infrared (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 0.87,
+            "full_width_half_max": 0.03
+        },
+        {
+            "name": "swir16",
+            "common_name": "swir16",
+            "data_type": "uint16",
+            "description": "Short-wave infrared (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 1.61,
+            "full_width_half_max": 0.09
+        },
+        {
+            "name": "swir22",
+            "common_name": "swir22",
+            "data_type": "uint16",
+            "description": "Short-wave infrared (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": 2.2,
+            "full_width_half_max": 0.19
+        },
+        {
+            "name": "qa_pixel",
+            "common_name": "quality",
+            "data_type": "uint16",
+            "description": "",
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 1,
+            "scale": 1,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "EVI",
+            "common_name": "evi",
+            "data_type": "int16",
+            "description": "Enhanced Vegetation Index",
+            "min_value": -10000,
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -9999,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "NDVI",
+            "common_name": "ndvi",
+            "data_type": "int16",
+            "description": "Normalized Difference Vegetation Index",
+            "min_value": -10000,
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -9999,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "CLEAROB",
+            "common_name": "ClearOb",
+            "data_type": "uint8",
+            "description": "Clear Observation Count.",
+            "min_value": 0,
+            "max_value": 255,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": 0,
+            "scale": 1,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "TOTALOB",
+            "common_name": "TotalOb",
+            "data_type": "uint8",
+            "description": "Total Observation Count",
+            "max_value": 255,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 1,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "PROVENANCE",
+            "common_name": "Provenance",
+            "data_type": "int16",
+            "description": "Provenance value Day of Year",
+            "min_value": 1,
+            "max_value": 366,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -1,
+            "scale": 1,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Landsat-4",
+            "Landsat-5",
+            "Landsat-7",
+            "Landsat-8",
+            "Landsat-9"
+        ]
+    },
+    "item_assets": {
+        "CLEAROB": {
+            "roles": [
+                "data"
+            ],
+            "title": "Clear observation",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "TOTALOB": {
+            "roles": [
+                "data"
+            ],
+            "title": "Total observation count",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "PROVENANCE": {
+            "roles": [
+                "data"
+            ],
+            "title": "Day of year",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "EVI": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band EVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "NDVI": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band NDVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "blue": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "coastal": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band coastal",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "green": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band green",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nir08": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band nir08",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "qa_pixel": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band qa_pixel",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "red": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "swir16": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band swir16",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "swir22": {
+            "roles": [
+                "data"
+            ],
+            "title": "Band swir22",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "properties": {
+    }
+}
