@@ -1,7 +1,7 @@
 {
     "id": 2,
     "name": "CB4A-WPM-PCA-FUSED",
-    "title": "CBERS-4A WPM - FUSED - Cloud Optimized GeoTIFF",
+    "title": "CBERS-4A/WPM - Multispectral and Panchromatic Bands Fusioned",
     "description": "This collection contains 2 meter high-resolution, RGB products, generated using the Principal Components Fusion (PCA) method, with values coded between 1 and 255, with 0 being reserved for 'No Data'. This product is derived from the original CBERS-4A WPM Level-4 Digital Number with 10 bit of quantization.",
     "temporal_composition_schema": null,
     "composition_function": null,
