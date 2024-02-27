@@ -34,7 +34,7 @@
             }
         ],
         "license": {
-            "type": "proprietary",
+            "type": "https://www.usgs.gov/legal",
             "uri": ""
         }
     },
