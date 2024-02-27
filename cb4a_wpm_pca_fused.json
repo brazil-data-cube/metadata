@@ -5,7 +5,7 @@
     "description": "This collection contains 2 meter high-resolution, RGB products, generated using the Principal Components Fusion (PCA) method, with values coded between 1 and 255, with 0 being reserved for 'No Data'. This product is derived from the original CBERS-4A WPM Level-4 Digital Number with 10 bit of quantization.",
     "temporal_composition_schema": null,
     "composition_function": null,
-    "grid_ref_sys": "CBERS4A-MUX",
+    "grid_ref_sys": null,
     "collection_type": "collection",
     "metadata": {
         "providers": [
@@ -20,9 +20,9 @@
                 "url": "https://data.inpe.br/big/",
                 "processing:lineage": "Generation of fused images, using the Principal Components Fusion (PCA) method",
                 "processing:level": "FUSED",
-                "processing:facility": "BDC/BIG",
+                "processing:facility": "LGI",
                 "processing:software": {
-                    "wpmfusion_docker": "1.0"
+                    "wpm-fusion-processor": "1.0"
                   }
           }
       ],
@@ -42,7 +42,7 @@
         {
             "name": "BAND1",
             "common_name": "red",
-            "description": "The TCIF images is an RGB image built from the B01 (Blue), B02 (Green), and B03 (Red) Bands the high resolution, fusing the low resolution WPM bands.",
+            "description": "Red channel in the fused true color images.",
             "min_value": 0,
             "max_value": 255.0,
             "nodata": 0,
@@ -58,7 +58,7 @@
         {
             "name": "BAND2",
             "common_name": "green",
-            "description": "The TCIF images is an RGB image built from the B01 (Blue), B02 (Green), and B03 (Red) Bands the high resolution, fusing the low resolution WPM bands.",
+            "description": "Green channel in the fused true color images.",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -74,7 +74,7 @@
         {
             "name": "BAND3",
             "common_name": "blue",
-            "description": "The TCIF images is an RGB image built from the B01 (Blue), B02 (Green), and B03 (Red) Bands the high resolution, fusing the low resolution WPM bands.",
+            "description": "Blue channel in the fused true color images.",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
