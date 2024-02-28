@@ -1,0 +1,310 @@
+{
+    "id": null,
+    "name": "CBERS4-MUX-2M",
+    "title": "Data Cube CBERS 4 - Level-4 - LCF 2 months",
+    "description": "Earth Observation Data Cube generated from CBERS-4/MUX Level-4 SR product over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 20 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 2 months using the Least Cloud Cover First (LCF) best pixel approach.",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 2,
+        "unit": "month"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": "BDC_MD_V2",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on CBERS4-MUX in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "data cube",
+        "cbers",
+        "surface reflectance",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "nir",
+        "blue"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND5",
+            "common_name": "blue",
+            "description": "B5 blue band from 0.45 to 0.52 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND6",
+            "common_name": "green",
+            "description": "B6 green band from 0.52 to 0.59 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND7",
+            "common_name": "red",
+            "description": "B7 red band from 0.63 to 0.69 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND8",
+            "common_name": "nir",
+            "description": "B8 nir band from 0.77 to 0.89 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "CMASK",
+            "common_name": "quality",
+            "description": "Cloud Mask Product",
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "EVI",
+            "common_name": "evi",
+            "data_type": "int16",
+            "description": "Enhanced Vegetation Index",
+            "min_value": -10000,
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -9999,
+            "scale": 0.0001,
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "NDVI",
+            "common_name": "ndvi",
+            "data_type": "int16",
+            "description": "Normalized Difference Vegetation Index",
+            "min_value": -10000,
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -9999,
+            "scale": 0.0001,
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "CLEAROB",
+            "common_name": "ClearOb",
+            "data_type": "uint8",
+            "description": "Clear Observation Count.",
+            "min_value": 0,
+            "max_value": 255,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": 0,
+            "scale": 1,
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "TOTALOB",
+            "common_name": "TotalOb",
+            "data_type": "uint8",
+            "description": "Total Observation Count",
+            "max_value": 255,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 1,
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "PROVENANCE",
+            "common_name": "Provenance",
+            "data_type": "int16",
+            "description": "Provenance value Day of Year",
+            "min_value": 1,
+            "max_value": 366,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -1,
+            "scale": 1,
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+       "platform": [
+            "cbers-4"
+        ],
+        "constellation": [
+            "cbers-4"
+        ],
+        "instruments": [
+            "mux"
+        ],
+        "gsd": [
+            20
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "CLEAROB": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "TOTALOB": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "PROVENANCE": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "EVI": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "NDVI": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND5": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND6": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND7": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND8": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "CMASK": {
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "roles": [
+                "thumbnail"
+            ],
+            "type": "image/png"
+        }
+    },
+    "properties": {
+    }
+}
