@@ -1,0 +1,286 @@
+{
+    "id": null,
+    "name": "GOES-16-L2-CMI",
+    "title": "GOES-16 Cloud & Moisture Imagery",
+    "description": "GOES-16 Advanced Baseline Imager (ABI) L2 Cloud and Moisture Imagery provides 16 spectral bands at high temporal resolution over the American Continent. (...)",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://www.nasa.gov/content/goes",
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "roles": [
+                    "producer"
+                ]
+            },
+            {
+                "url": "https://www.goes-r.gov/",
+                "name": "National Oceanic and Atmospheric Administration (NOAA)",
+                "roles": [
+                    "processor",
+                    "producer",
+                    "licensor"
+                ]
+            },
+            {
+                "url": "https://data.inpe.br/big/",
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ]
+            }
+        ],
+        "license": {
+            "type": "Public Domain",
+            "uri": "https://www.nesdisia.noaa.gov/policy.html"
+        }
+    },
+    "keywords": [
+        "GOES",
+        "GOES-16",
+        "Satellite",
+        "NOAA",
+        "NASA",
+        "Cloud",
+        "Moisture",
+        "Meteorology",
+        "Atmosphere",
+        "Surface"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "extent": {
+        "spatial": {
+            "bbox": [
+            [
+              -180,
+              -81.33,
+              6.3,
+              81.33
+            ]
+          ]
+        }
+    },
+    "bands": [
+        {
+            "name": "ABI Band 1",
+            "common_name": "blue",
+            "description": "Daytime aerosol over land, coastal water mapping",
+            "center_wavelength": 0.47
+        },
+        {
+            "name": "ABI Band 2",
+            "common_name": "red",
+            "description": "Daytime clouds, fog, insolation, winds",
+            "center_wavelength": 0.64
+        },
+        {
+            "name": "ABI Band 3",
+            "common_name": "nir09",
+            "description": "Daytime vegetation, burn scar, aerosol over water, winds",
+            "center_wavelength": 0.87
+        },
+        {
+            "name": "ABI Band 4",
+            "common_name": "cirrus",
+            "description": "Daytime cirrus cloud",
+            "center_wavelength": 1.38
+        },
+        {
+            "name": "ABI Band 5",
+            "common_name": "swir16",
+            "description": "Daytime cloud-top phase and particle size, snow",
+            "center_wavelength": 1.61
+        },
+        {
+            "name": "ABI Band 6",
+            "common_name": "swir22",
+            "description": "Daytime land, cloud properties, particle size, vegetation, snow",
+            "center_wavelength": 2.25
+        },
+        {
+            "name": "ABI Band 7",
+            "description": "Surface and cloud, fog at night, fire, winds",
+            "center_wavelength": 3.89
+        },
+        {
+            "name": "ABI Band 8",
+            "description": "High-level atmospheric water vapor, winds, rainfall",
+            "center_wavelength": 6.17
+        },
+        {
+            "name": "ABI Band 9",
+            "description": "Midlevel atmospheric water vapor, winds, rainfall",
+            "center_wavelength": 6.93
+        },
+        {
+            "name": "ABI Band 10",
+            "description": "Lower-level water vapor, winds, and silicon dioxide",
+            "center_wavelength": 7.34
+        },
+        {
+            "name": "ABI Band 11",
+            "description": "Total water for stability, cloud phase, dust, silicon dioxide, rainfall",
+            "center_wavelength": 8.44
+        },
+        {
+            "name": "ABI Band 12",
+            "description": "Total ozone, turbulence, winds",
+            "center_wavelength": 9.61
+        },
+        {
+            "name": "ABI Band 13",
+            "description": "Surface and clouds",
+            "center_wavelength": 10.33
+        },
+        {
+            "name": "ABI Band 14",
+            "description": "Imagery, sea surface temperature, clouds, rainfall",
+            "center_wavelength": 11.19
+        },
+        {
+            "name": "ABI Band 15",
+            "description": "Total water, volcanic ash, sea surface temperature",
+            "center_wavelength": 12.27
+        },
+        {
+            "name": "ABI Band 16",
+            "description": "Air temperature, cloud heights",
+            "center_wavelength": 13.27
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GOES-16"
+        ],
+        "instruments": [
+            "ABI"
+        ]
+    },
+    "item_assets": {
+        "ABI Band 1": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery reflectance factor - Band 01",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 2": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery reflectance factor - Band 02",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 3": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery reflectance factor - Band 03",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 4": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery reflectance factor - Band 04",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 5": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery reflectance factor - Band 05",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 6": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery reflectance factor - Band 06",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 7": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 07",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 8": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 08",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 9": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 09",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 10": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 10",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 11": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 11",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 12": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 12",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 13": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 13",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 14": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 14",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 15": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 15",
+            "roles": [
+                "data"
+            ]
+        },
+        "ABI Band 16": {
+            "type": "application/netcdf",
+            "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 16",
+            "roles": [
+                "data"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.inpe.br"
+        ]
+    }
+}
