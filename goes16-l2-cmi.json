@@ -39,16 +39,15 @@
         }
     },
     "keywords": [
-        "GOES",
-        "GOES-16",
-        "Satellite",
-        "NOAA",
-        "NASA",
-        "Cloud",
-        "Moisture",
-        "Meteorology",
-        "Atmosphere",
-        "Surface"
+        "goes",
+        "goes-16",
+        "level-2",
+        "cloud",
+        "moisture",
+        "meteorology",
+        "atmosphere",
+        "surface",
+        "brazil"
     ],
     "is_public": true,
     "is_available": true,
