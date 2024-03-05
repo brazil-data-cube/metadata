@@ -1,5 +1,4 @@
 {
-    "id": null,
     "name": "CB4A-WFI-L4-SR",
     "title": "CBERS-4A/WFI - Level 4 - Cloud Optimized GeoTIFF",
     "description": "CBERS-4A/WFI Surface Reflectance product over Brazil. L4 product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",

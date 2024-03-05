@@ -1,11 +1,11 @@
 {
-    "id": null,
+    "id": 24,
     "name": "AMZ1-WFI-L4-SR",
     "title": "AMAZONIA-1/WFI - Level 4 - Cloud Optimized GeoTIFF",
     "description": "AMAZONIA-1/WFI Surface Reflectance product over Brazil. L4 product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
     "temporal_composition_schema": null,
     "composition_function": null,
-    "grid_ref_sys": "AMAZONIA-1-WFI",
+    "grid_ref_sys": "AMAZONIA1_WFI_GRID",
     "collection_type": "collection",
     "metadata": {
         "providers": [
@@ -193,7 +193,7 @@
     },
     "properties": {
         "sources": [
-            "http://www.inpe.inpe.br"
+            "http://www.inpe.br"
         ]
     }
 }
