@@ -88,7 +88,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 1",
                   "common_name": "blue",
@@ -103,7 +103,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 2",
                   "common_name": "red",
@@ -118,7 +118,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 3",
                   "common_name": "nir09",
@@ -133,7 +133,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 4",
                   "common_name": "cirrus",
@@ -148,7 +148,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 5",
                   "common_name": "swir16",
@@ -163,7 +163,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 6",
                   "common_name": "swir22",
@@ -178,7 +178,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                     "name": "ABI Band 7",
                     "description": "Surface and cloud, fog at night, fire, winds",
@@ -192,7 +192,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                     "name": "ABI Band 8",
                     "description": "High-level atmospheric water vapor, winds, rainfall",
@@ -206,7 +206,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 9",
                   "description": "Midlevel atmospheric water vapor, winds, rainfall",
@@ -220,7 +220,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 10",
                   "description": "Lower-level water vapor, winds, and silicon dioxide",
@@ -234,7 +234,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 11",
                   "description": "Total water for stability, cloud phase, dust, silicon dioxide, rainfall",
@@ -248,7 +248,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 12",
                   "description": "Total ozone, turbulence, winds",
@@ -262,7 +262,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 13",
                   "description": "Surface and clouds",
@@ -276,7 +276,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 14",
                   "description": "Imagery, sea surface temperature, clouds, rainfall",
@@ -290,7 +290,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 15",
                   "description": "Total water, volcanic ash, sea surface temperature",
@@ -304,7 +304,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 16",
                   "description": "Air temperature, cloud heights",
@@ -318,7 +318,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 1",
                   "common_name": "blue",
@@ -333,7 +333,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 2",
                   "common_name": "red",
@@ -348,7 +348,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 3",
                   "common_name": "nir09",
@@ -363,7 +363,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 4",
                   "common_name": "cirrus",
@@ -378,7 +378,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 5",
                   "common_name": "swir16",
@@ -393,7 +393,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 6",
                   "common_name": "swir22",
@@ -408,7 +408,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                     "name": "ABI Band 7",
                     "description": "Surface and cloud, fog at night, fire, winds",
@@ -422,7 +422,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                     "name": "ABI Band 8",
                     "description": "High-level atmospheric water vapor, winds, rainfall",
@@ -436,7 +436,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 9",
                   "description": "Midlevel atmospheric water vapor, winds, rainfall",
@@ -450,7 +450,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 10",
                   "description": "Lower-level water vapor, winds, and silicon dioxide",
@@ -464,7 +464,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 11",
                   "description": "Total water for stability, cloud phase, dust, silicon dioxide, rainfall",
@@ -478,7 +478,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 12",
                   "description": "Total ozone, turbulence, winds",
@@ -492,7 +492,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 13",
                   "description": "Surface and clouds",
@@ -506,7 +506,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 14",
                   "description": "Imagery, sea surface temperature, clouds, rainfall",
@@ -520,7 +520,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 15",
                   "description": "Total water, volcanic ash, sea surface temperature",
@@ -534,7 +534,7 @@
             "roles": [
                 "data"
             ],
-            "eo:bands": [
+            "bands": [
                 {
                   "name": "ABI Band 16",
                   "description": "Air temperature, cloud heights",
