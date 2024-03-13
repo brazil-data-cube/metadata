@@ -1,0 +1,132 @@
+{
+    "id": ,
+    "name": "lc8-mosaic-brazil_30_6m_medstk-1",
+    "title": "Mosaic Landsat/OLI - 6M - Brazil",
+    "description": "Mosaic composed of Surface Reflectance images from Landsat-8 satellite, OLI camera with 30m of spatial resolution, RGB composition of the Red (band 4), Green (band 3) and Blue (band 2) bands. For the generation of this product images from the months January until June and from July until December were selected using best pixel approach called MEDSTK, which consists in choosing images close to the center of the step Least Cloud Cover First (LCF). Finally the Geotiff was converted from 16 bits to 8 bits.",
+    "temporal_composition_schema": {
+        "step": 6,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "MEDSTK",
+    "grid_ref_sys": "BDC_MD_V2",
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Mosaic based on Landsat-8 L2 Data Cubes in Cloud Optimized GeoTIFF",
+                "processing:level": "L2",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "0.6.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": ""
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "landsat",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "blue",
+            "common_name": "blue",
+            "description": "Blue (band 2) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "green",
+            "common_name": "green",
+            "description": "Green (band 3) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "description": "Red (band 4) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "landsat-8"
+        ]
+    },
+    "item_assets": {
+        "file": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "bands": {
+                "red": "red",
+                "green": "green",
+                "blue": "blue"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+    }
+}

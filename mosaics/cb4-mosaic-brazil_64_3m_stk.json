@@ -1,0 +1,143 @@
+{
+    "id": ,
+    "name": "cb4-mosaic-brazil_64_3m_stk-1",
+    "title": "Mosaic CBERS-4/WFI - 3M - Brazil",
+    "description": "Mosaic composed of Surface Reflectance images from CBERS-4 satellite, WFI camera with 64m of spatial resolution, RGB composition of the Red (B15), NIR (B16) and Blue (B13) bands. For the generation of this product images from the months April, May and June of 2020 were selected using a best pixel approach called Least Cloud Cover First (LCF). Finally the Geotiff was converted from 16 bits to 8 bits.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": null,
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Mosaic based on CBERS-4 L4 Data Cubes in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "0.4.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "cbers",
+        "cbers4",
+        "wfi",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "B15",
+        "B16",
+        "B13"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND13",
+            "common_name": "blue",
+            "description": "B13 blue band from 0.45 to 0.52 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND15",
+            "common_name": "red",
+            "description": "B15 red band from 0.63 to 0.69 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND16",
+            "common_name": "nir",
+            "description": "B16 nir band from 0.77 to 0.89 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4"
+        ],
+        "constellation": [
+            "cbers-4"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            64
+        ]
+    },
+    "item_assets": {
+        "file": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "bands": {
+                "red": "B15",
+                "green": "B16",
+                "blue": "B13"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+    }
+}
