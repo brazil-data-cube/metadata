@@ -462,6 +462,13 @@
             "roles": [
                 "data"
             ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
         }
     },
     "properties": {
