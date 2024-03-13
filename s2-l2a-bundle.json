@@ -207,22 +207,6 @@
             "full_width_half_max": 0.020
         },
         {
-            "name": "B10",
-            "common_name": "cirrus",
-            "description": "Cirrus (band 10)",
-            "min_value": 0,
-            "max_value": 10000,
-            "nodata": 0,
-            "scale": 0.0001,
-            "data_type": "uint16",
-            "mime_type": "image/jp2",
-            "resolution_x": 60.0,
-            "resolution_y": 60.0,
-            "resolution_unit": "Meter",
-            "center_wavelength": 0.3735,
-            "full_width_half_max": 0.031
-        },
-        {
             "name": "B11",
             "common_name": "swir16",
             "description": "SWIR 1 (band 11)",
