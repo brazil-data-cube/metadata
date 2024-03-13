@@ -49,8 +49,8 @@
   "summaries": {
     "platform": ["Landsat-4", "Landsat-5", "Landsat-7", "Landsat-8", "Landsat-9"]
   },
-  "is_public": false,
-  "is_available": false,
+  "is_public": true,
+  "is_available": true,
   "version": 2,
   "category": "eo",
   "version_predecessor": null,
