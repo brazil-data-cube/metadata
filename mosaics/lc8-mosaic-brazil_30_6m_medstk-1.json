@@ -1,6 +1,6 @@
 {
     "id": ,
-    "name": "lc8-mosaic-brazil_30_6m_medstk-1",
+    "name": "lc8-mosaic-brazil_30_6m_medstk",
     "title": "Mosaic Landsat/OLI - 6M - Brazil",
     "description": "Mosaic composed of Surface Reflectance images from Landsat-8 satellite, OLI camera with 30m of spatial resolution, RGB composition of the Red (band 4), Green (band 3) and Blue (band 2) bands. For the generation of this product images from the months January until June and from July until December were selected using best pixel approach called MEDSTK, which consists in choosing images close to the center of the step Least Cloud Cover First (LCF). Finally the Geotiff was converted from 16 bits to 8 bits.",
     "temporal_composition_schema": {
@@ -109,13 +109,15 @@
         ]
     },
     "item_assets": {
-        "file": {
+        "asset": {
+            "title": "Asset",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "red",
@@ -127,6 +129,5 @@
             ]
         }
     },
-    "properties": {
-    }
+    "properties": {}
 }

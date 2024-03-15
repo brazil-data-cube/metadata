@@ -1,6 +1,6 @@
 {
     "id": ,
-    "name": "cb4-mosaic-brazil_64_3m_stk-1",
+    "name": "cb4-mosaic-brazil_64_3m_stk",
     "title": "Mosaic CBERS-4/WFI - 3M - Brazil",
     "description": "Mosaic composed of Surface Reflectance images from CBERS-4 satellite, WFI camera with 64m of spatial resolution, RGB composition of the Red (B15), NIR (B16) and Blue (B13) bands. For the generation of this product images from the months April, May and June of 2020 were selected using a best pixel approach called Least Cloud Cover First (LCF). Finally the Geotiff was converted from 16 bits to 8 bits.",
     "temporal_composition_schema": {
@@ -120,13 +120,15 @@
         ]
     },
     "item_assets": {
-        "file": {
+        "asset": {
+            "title": "Asset",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "B15",
@@ -138,6 +140,5 @@
             ]
         }
     },
-    "properties": {
-    }
+    "properties": {}
 }

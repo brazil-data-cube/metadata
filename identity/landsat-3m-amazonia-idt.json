@@ -122,30 +122,35 @@
     },
     "item_assets": {
         "blue": {
+            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "green": {
+            "title": "Band green",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "red": {
+            "title": "Band red",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "qa_pixel": {
+            "title": "Band qa_pixel",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "red",
@@ -157,6 +162,5 @@
             ]
         }
     },
-    "properties": {
-    }
+    "properties": {}
 }

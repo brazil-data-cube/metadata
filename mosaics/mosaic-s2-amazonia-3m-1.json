@@ -1,7 +1,7 @@
 {
     "id": ,
-    "name": "s2-2m-cerrado",
-    "title": "Mosaic Sentinel-2/MSI - 2M - Cerrado",
+    "name": "mosaic-s2-amazonia-3m",
+    "title": "Mosaic Sentinel-2/MSI - 3M - Amazonia",
     "description": "Mosaic composed of images from Sentinel-2 Data Cube with 10m of spatial resolution, RGB composition of the NIR (B08), Red (B04) and Green (B03) bands. For the generation of this product images from November and December of 2023 were composed as well as images from January and February (2024) were selected using a best pixel approach called Least Cloud Cover First (LCF). Finally the final Geotiff was converted from 16 bits to 8.",
     "temporal_composition_schema": {
         "step": 3,
@@ -32,7 +32,7 @@
                 "processing:level": "L2A",
                 "processing:facility": "BDC/BIG",
                 "processing:software": {
-                    "bdc-cube-builder": "1.0"
+                    "bdc-cube-builder": "0.8.4"
                 }
             }
         ],
@@ -110,6 +110,22 @@
             "resolution_unit": "Meter",
             "center_wavelength": 0.8328,
             "full_width_half_max": 0.106
+        },
+        {
+            "name": "B8A",
+            "common_name": "nir08",
+            "description": "NIR 2 (band 8A) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.8647,
+            "full_width_half_max": 0.021
         }
     ],
     "summaries": {

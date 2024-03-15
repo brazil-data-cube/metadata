@@ -1,6 +1,6 @@
 {
     "id": 19,
-    "name": "landsat-3m-amazonia-1",
+    "name": "landsat-3m-amazonia",
     "title": "Mosaic - Amazonia - Landsat/OLI",
     "description": "Mosaic composed of Surface Reflectance images from Landsat-8 satellite, OLI camera with 30m of spatial resolution, RGB composition of the Red (band 4), Green (band 3) and Blue (band 2) bands. For the generation of this product images from the months July, August and September of 2016 were selected using a best pixel approach called Least Cloud Cover First (LCF). Finally the Geotiff was converted from 16 bits to 8 bits.",
     "temporal_composition_schema": {
@@ -175,48 +175,56 @@
     },
     "item_assets": {
         "blue": {
+            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "green": {
+            "title": "Band green",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "red": {
+            "title": "Band red",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "qa_pixel": {
+            "title": "Band qa_pixel",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "CLEAROB": {
+            "title": "Clear observation",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "TOTALOB": {
+            "title": "Total observation count",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "PROVENANCE": {
+            "title": "Day of year",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "red",
@@ -228,6 +236,5 @@
             ]
         }
     },
-    "properties": {
-    }
+    "properties": {}
 }
