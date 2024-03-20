@@ -150,8 +150,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": -9999,
             "scale": 0.0001,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -166,8 +166,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": -9999,
             "scale": 0.0001,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -182,8 +182,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": 0,
             "scale": 1,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -198,8 +198,8 @@
             "min_value": 0,
             "nodata": 0,
             "scale": 1,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -214,8 +214,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": -1,
             "scale": 1,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -240,66 +240,77 @@
     },
     "item_assets": {
         "CLEAROB": {
+            "title": "Clear observation",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "TOTALOB": {
+            "title": "Total observation count",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "PROVENANCE": {
+            "title": "Day of year",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "EVI": {
+            "title": "Band EVI",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "NDVI": {
+            "title": "Band NDVI",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND13": {
+            "title": "Band 13 blue",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND14": {
+            "title": "Band 14 green",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND15": {
+            "title": "Band 15 red",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND16": {
+            "title": "Band 16 NIR",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "CMASK": {
+            "title": "Band CMASK",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "BAND15",
