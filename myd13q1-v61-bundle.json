@@ -263,77 +263,19 @@
     ]
   },
   "item_assets": {
-    "red_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "NIR_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "blue_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "MIR_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "NDVI": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "EVI": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "VI_Quality": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "view_zenith_angle": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "sun_zenith_angle": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "relative_azimuth_angle": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "composite_day_of_the_year": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "pixel_reliability": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    }
-  }
+      "bundle": {
+          "type": "application/zip",
+          "roles": [
+              "data"
+          ]
+      },
+      "thumbnail": {
+          "title": "Thumbnail",
+          "type": "image/png",
+          "roles": [
+              "thumbnail"
+          ]
+      }
+  },
+  "properties": {}
 }
