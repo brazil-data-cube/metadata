@@ -1,0 +1,162 @@
+{
+    "id": 18,
+    "name": "landsat-3m-amazonia-idt",
+    "title": "Landsat 3M - Amazonia",
+    "description": "Earth Observation.",
+    "temporal_composition_schema": null,
+    "composition_function": "Identity",
+    "grid_ref_sys": "BDC_MD_V2",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on Sentinel-2 Level-2A in Cloud Optimized GeoTIFF",
+                "processing:level": "L2A",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": ""
+        }
+    },
+    "keywords": [
+        "data cube",
+        "landsat",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": false,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "blue",
+            "common_name": "blue",
+            "description": "Blue (band 2)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "green",
+            "common_name": "green",
+            "description": "Green (band 3)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "description": "Red (band 4)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "qa_pixel",
+            "common_name": "quality",
+            "description": "Scene classification layer",
+            "min_value": 21824,
+            "max_value": 65534,
+            "nodata": 1,
+            "scale": 1.0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Landsat-8"
+        ]
+    },
+    "item_assets": {
+        "blue": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "green": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "red": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "qa_pixel": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "bands": {
+                "red": "red",
+                "green": "green",
+                "blue": "blue"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+    }
+}
