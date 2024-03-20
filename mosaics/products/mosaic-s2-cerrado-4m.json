@@ -1,10 +1,10 @@
 {
     "id": ,
-    "name": "s2-2m-cerrado",
-    "title": "Mosaic Sentinel-2/MSI - 2M - Cerrado",
-    "description": "Mosaic composed of images from Sentinel-2 Data Cube with 10m of spatial resolution, RGB composition of the NIR (B08), Red (B04) and Green (B03) bands. For the generation of this product images from November and December of 2023 were composed as well as images from January and February (2024) were selected using a best pixel approach called Least Cloud Cover First (LCF). Finally the final Geotiff was converted from 16 bits to 8.",
+    "name": "mosaic-s2-cerrado-4m",
+    "title": "Sentinel-2 image Mosaic of Brazilian Cerrado Biome - 4 Months",
+    "description": "Sentinel-2 image mosaic of Brazilian Cerrado biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 8, 4 and 3 assigned to RGB channels. The temporal composition encompasses 04-months of images, starting in june 2022 and ending in September 2022, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 14000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
     "temporal_composition_schema": {
-        "step": 3,
+        "step": 4,
         "unit": "month",
         "schema": "Continuous"
     },
@@ -43,12 +43,9 @@
     },
     "keywords": [
         "mosaic",
-        "sentinel",
-        "sentinel2",
-        "msi",
-        "cloud optimized geotiff",
-        "cog",
-        "earth observation",
+        "sentinel-2",
+        "biome",
+        "cerrado",
         "brazil"
     ],
     "is_public": true,
@@ -118,8 +115,8 @@
         ]
     },
     "item_assets": {
-        "asset": {
-            "title": "Asset",
+        "visual": {
+            "title": "False Color Composition of the mosaic. Contains Sentinel-2 Bands B04, B08 and B03.",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
@@ -137,5 +134,6 @@
                 "thumbnail"
             ]
         }
-    }
+    },
+    "properties": {}
 }

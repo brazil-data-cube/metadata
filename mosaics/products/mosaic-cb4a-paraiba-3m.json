@@ -1,8 +1,8 @@
 {
     "id": ,
-    "name": "cb4-mosaic-brazil_64_3m_stk",
-    "title": "Mosaic CBERS-4/WFI - 3M - Brazil",
-    "description": "Mosaic composed of Surface Reflectance images from CBERS-4 satellite, WFI camera with 64m of spatial resolution, RGB composition of the Red (B15), NIR (B16) and Blue (B13) bands. For the generation of this product images from the months April, May and June of 2020 were selected using a best pixel approach called Least Cloud Cover First (LCF). Finally the Geotiff was converted from 16 bits to 8 bits.",
+    "name": "mosaic-cb4a-paraiba-3m",
+    "title": "CBERS-4A/WFI Image Mosaic of Brazil Paraíba State - 3 Months",
+    "description": "CBERS-4A/WFI image mosaic of Brazil Paraíba State with 55m of spatial resolution. The mosaic was prepared in order to demonstrate the technological capabilities of the Brazil Data Cube project tools. The false color composition is based on the WFI bands 16, 15 and 14 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in July 2020 and ending in September 2020, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 50 CBERS-4A scenes and was generated based on an existing CBERS-4A/WFI image collection.",
     "temporal_composition_schema": {
         "step": 3,
         "unit": "month",
@@ -36,40 +36,36 @@
     },
     "keywords": [
         "mosaic",
-        "cbers",
-        "cbers4",
-        "wfi",
-        "cloud optimized geotiff",
-        "cog",
-        "earth observation",
+        "cbers-4a",
+        "paraiba state",
         "brazil"
     ],
     "is_public": true,
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "B15",
-        "B16",
-        "B13"
+        "BAND16",
+        "BAND15",
+        "BAND14"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND13",
-            "common_name": "blue",
-            "description": "B13 blue band from 0.45 to 0.52 micrometers resampled to 8 bits",
+            "name": "BAND14",
+            "common_name": "green",
+            "description": "B14 green band from 0.52 to 0.59 micrometers resampled to 8 bits",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "int8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 64.0,
-            "resolution_y": 64.0,
+            "resolution_x": 55.0,
+            "resolution_y": 55.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.485,
+            "center_wavelength": 0.555,
             "full_width_half_max": 0.07
         },
         {
@@ -82,8 +78,8 @@
             "scale": 1,
             "data_type": "int8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 64.0,
-            "resolution_y": 64.0,
+            "resolution_x": 55.0,
+            "resolution_y": 55.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
@@ -98,8 +94,8 @@
             "scale": 1,
             "data_type": "int8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 64.0,
-            "resolution_y": 64.0,
+            "resolution_x": 55.0,
+            "resolution_y": 55.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.830,
             "full_width_half_max": 0.12
@@ -107,21 +103,21 @@
     ],
     "summaries": {
         "platform": [
-            "cbers-4"
+            "cbers-4a"
         ],
         "constellation": [
-            "cbers-4"
+            "cbers-4a"
         ],
         "instruments": [
             "wfi"
         ],
         "gsd": [
-            64
+            55
         ]
     },
     "item_assets": {
-        "asset": {
-            "title": "Asset",
+        "visual": {
+            "title": "False Color Composition of the mosaic. Contains CBERS-4A/WFI Bands 16, 15 and 14.",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
@@ -131,9 +127,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "B15",
-                "green": "B16",
-                "blue": "B13"
+                "red": "BAND16",
+                "green": "BAND15",
+                "blue": "BAND14"
             },
             "roles": [
                 "thumbnail"

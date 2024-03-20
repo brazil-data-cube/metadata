@@ -1,0 +1,132 @@
+{
+    "id": ,
+    "name": "mosaic-landsat-amazon-3m",
+    "title": "Landsat Image Mosaic of Brazilian Amazon Biome - 3 Months",
+    "description": "Landsat-8/OLI image mosaic of Brazilian Amazon biome with 30m of spatial resolution. The mosaic was prepared in support of TerraClass project. The true color composition is based on the OLI bands 4, 3 and 2 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in July 2016 and ending in September of 2016, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 1200 Landsat/OLI scenes and was generated based on an existing data cube of Landsat images.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": null,
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Mosaic based on Landsat-8 L2 Data Cubes in Cloud Optimized GeoTIFF",
+                "processing:level": "L2",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": ""
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "landsat",
+        "biome",
+        "amazon",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "blue",
+            "common_name": "blue",
+            "description": "Blue (band 2) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "green",
+            "common_name": "green",
+            "description": "Green (band 3) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "description": "Red (band 4) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.65,
+            "full_width_half_max": 0.04
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "landsat-8"
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "True Color Composition of the mosaic. Contains Landsat Red, Green and Blue.",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "red",
+                "green": "green",
+                "blue": "blue"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
