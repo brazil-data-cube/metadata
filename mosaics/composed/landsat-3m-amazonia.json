@@ -1,10 +1,14 @@
 {
-    "id": 18,
-    "name": "landsat-3m-amazonia-idt",
-    "title": "Support Landsat Identity Data Cube of Brazilian Amazon Biome - Level-2",
-    "description": "Landsat Support Data Cube for generating Mosaics. Identity Data Cube of Brazilian Amazon biome with 30m of spatial resolution. The mosaic was prepared in support of TerraClass project.",
-    "temporal_composition_schema": null,
-    "composition_function": "Identity",
+    "id": 19,
+    "name": "landsat-3m-amazonia",
+    "title": "Support Landsat Composed Data Cube Landsat for Brazilian Amazon - Level-2 - LCF 3 months",
+    "description": "Landsat Support Data Cube for generating Mosaics. Composed Data Cube of Brazilian Amazon biome with 30m of spatial resolution. The mosaic was prepared in support of TerraClass project. The true color composition is based on the OLI bands 4, 3 and 2 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in July 2016 and ending in September of 2016, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 1200 Landsat/OLI scenes and was generated based on an existing data cube of Landsat images.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
     "grid_ref_sys": "BDC_MD_V2",
     "collection_type": "cube",
     "metadata": {
@@ -111,6 +115,54 @@
             "resolution_unit": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
+        },
+        {
+            "name": "CLEAROB",
+            "common_name": "ClearOb",
+            "description": "Clear Observation Count",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "TOTALOB",
+            "common_name": "TotalOb",
+            "description": "Total Observation Count",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "PROVENANCE",
+            "common_name": "Provenance",
+            "description": "Provenance value Day of Year",
+            "min_value": 1,
+            "max_value": 366,
+            "nodata": -1,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
         }
     ],
     "summaries": {
@@ -120,35 +172,48 @@
     },
     "item_assets": {
         "blue": {
-            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "green": {
-            "title": "Band green",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "red": {
-            "title": "Band red",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "qa_pixel": {
-            "title": "Band qa_pixel",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "CLEAROB": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "TOTALOB": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "PROVENANCE": {
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
-            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "red",
