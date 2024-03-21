@@ -1,0 +1,95 @@
+{
+    "id":,
+    "name": "S5P_L2_HCHO",
+    "title": "Sentinel5P - Level-2 Formaldehyde",
+    "description": "Long term satellite observations of tropospheric formaldehyde (HCHO) are essential to support air quality and chemistry-climate related studies from the regional to the global scale. The seasonal and inter-annual variations of the formaldehyde distribution are principally related to temperature changes and fire events, but also to changes in anthropogenic (human-made) activities. Its lifetime being of the order of a few hours, HCHO concentrations in the boundary layer can be directly related to the release of short-lived hydrocarbons, which mostly cannot be observed directly from space. Measurements are in mol per square meter (mol/ m^2)",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-5p",
+        "level-2",
+        "Formaldehyde",
+        "earth observation"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "formaldehyde_tropospheric_vertical_column",
+            "common_name": "Formaldehyde troposheric vertical column (mol/m2)",
+            "description": "troposphere_mole_content_of_formaldehyde",
+            "min_value": 0,
+            "max_value": 0.001,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 5.5,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-5p"
+        ],
+        "constellation": [
+            "sentinel-5p"
+        ],
+        "instruments": [
+            "tropomi"
+        ],
+        "gsd": [
+            null
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "cloud": {
+            "type": "application/x-netcdf",
+            "roles": [
+                "data"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/"
+        ]
+    }
+}
+

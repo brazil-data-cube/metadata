@@ -1,0 +1,127 @@
+{
+    "id":,
+    "name": "S5P_L2_AER_AI_NRTI",
+    "title": "Sentinel5P - Level-2 Ultra violet aerosol index",
+    "description": "Aerosol index with a spatial resolution of 5.5×3.5km2 observed from spectra measured by TROPOMI",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-5p",
+        "level-2",
+        "aerosol index",
+        "earth observation"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "aerosol_index_335_367",
+            "common_name": "UV aerosol index from 367 and 335 nm (unitless)",
+            "description": "The Aerosol Index (AI) is a qualitative index indicating the presence of elevated layers of aerosols in the atmosphere. It can be used to detect the presence of UV absorbing aerosols such as desert dust and volcanic ash plumes. Positive values (from light blue to red) indicate the presence of UV-absorbing aerosol.",
+            "min_value": -1,
+            "max_value": 5,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 5.5,
+            "resolution_y": 3.5,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": "351nm",
+            "full_width_half_max": null
+        },
+        {
+            "name": "aerosol_index_340_380",
+            "common_name": "UV aerosol index from 380 and 340 nm (unitless)",
+            "description": "The Aerosol Index (AI) is a qualitative index indicating the presence of elevated layers of aerosols in the atmosphere. It can be used to detect the presence of UV absorbing aerosols such as desert dust and volcanic ash plumes. Positive values (from light blue to red) indicate the presence of UV-absorbing aerosol.",
+            "min_value": -1,
+            "max_value": 5,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 5.5,
+            "resolution_y": 3.5,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": "360nm",
+            "full_width_half_max": null
+        },
+        {
+            "name": "aerosol_index_354_388",
+            "common_name": "UV aerosol index from 388 and 354 nm (unitless)",
+            "description": "The Aerosol Index (AI) is a qualitative index indicating the presence of elevated layers of aerosols in the atmosphere. It can be used to detect the presence of UV absorbing aerosols such as desert dust and volcanic ash plumes. Positive values (from light blue to red) indicate the presence of UV-absorbing aerosol.",
+            "min_value": -1,
+            "max_value": 5,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 5.5,
+            "resolution_y": 3.5,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": "371nm",
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-5p"
+        ],
+        "constellation": [
+            "sentinel-5p"
+        ],
+        "instruments": [
+            "tropomi"
+        ],
+        "gsd": [
+            null
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "cloud": {
+            "type": "application/x-netcdf",
+            "roles": [
+                "data"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/"
+        ]
+    }
+}
+

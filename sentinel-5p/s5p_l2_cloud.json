@@ -1,0 +1,175 @@
+{
+    "id":,
+    "name": "S5P_L2_CLOUD_NRTI",
+    "title": "Sentinel5P - Level-2 Cloud Near Real Time",
+    "description": "Cloud fraction, cloud pressure and cloud albedo with a spatial resolution of 7×7km2 observed from spectra measured by TROPOMI",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-5p",
+        "level-2",
+        "cloud near real time",
+        "earth observation"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "cloud_base_height",
+            "common_name": "Cloud Base Height",
+            "description": "Height of a cloud base in meters",
+            "min_value": 0,
+            "max_value": 20000,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 7,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cloud_base_pressure",
+            "common_name": "Cloud Base Pressure",
+            "description": "Air pressure measured at the base of a cloud in Pascal (Pa)",
+            "min_value": 1000,
+            "max_value": 110000,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 7,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cloud_fraction",
+            "common_name": "Effective Radiometric Cloud Fraction",
+            "description": "Represents the portion of the Earth is surface covered by clouds, divided by the total surface. Clouds have shielding, albedo, and in-cloud absorption effects on trace gas retrieval. The effective radiometric cloud fraction is an important parameter to correct these effects.",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 7,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cloud_optical_thickness",
+            "common_name": "Cloud Optical Thickness",
+            "description": "The cloud thickness is a key parameter to characterise optical properties of clouds. It is a measure of how much sunlight passes through the cloud to reach Earth’s surface. The higher a cloud’s optical thickness, the more sunlight the cloud is scattering and reflecting. Dark blue shows where there are low cloud optical thickness values and red shows larger cloud optical thickness.",
+            "min_value": 0,
+            "max_value": 250,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 7,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cloud_top_height",
+            "common_name": "Cloud Top Height",
+            "description": "Height of a cloud top in meters",
+            "min_value": 0,
+            "max_value": 20000,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 7,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cloud_top_pressure",
+            "common_name": "Cloud Top Pressure",
+            "description": "Air pressure measured at the top of a cloud in Pascal (Pa)",
+            "min_value": 1000,
+            "max_value": 110000,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 7,
+            "resolution_y": 7,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-5p"
+        ],
+        "constellation": [
+            "sentinel-5p"
+        ],
+        "instruments": [
+            "tropomi"
+        ],
+        "gsd": [
+            null
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "cloud": {
+            "type": "application/x-netcdf",
+            "roles": [
+                "data"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/"
+        ]
+    }
+}
+

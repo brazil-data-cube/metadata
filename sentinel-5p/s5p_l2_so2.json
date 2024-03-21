@@ -1,0 +1,95 @@
+{
+    "id":,
+    "name": "S5P_L2_SO2",
+    "title": "Sentinel5P - Level-2 Sulphur dioxide",
+    "description": "Sulphur dioxide enters the Earth’s atmosphere through both natural and anthropogenic (human made) processes. It plays a role in chemistry on a local and global scale and its impact ranges from short term pollution to effects on climate. Only about 30% of the emitted SO2 comes from natural sources; the majority is of anthropogenic origin. Sentinel-5P/TROPOMI instrument samples the Earth’s surface with a revisit time of one day with a spatial resolution of 3.5 x 7 km which allows the resolution of fine details including the detection of smaller SO2 plumes. Measurements are in mol per square meter (mol/ m^2)",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-5p",
+        "level-2",
+        "sulphur dioxide",
+        "earth observation"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "sulfurdioxide_total_vertical_column",
+            "common_name": "Sulfur dioxide total column (mol/m2)",
+            "description": "total vertical column of sulfur dioxide for the polluted scenario derived from the total slant column",
+            "min_value": 0,
+            "max_value": 0.01,
+            "nodata": 9.96921e+36,
+            "scale": 1,
+            "data_type": "Float32",
+            "mime_type": "application/x-netcdf4",
+            "resolution_x": 5.5,
+            "resolution_y": 3.5,
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-5p"
+        ],
+        "constellation": [
+            "sentinel-5p"
+        ],
+        "instruments": [
+            "tropomi"
+        ],
+        "gsd": [
+            null
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "cloud": {
+            "type": "application/x-netcdf",
+            "roles": [
+                "data"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/"
+        ]
+    }
+}
+
