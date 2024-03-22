@@ -1,0 +1,142 @@
+{
+    "id": ,
+    "name": "mosaic-s2-amazonia-3m",
+    "title": "Sentinel-2 image Mosaic of Brazilian Amazon Biome - 3 Months",
+    "description": "Sentinel-2 image mosaic of Brazilian Amazon biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 11, 8A and 4 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in june 2022 and ending in August 2022, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 15000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": null,
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Level-2A in Cloud Optimized GeoTIFF",
+                "processing:level": "L2A",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "0.8.4"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "sentinel-2",
+        "biome",
+        "amazon",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "B11",
+        "B8A",
+        "B04"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "B04",
+            "common_name": "red",
+            "description": "Red (band 4) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.6646,
+            "full_width_half_max": 0.031
+        },
+        {
+            "name": "B8A",
+            "common_name": "nir08",
+            "description": "NIR 2 (band 8A) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.8647,
+            "full_width_half_max": 0.021
+        },
+        {
+            "name": "B11",
+            "common_name": "swir16",
+            "description": "SWIR 1 (band 11)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.6137,
+            "full_width_half_max": 0.091
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2"
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "False Color Composition of the mosaic. Contains Sentinel-2 Bands B11, B8A and B04.",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "B11",
+                "green": "B8A",
+                "blue": "B04"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
