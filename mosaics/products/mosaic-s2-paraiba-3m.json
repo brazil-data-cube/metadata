@@ -45,6 +45,9 @@
         "mosaic",
         "sentinel-2",
         "paraiba state",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
         "brazil"
     ],
     "is_public": true,

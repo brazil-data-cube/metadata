@@ -39,6 +39,9 @@
         "landsat",
         "biome",
         "amazon",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
         "brazil"
     ],
     "is_public": true,

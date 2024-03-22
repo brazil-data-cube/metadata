@@ -38,6 +38,9 @@
         "mosaic",
         "cbers-4a",
         "paraiba state",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
         "brazil"
     ],
     "is_public": true,

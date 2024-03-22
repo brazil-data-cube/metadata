@@ -37,6 +37,9 @@
     "keywords": [
         "mosaic",
         "cbers-4",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
         "brazil"
     ],
     "is_public": true,
