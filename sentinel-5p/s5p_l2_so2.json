@@ -1,7 +1,7 @@
 {
     "id":,
     "name": "S5P_L2_SO2",
-    "title": "Sentinel5P - Level-2 Sulphur dioxide",
+    "title": "Sentinel5P - Level-2 - Sulphur dioxide",
     "description": "Sulphur dioxide enters the Earth’s atmosphere through both natural and anthropogenic (human made) processes. It plays a role in chemistry on a local and global scale and its impact ranges from short term pollution to effects on climate. Only about 30% of the emitted SO2 comes from natural sources; the majority is of anthropogenic origin. Sentinel-5P/TROPOMI instrument samples the Earth’s surface with a revisit time of one day with a spatial resolution of 3.5 x 7 km which allows the resolution of fine details including the detection of smaller SO2 plumes. Measurements are in mol per square meter (mol/ m^2)",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -52,7 +52,7 @@
             "max_value": 0.01,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 5.5,
             "resolution_y": 3.5,

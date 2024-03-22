@@ -1,7 +1,7 @@
 {
     "id":,
     "name": "S5P_L2_AER_AI_NRTI",
-    "title": "Sentinel5P - Level-2 Ultra violet aerosol index",
+    "title": "Sentinel5P - Level-2 - Ultra violet aerosol index",
     "description": "Aerosol index with a spatial resolution of 5.5×3.5km2 observed from spectra measured by TROPOMI",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -52,13 +52,13 @@
             "max_value": 5,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 5.5,
             "resolution_y": 3.5,
             "resolution_unit": "Kilometer",
-            "center_wavelength": "351nm",
-            "full_width_half_max": null
+            "center_wavelength": 0.351,
+            "full_width_half_max": 0.54
         },
         {
             "name": "aerosol_index_340_380",
@@ -68,13 +68,13 @@
             "max_value": 5,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 5.5,
             "resolution_y": 3.5,
             "resolution_unit": "Kilometer",
-            "center_wavelength": "360nm",
-            "full_width_half_max": null
+            "center_wavelength": 0.360,
+            "full_width_half_max": 0.54
         },
         {
             "name": "aerosol_index_354_388",
@@ -84,13 +84,13 @@
             "max_value": 5,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 5.5,
             "resolution_y": 3.5,
             "resolution_unit": "Kilometer",
-            "center_wavelength": "371nm",
-            "full_width_half_max": null
+            "center_wavelength": 0.371,
+            "full_width_half_max": 0.54
         }
     ],
     "summaries": {

@@ -1,7 +1,7 @@
 {
     "id":,
     "name": "S5P_L2_NO2",
-    "title": "Sentinel5P - Level-2 Nitrogen oxide",
+    "title": "Sentinel5P - Level-2 - Nitrogen oxide",
     "description": "Methane is, after carbon dioxide, the most important contributor to the anthropogenically (caused by human activity) enhanced greenhouse effect. Measurements are provided in parts per billion (ppb) with a spatial resolution of 7 km x 3.5 km",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -52,7 +52,7 @@
             "max_value": 0.0003,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 7,
             "resolution_y": 3.5,

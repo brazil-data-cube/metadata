@@ -1,7 +1,7 @@
 {
     "id":,
     "name": "S5P_L2_HCHO",
-    "title": "Sentinel5P - Level-2 Formaldehyde",
+    "title": "Sentinel5P - Level-2 - Formaldehyde",
     "description": "Long term satellite observations of tropospheric formaldehyde (HCHO) are essential to support air quality and chemistry-climate related studies from the regional to the global scale. The seasonal and inter-annual variations of the formaldehyde distribution are principally related to temperature changes and fire events, but also to changes in anthropogenic (human-made) activities. Its lifetime being of the order of a few hours, HCHO concentrations in the boundary layer can be directly related to the release of short-lived hydrocarbons, which mostly cannot be observed directly from space. Measurements are in mol per square meter (mol/ m^2)",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -52,7 +52,7 @@
             "max_value": 0.001,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 7,
             "resolution_y": 5.5,

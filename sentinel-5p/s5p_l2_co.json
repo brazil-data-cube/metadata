@@ -1,7 +1,7 @@
 {
     "id":,
     "name": "S5P_L2_CO",
-    "title": "Sentinel5P - Level-2 Carbon monoxide",
+    "title": "Sentinel5P - Level-2 - Carbon monoxide",
     "description": "Carbon monoxide (CO) is an important atmospheric trace gas. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. The carbon monoxide total column is measured in mol per square meter (mol/ m^2)",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -52,7 +52,7 @@
             "max_value": 0.1,
             "nodata": 9.96921e+36,
             "scale": 1,
-            "data_type": "Float32",
+            "data_type": "float",
             "mime_type": "application/x-netcdf4",
             "resolution_x": 7,
             "resolution_y": 5.5,
