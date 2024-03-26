@@ -1,0 +1,329 @@
+{
+    "id": null,
+    "name": "CBERS-WFI-8D",
+    "title": "CBERS WFI - Level-4 - Data Cube - LCF 8 days",
+    "description": "Earth Observation Data Cube generated from CBERS-4/WFI and CBERS-4A/WFI Level-4 SR products over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 64 meters of spatial resolution, reprojected and cropped to BDC_LG grid Version 2 (BDC_LG V2), considering a temporal compositing function of 8 days using the Least Cloud Cover First (LCF) best pixel approach.",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 8,
+        "unit": "day"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": "BDC_LG_V2",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on CBERS4-WFI and CBERS4A-WFI in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "data cube",
+        "cbers",
+        "cbers-4",
+        "cbers-4a",
+        "surface reflectance",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND15",
+        "BAND16",
+        "BAND13"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND13",
+            "common_name": "blue",
+            "description": "B13 blue band from 0.45 to 0.52 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND14",
+            "common_name": "green",
+            "description": "B14 green band from 0.52 to 0.59 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND15",
+            "common_name": "red",
+            "description": "B15 red band from 0.63 to 0.69 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND16",
+            "common_name": "nir",
+            "description": "B16 nir band from 0.77 to 0.89 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "CMASK",
+            "common_name": "quality",
+            "description": "Cloud Mask Product",
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "EVI",
+            "common_name": "evi",
+            "data_type": "int16",
+            "description": "Enhanced Vegetation Index",
+            "min_value": -10000,
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -9999,
+            "scale": 0.0001,
+            "resolution_x": 64,
+            "resolution_y": 64,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "NDVI",
+            "common_name": "ndvi",
+            "data_type": "int16",
+            "description": "Normalized Difference Vegetation Index",
+            "min_value": -10000,
+            "max_value": 10000,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -9999,
+            "scale": 0.0001,
+            "resolution_x": 64,
+            "resolution_y": 64,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "CLEAROB",
+            "common_name": "ClearOb",
+            "data_type": "uint8",
+            "description": "Clear Observation Count.",
+            "min_value": 0,
+            "max_value": 255,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": 0,
+            "scale": 1,
+            "resolution_x": 64,
+            "resolution_y": 64,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "TOTALOB",
+            "common_name": "TotalOb",
+            "data_type": "uint8",
+            "description": "Total Observation Count",
+            "max_value": 255,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 0,
+            "nodata": 0,
+            "scale": 1,
+            "resolution_x": 64,
+            "resolution_y": 64,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "PROVENANCE",
+            "common_name": "Provenance",
+            "data_type": "int16",
+            "description": "Provenance value Day of Year",
+            "min_value": 1,
+            "max_value": 366,
+            "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "nodata": -1,
+            "scale": 1,
+            "resolution_x": 64,
+            "resolution_y": 64,
+            "resolution_unit_id": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4",
+            "cbers-4a"
+        ],
+        "constellation": [
+            "cbers-4",
+            "cbers-4a"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            64
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "CLEAROB": {
+            "title": "Clear observation",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "TOTALOB": {
+            "title": "Total observation count",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "PROVENANCE": {
+            "title": "Day of year",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "EVI": {
+            "title": "Band EVI",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "NDVI": {
+            "title": "Band NDVI",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND13": {
+            "title": "Band 13 blue",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND14": {
+            "title": "Band 14 green",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND15": {
+            "title": "Band 15 red",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND16": {
+            "title": "Band 16 NIR",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "CMASK": {
+            "title": "Band CMASK",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND15",
+                "green": "BAND16",
+                "blue": "BAND13"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
