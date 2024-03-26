@@ -16,22 +16,30 @@
                     "licensor",
                     "processor",
                     "host"
-                  ],
+                ],
                 "url": "https://data.inpe.br/big/",
                 "processing:lineage": "Generation of fused images, using the Principal Components Fusion (PCA) method",
                 "processing:level": "FUSED",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "wpm-fusion-processor": "1.0"
-                  }
-          }
-      ],
+                }
+            }
+        ],
         "license": {
             "type": "Creative Commons Attribution 4.0 International",
             "uri": "https://creativecommons.org/licenses/by/4.0/"
-          }
+        }
     },
-    "keywords": ["cbers-4a", "wpm", "optical","cloud optimized geotiff","cog","earth observation","brazil"],
+    "keywords": [
+        "cbers-4a",
+        "wpm",
+        "optical",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
     "is_public": true,
     "is_available": true,
     "category": "eo",
@@ -111,19 +119,23 @@
     },
     "item_assets": {
         "rgb": {
+            "title": "rgb",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-      "thumbnail": {
-          "type": "image/png",
-          "roles": ["thumbnail"]
-          }
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
     },
     "properties": {
         "sources": [
             "http://www.inpe.inpe.br"
-      ]
+        ]
     }
 }

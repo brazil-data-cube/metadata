@@ -1,355 +1,374 @@
 {
-  "id": 16,
-  "name": "mod13q1",
-  "title": "MOD13Q1 v006 - Cloud Optimized GeoTIFF",
-  "description": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6.0 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.",
-  "temporal_composition_schema": {
-    "step": 16,
-    "unit": "day",
-    "schema": "Cyclic",
-    "cycle": {
-      "step": 1,
-      "unit": "year"
-    }
-  },
-  "composition_function": null,
-  "grid_ref_sys": "STG",
-  "collection_type": "cube",
-  "metadata": {
-    "providers": [
-      {
-        "name": "National Aeronautics and Space Administration (NASA)",
-        "roles": [
-          "producer",
-          "licensor"
-        ],
-        "url": "https://modis.gsfc.nasa.gov/"
-      },
-      {
-        "name": "National Institute for Space Research (INPE)",
-        "roles": [
-          "host",
-          "processor",
-          "producer"
-        ],
-        "url": "https://data.inpe.br/big/",
-        "processing:lineage": "Generation of MOD13Q1 in Cloud Optimized GeoTIFF",
-        "processing:level": "L3",
-        "processing:facility": "BDC/BIG",
-        "processing:software": {
-          "bdc-collection-builder": "1.0",
-          "rio-cogeo": "3.0"
+    "id": 16,
+    "name": "mod13q1",
+    "title": "MOD13Q1 v006 - Cloud Optimized GeoTIFF",
+    "description": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6.0 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.",
+    "temporal_composition_schema": {
+        "step": 16,
+        "unit": "day",
+        "schema": "Cyclic",
+        "cycle": {
+            "step": 1,
+            "unit": "year"
         }
-      }
-    ],
-    "license": {
-      "type": "proprietary",
-      "uri": "https://modaps.modaps.eosdis.nasa.gov/services/faq/LAADS_Data-Use_Citation_Policies.pdf"
     },
-    "platform": {
-      "code": [
-        "TERRA"
-      ],
-      "instruments": [
-        "MODIS"
-      ]
+    "composition_function": null,
+    "grid_ref_sys": "STG",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://modis.gsfc.nasa.gov/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of MOD13Q1 in Cloud Optimized GeoTIFF",
+                "processing:level": "L3",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-collection-builder": "1.0",
+                    "rio-cogeo": "3.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://modaps.modaps.eosdis.nasa.gov/services/faq/LAADS_Data-Use_Citation_Policies.pdf"
+        },
+        "platform": {
+            "code": [
+                "TERRA"
+            ],
+            "instruments": [
+                "MODIS"
+            ]
+        }
+    },
+    "keywords": [
+        "modis",
+        "terra",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "version": "6.0",
+    "category": "eo",
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "blue_reflectance",
+            "common_name": "blue",
+            "description": "Surface Reflectance Band 3",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -1000,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.469,
+            "full_width_half_max": 0.01
+        },
+        {
+            "name": "red_reflectance",
+            "common_name": "red",
+            "description": "Surface Reflectance Band 1",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -1000,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.645,
+            "full_width_half_max": 0.025
+        },
+        {
+            "name": "NIR_reflectance",
+            "common_name": "nir",
+            "description": "Surface Reflectance Band 2",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -1000,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.8585,
+            "full_width_half_max": 0.175
+        },
+        {
+            "name": "MIR_reflectance",
+            "common_name": "swir22",
+            "description": "Surface Reflectance Band 7",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -1000,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.2130,
+            "full_width_half_max": 0.0025
+        },
+        {
+            "name": "NDVI",
+            "common_name": "NDVI",
+            "description": "16 day NDVI",
+            "min_value": -2000,
+            "max_value": 10000,
+            "nodata": -3000,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "EVI",
+            "common_name": "EVI",
+            "description": "16 day EVI",
+            "min_value": -2000,
+            "max_value": 10000,
+            "nodata": -3000,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "VI_Quality",
+            "common_name": "quality",
+            "description": "VI quality indicators",
+            "min_value": 0,
+            "max_value": 65534,
+            "nodata": 65535,
+            "scale": 1,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "view_zenith_angle",
+            "common_name": "",
+            "description": "View zenith angle of VI Pixel",
+            "min_value": 0,
+            "max_value": 18000,
+            "nodata": -10000,
+            "scale": 0.01,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "sun_zenith_angle",
+            "common_name": "",
+            "description": "Sun zenith angle of VI pixel",
+            "min_value": 0,
+            "max_value": 18000,
+            "nodata": -10000,
+            "scale": 0.01,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "relative_azimuth_angle",
+            "common_name": "",
+            "description": "Relative azimuth angle of VI pixel",
+            "min_value": -18000,
+            "max_value": 18000,
+            "nodata": -4000,
+            "scale": 0.01,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "composite_day_of_the_year",
+            "common_name": "quality",
+            "description": "Day of year VI pixel",
+            "min_value": 1,
+            "max_value": 366,
+            "nodata": -1,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "pixel_reliability",
+            "common_name": "quality",
+            "description": "Quality reliability of VI pixel",
+            "min_value": 0,
+            "max_value": 3,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 231.656358263,
+            "resolution_y": 231.656358263,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "terra"
+        ],
+        "constellation": [
+            "modis"
+        ],
+        "instruments": [
+            "modis"
+        ],
+        "gsd": [
+            231.656358263
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "red_reflectance": {
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "NIR_reflectance": {
+            "title": "Band nir",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "blue_reflectance": {
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "MIR_reflectance": {
+            "title": "Band mir",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "NDVI": {
+            "title": "Band NDVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "EVI": {
+            "title": "Band EVI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "VI_Quality": {
+            "title": "Band VI_Quality",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "view_zenith_angle": {
+            "title": "Band view_zenith_angle",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "sun_zenith_angle": {
+            "title": "Band sun_zenith_angle",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "relative_azimuth_angle": {
+            "title": "Band relative_azimuth_angle",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "composite_day_of_the_year": {
+            "title": "Band composite_day_of_the_year",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "pixel_reliability": {
+            "title": "Band pixel_reliability",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ],
+            "type": "image/png"
+        }
     }
-  },
-  "keywords": [
-    "modis",
-    "terra",
-    "earth observation",
-    "brazil"
-  ],
-  "is_public": true,
-  "is_available": true,
-  "version": "6.0",
-  "category": "eo",
-  "version_predecessor": null,
-  "version_successor": null,
-  "bands": [
-    {
-      "name": "blue_reflectance",
-      "common_name": "blue",
-      "description": "Surface Reflectance Band 3",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -1000,
-      "scale": 0.0001,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.469,
-      "full_width_half_max": 0.01
-    },
-    {
-      "name": "red_reflectance",
-      "common_name": "red",
-      "description": "Surface Reflectance Band 1",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -1000,
-      "scale": 0.0001,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.645,
-      "full_width_half_max": 0.025
-    },
-    {
-      "name": "NIR_reflectance",
-      "common_name": "nir",
-      "description": "Surface Reflectance Band 2",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -1000,
-      "scale": 0.0001,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.8585,
-      "full_width_half_max": 0.175
-    },
-    {
-      "name": "MIR_reflectance",
-      "common_name": "swir22",
-      "description": "Surface Reflectance Band 7",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -1000,
-      "scale": 0.0001,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.2130,
-      "full_width_half_max": 0.0025
-    },
-    {
-      "name": "NDVI",
-      "common_name": "NDVI",
-      "description": "16 day NDVI",
-      "min_value": -2000,
-      "max_value": 10000,
-      "nodata": -3000,
-      "scale": 0.0001,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "EVI",
-      "common_name": "EVI",
-      "description": "16 day EVI",
-      "min_value": -2000,
-      "max_value": 10000,
-      "nodata": -3000,
-      "scale": 0.0001,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "VI_Quality",
-      "common_name": "quality",
-      "description": "VI quality indicators",
-      "min_value": 0,
-      "max_value": 65534,
-      "nodata": 65535,
-      "scale": 1,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "view_zenith_angle",
-      "common_name": "",
-      "description": "View zenith angle of VI Pixel",
-      "min_value": 0,
-      "max_value": 18000,
-      "nodata": -10000,
-      "scale": 0.01,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "sun_zenith_angle",
-      "common_name": "",
-      "description": "Sun zenith angle of VI pixel",
-      "min_value": 0,
-      "max_value": 18000,
-      "nodata": -10000,
-      "scale": 0.01,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "relative_azimuth_angle",
-      "common_name": "",
-      "description": "Relative azimuth angle of VI pixel",
-      "min_value": -18000,
-      "max_value": 18000,
-      "nodata": -4000,
-      "scale": 0.01,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "composite_day_of_the_year",
-      "common_name": "quality",
-      "description": "Day of year VI pixel",
-      "min_value": 1,
-      "max_value": 366,
-      "nodata": -1,
-      "scale": 1,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "pixel_reliability",
-      "common_name": "quality",
-      "description": "Quality reliability of VI pixel",
-      "min_value": 0,
-      "max_value": 3,
-      "nodata": 255,
-      "scale": 1,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 231.656358263,
-      "resolution_y": 231.656358263,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    }
-  ],
-  "summaries": {
-    "platform": [
-      "terra"
-    ],
-    "constellation": [
-      "modis"
-    ],
-    "instruments": [
-      "modis"
-    ],
-    "gsd": [
-      231.656358263
-    ],
-    "view:off_nadir": [
-      0
-    ]
-  },
-  "item_assets": {
-    "red_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "NIR_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "blue_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "MIR_reflectance": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "NDVI": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "EVI": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "VI_Quality": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "view_zenith_angle": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "sun_zenith_angle": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "relative_azimuth_angle": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "composite_day_of_the_year": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "pixel_reliability": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    }
-  }
 }

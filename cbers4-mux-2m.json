@@ -221,7 +221,7 @@
         }
     ],
     "summaries": {
-       "platform": [
+        "platform": [
             "cbers-4"
         ],
         "constellation": [
@@ -239,72 +239,82 @@
     },
     "item_assets": {
         "CLEAROB": {
+            "title": "Clear observation",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "TOTALOB": {
+            "title": "Total observation count",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "PROVENANCE": {
+            "title": "Day of year",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "EVI": {
+            "title": "Band EVI",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "NDVI": {
+            "title": "Band NDVI",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND5": {
+            "title": "Band blue",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND6": {
+            "title": "Band green",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND7": {
+            "title": "Band red",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "BAND8": {
+            "title": "Band nir",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "CMASK": {
+            "title": "Band cmask",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "roles": [
                 "thumbnail"
             ],
             "type": "image/png"
         }
     },
-    "properties": {
-    }
+    "properties": {}
 }

@@ -279,104 +279,103 @@
     },
     "item_assets": {
         "CLEAROB": {
+            "title": "Clear observation",
             "roles": [
                 "data"
             ],
-            "title": "Clear observation",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "TOTALOB": {
+            "title": "Total observation count",
             "roles": [
                 "data"
             ],
-            "title": "Total observation count",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "PROVENANCE": {
+            "title": "Day of year",
             "roles": [
                 "data"
             ],
-            "title": "Day of year",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "EVI": {
+            "title": "Band EVI",
             "roles": [
                 "data"
             ],
-            "title": "Band EVI",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "NDVI": {
-            "roles": [
-                "data"
-            ],
             "title": "Band NDVI",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
-        "blue": {
             "roles": [
                 "data"
             ],
-            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "coastal": {
+            "title": "Band coastal",
             "roles": [
                 "data"
             ],
-            "title": "Band coastal",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "blue": {
+            "title": "Band blue",
+            "roles": [
+                "data"
+            ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "green": {
-            "roles": [
-                "data"
-            ],
             "title": "Band green",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
-        "nir08": {
             "roles": [
                 "data"
             ],
-            "title": "Band nir08",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
-        "qa_pixel": {
-            "roles": [
-                "data"
-            ],
-            "title": "Band qa_pixel",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "red": {
+            "title": "Band red",
             "roles": [
                 "data"
             ],
-            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "nir08": {
+            "title": "Band nir08",
+            "roles": [
+                "data"
+            ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "swir16": {
+            "title": "Band swir16",
             "roles": [
                 "data"
             ],
-            "title": "Band swir16",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "swir22": {
+            "title": "Band swir22",
             "roles": [
                 "data"
             ],
-            "title": "Band swir22",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "qa_pixel": {
+            "title": "Band qa_pixel",
+            "roles": [
+                "data"
+            ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "roles": [
                 "thumbnail"
             ],
-            "title": "Thumbnail",
             "type": "image/png"
         }
     },
-    "properties": {
-    }
+    "properties": {}
 }

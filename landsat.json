@@ -1,837 +1,891 @@
 {
-  "id": 11,
-  "name": "landsat",
-  "title": "Landsat Collection 2 - Level-2",
-  "description": "Landsat Collection 2 Level-2 Science Products (https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products), consisting of atmospherically corrected surface reflectance (https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-reflectance) and surface temperature (https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature) image data. Collection 2 Level-2 Science Products are available from August 22, 1982 to present. This dataset represents the Brazilian archive of Level-2 data from Landsat Collection 2 (https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2) acquired by the Thematic Mapper (https://landsat.gsfc.nasa.gov/thematic-mapper/) onboard Landsat 4 and 5, the Enhanced Thematic Mapper (https://landsat.gsfc.nasa.gov/the-enhanced-thematic-mapper-plus-etm/) onboard Landsat 7, and Operatational Land Imager (https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/) and Thermal Infrared Sensor (https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/thermal-infrared-sensor/) onboard Landsat 8 and 9. Images are stored in cloud-optimized GeoTIFF (https://www.cogeo.org/) format.",
-  "temporal_composition_schema": null,
-  "composition_function": null,
-  "grid_ref_sys": "WRS2",
-  "collection_type": "collection",
-  "metadata": {
-    "providers": [
-        {
-            "name": "United States Geological Survey (USGS)",
-            "roles": [
-                "producer",
-                "licensor"
+    "id": 11,
+    "name": "landsat",
+    "title": "Landsat Collection 2 - Level-2",
+    "description": "Landsat Collection 2 Level-2 Science Products (https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products), consisting of atmospherically corrected surface reflectance (https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-reflectance) and surface temperature (https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature) image data. Collection 2 Level-2 Science Products are available from August 22, 1982 to present. This dataset represents the Brazilian archive of Level-2 data from Landsat Collection 2 (https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2) acquired by the Thematic Mapper (https://landsat.gsfc.nasa.gov/thematic-mapper/) onboard Landsat 4 and 5, the Enhanced Thematic Mapper (https://landsat.gsfc.nasa.gov/the-enhanced-thematic-mapper-plus-etm/) onboard Landsat 7, and Operatational Land Imager (https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/operational-land-imager/) and Thermal Infrared Sensor (https://landsat.gsfc.nasa.gov/satellites/landsat-8/spacecraft-instruments/thermal-infrared-sensor/) onboard Landsat 8 and 9. Images are stored in cloud-optimized GeoTIFF (https://www.cogeo.org/) format.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "WRS2",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "United States Geological Survey (USGS)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf"
+        },
+        "platform": {
+            "code": [
+                "Landsat-4",
+                "Landsat-5",
+                "Landsat-7",
+                "Landsat-8",
+                "Landsat-9"
             ],
-            "url": "https://earth.esa.int/"
+            "instruments": [
+                "TM",
+                "ETM",
+                "OLI",
+                "TIRS",
+                "OLI-2",
+                "TIRS-2"
+            ]
+        }
+    },
+    "keywords": [
+        "landsat",
+        "oli",
+        "tirs",
+        "level-2a",
+        "collection-2",
+        "surface reflectance",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "summaries": {
+        "platform": [
+            "Landsat-4",
+            "Landsat-5",
+            "Landsat-7",
+            "Landsat-8",
+            "Landsat-9"
+        ]
+    },
+    "is_public": true,
+    "is_available": true,
+    "version": 2,
+    "category": "eo",
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "TM_B1",
+            "common_name": "blue",
+            "description": "Visible blue (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.49,
+            "full_width_half_max": 0.07
         },
         {
-            "name": "National Institute for Space Research (INPE)",
-            "roles": [
-                "host"
-            ],
-            "url": "https://data.inpe.br/big/"
+            "name": "TM_B2",
+            "common_name": "green",
+            "description": "Visible green (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.08
+        },
+        {
+            "name": "TM_B3",
+            "common_name": "red",
+            "description": "Visible red (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "TM_B4",
+            "common_name": "nir08",
+            "description": "Near infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.14
+        },
+        {
+            "name": "TM_B5",
+            "common_name": "swir16",
+            "description": "Short-wave infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.65,
+            "full_width_half_max": 0.2
+        },
+        {
+            "name": "TM_B6",
+            "common_name": "lwir",
+            "description": "Long-wave infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 11.45,
+            "full_width_half_max": 2.1
+        },
+        {
+            "name": "TM_B7",
+            "common_name": "swir22",
+            "description": "Short-wave infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.22,
+            "full_width_half_max": 0.27
+        },
+        {
+            "name": "ETM_B1",
+            "common_name": "blue",
+            "description": "Visible blue (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "ETM_B2",
+            "common_name": "green",
+            "description": "Visible green (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.08
+        },
+        {
+            "name": "ETM_B3",
+            "common_name": "red",
+            "description": "Visible red (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "ETM_B4",
+            "common_name": "nir08",
+            "description": "Near infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.84,
+            "full_width_half_max": 0.13
+        },
+        {
+            "name": "ETM_B5",
+            "common_name": "swir16",
+            "description": "Short-wave infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.65,
+            "full_width_half_max": 0.2
+        },
+        {
+            "name": "ETM_B6",
+            "common_name": "lwir",
+            "description": "Long-wave infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 11.34,
+            "full_width_half_max": 2.05
+        },
+        {
+            "name": "ETM_B7",
+            "common_name": "swir22",
+            "description": "Short-wave infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.2,
+            "full_width_half_max": 0.28
+        },
+        {
+            "name": "OLI_B1",
+            "common_name": "coastal",
+            "description": "Coastal/Aerosol (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.44,
+            "full_width_half_max": 0.02
+        },
+        {
+            "name": "OLI_B2",
+            "common_name": "blue",
+            "description": "Visible blue (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "OLI_B3",
+            "common_name": "green",
+            "description": "Visible green (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "OLI_B4",
+            "common_name": "red",
+            "description": "Visible red (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.65,
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "OLI_B5",
+            "common_name": "nir08",
+            "description": "Near infrared (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.87,
+            "full_width_half_max": 0.03
+        },
+        {
+            "name": "OLI_B6",
+            "common_name": "swir16",
+            "description": "Short-wave infrared (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.61,
+            "full_width_half_max": 0.09
+        },
+        {
+            "name": "OLI_B7",
+            "common_name": "swir22",
+            "description": "Short-wave infrared (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 0.0000275,
+            "scale_add": -0.2,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.2,
+            "full_width_half_max": 0.19
+        },
+        {
+            "name": "TIRS_B10",
+            "common_name": "lwir11",
+            "description": "Long-wave infrared (Thermal Infrared Sensor)",
+            "min_value": 1,
+            "max_value": 65535,
+            "nodata": 0,
+            "scale_mult": 0.00341802,
+            "scale_add": 149,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 10.9,
+            "full_width_half_max": 0.59
+        },
+        {
+            "name": "QA_PIXEL",
+            "common_name": "quality",
+            "description": "",
+            "min_value": 21824,
+            "max_value": 65534,
+            "nodata": 1,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SR_CLOUD_QA",
+            "common_name": "quality",
+            "description": "",
+            "min_value": 21824,
+            "max_value": 65534,
+            "nodata": 1,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SR_QA_AEROSOL",
+            "common_name": "quality",
+            "description": "",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 1,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "QA_RADSAT",
+            "common_name": "quality",
+            "description": "",
+            "min_value": 0,
+            "max_value": 3829,
+            "nodata": null,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_QA",
+            "common_name": "quality",
+            "description": "",
+            "min_value": 0,
+            "max_value": 32767,
+            "nodata": -9999,
+            "scale_mult": 0.01,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_TRAD",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 22000,
+            "nodata": -9999,
+            "scale_mult": 0.001,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_URAD",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 28000,
+            "nodata": -9999,
+            "scale_mult": 0.001,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_DRAD",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 28000,
+            "nodata": -9999,
+            "scale_mult": 0.001,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_ATRAN",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale_mult": 0.0001,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_EMIS",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale_mult": 0.0001,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_EMSD",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ST_CDIST",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 24000,
+            "nodata": -9999,
+            "scale_mult": 0.01,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SR_ATMOS_OPACITY",
+            "common_name": "",
+            "description": "",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale_mult": 0.001,
+            "scale_add": 0,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
         }
     ],
-    "license": {
-        "type": "proprietary",
-        "uri": "https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf"
-    },
-    "platform": {
-      "code": ["Landsat-4", "Landsat-5", "Landsat-7", "Landsat-8", "Landsat-9"],
-      "instruments": ["TM", "ETM", "OLI", "TIRS", "OLI-2", "TIRS-2"]
+    "assets": {
+        "coastal": {
+            "title": "Band coastal",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "blue": {
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "green": {
+            "title": "Band green",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "red": {
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "nir08": {
+            "title": "Band nir08",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "swir16": {
+            "title": "Band swir16",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "swir22": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "lwir": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "lwir11": {
+            "title": "Band swir22",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "qa_aerosol": {
+            "title": "Band qa_aerosol",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "qa_pixel": {
+            "title": "Band qa_pixel",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "qa_radsat": {
+            "title": "Band qa_radsat",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_qa": {
+            "title": "Band st_qa",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_atran": {
+            "title": "Band st_atran",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_trad": {
+            "title": "Band st_trad",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_urad": {
+            "title": "Band st_urad",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_drad": {
+            "title": "Band st_drad",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_emis": {
+            "title": "Band st_emis",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_emsd": {
+            "title": "Band st_emsd",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_cdist": {
+            "title": "Band st_cdist",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "sr_atmos_opacity": {
+            "title": "Band sr_atmos_opacity",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "sr_cloud_qa": {
+            "title": "Band sr_cloud_qa",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "mtl.json": {
+            "title": "mtl json",
+            "type": "application/json",
+            "roles": [
+                "data"
+            ]
+        },
+        "mtl.txt": {
+            "title": "mtl txt",
+            "type": "text/plain",
+            "roles": [
+                "data"
+            ]
+        },
+        "mtl.xml": {
+            "title": "mtl xml",
+            "type": "application/xml",
+            "roles": [
+                "data"
+            ]
+        },
+        "sr_stac": {
+            "title": "sr_stac",
+            "type": "application/json",
+            "roles": [
+                "data"
+            ]
+        },
+        "st_stac": {
+            "title": "st_stac",
+            "type": "application/json",
+            "roles": [
+                "data"
+            ]
+        },
+        "ang": {
+            "title": "ang",
+            "type": "text/plain",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumb_large.jpeg": {
+            "title": "Thumbnail large",
+            "type": "image/jpeg",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumb_small.jpeg": {
+            "title": "Thumbnail small",
+            "type": "image/jpeg",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail Large",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
     }
-  },
-  "keywords": [
-    "landsat",
-    "oli",
-    "tirs",
-    "level-2a",
-    "collection-2",
-    "bottom of atmosphere reflectance",
-    "cloud optimized geotiff",
-    "cog",
-    "earth observation",
-    "brazil"
-  ],
-  "summaries": {
-    "platform": ["Landsat-4", "Landsat-5", "Landsat-7", "Landsat-8", "Landsat-9"]
-  },
-  "is_public": true,
-  "is_available": true,
-  "version": 2,
-  "category": "eo",
-  "version_predecessor": null,
-  "version_successor": null,
-  "bands": [
-    {
-      "name": "TM_B1",
-      "common_name": "blue",
-      "description": "Visible blue (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.49,
-      "full_width_half_max": 0.07
-    },
-    {
-      "name": "TM_B2",
-      "common_name": "green",
-      "description": "Visible green (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.56,
-      "full_width_half_max": 0.08
-    },
-    {
-      "name": "TM_B3",
-      "common_name": "red",
-      "description": "Visible red (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength":0.66,
-      "full_width_half_max": 0.06
-    },
-    {
-      "name": "TM_B4",
-      "common_name": "nir08",
-      "description": "Near infrared (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.83,
-      "full_width_half_max": 0.14
-    },
-    {
-      "name": "TM_B5",
-      "common_name": "swir16",
-      "description": "Short-wave infrared (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 1.65,
-      "full_width_half_max": 0.2
-    },
-    {
-      "name": "TM_B6",
-      "common_name": "lwir",
-      "description": "Long-wave infrared (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 11.45,
-      "full_width_half_max": 2.1
-    },
-    {
-      "name": "TM_B7",
-      "common_name": "swir22",
-      "description": "Short-wave infrared (Thematic Mapper)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 2.22,
-      "full_width_half_max": 0.27
-    },
-    {
-      "name": "ETM_B1",
-      "common_name": "blue",
-      "description": "Visible blue (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.48,
-      "full_width_half_max": 0.07
-    },
-    {
-      "name": "ETM_B2",
-      "common_name": "green",
-      "description": "Visible green (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.56,
-      "full_width_half_max": 0.08
-    },
-    {
-      "name": "ETM_B3",
-      "common_name": "red",
-      "description": "Visible red (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.66,
-      "full_width_half_max": 0.06
-    },
-    {
-      "name": "ETM_B4",
-      "common_name": "nir08",
-      "description": "Near infrared (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.84,
-      "full_width_half_max": 0.13
-    },
-    {
-      "name": "ETM_B5",
-      "common_name": "swir16",
-      "description": "Short-wave infrared (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 1.65,
-      "full_width_half_max": 0.2
-    },
-    {
-      "name": "ETM_B6",
-      "common_name": "lwir",
-      "description": "Long-wave infrared (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 11.34,
-      "full_width_half_max": 2.05
-    },
-    {
-      "name": "ETM_B7",
-      "common_name": "swir22",
-      "description": "Short-wave infrared (Enhanced Thematic Mapper Plus)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 2.2,
-      "full_width_half_max": 0.28
-    },
-    {
-      "name": "OLI_B1",
-      "common_name": "coastal",
-      "description": "Coastal/Aerosol (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.44,
-      "full_width_half_max": 0.02
-    },
-    {
-      "name": "OLI_B2",
-      "common_name": "blue",
-      "description": "Visible blue (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.48,
-      "full_width_half_max": 0.06
-    },
-    {
-      "name": "OLI_B3",
-      "common_name": "green",
-      "description": "Visible green (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.56,
-      "full_width_half_max": 0.06
-    },
-    {
-      "name": "OLI_B4",
-      "common_name": "red",
-      "description": "Visible red (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.65,
-      "full_width_half_max": 0.04
-    },
-    {
-      "name": "OLI_B5",
-      "common_name": "nir08",
-      "description": "Near infrared (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 0.87,
-      "full_width_half_max": 0.03
-    },
-    {
-      "name": "OLI_B6",
-      "common_name": "swir16",
-      "description": "Short-wave infrared (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 1.61,
-      "full_width_half_max": 0.09
-    },
-    {
-      "name": "OLI_B7",
-      "common_name": "swir22",
-      "description": "Short-wave infrared (Operational Land Imager)",
-      "min_value": 7273,
-      "max_value": 43636,
-      "nodata": 0,
-      "scale_mult": 0.0000275,
-      "scale_add": -0.2,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 2.2,
-      "full_width_half_max": 0.19
-    },
-    {
-      "name": "TIRS_B10",
-      "common_name": "lwir11",
-      "description": "Long-wave infrared (Thermal Infrared Sensor)",
-      "min_value": 1,
-      "max_value": 65535,
-      "nodata": 0,
-      "scale_mult": 0.00341802,
-      "scale_add": 149,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 10.9,
-      "full_width_half_max": 0.59
-    },
-    {
-      "name": "QA_PIXEL",
-      "common_name": "quality",
-      "description": "",
-      "min_value": 21824,
-      "max_value": 65534,
-      "nodata": 1,
-      "scale_mult": 1,
-      "scale_add": 0,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "SR_CLOUD_QA",
-      "common_name": "quality",
-      "description": "",
-      "min_value": 21824,
-      "max_value": 65534,
-      "nodata": 1,
-      "scale_mult": 1,
-      "scale_add": 0,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "SR_QA_AEROSOL",
-      "common_name": "quality",
-      "description": "",
-      "min_value": 0,
-      "max_value": 255,
-      "nodata": 1,
-      "scale_mult": 1,
-      "scale_add": 0,
-      "data_type": "uint8",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "QA_RADSAT",
-      "common_name": "quality",
-      "description": "",
-      "min_value": 0,
-      "max_value": 3829,
-      "nodata": null,
-      "scale_mult": 1,
-      "scale_add": 0,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_QA",
-      "common_name": "quality",
-      "description": "",
-      "min_value": 0,
-      "max_value": 32767,
-      "nodata": -9999,
-      "scale_mult": 0.01,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_TRAD",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 22000,
-      "nodata": -9999,
-      "scale_mult": 0.001,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_URAD",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 28000,
-      "nodata": -9999,
-      "scale_mult": 0.001,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_DRAD",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 28000,
-      "nodata": -9999,
-      "scale_mult": 0.001,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_ATRAN",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -9999,
-      "scale_mult": 0.0001,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_EMIS",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -9999,
-      "scale_mult": 0.0001,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_EMSD",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": -9999,
-      "scale_mult": 1,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "ST_CDIST",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 24000,
-      "nodata": -9999,
-      "scale_mult": 0.01,
-      "scale_add": 0,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    },
-    {
-      "name": "SR_ATMOS_OPACITY",
-      "common_name": "",
-      "description": "",
-      "min_value": 0,
-      "max_value": 1000,
-      "nodata": -9999,
-      "scale_mult": 0.001,
-      "scale_add": 0,
-      "data_type": "int16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 30.0,
-      "resolution_y": 30.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": null,
-      "full_width_half_max": null
-    }
-  ],
-  "assets": {
-    "coastal": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "blue": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "green": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "red": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "nir08": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "swir16": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "swir22": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "lwir": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "lwir11": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "qa_aerosol": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "qa_pixel": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "qa_radsat": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_qa": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_atran": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_trad": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_urad": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_drad": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_emis": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_emsd": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_cdist": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "sr_atmos_opacity": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "sr_cloud_qa": {
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-          "data"
-      ]
-    },
-    "mtl.json": {
-      "type": "application/json",
-      "roles": [
-          "data"
-      ]
-    },
-    "mtl.txt": {
-      "type": "text/plain",
-      "roles": [
-          "data"
-      ]
-    },
-    "mtl.xml": {
-      "type": "application/xml",
-      "roles": [
-          "data"
-      ]
-    },
-    "sr_stac": {
-      "type": "application/json",
-      "roles": [
-          "data"
-      ]
-    },
-    "st_stac": {
-      "type": "application/json",
-      "roles": [
-          "data"
-      ]
-    },
-    "ang": {
-      "type": "text/plain",
-      "roles": [
-          "data"
-      ]
-    },
-    "thumb_large.jpeg": {
-      "type": "image/jpeg",
-      "roles": ["thumbnail"]
-    },
-    "thumb_small.jpeg": {
-      "type": "image/jpeg",
-      "roles": ["thumbnail"]
-    },
-    "thumbnail": {
-      "type": "image/png",
-      "roles": ["thumbnail"]
-    }
-  }
 }

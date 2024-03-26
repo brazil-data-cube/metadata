@@ -335,102 +335,119 @@
     },
     "item_assets": {
         "B01": {
+            "title": "Band coastal",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B02": {
+            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B03": {
+            "title": "Band green",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B04": {
+            "title": "Band red",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B05": {
+            "title": "Band rededge 1",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B06": {
+            "title": "Band rededge 2",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B07": {
+            "title": "Band rededge 3",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B08": {
+            "title": "Band nir",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B09": {
+            "title": "Band Water Vapour",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B11": {
+            "title": "Band swir16",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B12": {
+            "title": "Band swir22",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "B8A": {
+            "title": "Band nir08",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "AOT": {
+            "title": "Band AOT",
             "type": "image/tiff; application=geotiff",
             "roles": [
                 "data"
             ]
         },
         "SCL": {
+            "title": "Band SCL",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "WVP": {
+            "title": "Band WVP",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "TCI": {
+            "title": "Band TCI",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "overview"
             ]
         },
         "PVI": {
+            "title": "PreView Image",
             "type": "image/png",
             "bands": {
                 "red": "B04",
