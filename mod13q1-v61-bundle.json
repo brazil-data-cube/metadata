@@ -1,8 +1,8 @@
 {
-    "id": 22,
-    "name": "myd13q1",
-    "title": "MYD13Q1 v006 - Cloud Optimized GeoTIFF",
-    "description": "The Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MYD13Q1) Version 6.0 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MYD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.",
+    "id": null,
+    "name": "mod13q1_bundle",
+    "title": "MOD13Q1 v061 - Bundle",
+    "description": "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6.1 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.",
     "temporal_composition_schema": {
         "step": 16,
         "unit": "day",
@@ -28,18 +28,9 @@
             {
                 "name": "National Institute for Space Research (INPE)",
                 "roles": [
-                    "host",
-                    "processor",
-                    "producer"
+                    "host"
                 ],
-                "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of MYD13Q1 in Cloud Optimized GeoTIFF",
-                "processing:level": "L3",
-                "processing:facility": "BDC/BIG",
-                "processing:software": {
-                    "bdc-collection-builder": "1.0",
-                    "rio-cogeo": "3.0"
-                }
+                "url": "https://data.inpe.br/big/"
             }
         ],
         "license": {
@@ -48,7 +39,7 @@
         },
         "platform": {
             "code": [
-                "AQUA"
+                "TERRA"
             ],
             "instruments": [
                 "MODIS"
@@ -57,13 +48,13 @@
     },
     "keywords": [
         "modis",
-        "aqua",
+        "terra",
         "earth observation",
         "brazil"
     ],
-    "is_public": true,
+    "is_public": false,
     "is_available": true,
-    "version": "6.0",
+    "version": "6.1",
     "category": "eo",
     "version_predecessor": null,
     "version_successor": null,
@@ -263,7 +254,7 @@
     ],
     "summaries": {
         "platform": [
-            "aqua"
+            "terra"
         ],
         "constellation": [
             "modis"
@@ -279,96 +270,19 @@
         ]
     },
     "item_assets": {
-        "red_reflectance": {
-            "title": "Band red",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "NIR_reflectance": {
-            "title": "Band nir",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "blue_reflectance": {
-            "title": "Band blue",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "MIR_reflectance": {
-            "title": "Band mir",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "NDVI": {
-            "title": "Band NDVI",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "EVI": {
-            "title": "Band EVI",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "VI_Quality": {
-            "title": "Band VI_Quality",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "view_zenith_angle": {
-            "title": "Band view_zenith_angle",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "sun_zenith_angle": {
-            "title": "Band sun_zenith_angle",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "relative_azimuth_angle": {
-            "title": "Band relative_azimuth_angle",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "composite_day_of_the_year": {
-            "title": "Band composite_day_of_the_year",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "roles": [
-                "data"
-            ]
-        },
-        "pixel_reliability": {
-            "title": "Band pixel_reliability",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "bundle": {
+            "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
             "title": "Thumbnail",
+            "type": "image/png",
             "roles": [
                 "thumbnail"
-            ],
-            "type": "image/png"
+            ]
         }
-    }
+    },
+    "properties": {}
 }

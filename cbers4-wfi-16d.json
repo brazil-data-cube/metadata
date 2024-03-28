@@ -1,19 +1,19 @@
 {
     "id": null,
-    "name": "CBERS4-MUX-2M",
-    "title": "CBERS-4/MUX - Level-4 SR - Data Cube - LCF 2 months",
-    "description": "Earth Observation Data Cube generated from CBERS-4/MUX Level-4 SR product over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 20 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 2 months using the Least Cloud Cover First (LCF) best pixel approach.",
+    "name": "CBERS4-WFI-16D",
+    "title": "CBERS-4/WFI - Level-4 - Data Cube - LCF 16 days",
+    "description": "Earth Observation Data Cube generated from CBERS-4/WFI Level-4 SR product over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 64 meters of spatial resolution, reprojected and cropped to BDC_LG grid Version 2 (BDC_LG V2), considering a temporal compositing function of 16 days using the Least Cloud Cover First (LCF) best pixel approach.",
     "temporal_composition_schema": {
         "cycle": {
             "step": 1,
             "unit": "year"
         },
         "schema": "Cyclic",
-        "step": 2,
-        "unit": "month"
+        "step": 16,
+        "unit": "day"
     },
     "composition_function": "Least CC First",
-    "grid_ref_sys": "BDC_MD_V2",
+    "grid_ref_sys": "BDC_LG_V2",
     "collection_type": "cube",
     "metadata": {
         "providers": [
@@ -25,8 +25,8 @@
                     "producer"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of Earth Observation Data Cubes based on CBERS4-MUX in Cloud Optimized GeoTIFF",
-                "processing:level": "L4 SR",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on CBERS4-WFI in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
                 "processing:facility": "BDC/BIG",
                 "processing:software": {
                     "bdc-cube-builder": "1.0"
@@ -41,6 +41,7 @@
     "keywords": [
         "data cube",
         "cbers",
+        "cbers-4",
         "surface reflectance",
         "cloud optimized geotiff",
         "cog",
@@ -51,74 +52,74 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "red",
-        "nir",
-        "blue"
+        "BAND15",
+        "BAND16",
+        "BAND13"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND5",
+            "name": "BAND13",
             "common_name": "blue",
-            "description": "B5 blue band from 0.45 to 0.52 micrometers",
+            "description": "B13 blue band from 0.45 to 0.52 micrometers",
             "min_value": 0,
             "max_value": 10000,
             "nodata": -9999,
             "scale": 0.0001,
             "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND6",
+            "name": "BAND14",
             "common_name": "green",
-            "description": "B6 green band from 0.52 to 0.59 micrometers",
+            "description": "B14 green band from 0.52 to 0.59 micrometers",
             "min_value": 0,
             "max_value": 10000,
             "nodata": -9999,
             "scale": 0.0001,
             "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND7",
+            "name": "BAND15",
             "common_name": "red",
-            "description": "B7 red band from 0.63 to 0.69 micrometers",
+            "description": "B15 red band from 0.63 to 0.69 micrometers",
             "min_value": 0,
             "max_value": 10000,
             "nodata": -9999,
             "scale": 0.0001,
             "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
         },
         {
-            "name": "BAND8",
+            "name": "BAND16",
             "common_name": "nir",
-            "description": "B8 nir band from 0.77 to 0.89 micrometers",
+            "description": "B16 nir band from 0.77 to 0.89 micrometers",
             "min_value": 0,
             "max_value": 10000,
             "nodata": -9999,
             "scale": 0.0001,
             "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.830,
             "full_width_half_max": 0.12
@@ -133,8 +134,8 @@
             "scale": 1,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -149,8 +150,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": -9999,
             "scale": 0.0001,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -165,8 +166,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": -9999,
             "scale": 0.0001,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -181,8 +182,8 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": 0,
             "scale": 1,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -197,8 +198,8 @@
             "min_value": 0,
             "nodata": 0,
             "scale": 1,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -213,25 +214,25 @@
             "mime_type_id": "image/tiff; application=geotiff; profile=cloud-optimized",
             "nodata": -1,
             "scale": 1,
-            "resolution_x": 20,
-            "resolution_y": 20,
+            "resolution_x": 64,
+            "resolution_y": 64,
             "resolution_unit_id": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
         }
     ],
     "summaries": {
-        "platform": [
+       "platform": [
             "cbers-4"
         ],
         "constellation": [
             "cbers-4"
         ],
         "instruments": [
-            "mux"
+            "wfi"
         ],
         "gsd": [
-            20
+            64
         ],
         "view:off_nadir": [
             0
@@ -273,36 +274,36 @@
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "BAND5": {
-            "title": "Band blue",
+        "BAND13": {
+            "title": "Band 13 blue",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "BAND6": {
-            "title": "Band green",
+        "BAND14": {
+            "title": "Band 14 green",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "BAND7": {
-            "title": "Band red",
+        "BAND15": {
+            "title": "Band 15 red",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "BAND8": {
-            "title": "Band nir",
+        "BAND16": {
+            "title": "Band 16 NIR",
             "roles": [
                 "data"
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
         "CMASK": {
-            "title": "Band cmask",
+            "title": "Band CMASK",
             "roles": [
                 "data"
             ],
@@ -310,11 +311,17 @@
         },
         "thumbnail": {
             "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND15",
+                "green": "BAND16",
+                "blue": "BAND13"
+            },
             "roles": [
                 "thumbnail"
-            ],
-            "type": "image/png"
+            ]
         }
     },
-    "properties": {}
+    "properties": {
+    }
 }

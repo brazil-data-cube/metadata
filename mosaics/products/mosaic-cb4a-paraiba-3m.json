@@ -1,0 +1,143 @@
+{
+    "id": ,
+    "name": "mosaic-cb4a-paraiba-3m",
+    "title": "CBERS-4A/WFI Image Mosaic of Brazil Paraíba State - 3 Months",
+    "description": "CBERS-4A/WFI image mosaic of Brazil Paraíba State with 55m of spatial resolution. The mosaic was prepared in order to demonstrate the technological capabilities of the Brazil Data Cube project tools. The false color composition is based on the WFI bands 16, 15 and 14 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in July 2020 and ending in September 2020, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 50 CBERS-4A scenes and was generated based on an existing CBERS-4A/WFI image collection.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": null,
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Mosaic based on CBERS-4 L4 Data Cubes in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "0.4.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "cbers-4a",
+        "paraiba state",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND16",
+        "BAND15",
+        "BAND14"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND14",
+            "common_name": "green",
+            "description": "B14 green band from 0.52 to 0.59 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 55.0,
+            "resolution_y": 55.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND15",
+            "common_name": "red",
+            "description": "B15 red band from 0.63 to 0.69 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 55.0,
+            "resolution_y": 55.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND16",
+            "common_name": "nir",
+            "description": "B16 nir band from 0.77 to 0.89 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 55.0,
+            "resolution_y": 55.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4a"
+        ],
+        "constellation": [
+            "cbers-4a"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            55
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "False Color Composition of the mosaic. Contains CBERS-4A/WFI Bands 16, 15 and 14.",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND16",
+                "green": "BAND15",
+                "blue": "BAND14"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
