@@ -1,7 +1,7 @@
 {
     "name": "CB4-WFI-L4-SR",
-    "title": "CBERS-4/WFI - Level 4 - Cloud Optimized GeoTIFF",
-    "description": "CBERS-4/WFI Surface Reflectance product over Brazil. L4 product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "title": "CBERS-4/WFI - Level 4 SR - Cloud Optimized GeoTIFF",
+    "description": "CBERS-4/WFI Surface Reflectance product over Brazil. L4 SR product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -18,7 +18,7 @@
                 ],
                 "url": "https://data.inpe.br/big/",
                 "processing:lineage": "Generation of L4 in Cloud Optimized GeoTIFF",
-                "processing:level": "L4",
+                "processing:level": "L4 SR",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "bdc-collection-builder": "1.0",
@@ -149,36 +149,42 @@
     },
     "item_assets": {
         "BAND13": {
+            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "BAND14": {
+            "title": "Band green",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "BAND15": {
+            "title": "Band red",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "BAND16": {
+            "title": "Band nir",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "CMASK": {
+            "title": "Band cmask",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "BAND15",
