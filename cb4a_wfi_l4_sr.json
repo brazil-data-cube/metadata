@@ -149,36 +149,42 @@
     },
     "item_assets": {
         "BAND13": {
+            "title": "Band blue",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "BAND14": {
+            "title": "Band green",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "BAND15": {
+            "title": "Band red",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "BAND16": {
+            "title": "Band nir",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "CMASK": {
+            "title": "Band cmask",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "BAND15",

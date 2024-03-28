@@ -866,6 +866,7 @@
         ]
     },
     "item_assets": {
+        "title": "Asset",
         "asset": {
             "type": "application/zip",
             "roles": [

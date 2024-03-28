@@ -325,12 +325,14 @@
     },
     "item_assets": {
         "asset": {
+            "title": "Asset",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "B04",
