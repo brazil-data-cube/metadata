@@ -158,42 +158,42 @@
     },
     "item_assets": {
         "B01": {
-            "type": "application/octet-stream",
+            "type": "application/gzip",
             "title": "GOES-13/Imager Band 01 (VIS) (full resolution, about 1km spatial resolution)",
             "roles": [
                 "data"
             ]
         },
         "B01_4km": {
-            "type": "application/octet-stream",
+            "type": "application/gzip",
             "title": "GOES-13/Imager Band 01 (VIS) (about 4km spatial resolution)",
             "roles": [
                 "data"
             ]
         },
         "B02": {
-            "type": "application/octet-stream",
+            "type": "application/gzip",
             "title": "GOES-13/Imager Band 02 (IR)",
             "roles": [
                 "data"
             ]
         },
         "B03": {
-            "type": "application/octet-stream",
+            "type": "application/gzip",
             "title": "GOES-13/Imager Band 03 (IR)",
             "roles": [
                 "data"
             ]
         },
         "B04": {
-            "type": "application/octet-stream",
+            "type": "application/gzip",
             "title": "GOES-13/Imager Band 04 (IR)",
             "roles": [
                 "data"
             ]
         },
         "B05": {
-            "type": "application/octet-stream",
+            "type": "application/gzip",
             "title": "GOES-13/Imager Band 05 (IR)",
             "roles": [
                 "data"
