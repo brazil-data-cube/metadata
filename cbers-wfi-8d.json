@@ -263,6 +263,13 @@
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
+        "DATASOURCE": {
+            "title": "Data Source",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
         "EVI": {
             "title": "Band EVI",
             "roles": [
