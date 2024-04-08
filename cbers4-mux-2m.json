@@ -1,7 +1,7 @@
 {
     "id": 30,
     "name": "CBERS4-MUX-2M",
-    "title": "CBERS-4/MUX - Level-4 SR - Data Cube - LCF 2 months",
+    "title": "CBERS-4/MUX - L4-SR - Data Cube - LCF 2 months",
     "description": "Earth Observation Data Cube generated from CBERS-4/MUX Level-4 SR product over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 20 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 2 months using the Least Cloud Cover First (LCF) best pixel approach.",
     "temporal_composition_schema": {
         "cycle": {
@@ -41,6 +41,7 @@
     "keywords": [
         "data cube",
         "cbers",
+        "cbers-4",
         "surface reflectance",
         "cloud optimized geotiff",
         "cog",

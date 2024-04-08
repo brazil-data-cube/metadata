@@ -1,7 +1,7 @@
 {
     "id": 29,
     "name": "CBERS4-WFI-16D",
-    "title": "CBERS-4/WFI - Level-4 - Data Cube - LCF 16 days",
+    "title": "CBERS-4/WFI - L4-SR - Data Cube - LCF 16 days",
     "description": "Earth Observation Data Cube generated from CBERS-4/WFI Level-4 SR product over Brazil extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 64 meters of spatial resolution, reprojected and cropped to BDC_LG grid Version 2 (BDC_LG V2), considering a temporal compositing function of 16 days using the Least Cloud Cover First (LCF) best pixel approach.",
     "temporal_composition_schema": {
         "cycle": {
