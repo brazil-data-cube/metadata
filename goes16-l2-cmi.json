@@ -104,6 +104,23 @@
             "full_width_half_max": 0.0858
         },
         {
+            "name": "B02_1km",
+            "common_name": "red",
+            "description": "Daytime clouds, fog, insolation, winds",
+            "center_wavelength": 0.64,
+            "min_value": 0,
+            "max_value": 4095,
+            "nodata": 65535,
+            "scale": 0.00031746,
+            "offset": 0,
+            "data_type": "uint16",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": 0.0858
+        },
+        {
             "name": "B03",
             "common_name": "nir09",
             "description": "Daytime vegetation, burn scar, aerosol over water, winds",
