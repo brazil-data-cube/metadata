@@ -54,6 +54,9 @@
         "constellation": [
             "sentinel-1"
         ],
+        "instruments": [
+            "C-SAR"
+        ],
         "sar:product_type": [
             "GRD"
         ],
