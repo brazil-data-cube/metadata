@@ -55,7 +55,7 @@
             "sentinel-1"
         ],
         "instruments": [
-            "C-SAR"
+            "c-sar"
         ],
         "sar:product_type": [
             "GRD"
