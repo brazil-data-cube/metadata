@@ -66,6 +66,14 @@
             "Landsat-7",
             "Landsat-8",
             "Landsat-9"
+        ],
+        "instruments": [
+            "tm",
+            "etm",
+            "oli",
+            "tirs",
+            "oli-2",
+            "tirs-2"
         ]
     },
     "is_public": true,
