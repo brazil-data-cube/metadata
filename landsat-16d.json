@@ -275,6 +275,14 @@
             "Landsat-7",
             "Landsat-8",
             "Landsat-9"
+        ],
+        "instruments": [
+            "TM",
+            "ETM",
+            "OLI",
+            "TIRS",
+            "OLI-2",
+            "TIRS-2"
         ]
     },
     "item_assets": {
