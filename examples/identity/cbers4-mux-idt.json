@@ -1,0 +1,204 @@
+{
+    "id": null,
+    "name": "CBERS4-MUX-IDT",
+    "title": "Support CBERS 4 MUX Identity Data Cube of Brazil - Level-4-SR",
+    "description": "Earth Observation Data Cube generated from CBERS-4/MUX Level-4 SR product over Brazil extension. Identity Data Cube of Brazil with 20m of spatial resolution.",
+    "temporal_composition_schema": null,
+    "composition_function": "Identity",
+    "grid_ref_sys": "BDC_MD_V2",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on CBERS4-MUX in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "data cube",
+        "cbers",
+        "cbers-4",
+        "surface reflectance",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": false,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND7",
+        "BAND8",
+        "BAND5"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND5",
+            "common_name": "blue",
+            "description": "B5 blue band from 0.45 to 0.52 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND6",
+            "common_name": "green",
+            "description": "B6 green band from 0.52 to 0.59 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND7",
+            "common_name": "red",
+            "description": "B7 red band from 0.63 to 0.69 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND8",
+            "common_name": "nir",
+            "description": "B8 nir band from 0.77 to 0.89 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "CMASK",
+            "common_name": "quality",
+            "description": "Cloud Mask Product",
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+       "platform": [
+            "cbers-4"
+        ],
+        "constellation": [
+            "cbers-4"
+        ],
+        "instruments": [
+            "mux"
+        ],
+        "gsd": [
+            20
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "BAND5": {
+            "title": "Band 5 blue",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND6": {
+            "title": "Band 6 green",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND7": {
+            "title": "Band 7 red",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "BAND8": {
+            "title": "Band 8 NIR",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "CMASK": {
+            "title": "Band CMASK",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND7",
+                "green": "BAND8",
+                "blue": "BAND5"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+    }
+}
