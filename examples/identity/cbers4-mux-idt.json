@@ -1,5 +1,5 @@
 {
-    "id": ,
+    "id": null,
     "name": "CBERS4-MUX-IDT",
     "title": "Support CBERS 4 MUX Identity Data Cube of Brazil - Level-4-SR",
     "description": "Earth Observation Data Cube generated from CBERS-4/MUX Level-4 SR product over Brazil extension. Identity Data Cube of Brazil with 20m of spatial resolution.",
