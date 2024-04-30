@@ -43,7 +43,7 @@
         "sentinel-2",
         "msi",
         "level-2a",
-        "bottom of atmosphere reflectance",
+        "surface reflectance",
         "cloud optimized geotiff",
         "cog",
         "earth observation",
