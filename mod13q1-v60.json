@@ -56,8 +56,10 @@
         }
     },
     "keywords": [
+        "data cube",
         "modis",
         "terra",
+        "vegetation index",
         "earth observation",
         "brazil"
     ],
