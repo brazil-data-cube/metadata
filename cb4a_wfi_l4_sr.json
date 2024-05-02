@@ -46,6 +46,11 @@
     "is_public": true,
     "is_available": true,
     "category": "eo",
+    "quicklook": [
+        "BAND15",
+        "BAND16",
+        "BAND13"
+    ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
