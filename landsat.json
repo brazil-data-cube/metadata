@@ -81,9 +81,9 @@
     "version": 2,
     "category": "eo",
     "quicklook": [
-        "red",
-        "green",
-        "blue"
+        "OLI_B4",
+        "OLI_B3",
+        "OLI_B2"
     ],
     "version_predecessor": null,
     "version_successor": null,
