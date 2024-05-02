@@ -65,6 +65,11 @@
     "is_available": true,
     "version": "6.1",
     "category": "eo",
+    "quicklook": [
+        "red_reflectance",
+        "NIR_reflectance",
+        "blue_reflectance"
+    ],
     "version_predecessor": null,
     "version_successor": null,
     "bands": [

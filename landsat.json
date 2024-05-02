@@ -80,6 +80,11 @@
     "is_available": true,
     "version": 2,
     "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
     "version_predecessor": null,
     "version_successor": null,
     "bands": [

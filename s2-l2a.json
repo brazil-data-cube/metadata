@@ -52,6 +52,11 @@
     "is_public": true,
     "is_available": true,
     "category": "eo",
+    "quicklook": [
+        "B04",
+        "B03",
+        "B02"
+    ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
