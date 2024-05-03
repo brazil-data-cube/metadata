@@ -469,6 +469,7 @@
             "https://dataspace.copernicus.eu/",
             "https://inthub2.copernicus.eu",
             "https://scihub.copernicus.eu/"
-        ]
+        ],
+        "bdc:visual_band": "TCI"
     }
 }
