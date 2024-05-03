@@ -136,6 +136,7 @@
     "properties": {
         "sources": [
             "http://www.inpe.inpe.br"
-        ]
+        ],
+        "bdc:visual_band": "TCI"
     }
 }
