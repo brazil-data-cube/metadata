@@ -45,6 +45,8 @@
         "mosaic",
         "sentinel-2",
         "msi",
+        "visible wavelengths", 
+        "ultraviolet wavelenghts",
         "yanomami",
         "indigenous",
         "cloud optimized geotiff",
