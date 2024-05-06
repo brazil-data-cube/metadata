@@ -44,6 +44,9 @@
     "keywords": [
         "mosaic",
         "sentinel-2",
+        "msi",
+        "visible wavelengths",
+        "ultraviolet wavelenghts",
         "biome",
         "cerrado",
         "cloud optimized geotiff",
