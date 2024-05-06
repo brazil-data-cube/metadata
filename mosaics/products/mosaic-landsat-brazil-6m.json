@@ -1,5 +1,5 @@
 {
-    "id": ,
+    "id": 39,
     "name": "mosaic-landsat-brazil-6m",
     "title": "Landsat Image Mosaic of Brazil - 6 Months",
     "description": "Landsat-8/OLI image mosaic of Brazil with 30m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the OLI bands 6, 5 and 4 assigned to RGB channels. The temporal composition encompasses 06-months of images, starting in July 2017 and ending in June 2018, with a best pixel approach called MEDSTK, which uses the middle of the temporal composition interval to select pixels from the closest dates. More information on MEDSTK can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 8000 Landsat/OLI scenes and was generated based on an existing Landsat Image collection.",
@@ -8,7 +8,7 @@
         "unit": "month",
         "schema": "Continuous"
     },
-    "composition_function": "MEDSTK",
+    "composition_function": "MedianStack",
     "grid_ref_sys": null,
     "collection_type": "mosaic",
     "metadata": {
@@ -46,9 +46,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "red",
-        "green",
-        "blue"
+        "swir16",
+        "nir08",
+        "red"
     ],
     "version": 1,
     "version_predecessor": null,
