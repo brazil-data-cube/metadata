@@ -37,7 +37,10 @@
     "keywords": [
         "mosaic",
         "landsat",
+        "landsat-8",
         "oli",
+        "visible wavelengths", 
+        "ultraviolet wavelenghts",
         "cloud optimized geotiff",
         "cog",
         "earth observation",
