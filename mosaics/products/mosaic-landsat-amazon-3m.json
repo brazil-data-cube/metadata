@@ -39,6 +39,7 @@
         "landsat",
         "oli",
         "visible imagery",
+        "visible wavelengths",
         "biome",
         "amazon",
         "cloud optimized geotiff",
