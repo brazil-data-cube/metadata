@@ -54,7 +54,7 @@
     "category": "eo",
     "quicklook": [
         "BAND7",
-        "BAND6",
+        "BAND8",
         "BAND5"
     ],
     "version": 1,
@@ -318,5 +318,13 @@
             "type": "image/png"
         }
     },
-    "properties": {}
+    "properties": {
+        "bdc:visual":{
+            "rgb": [
+                "BAND7",
+                "BAND6",
+                "BAND5"
+            ]
+        }
+    }
 }

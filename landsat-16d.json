@@ -386,5 +386,13 @@
             "type": "image/png"
         }
     },
-    "properties": {}
+    "properties": {
+        "bdc:visual":{
+            "rgb": [
+                "red",
+                "green",
+                "blue"
+            ]
+        }
+    }
 }

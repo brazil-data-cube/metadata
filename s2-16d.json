@@ -55,9 +55,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "B04",
-        "B03",
-        "B02"
+        "B12",
+        "B8A",
+        "B04"
     ],
     "version": 2,
     "version_predecessor": null,
@@ -534,5 +534,12 @@
         }
     },
     "properties": {
+        "bdc:visual":{
+            "rgb": [
+                "B04",
+                "B03",
+                "B02"
+            ]
+        }
     }
 }
