@@ -48,7 +48,7 @@
     "category": "eo",
     "quicklook": [
         "BAND7",
-        "BAND6",
+        "BAND8",
         "BAND5"
     ],
     "version": 1,
@@ -205,6 +205,13 @@
     "properties": {
         "sources": [
             "http://www.inpe.inpe.br"
-        ]
+        ],
+        "bdc:visual":{
+            "rgb": [
+                "BAND7",
+                "BAND6",
+                "BAND5"
+            ]
+        }
     }
 }

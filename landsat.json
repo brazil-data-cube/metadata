@@ -900,5 +900,14 @@
                 "thumbnail"
             ]
         }
+    },
+    "properties": {
+        "bdc:visual":{
+            "rgb": [
+                "red",
+                "green",
+                "blue"
+            ]
+        }
     }
 }

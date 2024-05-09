@@ -470,6 +470,13 @@
             "https://inthub2.copernicus.eu",
             "https://scihub.copernicus.eu/"
         ],
-        "bdc:visual_band": "TCI"
+        "bdc:visual":{
+                "tci": "TCI",
+                "rgb": [
+                    "B04",
+                    "B03",
+                    "B02"
+                ]
+        }
     }
 }

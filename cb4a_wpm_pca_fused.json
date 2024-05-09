@@ -137,6 +137,8 @@
         "sources": [
             "http://www.inpe.inpe.br"
         ],
-        "bdc:visual_band": "tci"
+        "bdc:visual":{
+            "tci": "tci"
+        }
     }
 }

@@ -54,7 +54,7 @@
     "category": "eo",
     "quicklook": [
         "BAND15",
-        "BAND14",
+        "BAND16",
         "BAND13"
     ],
     "version": 1,
@@ -324,5 +324,12 @@
         }
     },
     "properties": {
+        "bdc:visual":{
+            "rgb": [
+                "BAND15",
+                "BAND14",
+                "BAND13"
+            ]
+        }
     }
 }
