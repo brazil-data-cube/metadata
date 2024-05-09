@@ -48,8 +48,8 @@
     "category": "eo",
     "quicklook": [
         "BAND3",
-        "BAND4",
-        "BAND2"
+        "BAND2",
+        "BAND1"
     ],
     "version": 1,
     "version_predecessor": null,
