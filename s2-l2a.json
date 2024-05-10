@@ -471,12 +471,17 @@
             "https://scihub.copernicus.eu/"
         ],
         "bdc:visual":{
-                "tci": "TCI",
-                "rgb": [
-                    "B04",
-                    "B03",
-                    "B02"
-                ]
+            "tci": "TCI",
+            "rgb": [
+                "B04",
+                "B03",
+                "B02"
+            ],
+            "rescale": [
+                [0, 2000],
+                [0, 2000],
+                [0, 2000]
+            ]
         }
     }
 }
