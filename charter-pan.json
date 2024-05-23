@@ -22,7 +22,7 @@
                     "processor",
                     "host"
                 ],
-                "url": "https://disasterscharter.org/",
+                "url": "https://data.inpe.br",
                 "processing:lineage": "Download multiple files from CBERS/AMAZONIA temporary folders, crop within AOI's bounds, and stacks all bands in Cloud Optimized GeoTIFF",
                 "processing:level": "L4",
                 "processing:facility": "Disasters Charter",
