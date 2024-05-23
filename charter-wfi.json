@@ -1,0 +1,231 @@
+{
+    "id": 46,
+    "name": "charter-wfi",
+    "title": "CHARTER - WFI",
+    "description": "This collection contains images from the WFI sensor onboard the satellites CBERS-4, CBERS-4A and AMAZONIA-1 over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG) and uses the following RGB composition R:NIR, G:Red, B:Green.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://disasterscharter.org/",
+                "processing:lineage": "Download multiple files from CBERS/AMAZONIA temporary folders, crop within AOI's bounds, and stacks all bands in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "Disasters Charter",
+                "processing:software": {
+                    "charter_download_and_crop": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "wfi",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND4",
+        "BAND3",
+        "BAND2"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND1",
+            "common_name": "blue",
+            "description": "BAND1 blue band from 0.45 to 0.52 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND2",
+            "common_name": "green",
+            "description": "BAND2 green band from 0.52 to 0.59 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND3",
+            "common_name": "red",
+            "description": "BAND3 red band from 0.63 to 0.69 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND4",
+            "common_name": "nir",
+            "description": "BAND4 nir band from 0.77 to 0.89 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "BAND13",
+            "common_name": "blue",
+            "description": "B13 blue band from 0.45 to 0.52 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": null,
+            "resolution_y": null,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND14",
+            "common_name": "green",
+            "description": "B14 green band from 0.52 to 0.59 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": null,
+            "resolution_y": null,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND15",
+            "common_name": "red",
+            "description": "B15 red band from 0.63 to 0.69 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": null,
+            "resolution_y": null,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND16",
+            "common_name": "nir",
+            "description": "B16 nir band from 0.77 to 0.89 micrometers",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": null,
+            "resolution_y": null,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "amazonia-1",
+            "cbers-4",
+            "cbers-4a"
+        ],
+        "constellation": [
+            "amazonia-1",
+            "cbers"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            null
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "Visual composition",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "NIR",
+                "green": "Red",
+                "blue": "Green"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ],
+        "bdc:visual":{
+            "tci": "visual"
+        }
+    }
+}
