@@ -2,7 +2,7 @@
     "id": 46,
     "name": "charter-wfi",
     "title": "CHARTER - WFI",
-    "description": "This collection contains images from the WFI sensor onboard the satellites CBERS-4, CBERS-4A and AMAZONIA-1 over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG) and uses the following RGB composition R:NIR, G:Red, B:Green.",
+    "description": "This collection contains images from the WFI sensor onboard the satellites CBERS-4, CBERS-4A and AMAZONIA-1 over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG). This products has four spectral bands: Blue, Green, Red and NIR.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -211,9 +211,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "red",
-                "green": "green",
-                "blue": "blue"
+                "red": "BAND4",
+                "green": "BAND3",
+                "blue": "BAND2"
             },
             "roles": [
                 "thumbnail"
