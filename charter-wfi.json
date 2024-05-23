@@ -211,9 +211,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "NIR",
-                "green": "Red",
-                "blue": "Green"
+                "red": "red",
+                "green": "green",
+                "blue": "blue"
             },
             "roles": [
                 "thumbnail"

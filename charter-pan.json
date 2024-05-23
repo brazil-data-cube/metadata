@@ -2,11 +2,16 @@
     "id": 48,
     "name": "charter-pan",
     "title": "CHARTER - PAN",
-    "description": "This collection contains images from the pancromatic sensor on board the satellites CBERS-4 and CBERS-4A over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG) and uses the following RGB composition R:NIR, G:Red, B:Green.",
+    "description": "This collection contains images from the pancromatic sensor on board the satellite CBERS-4 over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG) and uses the following RGB composition R:Red, G:Nir, B:Green.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
     "collection_type": "collection",
+    "quicklook": [
+        "BAND3",
+        "BAND4",
+        "BAND2"
+    ],
     "metadata": {
         "providers": [
             {
@@ -129,7 +134,7 @@
     },
     "properties": {
         "sources": [
-            "http://www.inpe.inpe.br"
+            "http://www.inpe.br"
         ],
         "bdc:visual":{
             "tci": "visual"
