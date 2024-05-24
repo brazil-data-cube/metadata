@@ -2,7 +2,7 @@
     "id": 49,
     "name": "charter-mux",
     "title": "CHARTER - MUX",
-    "description": "This collection contains images from the CBERS-4/MUX over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG) and uses the following RGB composition R:Red, G:Green, B:Blue.",
+    "description": "This collection contains images from the CBERS-4/MUX over Brazil. The data is processed by the Disasters Charter and provided as Cloud Optimized GeoTIFF (COG). This products has four spectral bands: Blue, Green, Red and NIR.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": "CBERS4_MUX_GRID",
