@@ -1,0 +1,154 @@
+{
+    "id": ,
+    "name": "prec_merge_01hr",
+    "title": "MERGE - Hourly Gridded Precipitation over South America",
+    "description": "Satellite precipitation estimates combined with surface observations over South America. Precipitation estimates from GSMaP Now used. GRIB2 format data (https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/).",
+    "temporal_composition_schema": {
+        "step": 1,
+        "unit": "hour",
+        "schema": "continuous"
+    },
+    "composition_function": "sum",
+    "grid_ref_sys": null,
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://sharaku.eorc.jaxa.jp/GSMaP/index.htm",
+                "name": "Japan Aerospace Exploration Agency (JAXA)",
+                "roles": [
+                    "producer"
+                ]
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "url": "http://ftp.cptec.inpe.br/modelos/tempo/MERGE/GPM/HOURLY/",
+                "processing:lineage": "Generation of merged satelitte precipitation estimatives with surface observations.",
+                "processing:level": null,
+                "processing:facility": "CPTEC/INPE",
+                "processing:software": null
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "gpm",
+        "imerge",
+        "merge",
+        "hourly",
+        "surface observations",
+        "gridded precipitation",
+        "south america",
+        "grib2"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    239.950000,
+                    -60.050000,
+                    339.950000,
+                    32.250000
+                ]
+            ]
+        }
+    },
+    "bands": [
+        {
+            "name": "prec",
+            "common_name": "1h acc. precipitation in mm/hour ",
+            "description": "The accumulated precipitation in 1 hour. The accumulation date ends on the date of the files, starting at _h-1 UTC_.  Unit: _mm/hour_",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/wmo-GRIB2",
+            "resolution_x": 0.10,
+            "resolution_y": 0.10,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "nest",
+            "common_name": "Number of surface observations/grid point",
+            "description": "Number of surface observations incorporated into each grid point in the MERGE method.",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/wmo-GRIB2",
+            "resolution_x": 0.10,
+            "resolution_y": 0.10,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": null,
+        "constellation": null,
+        "instruments": [
+            "pwm",
+            "rain gauges"
+        ],
+        "gsd": [
+            0.10
+        ],
+        "view:off_nadir": null
+    },
+    "item_assets": {
+        "grib2": {
+            "title": "MERGE - Gridded Precipitation over South America - GRIB2 File",
+            "type": "application/wmo-GRIB2",
+            "roles": [
+                "data"
+            ]
+        },
+        "ctl": {
+            "title": "MERGE - Gridded Precipitation over South America - Description/ASCII File (for use in GrADS)",
+            "type": "text/plain",
+            "roles": [
+                "data"
+            ]
+        },
+        "idx": {
+            "title": "MERGE - Gridded Precipitation over South America - GRIB2 index file (for use in GrADS)",
+            "type": "data",
+            "roles": [
+                "data"
+            ]
+        },
+        "img": {
+            "title": "MERGE - Gridded Precipitation over South America",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://ftp.cptec.inpe.br/modelos/tempo/MERGE/GPM/HOURLY_NOW/",
+            "http://ftp.cptec.inpe.br/modelos/tempo/MERGE/GPM/Rozante_et.al.2010.pdf",
+            "http://ftp.cptec.inpe.br/modelos/tempo/MERGE/GPM/Rozante_et.al.2020.pdf"
+        ]
+    }
+}
