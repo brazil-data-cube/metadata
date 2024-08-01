@@ -7,16 +7,14 @@ Este documento demonstra como preparar as coleções de metadados em documentos 
 Metadados
 ---------
 
-O repositório ``metadata`` consiste em uma base de dados revisados pelos responsáveis de modo a publicar os dados no catálogo oficial da BIG/BDC. Basicamente, esses metadados são documentos em JSON que seguem algumas diretrizes de campos de modo a serem integrados com o modelo de dados do `bdc-catalog <https://github.com/brazil-data-cube/bdc-catalog>`_.
+O repositório ``metadata`` consiste em uma base de dados revisados pelos responsáveis de modo a publicar os dados no catálogo oficial da BIG/BDC. Basicamente, esses metadados são documentos em JSON que seguem algumas diretrizes de campos de modo a serem integrados com o modelo de dados do [bdc-catalog](https://github.com/brazil-data-cube/bdc-catalog).
 
-Para incluir uma nova coleção neste repositório, recomenda-se criar um `fork <https://github.com/brazil-data-cube/metadata/fork>`_ para sua conta no GitHub. Em seguida, clone o repositorio::
+Para incluir uma nova coleção neste repositório, recomenda-se criar um [fork](https://github.com/brazil-data-cube/metadata/fork) para sua conta no GitHub. Em seguida, clone o repositorio::
 
     git clone https://github.com/<UserName>/metadata
 
 
-.. tip::
-
-    Se você tiver dúvidas de como funciona um fork, por favor, acesse o documento oficial do GitHub `how to fork a repo <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo>`_
+> **Tip:** Se você tiver dúvidas de como funciona um fork, por favor, acesse o documento oficial do GitHub [how to fork a repo](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 
 A estrutura deste documento desse seguir os seguintes campos:
@@ -30,14 +28,14 @@ A estrutura deste documento desse seguir os seguintes campos:
 - ``collection_type``: (*OBRIGATORIO*) Enumeração do tipo do documento. Os valores disponíveis são: ``collection`` - coleções de dados; ``cube`` - cudos de dados; ``mosaic`` - mosaico de imagens; ``classification`` - mapa temático do produto classificado.
 - ``metadata``: (*OBRIGATORIO*) Metadados gerais a serem agregados na coleção. Nos objetos STAC Collection, incorpora novos campos dentro de ``properties``.
 
-    - ``providers``: (*OBRIGATORIO*) Lista de entidades provedores dos dados. Cada entidade provedor segue a especificação `STAC Provider Object <https://github.com/radiantearth/stac-spec/blob/v1.0.0/collection-spec/collection-spec.md#provider-object>`_ e deve possuir os seguintes campos:
+    - ``providers``: (*OBRIGATORIO*) Lista de entidades provedores dos dados. Cada entidade provedor segue a especificação [STAC Provider Object](https://github.com/radiantearth/stac-spec/blob/v1.0.0/collection-spec/collection-spec.md#provider-object) e deve possuir os seguintes campos:
 
         - ``name``: Nome real da entidade provedora dos dados.
         - ``roles``: Enumeração que represente o papel do provedor de dados. Os valores disponíveis são: `licensor`, `producer`, `processor` e `host`.
         - ``url``: Pagina inicial que o provedor utiliza para descrever o seu papel e a definição dos dados para contato.
         - ``description`` (*OPCIONAL*): Detalhes adicionais para descrever a entidade provedora.
 
-- ``keywords``: Palavras chaves associadas para descrever a coleção. Uma boa prática é manter os nomes com os caracteres em minúsculo. Algumas palavras chaves a serem adotadas podem referir-se à àrea do dado (`brazil`, `biome`, `amazon`, `cerrado`, `paraiba state`), nome do programa espacial (`cbers`, `landsat`), nome do satélite que carrega o instrumento (`cbers-4`,` `landsat-8`,` `cbers-4a`,` `sentinel-2`), sensor (`oli`, `msi`, `wfi`), tipo do dado (`mosaic`), formato do dado (`cog`, `cloud optimized geotiff`) dentre outros (`visible imagery`, `earth observation`, `visible wavelengths`, `ultraviolet wavelengths`, `yanomami`, `indigenous`).
+- ``keywords``: Palavras chaves associadas para descrever a coleção. Uma boa prática é manter os nomes com os caracteres em minúsculo. Algumas palavras chaves a serem adotadas podem referir-se à àrea do dado (`brazil`, `biome`, `amazon`, `cerrado`, `paraiba state`), nome do programa espacial (`cbers`, `landsat`), nome do satélite que carrega o instrumento (`cbers-4`, `landsat-8`,` `cbers-4a`,` `sentinel-2`), sensor (`oli`, `msi`, `wfi`), tipo do dado (`mosaic`), formato do dado (`cog`, `cloud optimized geotiff`) dentre outros (`visible imagery`, `earth observation`, `visible wavelengths`, `ultraviolet wavelengths`, `yanomami`, `indigenous`).
 - ``is_public``: Campo booleano que define se a coleção está disponível publicamente no STAC. Por padrão ``true``. Quando configurado como ``false``, só poderá acessa-la através de role definida no INPE IAM.
 - ``is_available``: Campo booleano que define se a coleção se encontra disponível. Este campo é usado quando uma coleção deixa de existir (devido a existência de uma nova) ou mesmo quando planeja-se alguma parada momentânea. Quando configurado como ``false``, nem mesmo usuários com permissão de acesso (com exceção de administradores) podem acessa-lá caso tenham o privilégio configurado no INPE IAM. Por padrão, é configurado como ``false``.
 - ``category``: (*OBRIGATORIO*) Campo interno do ``bdc-catalog`` para identificação da categoria de dados que se enquadra a coleção: ``eo``, ``sar``, ``lidar``, ``unknown``.
@@ -86,6 +84,5 @@ Os campos a seguir referem-se ao *collection_type* ``cube`` ou ``mosaic``:
 
 Uma vez preparado o documento JSON, você pode fazer o *commit* no seu *fork* e em seguite abrir um *pull-request** no repositorio oficial dos metadados.
 
-.. note::
-
-    Revise os documentos antes de fazer o *commit* e abrir o *pull-request*. Garanta que o documento é um JSON válido, caso contrário não será aceito.
+> :warning: **Warning:**
+Revise os documentos antes de fazer o *commit* e abrir o *pull-request*. Garanta que o documento é um JSON válido, caso contrário não será aceito.
