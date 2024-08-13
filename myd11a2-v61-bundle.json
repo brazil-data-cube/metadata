@@ -1,0 +1,96 @@
+{
+    "id": null,
+    "name": "myd11a2_bundle",
+    "title": "MYD11A2 v061 - Bundle",
+    "description": "The Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature/Emissivity 8-Day (MYD11A2) Version 6.1 product provides an average 8-day per-pixel Land Surface Temperature and Emissivity (LST&E) with a 1 kilometer (km) spatial resolution in a 1,200 by 1,200 km grid. Each pixel value in the MYD11A2 is a simple average of all the corresponding MYD11A1 LST pixels collected within that 8-day period. The 8-day compositing period was chosen because twice that period is the exact ground track repeat period of the Terra and Aqua platforms. Provided along with the daytime and nighttime surface temperature bands are associated quality control assessments, observation times, view zenith angles, and clear-sky coverages along with bands 31 and 32 emissivities from land cover types.",
+    "temporal_composition_schema": {
+        "step": 8,
+        "unit": "day",
+        "schema": "Cyclic",
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        }
+    },
+    "composition_function": null,
+    "grid_ref_sys": "STG",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://modis.gsfc.nasa.gov/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://modaps.modaps.eosdis.nasa.gov/services/faq/LAADS_Data-Use_Citation_Policies.pdf"
+        },
+        "platform": {
+            "code": [
+                "AQUA"
+            ],
+            "instruments": [
+                "MODIS"
+            ]
+        }
+    },
+    "keywords": [
+        "data cube",
+        "modis",
+        "aqua",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": false,
+    "is_available": true,
+    "version": "6.1",
+    "category": "eo",
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [],
+    "summaries": {
+        "platform": [
+            "aqua"
+        ],
+        "constellation": [
+            "modis"
+        ],
+        "instruments": [
+            "modis"
+        ],
+        "gsd": [
+            926.625433138333392
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "bundle": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
