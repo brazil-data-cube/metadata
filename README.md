@@ -17,7 +17,7 @@ Para incluir uma nova coleção neste repositório, recomenda-se criar um [fork]
 > **Tip:** Se você tiver dúvidas de como funciona um fork, por favor, acesse o documento oficial do GitHub [how to fork a repo](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 
-A estrutura deste documento desse seguir os seguintes campos:
+A estrutura deste documento deve seguir os seguintes campos:
 
 - ``id``: Identificador Unico da coleção (Deve-se manter como ``null``). Este valor deve ser alterado posteriormente uma vez que tenha um identificador referente no banco de dados do catálogo.
 - ``name``: (*OBRIGATORIO*) Nome curto para representar a coleção. Uma boa prática é manter os nomes com os caracteres em minúsculo. ``landsat``, ``mod13q1``, etc. Caso opte por usar algum separador de preferência ao uso de hífen (``-``).
