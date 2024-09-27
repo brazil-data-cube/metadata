@@ -1,17 +1,12 @@
 {
-    "id": 55,
-    "name": "LANDSAT-6M-SP",
-    "title": "Landsat Image Mosaic of Sao Paulo State - 6 months",
+    "id": 54,
+    "name": "LANDSAT-6M-SP-IDT",
+    "title": "Landsat Image Identity of Sao Paulo State",
     "description": "Earth Observation Data Cube generated from Landsat Level-2 product over Sao Paulo State extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 30 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 6 months using the Least Cloud Cover First (LCF) best pixel approach.",
-    "temporal_composition_schema": {
-        "schema": "Continuous",
-        "step": 6,
-        "unit": "month"
-    },
-    "composition_function": "Least CC First",
+    "temporal_composition_schema": null,
+    "composition_function": "Identity",
     "grid_ref_sys": "BDC_MD_V2",
     "collection_type": "cube",
-    "source": 54,
     "metadata": {
         "providers": [
             {
@@ -121,54 +116,6 @@
             "center_wavelength": null,
             "full_width_half_max": null
         },
-        {
-            "name": "CLEAROB",
-            "common_name": "ClearOb",
-            "data_type": "uint8",
-            "description": "Clear Observation Count.",
-            "min_value": 1,
-            "max_value": 255,
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "nodata": 0,
-            "scale": 1,
-            "resolution_x": 30,
-            "resolution_y": 30,
-            "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
-        },
-        {
-            "name": "TOTALOB",
-            "common_name": "TotalOb",
-            "data_type": "uint8",
-            "description": "Total Observation Count",
-            "max_value": 255,
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "min_value": 1,
-            "nodata": 0,
-            "scale": 1,
-            "resolution_x": 30,
-            "resolution_y": 30,
-            "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
-        },
-        {
-            "name": "PROVENANCE",
-            "common_name": "Provenance",
-            "data_type": "int16",
-            "description": "Provenance value Day of Year",
-            "min_value": 1,
-            "max_value": 366,
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "nodata": -1,
-            "scale": 1,
-            "resolution_x": 30,
-            "resolution_y": 30,
-            "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
-        },
 	{
             "name": "DATASOURCE",
             "common_name": "datasource",
@@ -204,27 +151,6 @@
         ]
     },
     "item_assets": {
-        "CLEAROB": {
-            "title": "Clear observation",
-            "roles": [
-                "data"
-            ],
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
-        "TOTALOB": {
-            "title": "Total observation count",
-            "roles": [
-                "data"
-            ],
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
-        "PROVENANCE": {
-            "title": "Day of year",
-            "roles": [
-                "data"
-            ],
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-        },
         "DATASOURCE": {
             "title": "Data set value",
             "roles": [
