@@ -1,0 +1,144 @@
+{
+    "id": 56,
+    "name": "mosaic-landsat-sp-6m",
+    "title": "Landsat Image Mosaic of São Paulo State - 6 months",
+    "description": "Earth Observation Data Cube generated from Landsat Level-2 product over Sao Paulo State extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 30 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 6 months using the Least Cloud Cover First (LCF) best pixel approach.",
+    "temporal_composition_schema": {
+        "schema": "Continuous",
+        "step": 6,
+        "unit": "month"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": "BDC_MD_V2",
+    "collection_type": "mosaic",
+    "source": 54,
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on Landsat in Cloud Optimized GeoTIFF",
+                "processing:level": "L2",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://www.usgs.gov/legal"
+        }
+    },
+    "keywords": [
+        "data cube",
+        "landsat",
+        "surface reflectance",
+        "vegetation index",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "blue",
+            "common_name": "blue",
+            "data_type": "uint16",
+            "description": "Visible blue (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 1,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "green",
+            "common_name": "green",
+            "data_type": "uint16",
+            "description": "Visible green (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 1,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "data_type": "uint16",
+            "description": "Visible red (Operational Land Imager)",
+            "max_value": 10000,
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "min_value": 1,
+            "nodata": 0,
+            "scale": 0.0001,
+            "resolution_x": 30,
+            "resolution_y": 30,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.65,
+            "full_width_half_max": 0.04
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Landsat-4",
+            "Landsat-5",
+            "Landsat-7",
+            "Landsat-8",
+            "Landsat-9"
+        ],
+        "instruments": [
+            "tm",
+            "etm",
+            "oli",
+            "tirs",
+            "oli-2",
+            "tirs-2"
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "True Color Composition of the mosaic. Contains Landsat Bands red, green and blue",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ],
+            "type": "image/png"
+        }
+    },
+    "properties": {
+    }
+}
