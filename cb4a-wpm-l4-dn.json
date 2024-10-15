@@ -1,8 +1,8 @@
 {
     "id": null,
-    "name": "CB4A-WFI-L4-DN",
-    "title": "CBERS-4A/WFI - Level-4-DN",
-    "description": "CBERS-4A/WFI Level-4 Digital Number product over Brazil.",
+    "name": "CB4A-WPM-L4-DN",
+    "title": "CBERS-4A/WPM - Level-4-DN",
+    "description": "CBERS-4A/WPM - Level-4 Digital Number product over Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -18,8 +18,8 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L4",
-                "processing:level": "L4 DN",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "ms3": "0.0.0"
@@ -34,7 +34,7 @@
     "keywords": [
         "cbers",
         "cbers-4a",
-        "wfi",
+        "wpm",
         "level-4",
         "digital number",
         "earth observation",
@@ -44,74 +44,90 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND13",
-        "BAND14",
-        "BAND15"
+        "BAND1",
+        "BAND2",
+        "BAND3"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND13",
-            "common_name": "blue",
-            "description": "BAND13 blue band from 0.45 to 0.52 micrometers",
+            "name": "BAND0",
+            "common_name": "pan",
+            "description": "WPM - BAND0 - pan",
             "min_value": 0,
             "max_value": 1024,
             "nodata": 0,
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 2,
+            "resolution_y": 2,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.675,
+            "full_width_half_max": 0.45
+        },
+        {
+            "name": "BAND1",
+            "common_name": "blue",
+            "description": "WPM - BAND1 - blue",
+            "min_value": 0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "byte",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 8,
+            "resolution_y": 8,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND14",
+            "name": "BAND2",
             "common_name": "green",
-            "description": "BAND14 green band from 0.52 to 0.59 micrometers",
+            "description": "WPM - BAND2 - green",
             "min_value": 0,
             "max_value": 1024,
             "nodata": 0,
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 8,
+            "resolution_y": 8,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND15",
+            "name": "BAND3",
             "common_name": "red",
-            "description": "BAND15 red band from 0.63 to 0.69 micrometers",
+            "description": "WPM - BAND3 - red",
             "min_value": 0,
             "max_value": 1024,
             "nodata": 0,
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 8,
+            "resolution_y": 8,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
         },
         {
-            "name": "BAND16",
+            "name": "BAND4",
             "common_name": "nir",
-            "description": "B16 nir band from 0.77 to 0.89 micrometers",
+            "description": "WPM - BAND4 - nir",
             "min_value": 0,
             "max_value": 1024,
             "nodata": 0,
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 8,
+            "resolution_y": 8,
             "resolution_unit": "Meter",
             "center_wavelength": 0.83,
             "full_width_half_max": 0.12
@@ -125,64 +141,82 @@
             "cbers-4A"
         ],
         "instruments": [
-            "wfi"
+            "pan"
         ],
         "gsd": [
-            55
+            2
         ],
         "view:off_nadir": [
             0
         ]
     },
     "item_assets": {
-        "BAND13": {
-            "title": "Band blue",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "BAND0": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND0 pan",
             "roles": [
                 "data"
             ]
         },
-        "BAND14": {
-            "title": "Band green",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "BAND1": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND1 blue",
             "roles": [
                 "data"
             ]
         },
-        "BAND15": {
-            "title": "Band red",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "BAND2": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND2 green",
             "roles": [
                 "data"
             ]
         },
-        "BAND16": {
-            "title": "Band nir",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "BAND3": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND3 red",
             "roles": [
                 "data"
             ]
         },
-        "BAND13_xml": {
+        "BAND4": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND4 nir",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND0_xml": {
             "type": "application/xml",
+            "title": "BAND0 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND14_xml": {
+        "BAND1_xml": {
             "type": "application/xml",
+            "title": "BAND1 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND15_xml": {
+        "BAND2_xml": {
             "type": "application/xml",
+            "title": "BAND2 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND16_xml": {
+        "BAND3_xml": {
             "type": "application/xml",
+            "title": "BAND3 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND4_xml": {
+            "type": "application/xml",
+            "title": "BAND4 xml",
             "roles": [
                 "metadata"
             ]
@@ -191,38 +225,12 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "BAND13",
-                "green": "BAND14",
-                "blue": "BAND15"
+                "red": "BAND1",
+                "green": "BAND2",
+                "blue": "BAND3"
             },
             "roles": [
                 "thumbnail"
-            ]
-        }
-    },
-    "properties": {
-        "sources": [
-            "http://www.inpe.br"
-        ],
-        "bdc:visual": {
-            "rgb": [
-                "BAND13",
-                "BAND14",
-                "BAND15"
-            ],
-            "rescale": [
-                [
-                    0,
-                    3000
-                ],
-                [
-                    0,
-                    3000
-                ],
-                [
-                    0,
-                    3000
-                ]
             ]
         }
     }

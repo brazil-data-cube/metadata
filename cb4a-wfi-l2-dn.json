@@ -18,12 +18,11 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L2 in Cloud Optimized GeoTIFF",
+                "processing:lineage": "Generation of L2",
                 "processing:level": "L2 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
-                    "bdc-collection-builder": "1.0",
-                    "rio-cogeo": "3.0"
+                    "ms3": "0.0.0"
                 }
             }
         ],

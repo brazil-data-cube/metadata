@@ -19,7 +19,7 @@
                 ],
                 "url": "https://data.inpe.br/big/",
                 "processing:lineage": "Generation of L4",
-                "processing:level": "L4",
+                "processing:level": "L4 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "ms3": "0.0.0"

@@ -1,8 +1,8 @@
 {
     "id": null,
-    "name": "CB4-WFI-L2-DN",
-    "title": "CBERS-4/WFI - Level-2-DN",
-    "description": "CBERS4/WFI Level-2 Digital Number product over Brazil.",
+    "name": "CB2B-WFI-L2-DN",
+    "title": "CBERS-2B/WFI - Level-2-DN",
+    "description": "CBERS-2B/WFI - Level-2 Digital Number product over Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -33,7 +33,7 @@
     },
     "keywords": [
         "cbers",
-        "cbers-4",
+        "cbers-2b",
         "wfi",
         "level-2",
         "digital number",
@@ -44,74 +44,42 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND15",
-        "BAND16",
-        "BAND13"
+        "BAND1",
+        "BAND2",
+        "BAND1"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND13",
-            "common_name": "blue",
-            "description": "BAND13 blue band from 0.45 to 0.52 micrometers",
-            "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "byte",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 64,
-            "resolution_y": 64,
-            "resolution_unit": "Meter",
-            "center_wavelength": 0.485,
-            "full_width_half_max": 0.07
-        },
-        {
-            "name": "BAND14",
-            "common_name": "green",
-            "description": "BAND14 green band from 0.52 to 0.59 micrometers",
-            "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "byte",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 64,
-            "resolution_y": 64,
-            "resolution_unit": "Meter",
-            "center_wavelength": 0.555,
-            "full_width_half_max": 0.07
-        },
-        {
-            "name": "BAND15",
+            "name": "BAND1",
             "common_name": "red",
-            "description": "BAND15 red band from 0.63 to 0.69 micrometers",
+            "description": "WFI - B3 - red",
             "min_value": 0,
-            "max_value": 1024,
+            "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 64,
-            "resolution_y": 64,
+            "resolution_x": 260,
+            "resolution_y": 260,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
         },
         {
-            "name": "BAND16",
+            "name": "BAND2",
             "common_name": "nir",
-            "description": "B16 nir band from 0.77 to 0.89 micrometers",
+            "description": "WFI - B4 - nir",
             "min_value": 0,
-            "max_value": 1024,
+            "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 64,
-            "resolution_y": 64,
+            "resolution_x": 260,
+            "resolution_y": 260,
             "resolution_unit": "Meter",
             "center_wavelength": 0.83,
             "full_width_half_max": 0.12
@@ -119,70 +87,46 @@
     ],
     "summaries": {
         "platform": [
-            "cbers-4"
+            "cbers-2B"
         ],
         "constellation": [
-            "cbers-4"
+            "cbers-2"
         ],
         "instruments": [
             "wfi"
         ],
         "gsd": [
-            64
+            260
         ],
         "view:off_nadir": [
             0
         ]
     },
     "item_assets": {
-        "BAND13": {
-            "title": "Band blue",
+        "BAND1": {
             "type": "image/tiff; application=geotiff",
+            "title": "BAND1 red",
             "roles": [
                 "data"
             ]
         },
-        "BAND14": {
-            "title": "Band green",
+        "BAND2": {
             "type": "image/tiff; application=geotiff",
+            "title": "BAND2 nir",
             "roles": [
                 "data"
             ]
         },
-        "BAND15": {
-            "title": "Band red",
-            "type": "image/tiff; application=geotiff",
-            "roles": [
-                "data"
-            ]
-        },
-        "BAND16": {
-            "title": "Band nir",
-            "type": "image/tiff; application=geotiff",
-            "roles": [
-                "data"
-            ]
-        },
-        "BAND13_xml": {
+        "BAND1_xml": {
             "type": "application/xml",
+            "title": "BAND1 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND14_xml": {
+        "BAND2_xml": {
             "type": "application/xml",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "BAND15_xml": {
-            "type": "application/xml",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "BAND16_xml": {
-            "type": "application/xml",
+            "title": "BAND2 xml",
             "roles": [
                 "metadata"
             ]
@@ -191,9 +135,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "BAND15",
-                "green": "BAND16",
-                "blue": "BAND13"
+                "red": "BAND1",
+                "green": "BAND2",
+                "blue": "BAND1"
             },
             "roles": [
                 "thumbnail"

@@ -1,0 +1,117 @@
+{
+    "id": null,
+    "name": "CB4-PAN5-L4-DN",
+    "title": "CBERS-4/PAN5 - Level-4-DN",
+    "description": "CBERS-4/PAN5 - Level-4 Digital Number product over Brazil.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "cbers",
+        "cbers-4",
+        "pan",
+        "level-4",
+        "digital number",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND1",
+        "BAND1",
+        "BAND1"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND1",
+            "common_name": "pan",
+            "description": "WPM - BAND1 - pan",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "byte",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 5,
+            "resolution_y": 5,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.68,
+            "full_width_half_max": 0.34
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4"
+        ],
+        "constellation": [
+            "cbers-4"
+        ],
+        "instruments": [
+            "pan5"
+        ],
+        "gsd": [
+            5
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "BAND1": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND1 pan",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND1_xml": {
+            "type": "application/xml",
+            "title": "BAND1 lxml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND1",
+                "green": "BAND1",
+                "blue": "BAND1"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}
