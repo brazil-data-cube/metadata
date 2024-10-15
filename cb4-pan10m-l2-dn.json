@@ -1,8 +1,8 @@
 {
     "id": null,
-    "name": "CB4-PAN10-L2-DN",
-    "title": "CBERS-4/PAN10 - Level-2-DN",
-    "description": "CBERS-4/PAN10 - Level-2 Digital Number product over Brazil.",
+    "name": "CB4-PAN10M-L2-DN",
+    "title": "CBERS-4/PAN10M - Level-2-DN",
+    "description": "CBERS-4/PAN10M - Level-2 Digital Number product over Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -109,7 +109,7 @@
             "cbers-4"
         ],
         "instruments": [
-            "pan10"
+            "pan10m"
         ],
         "gsd": [
             10
