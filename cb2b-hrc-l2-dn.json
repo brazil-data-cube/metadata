@@ -2,7 +2,7 @@
     "id": null,
     "name": "CB2B-HRC-L2-DN",
     "title": "CBERS-2B/HRC - Level-2-DN",
-    "description": "CBERS-2B/HRC - Level-2 Digital Number product over Brazil.",
+    "description": "CBERS-2B/HRC - Level-2 Digital Number product over Brazil and part of South America.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -62,8 +62,8 @@
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 2.7,
-            "resolution_y": 2.7,
+            "resolution_x": 2.5,
+            "resolution_y": 2.5,
             "resolution_unit": "Meter",
             "center_wavelength": 0.65,
             "full_width_half_max": 0.3
@@ -80,7 +80,7 @@
             "hrc"
         ],
         "gsd": [
-            2.7
+            2.5
         ],
         "view:off_nadir": [
             0

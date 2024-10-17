@@ -2,7 +2,7 @@
     "id": null,
     "name": "CB4A-MUX-L4-DN",
     "title": "CBERS-4A/MUX - Level-4-DN",
-    "description": "CBERS-4A/MUX - Level-4 Digital Number product over Brazil.",
+    "description": "CBERS-4A/MUX - Level-4 Digital Number product over Brazil and part of South America. L4 product provides orthorectified images.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -44,9 +44,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND5",
-        "BAND6",
-        "BAND7"
+        "BAND7",
+        "BAND8",
+        "BAND6"
     ],
     "version": 1,
     "version_predecessor": null,
@@ -62,8 +62,8 @@
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16.5,
-            "resolution_y": 16.5,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
@@ -78,8 +78,8 @@
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16.5,
-            "resolution_y": 16.5,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
@@ -94,8 +94,8 @@
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16.5,
-            "resolution_y": 16.5,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
@@ -110,8 +110,8 @@
             "scale": 1,
             "data_type": "byte",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16.5,
-            "resolution_y": 16.5,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.83,
             "full_width_half_max": 0.12
@@ -128,7 +128,7 @@
             "mux"
         ],
         "gsd": [
-            16.5
+            16
         ],
         "view:off_nadir": [
             0
@@ -195,9 +195,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "BAND5",
-                "green": "BAND6",
-                "blue": "BAND7"
+                "red": "BAND7",
+                "green": "BAND8",
+                "blue": "BAND6"
             },
             "roles": [
                 "thumbnail"
