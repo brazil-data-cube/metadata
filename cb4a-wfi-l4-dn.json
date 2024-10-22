@@ -1,8 +1,8 @@
 {
-    "id": 21,
-    "name": "CB4A-WFI-L4-SR",
-    "title": "CBERS-4A/WFI - Level-4-SR - Cloud Optimized GeoTIFF",
-    "description": "CBERS-4A/WFI Surface Reflectance product over Brazil and part of South America. L4 SR product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "id": null,
+    "name": "CB4A-WFI-L4-DN",
+    "title": "CBERS-4A/WFI - Level-4-DN",
+    "description": "CBERS-4A/WFI Level-4 Digital Number product over Brazil and part of South America. L4 product provides orthorectified images.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -18,12 +18,11 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L4 in Cloud Optimized GeoTIFF",
-                "processing:level": "L4 SR",
+                "processing:lineage": "Generation of L4",
+                "processing:level": "L4 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
-                    "bdc-collection-builder": "1.0",
-                    "rio-cogeo": "3.0"
+                    "ms3": "0.0.0"
                 }
             }
         ],
@@ -37,9 +36,7 @@
         "cbers-4a",
         "wfi",
         "level-4",
-        "surface reflectance",
-        "cloud optimized geotiff",
-        "cog",
+        "digital number",
         "earth observation",
         "brazil"
     ],
@@ -47,9 +44,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND15",
-        "BAND16",
-        "BAND13"
+        "BAND13",
+        "BAND14",
+        "BAND15"
     ],
     "version": 1,
     "version_predecessor": null,
@@ -58,15 +55,15 @@
         {
             "name": "BAND13",
             "common_name": "blue",
-            "description": "B13 blue band from 0.45 to 0.52 micrometers",
+            "description": "BAND13 blue band from 0.45 to 0.52 micrometers",
             "min_value": 0,
-            "max_value": 10000,
-            "nodata": -9999,
-            "scale": 0.0001,
-            "data_type": "int16",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 55.0,
-            "resolution_y": 55.0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 55,
+            "resolution_y": 55,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
@@ -74,15 +71,15 @@
         {
             "name": "BAND14",
             "common_name": "green",
-            "description": "B14 green band from 0.52 to 0.59 micrometers",
+            "description": "BAND14 green band from 0.52 to 0.59 micrometers",
             "min_value": 0,
-            "max_value": 10000,
-            "nodata": -9999,
-            "scale": 0.0001,
-            "data_type": "int16",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 55.0,
-            "resolution_y": 55.0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 55,
+            "resolution_y": 55,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
@@ -90,15 +87,15 @@
         {
             "name": "BAND15",
             "common_name": "red",
-            "description": "B15 red band from 0.63 to 0.69 micrometers",
+            "description": "BAND15 red band from 0.63 to 0.69 micrometers",
             "min_value": 0,
-            "max_value": 10000,
-            "nodata": -9999,
-            "scale": 0.0001,
-            "data_type": "int16",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 55.0,
-            "resolution_y": 55.0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 55,
+            "resolution_y": 55,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
@@ -108,32 +105,16 @@
             "common_name": "nir",
             "description": "B16 nir band from 0.77 to 0.89 micrometers",
             "min_value": 0,
-            "max_value": 10000,
-            "nodata": -9999,
-            "scale": 0.0001,
-            "data_type": "int16",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 55.0,
-            "resolution_y": 55.0,
-            "resolution_unit": "Meter",
-            "center_wavelength": 0.830,
-            "full_width_half_max": 0.12
-        },
-        {
-            "name": "CMASK",
-            "common_name": "quality",
-            "description": "Cloud Mask Product",
-            "min_value": 0,
-            "max_value": 4,
-            "nodata": 255,
+            "max_value": 1024,
+            "nodata": 0,
             "scale": 1,
             "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 55.0,
-            "resolution_y": 55.0,
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 55,
+            "resolution_y": 55,
             "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.12
         }
     ],
     "summaries": {
@@ -182,20 +163,37 @@
                 "data"
             ]
         },
-        "CMASK": {
-            "title": "Band cmask",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "BAND13_xml": {
+            "type": "application/xml",
             "roles": [
-                "data"
+                "metadata"
+            ]
+        },
+        "BAND14_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND15_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND16_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
             ]
         },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "BAND15",
-                "green": "BAND16",
-                "blue": "BAND13"
+                "red": "BAND13",
+                "green": "BAND14",
+                "blue": "BAND15"
             },
             "roles": [
                 "thumbnail"
@@ -206,16 +204,25 @@
         "sources": [
             "http://www.inpe.br"
         ],
-        "bdc:visual":{
+        "bdc:visual": {
             "rgb": [
-                "BAND15",
+                "BAND13",
                 "BAND14",
-                "BAND13"
+                "BAND15"
             ],
             "rescale": [
-                [0, 3000],
-                [0, 3000],
-                [0, 3000]
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ]
             ]
         }
     }
