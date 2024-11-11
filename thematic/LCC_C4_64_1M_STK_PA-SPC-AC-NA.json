@@ -1,7 +1,7 @@
 {
     "id": null,
     "name": "LCC_C4_64_1M_STK_PA-SPC-AC-NA",
-    "title": "LCC - Bahia - CB4_64_1M_STK-1",
+    "title": "LCC - Bahia - CB4 64m 1M STK",
     "description": "This land cover classification refers to a study area in Bahia state, in the Cerrado biome. For this map, the CBERS-4/WFI monthly data cube was used, with a spatial resolution of 64 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. This experiment uses the time series of an agricultural calendar year, from September 2018 to August 2019, extracted from the CBERS-4/WFI data cube. The input datacube was CBERS-4 (WFI) Cube Identity - v001, which was deprecated. The classification was made using 922 samples (Pasture: 258; Agriculture: 242; Natural Vegetation: 422). The spectral band used were B1, B2, B3, B4, B5, B6, and B7 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. We trained a multi-layer perceptron for a deep learning classification network to classify the data cube using sits R package. Validation was done using good practice guidelines by Olofsson. The validation was done independently for each map using the PRODES Cerrado data of 2019. This data obtained overall accuracy (OA) 0.74. For more information see the paper <a href=\"https://www.mdpi.com/2072-4292/12/24/4033\" target=\"_blank\">Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products.</a>. This product was funded by the Brazilian Development Bank (BNDES).",
     "temporal_composition_schema": null,
     "composition_function": null,

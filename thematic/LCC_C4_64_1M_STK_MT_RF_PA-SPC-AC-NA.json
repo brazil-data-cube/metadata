@@ -1,7 +1,7 @@
 {
     "id": null,
     "name": "LCC_C4_64_1M_STK_MT_RF_PA-SPC-AC-NA",
-    "title": "LCC - Mato Grosso - CB4_64_1M_STK-1",
+    "title": "LCC - Mato Grosso - CB4 64m 1M STK",
     "description": "This land cover classification refers to a study area in Mato Grosso state, in the Cerrado biome. For this map, the CBERS-4/WFI monthly data cube was used, with a spatial resolution of 64 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. This experiment uses the time series of an agricultural calendar year, from September 2018 to August 2019, extracted from the CBERS-4/WFI data cube. The input datacube was CBERS-4 (WFI) Cube Identity - v001, which was deprecated. The classification was made using 852 samples (Annual Crop: 257; Natural Vegetation: 245; Pasture: 216; Semi-Perennial Crop: 134) and the following data cube bands: bands red, green, blue, and near-infrared along with the EVI, NDVI, GEMI, GNDVI, NDWI2, PVR indices applying the random forest algorithm. The classification quality assessment using 5-fold cross-validation (Wiens et al., 2008) of the training samples showed an overall accuracy of 97.0% and a Kappa index of 0.96. For more information see the paper <a href=\"https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-3-2020/533/2020/\" target=\"_blank\">CBERS DATA CUBE: A POWERFUL TECHNOLOGY FOR MAPPING AND MONITORING BRAZILIAN BIOMES.</a> . This product was funded by the Brazilian Development Bank (BNDES).",
     "temporal_composition_schema": null,
     "composition_function": null,

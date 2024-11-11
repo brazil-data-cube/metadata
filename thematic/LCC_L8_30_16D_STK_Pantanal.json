@@ -1,7 +1,7 @@
 {
     "id": null,
     "name": "LCC_L8_30_16D_STK_Pantanal",
-    "title": "LCC - Pantanal - Landsat-8 16D STK",
+    "title": "LCC - Pantanal - LC8 30m 16D STK",
     "description": "This is a land cover classification map of Brazilian Pantanal, from January to December of 2018. This classification was made on top of Landsat-8 days data cubes with spatial resolution of 30 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The input datacube was Landsat-8 (OLI) Cube Identity - v001, which was deprecated. The classification model was trained using 6601 sample points (Agriculture: 695, Forest: 1586, Pasture: 2930, Savanna and grassland: 1181, Wetland: 209). The spectral band used were B1, B2, B3, B4, B5, B6, B7 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. The classification algorithm was Random Forest. The post-processing included masking the label Water (Using Pekel et al 2016) and improving the labels Savanna and grassland and Pasture (using PRODES data). This product was funded by the Brazilian Development Bank (BNDES).",
     "temporal_composition_schema": null,
     "composition_function": null,

@@ -1,7 +1,7 @@
 {
     "id": null,
     "name": "LCC_S2_10_16D_STK_Amazonia",
-    "title": "LCC - Amazônia - Sentinel-2 16D STK",
+    "title": "LCC - Amazônia - S2 10m 16D STK",
     "description": "This is a land cover classification map of Brazilian Amazônia, from July 2018 to July 2019. This classification was made on top of Sentinel-2 biweekly cubes with spatial resolution of 10 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The classification model was trained using 1436 sample points (Deforestation: 190, Forest: 473, NatNonForest: 237, Pasture: 546). The spectral band used were B01, B02, B03, B04, B05, B06, B07, B08, B8A, B11, and B12 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. The classification algorithm was Random Forest. This product was funded by the Brazilian Development Bank (BNDES).",
     "temporal_composition_schema": null,
     "composition_function": null,
