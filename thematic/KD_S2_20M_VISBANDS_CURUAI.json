@@ -130,14 +130,12 @@
         ]
     },
     "item_assets": {
-        "assets": {
-            "kd": {
-                "title": "Thematic Image",
-                "roles": [
-                    "data"
-                ],
-                "type": "image/tiff; application=geotiff; profile=cloud-optimized"
-            }
+        "kd": {
+            "title": "Thematic Image",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     }
 }
