@@ -1,0 +1,134 @@
+{
+    "id": null,
+    "name": "LCC_L8_30_16D_STK_MataAtlantica",
+    "title": "LCC - Mata Atlantica - Landsat-8 16D STK",
+    "description": "This is a land cover classification map of Brazilian Mata Atlantica, from January to December of 2017. This classification was made on top of Landsat-8 days data cubes with spatial resolution of 30 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The input datacube was Landsat-8 - OLI - Cube Stack 16 days - v001, which was deprecated. The classification model was trained using 13442 sample points of the classes Agriculture 2668, Planted forest 823, Forest (Formação florestal) 3754, Pasture 6197. The spectral bands used were B1, B2, B3, B4, B5, B6, B7, along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask algorithm and estimated using linear interpolation. The classification algorithm was Random Forest. The post-processing consisted on cropping the images to the biome's boundary. This product was funded by the Brazilian Development Bank (BNDES).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "BDC_MD",
+    "collection_type": "classification",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Thematic Classification - RF (random forest)",
+                "processing:level": "",
+                "processing:facility": "BDC",
+                "processing:software": {
+                    "sits": "0.17.0"
+                },
+                "processing:parameters": {
+                    "numer of trees": 200,
+                    "node size": 1,
+                    "spectralIndices": [
+                        "NDVI",
+                        "EVI"
+                    ],
+                    "bands": [
+                        "B1",
+                        "B2",
+                        "B3",
+                        "B4",
+                        "B5",
+                        "B6",
+                        "B7"
+                    ]
+                },
+                "processing:samples": {
+                    "summary": {
+                        "Agriculture": 2668,
+                        "Planted forest": 823,
+                        "Forest": 3754,
+                        "Pasture": 6197
+                    }
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "classification",
+        "landsat",
+        "landsat-8",
+        "thematic",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil",
+        "machine learning",
+        "random forest"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "lcc",
+            "common_name": "lcc",
+            "description": "This is a classification.",
+            "min_value": 1,
+            "max_value": 101,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "landsat-8"
+        ],
+        "constellation": [
+            "landsat"
+        ],
+        "instruments": [
+            "oli"
+        ],
+        "gsd": [
+            30
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "lcc": {
+            "title": "Land Cover Classification Image",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "lcc",
+                "green": "lcc",
+                "blue": "lcc"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

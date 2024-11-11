@@ -1,0 +1,143 @@
+{
+    "id": null,
+    "name": "KD_S2_20M_VISBANDS_CURUAI",
+    "title": "KD - Curuai - Sentinel-2 20m VisBands",
+    "description": "Kd data generated based Semi-Analytical Algorithm developed by Maciel et al. (2020) (https://doi.org/10.1016/j.isprsjprs.2020.10.009). The underwater light field modeling is essential for the understanding of biogeochemical processes, such as photosynthesis, carbon fluxes, and sediment transports in inland waters. Water-column light attenuation can be quantified by the diffuse attenuation coefficient of the downwelling irradiance (Kd). This dataset represents the Kd estimate for a Sentinel-2/MSI time-series at Curuai Lake region - Lower Amazon floodplains. This time-series data was generated for 66 Sentinel-2/MSI scenes (08/2015 to 09/2019) during the research paper titled Mapping of diffuse attenuation coefficient in optically complex waters of amazon floodplain lakes. This product was funded by the Brazilian Development Bank (BNDES), Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "collection_type": "classification",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Thematic Classification",
+                "processing:level": "",
+                "processing:facility": "LabISA",
+                "processing:software": {
+                    "kd parallel estimator code": "0.0.1"
+                },
+                "processing:parameters": {
+                    "atmosphere_correction": "6SV",
+                    "glint_correction": "SWIR1 subtratction",
+                    "iop_eetrieval_method": "Reparametrized QAA",
+                    "algorithm": "Semi-Analytical algorithm",
+                    "bands": [
+                        "red",
+                        "green",
+                        "blue",
+                        "near-infrared (NIR5)",
+                        "near-infrared 2 (NIR6)",
+                        "short-wave-infrared 1 (SWIR1)"
+                    ]
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "classification",
+        "sentinel",
+        "sentinel-2",
+        "thematic",
+        "cloud optimized geotiff",
+        "cog",
+        "diffuse attenuation",
+        "light attenuation",
+        "optically complex waters"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "kd_490",
+            "common_name": "kd_490",
+            "description": "This is a kd estimation for Sentinel-2/MSI Band 2, centered at 490 nanometers",
+            "min_value": 0,
+            "max_value": 30,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "kd_560",
+            "common_name": "kd_560",
+            "description": "This is a kd estimation for Sentinel-2/MSI Band 3, centered at 560 nanometers",
+            "min_value": 0,
+            "max_value": 30,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "kd_660",
+            "common_name": "kd_660",
+            "description": "This is a kd estimation for Sentinel-2/MSI Band 4, centered at 660 nanometers",
+            "min_value": 0,
+            "max_value": 30,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2"
+        ],
+        "constellation": [
+            "sentinel-2"
+        ],
+        "instruments": [
+            "msi"
+        ],
+        "gsd": [
+            10
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "assets": {
+            "kd": {
+                "title": "Thematic Image",
+                "roles": [
+                    "data"
+                ],
+                "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+            }
+        }
+    }
+}

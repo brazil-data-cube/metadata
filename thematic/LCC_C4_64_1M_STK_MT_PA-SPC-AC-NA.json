@@ -1,0 +1,138 @@
+{
+    "id": null,
+    "name": "LCC_C4_64_1M_STK_MT_PA-SPC-AC-NA",
+    "title": "LCC - Mato Grosso - CB4_64_1M_STK-1",
+    "description": "This land cover classification refers to a study area in Mato Grosso state, in the Cerrado biome. For this map, the CBERS-4/WFI monthly data cube was used, with a spatial resolution of 64 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. This experiment uses the time series of an agricultural calendar year, from September 2018 to August 2019, extracted from the CBERS-4/WFI data cube. The input datacube was CBERS-4 (WFI) Cube Identity - v001, which was deprecated. The classification was made using 852 samples (Annual Crop: 257; Natural Vegetation: 245; Pasture: 216; Semi-Perennial Crop: 134) and the following data cube bands: bands red, green, blue, and near-infrared along with the EVI, NDVI, GEMI, GNDVI, NDWI2, PVR indices. We trained a multi-layer perceptron for a deep learning classification network to classify the data cube using sits R package. This product was funded by the Brazilian Development Bank (BNDES).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "BDC_LG",
+    "collection_type": "classification",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Thematic Classification - MLP (multi-layer perceptrons)",
+                "processing:level": "",
+                "processing:facility": "BDC",
+                "processing:software": {
+                    "sits": "0.9.8"
+                },
+                "processing:parameters": {
+                    "hidden layers": 5,
+                    "neurons for each layer": 512,
+                    "activation function": "rectilinear unit (ReLu)",
+                    "network architecture": "complete",
+                    "learning optimization algorithm": "Adam",
+                    "spectralIndices": [
+                        "NDVI",
+                        "EVI",
+                        "GEMI",
+                        "GNDVI",
+                        "NDWI2",
+                        "PVR"
+                    ],
+                    "bands": [
+                        "red",
+                        "green",
+                        "blue",
+                        "near-infrared (NIR)"
+                    ]
+                },
+                "processing:samples": {
+                    "summary": {
+                        "Annual Crop": 257,
+                        "Semi-Perennial Crop": 134,
+                        "Natural Vegetation": 245,
+                        "Pasture": 216
+                    }
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "classification",
+        "cbers",
+        "cbers-4",
+        "thematic",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil",
+        "machine learning",
+        "mlp"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "lcc",
+            "common_name": "lcc",
+            "description": "This is a classification.",
+            "min_value": 1,
+            "max_value": 4,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4"
+        ],
+        "constellation": [
+            "cbers-4"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            64
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "lcc": {
+            "title": "Land Cover Classification Image",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "lcc",
+                "green": "lcc",
+                "blue": "lcc"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

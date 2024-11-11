@@ -1,0 +1,138 @@
+{
+    "id": null,
+    "name": "LCC_S2_10_16D_STK_Amazonia",
+    "title": "LCC - Amazônia - Sentinel-2 16D STK",
+    "description": "This is a land cover classification map of Brazilian Amazônia, from July 2018 to July 2019. This classification was made on top of Sentinel-2 biweekly cubes with spatial resolution of 10 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The classification model was trained using 1436 sample points (Deforestation: 190, Forest: 473, NatNonForest: 237, Pasture: 546). The spectral band used were B01, B02, B03, B04, B05, B06, B07, B08, B8A, B11, and B12 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. The classification algorithm was Random Forest. This product was funded by the Brazilian Development Bank (BNDES).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "BDC_SM",
+    "collection_type": "classification",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Thematic Classification - RP (random forest)",
+                "processing:level": "",
+                "processing:facility": "BDC",
+                "processing:software": {
+                    "sits": "0.11.0"
+                },
+                "processing:parameters": {
+                    "numer of trees": 2000,
+                    "node size": 1,
+                    "spectralIndices": [
+                        "NDVI",
+                        "EVI"
+                    ],
+                    "bands": [
+                        "B01",
+                        "B02",
+                        "B03",
+                        "B04",
+                        "B05",
+                        "B06",
+                        "B07",
+                        "B08",
+                        "B8A",
+                        "B11",
+                        "B12"
+                    ]
+                },
+                "processing:samples": {
+                    "summary": {
+                        "Deforestation": 190,
+                        "Forest": 473,
+                        "Natural Non-Forest": 237,
+                        "Pasture": 546
+                    }
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "classification",
+        "sentinel",
+        "sentinel-2",
+        "thematic",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil",
+        "machine learning",
+        "random forest"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "lcc",
+            "common_name": "lcc",
+            "description": "This is a classification.",
+            "min_value": 1,
+            "max_value": 4,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2"
+        ],
+        "constellation": [
+            "sentinel-2"
+        ],
+        "instruments": [
+            "msi"
+        ],
+        "gsd": [
+            10
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "lcc": {
+            "title": "Land Cover Classification Image",
+            "roles": [
+                "data"
+            ],
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "lcc",
+                "green": "lcc",
+                "blue": "lcc"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}
