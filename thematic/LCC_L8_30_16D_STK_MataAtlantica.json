@@ -25,7 +25,7 @@
                     "sits": "0.17.0"
                 },
                 "processing:parameters": {
-                    "numer of trees": 200,
+                    "number of trees": 200,
                     "node size": 1,
                     "spectralIndices": [
                         "NDVI",
