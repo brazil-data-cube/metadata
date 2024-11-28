@@ -25,7 +25,7 @@
                     "sits": "0.11.0"
                 },
                 "processing:parameters": {
-                    "number of trees decision": 2000,
+                    "number of decision trees": 2000,
                     "node size": 1,
                     "spectralIndices": [
                         "NDVI",
