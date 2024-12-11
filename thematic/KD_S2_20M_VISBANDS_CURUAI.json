@@ -1,5 +1,5 @@
 {
-    "id": null,
+    "id": 61,
     "name": "KD_S2_20M_VISBANDS_CURUAI",
     "title": "KD - Curuai - S2 20m VisBands",
     "description": "Kd data generated based Semi-Analytical Algorithm developed by Maciel et al. (2020) (https://doi.org/10.1016/j.isprsjprs.2020.10.009). The underwater light field modeling is essential for the understanding of biogeochemical processes, such as photosynthesis, carbon fluxes, and sediment transports in inland waters. Water-column light attenuation can be quantified by the diffuse attenuation coefficient of the downwelling irradiance (Kd). This dataset represents the Kd estimate for a Sentinel-2/MSI time-series at Curuai Lake region - Lower Amazon floodplains. This time-series data was generated for 66 Sentinel-2/MSI scenes (08/2015 to 09/2019) during the research paper titled Mapping of diffuse attenuation coefficient in optically complex waters of amazon floodplain lakes. This product was funded by the Brazilian Development Bank (BNDES), Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).",

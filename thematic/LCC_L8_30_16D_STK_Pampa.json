@@ -1,5 +1,5 @@
 {
-    "id": null,
+    "id": 69,
     "name": "LCC_L8_30_16D_STK_Pampa",
     "title": "LCC - Pampa - LC8 30m 16D STK",
     "description": "This is a land cover classification map of Brazilian Pampa, from January to December of 2017. This classification was made on top of Landsat-8 days data cubes with spatial resolution of 30 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The input datacube was Landsat-8 - OLI - Cube Stack 16 days - v001, which was deprecated. The classification model was trained using 2224 sample points of the classes Agriculture 741, Planted forest 88, Country formation (Formação campestre) 1161, Forest (Formação florestal) 224. The spectral band used were B1, B2, B3, B4, B5, B6, B7, along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask algorithm and estimated using linear interpolation. The classification algorithm was Random Forest. The post-processing consisted on cropping the images to the biome's boundary. This product was funded by the Brazilian Development Bank (BNDES).",
