@@ -5,7 +5,7 @@
     "description": "CBERS-4/PAN5M - Level-4 Digital Number product over Brazil and part of South America. L4 product provides orthorectified images.",
     "temporal_composition_schema": null,
     "composition_function": null,
-    "grid_ref_sys": null,
+    "grid_ref_sys": "GRID_CBERS4_MUX",
     "collection_type": "collection",
     "metadata": {
         "providers": [
@@ -100,6 +100,12 @@
             "title": "BAND1 lxml",
             "roles": [
                 "metadata"
+            ]
+        },
+        "image_metadata": {
+            "type": "application/json",
+            "roles": [
+                "data"
             ]
         },
         "thumbnail": {
