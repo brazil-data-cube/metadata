@@ -1,0 +1,237 @@
+{
+    "id": null,
+    "name": "CB4A-WPM-L4-DN",
+    "title": "CBERS-4A/WPM - Level-4-DN",
+    "description": "CBERS-4A/WPM - Level-4 Digital Number product over Brazil and part of South America. L4 product provides orthorectified images.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L4",
+                "processing:level": "L4 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "cbers",
+        "cbers-4a",
+        "wpm",
+        "level-4",
+        "digital number",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND3",
+        "BAND4",
+        "BAND2"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND0",
+            "common_name": "pan",
+            "description": "WPM - BAND0 - pan",
+            "min_value": 0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 2,
+            "resolution_y": 2,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.675,
+            "full_width_half_max": 0.45
+        },
+        {
+            "name": "BAND1",
+            "common_name": "blue",
+            "description": "WPM - BAND1 - blue",
+            "min_value": 0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 8,
+            "resolution_y": 8,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND2",
+            "common_name": "green",
+            "description": "WPM - BAND2 - green",
+            "min_value": 0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 8,
+            "resolution_y": 8,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND3",
+            "common_name": "red",
+            "description": "WPM - BAND3 - red",
+            "min_value": 0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 8,
+            "resolution_y": 8,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND4",
+            "common_name": "nir",
+            "description": "WPM - BAND4 - nir",
+            "min_value": 0,
+            "max_value": 1024,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 8,
+            "resolution_y": 8,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4A"
+        ],
+        "constellation": [
+            "cbers-4A"
+        ],
+        "instruments": [
+            "pan"
+        ],
+        "gsd": [
+            2
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "BAND0": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND0 pan",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND1": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND1 blue",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND2": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND2 green",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND3": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND3 red",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND4": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND4 nir",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND0_xml": {
+            "type": "application/xml",
+            "title": "BAND0 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND1_xml": {
+            "type": "application/xml",
+            "title": "BAND1 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND2_xml": {
+            "type": "application/xml",
+            "title": "BAND2 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND3_xml": {
+            "type": "application/xml",
+            "title": "BAND3 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND4_xml": {
+            "type": "application/xml",
+            "title": "BAND4 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND3",
+                "green": "BAND4",
+                "blue": "BAND2"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "id": null,
+    "name": "CB2B-WFI-L2-DN",
+    "title": "CBERS-2B/WFI - Level-2-DN",
+    "description": "CBERS-2B/WFI - Level-2 Digital Number product over Brazil and part of South America.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "cbers",
+        "cbers-2b",
+        "wfi",
+        "level-2",
+        "digital number",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND1",
+        "BAND2",
+        "BAND1"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND1",
+            "common_name": "red",
+            "description": "WFI - B3 - red",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 260,
+            "resolution_y": 260,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND2",
+            "common_name": "nir",
+            "description": "WFI - B4 - nir",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 260,
+            "resolution_y": 260,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-2B"
+        ],
+        "constellation": [
+            "cbers-2"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            260
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "BAND1": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND1 red",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND2": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND2 nir",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND1_xml": {
+            "type": "application/xml",
+            "title": "BAND1 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND2_xml": {
+            "type": "application/xml",
+            "title": "BAND2 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND1",
+                "green": "BAND2",
+                "blue": "BAND1"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

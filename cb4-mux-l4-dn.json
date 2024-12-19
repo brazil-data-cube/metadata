@@ -1,0 +1,213 @@
+{
+    "id": null,
+    "name": "CB4-MUX-L4-DN",
+    "title": "CBERS-4/MUX Level-4-DN",
+    "description": "CBERS-4/MUX Level-4 Digital Number product over Brazil and part of South America. L4 product provides orthorectified images.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "GRID_CBERS4_MUX",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L4",
+                "processing:level": "L4 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "cbers",
+        "cbers-4",
+        "mux",
+        "level-4",
+        "digital number",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND7",
+        "BAND8",
+        "BAND5"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND5",
+            "common_name": "blue",
+            "description": "MUX - BAND5 - blue",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND6",
+            "common_name": "green",
+            "description": "MUX - BAND6 - green",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND7",
+            "common_name": "red",
+            "description": "MUX - BAND7 - red",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND8",
+            "common_name": "nir",
+            "description": "MUX - BAND8 - nir",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4"
+        ],
+        "constellation": [
+            "cbers-4"
+        ],
+        "instruments": [
+            "mux"
+        ],
+        "gsd": [
+            20
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "BAND5": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND5 blue",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND6": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND6 green",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND7": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND7 red",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND8": {
+            "type": "image/tiff; application=geotiff",
+            "title": "BAND8 nir",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND5_xml": {
+            "type": "application/xml",
+            "title": "BAND5 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND6_xml": {
+            "type": "application/xml",
+            "title": "BAND6 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND7_xml": {
+            "type": "application/xml",
+            "title": "BAND7 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "BAND8_xml": {
+            "type": "application/xml",
+            "title": "BAND8 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "image_metadata": {
+            "type": "application/json",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND7",
+                "green": "BAND8",
+                "blue": "BAND5"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}
