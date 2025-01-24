@@ -58,7 +58,10 @@
         "modis",
         "terra",
         "earth observation",
-        "brazil"
+        "brazil",
+        "land surface temperature",
+        "emissivity",
+        "fires"
     ],
     "is_public": true,
     "is_available": true,
