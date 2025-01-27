@@ -70,7 +70,10 @@
         "earth observation",
         "brazil",
         "machine learning",
-        "mlp"
+        "mlp",
+        "land use/land cover classification",
+        "land use classes",
+        "neural networks"
     ],
     "is_public": true,
     "is_available": true,
