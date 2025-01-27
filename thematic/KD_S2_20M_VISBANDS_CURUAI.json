@@ -54,7 +54,8 @@
         "cog",
         "diffuse attenuation",
         "light attenuation",
-        "optically complex waters"
+        "optically complex waters",
+        "neural networks"
     ],
     "is_public": true,
     "is_available": true,

@@ -72,7 +72,9 @@
         "earth observation",
         "brazil",
         "machine learning",
-        "mlp"
+        "mlp",
+        "land use/land cover classification",
+        "land use classes"
     ],
     "is_public": true,
     "is_available": true,
