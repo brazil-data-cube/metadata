@@ -1,5 +1,5 @@
 {
-    "id": null,
+    "id": 74,
     "name": "LCC_L8_30_1M_STK_Cerrado",
     "title": "LCC - Cerrado - LC8 30m 1M STK",
     "description": "This is a land cover classification map of Brazilian Cerrado, from August 2017 to August 2018. This classification was made on top of Landsat-8 monthly cubes with spatial resolution of 30 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The input datacube was Landsat-8 - OLI - Cube Stack 16 days - v001, which was deprecated. The classification model was trained using 67359 sample points spread across the whole Cerrado biome (Annual Crop: 9390, Dune Beach: 35, Forest: 5439, Pasture: 19697, Savanna: 30014, Semi-Perennial Crop: 1161, Silviculture: 1268, Water: 355). The spectral band used were B1, B2, B3, B4, B5, B6, and B7 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. The classification algorithm was Multi-Layer Perceptron (Deep Learning). This product was funded by the Brazilian Development Bank (BNDES).",
