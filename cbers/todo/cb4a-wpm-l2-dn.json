@@ -2,7 +2,7 @@
     "id": null,
     "name": "CB4A-WPM-L2-DN",
     "title": "CBERS-4A/WPM - Level-2-DN",
-    "description": "CBERS-4A/WPM - Level-2 Digital Number product over Brazil and part of South America.",
+    "description": "CBERS-4A/WPM - Level-2 Digital Number product.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
