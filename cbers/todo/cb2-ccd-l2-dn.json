@@ -54,9 +54,9 @@
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND1",
+            "name": "CCD2XS_BAND1",
             "common_name": "blue",
-            "description": "CCD - BAND1 - blue",
+            "description": "CCD2XS - BAND1 - blue",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -70,9 +70,9 @@
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND2",
+            "name": "CCD1XS_BAND2",
             "common_name": "green",
-            "description": "CCD - BAND2 - green",
+            "description": "CCD1XS - BAND2 - green",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -86,9 +86,9 @@
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND3",
+            "name": "CCD1XS_BAND3",
             "common_name": "red",
-            "description": "CCD - BAND3 - red",
+            "description": "CCD1XS - BAND3 - red",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -102,9 +102,25 @@
             "full_width_half_max": 0.06
         },
         {
-            "name": "BAND4",
+            "name": "CCD2XS_BAND3",
+            "common_name": "red",
+            "description": "CCD2XS - BAND3 - red",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 20,
+            "resolution_y": 20,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "CCD1XS_BAND4",
             "common_name": "nir",
-            "description": "CCD - BAND4 - nir",
+            "description": "CCD1XS - BAND4 - nir",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -118,9 +134,9 @@
             "full_width_half_max": 0.12
         },
         {
-            "name": "BAND5",
+            "name": "CCD2PAN_BAND5",
             "common_name": "pan",
-            "description": "CCD - BAND5 - pan",
+            "description": "CCD2PAN - BAND5 - pan",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -152,74 +168,94 @@
         ]
     },
     "item_assets": {
-        "BAND1": {
+        "CCD2XS_BAND1": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND1 blue",
+            "title": "CCD2XS_BAND1 blue",
             "roles": [
                 "data"
             ]
         },
-        "BAND2": {
+        "CCD1XS_BAND2": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND2 green",
+            "title": "CCD1XS_BAND2 green",
             "roles": [
                 "data"
             ]
         },
-        "BAND3": {
+        "CCD1XS_BAND3": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND3 red",
+            "title": "CCD1XS_BAND3 red",
             "roles": [
                 "data"
             ]
         },
-        "BAND4": {
+        "CCD2XS_BAND3": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND4 nir",
+            "title": "CCD2XS_BAND3 red",
             "roles": [
                 "data"
             ]
         },
-        "BAND5": {
+        "CCD1XS_BAND4": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND5 pan",
+            "title": "CCD1XS_BAND4 nir",
             "roles": [
                 "data"
             ]
         },
-        "BAND1_xml": {
+        "CCD2PAN_BAND5": {
+            "type": "image/tiff; application=geotiff",
+            "title": "CCD2PAN_BAND5 pan",
+            "roles": [
+                "data"
+            ]
+        },
+        "CCD2XS_BAND1_xml": {
             "type": "application/xml",
-            "title": "BAND1 xml",
+            "title": "CCD2XS_BAND1 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND2_xml": {
+        "CCD1XS_BAND2_xml": {
             "type": "application/xml",
-            "title": "BAND2 xml",
+            "title": "CCD1XS_BAND2 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND3_xml": {
+        "CCD1XS_BAND3_xml": {
             "type": "application/xml",
-            "title": "BAND3 xml",
+            "title": "CCD1XS_BAND3 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND4_xml": {
+        "CCD2XS_BAND3_BAND3_xml": {
             "type": "application/xml",
-            "title": "BAND4 xml",
+            "title": "CCD2XS_BAND3 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND5_xml": {
+        "CCD1XS_BAND4_xml": {
             "type": "application/xml",
-            "title": "BAND5 xml",
+            "title": "CCD1XS_BAND4 xml",
             "roles": [
                 "metadata"
+            ]
+        },
+        "CCD2PAN_BAND5_xml": {
+            "type": "application/xml",
+            "title": "CCD2PAN_BAND5 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "image_metadata": {
+            "type": "application/json",
+            "roles": [
+                "data"
             ]
         },
         "thumbnail": {
