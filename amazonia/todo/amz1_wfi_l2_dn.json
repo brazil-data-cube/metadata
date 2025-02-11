@@ -1,0 +1,208 @@
+{
+    "id": null,
+    "name": "AMZ1-WFI-L2-DN",
+    "title": "AMAZONIA-1/WFI - Level-2-DN",
+    "description": "AMAZONIA-1/WFI - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "AMAZONIA1_WFI_GRID",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "amazonia",
+        "amazonia-1",
+        "wfi",
+        "level-2",
+        "digital number",
+        "earth observation",
+        "brazil",
+        "visible imagery"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND3",
+        "BAND4",
+        "BAND2"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND1",
+            "common_name": "blue",
+            "description": "B1 blue band from 0.45 to 0.52 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND2",
+            "common_name": "green",
+            "description": "B2 green band from 0.52 to 0.59 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND3",
+            "common_name": "red",
+            "description": "B3 red band from 0.63 to 0.69 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND4",
+            "common_name": "nir",
+            "description": "B4 nir band from 0.77 to 0.89 micrometers",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "CMASK",
+            "common_name": "quality",
+            "description": "Cloud Mask Product",
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "amazonia-1"
+        ],
+        "constellation": [
+            "amazonia-1"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            64
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "BAND1": {
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND2": {
+            "title": "Band green",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND3": {
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "BAND4": {
+            "title": "Band nir",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "CMASK": {
+            "title": "Band cmask",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND3",
+                "green": "BAND4",
+                "blue": "BAND2"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ]
+    }
+}
