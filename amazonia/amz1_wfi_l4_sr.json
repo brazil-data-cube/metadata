@@ -2,7 +2,7 @@
     "id": 24,
     "name": "AMZ1-WFI-L4-SR",
     "title": "AMAZONIA-1/WFI - Level-4-SR - Cloud Optimized GeoTIFF",
-    "description": "AMAZONIA-1/WFI Surface Reflectance product over Brazil and part of South America. L4 SR product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "description": "AMAZONIA-1/WFI - Level-4 Surface Reflectance product. L4 SR product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": "AMAZONIA1_WFI_GRID",
@@ -41,7 +41,8 @@
         "cloud optimized geotiff",
         "cog",
         "earth observation",
-        "brazil"
+        "brazil",
+        "visible imagery"
     ],
     "is_public": true,
     "is_available": true,

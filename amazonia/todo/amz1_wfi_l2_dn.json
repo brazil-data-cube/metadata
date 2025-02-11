@@ -1,11 +1,11 @@
 {
     "id": null,
-    "name": "CB4A-WFI-L4-DN",
-    "title": "CBERS-4A/WFI - Level-4-DN",
-    "description": "CBERS-4A/WFI Level-4 Digital Number product. L4 product provides orthorectified images.",
+    "name": "AMZ1-WFI-L2-DN",
+    "title": "AMAZONIA-1/WFI - Level-2-DN",
+    "description": "AMAZONIA-1/WFI - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
     "temporal_composition_schema": null,
     "composition_function": null,
-    "grid_ref_sys": null,
+    "grid_ref_sys": "AMAZONIA1_WFI_GRID",
     "collection_type": "collection",
     "metadata": {
         "providers": [
@@ -18,8 +18,8 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L4",
-                "processing:level": "L4 DN",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "ms3": "0.0.0"
@@ -32,10 +32,10 @@
         }
     },
     "keywords": [
-        "cbers",
-        "cbers-4a",
+        "amazonia",
+        "amazonia-1",
         "wfi",
-        "level-4",
+        "level-2",
         "digital number",
         "earth observation",
         "brazil",
@@ -45,156 +45,155 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND13",
-        "BAND14",
-        "BAND15"
+        "BAND3",
+        "BAND4",
+        "BAND2"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND13",
+            "name": "BAND1",
             "common_name": "blue",
-            "description": "BAND13 blue band from 0.45 to 0.52 micrometers",
+            "description": "B1 blue band from 0.45 to 0.52 micrometers",
             "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND14",
+            "name": "BAND2",
             "common_name": "green",
-            "description": "BAND14 green band from 0.52 to 0.59 micrometers",
+            "description": "B2 green band from 0.52 to 0.59 micrometers",
             "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND15",
+            "name": "BAND3",
             "common_name": "red",
-            "description": "BAND15 red band from 0.63 to 0.69 micrometers",
+            "description": "B3 red band from 0.63 to 0.69 micrometers",
             "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
         },
         {
-            "name": "BAND16",
+            "name": "BAND4",
             "common_name": "nir",
-            "description": "B16 nir band from 0.77 to 0.89 micrometers",
+            "description": "B4 nir band from 0.77 to 0.89 micrometers",
             "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "CMASK",
+            "common_name": "quality",
+            "description": "Cloud Mask Product",
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": 255,
             "scale": 1,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 55,
-            "resolution_y": 55,
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.83,
-            "full_width_half_max": 0.12
+            "center_wavelength": null,
+            "full_width_half_max": null
         }
     ],
     "summaries": {
         "platform": [
-            "cbers-4A"
+            "amazonia-1"
         ],
         "constellation": [
-            "cbers-4A"
+            "amazonia-1"
         ],
         "instruments": [
             "wfi"
         ],
         "gsd": [
-            55
+            64
         ],
         "view:off_nadir": [
             0
         ]
     },
     "item_assets": {
-        "BAND13": {
+        "BAND1": {
             "title": "Band blue",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "type": "image/tiff; application=geotiff",
             "roles": [
                 "data"
             ]
         },
-        "BAND14": {
+        "BAND2": {
             "title": "Band green",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "type": "image/tiff; application=geotiff",
             "roles": [
                 "data"
             ]
         },
-        "BAND15": {
+        "BAND3": {
             "title": "Band red",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "type": "image/tiff; application=geotiff",
             "roles": [
                 "data"
             ]
         },
-        "BAND16": {
+        "BAND4": {
             "title": "Band nir",
-            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "type": "image/tiff; application=geotiff",
             "roles": [
                 "data"
             ]
         },
-        "BAND13_xml": {
-            "type": "application/xml",
+        "CMASK": {
+            "title": "Band cmask",
+            "type": "image/tiff; application=geotiff",
             "roles": [
-                "metadata"
-            ]
-        },
-        "BAND14_xml": {
-            "type": "application/xml",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "BAND15_xml": {
-            "type": "application/xml",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "BAND16_xml": {
-            "type": "application/xml",
-            "roles": [
-                "metadata"
+                "data"
             ]
         },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "BAND13",
-                "green": "BAND14",
-                "blue": "BAND15"
+                "red": "BAND3",
+                "green": "BAND4",
+                "blue": "BAND2"
             },
             "roles": [
                 "thumbnail"
@@ -204,27 +203,6 @@
     "properties": {
         "sources": [
             "http://www.inpe.br"
-        ],
-        "bdc:visual": {
-            "rgb": [
-                "BAND13",
-                "BAND14",
-                "BAND15"
-            ],
-            "rescale": [
-                [
-                    0,
-                    3000
-                ],
-                [
-                    0,
-                    3000
-                ],
-                [
-                    0,
-                    3000
-                ]
-            ]
-        }
+        ]
     }
 }
