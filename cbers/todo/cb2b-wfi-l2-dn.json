@@ -2,7 +2,7 @@
     "id": null,
     "name": "CB2B-WFI-L2-DN",
     "title": "CBERS-2B/WFI - Level-2-DN",
-    "description": "CBERS-2B/WFI - Level-2 Digital Number product.",
+    "description": "CBERS-2B/WFI - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -38,7 +38,8 @@
         "level-2",
         "digital number",
         "earth observation",
-        "brazil"
+        "brazil",
+        "visible imagery"
     ],
     "is_public": true,
     "is_available": true,
