@@ -6,9 +6,9 @@
     "temporal_composition_schema": {
         "step": 1,
         "unit": "day",
-        "schema": "continuous"
+        "schema": "Continuous"
     },
-    "composition_function": "sum",
+    "composition_function": "Sum",
     "grid_ref_sys": null,
     "collection_type": "cube",
     "metadata": {
@@ -92,16 +92,13 @@
         }
     ],
     "summaries": {
-        "platform": null,
-        "constellation": null,
         "instruments": [
             "pwm",
             "rain gauges"
         ],
         "gsd": [
             0.10
-        ],
-        "view:off_nadir": null
+        ]
     },
     "item_assets": {
         "merge_daily": {
@@ -112,21 +109,21 @@
             ]
         },
         "ctl": {
-            "title": "MERGE - Gridded Precipitation over South America - Description/ASCII File (in GrADS)",
+            "title": "GrADS descriptor",
             "type": "text/plain",
             "roles": [
                 "data"
             ]
         },
         "idx": {
-            "title": "MERGE - Gridded Precipitation over South America - GRIB2 index file (in GrADS)",
+            "title": "GrADS index file",
             "type": "application/octet-stream",
             "roles": [
                 "data"
             ]
         },
         "thumbnail": {
-            "title": "MERGE - Gridded Precipitation over South America",
+            "title": "Thumbnail",
             "type": "image/png",
             "roles": [
                 "thumbnail"
