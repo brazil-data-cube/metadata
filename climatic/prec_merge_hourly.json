@@ -6,9 +6,9 @@
     "temporal_composition_schema": {
         "step": 1,
         "unit": "hour",
-        "schema": "continuous"
+        "schema": "Continuous"
     },
-    "composition_function": "sum",
+    "composition_function": "Sum",
     "grid_ref_sys": null,
     "collection_type": "cube",
     "metadata": {
@@ -92,16 +92,13 @@
         }
     ],
     "summaries": {
-        "platform": null,
-        "constellation": null,
         "instruments": [
             "pwm",
             "rain gauges"
         ],
         "gsd": [
             0.10
-        ],
-        "view:off_nadir": null
+        ]
     },
     "item_assets": {
         "merge_hourly": {
