@@ -2,7 +2,7 @@
     "id": null,
     "name": "prec_merge_hourly",
     "title": "MERGE - Hourly Gridded Precipitation over South America",
-    "description": "Satellite precipitation estimates combined with surface observations over South America. Precipitation estimates from GSMaP Now used. GRIB2 format data (https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/).",
+    "description": "Satellite precipitation estimates combined with surface observations over South America. Satellite estimates for the first few hours are provided by the GPM-Early product. GRIB2 format data (https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/).",
     "temporal_composition_schema": {
         "step": 1,
         "unit": "hour",
@@ -109,14 +109,14 @@
             ]
         },
         "ctl": {
-            "title": "MERGE - Gridded Precipitation over South America - Description/ASCII File (in GrADS)",
+            "title": "GrADS descriptor",
             "type": "text/plain",
             "roles": [
                 "data"
             ]
         },
         "idx": {
-            "title": "MERGE - Gridded Precipitation over South America - GRIB2 index file (in GrADS)",
+            "title": "GrADS index file",
             "type": "application/octet-stream",
             "roles": [
                 "data"

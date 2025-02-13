@@ -109,14 +109,14 @@
             ]
         },
         "ctl": {
-            "title": "MERGE - Gridded Precipitation over South America - Description/ASCII File (in GrADS)",
+            "title": "GrADS descriptor",
             "type": "text/plain",
             "roles": [
                 "data"
             ]
         },
         "idx": {
-            "title": "MERGE - Gridded Precipitation over South America - GRIB2 index file (in GrADS)",
+            "title": "GrADS index file",
             "type": "application/octet-stream",
             "roles": [
                 "data"
