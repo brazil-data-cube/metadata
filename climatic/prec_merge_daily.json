@@ -95,9 +95,6 @@
         "instruments": [
             "pwm",
             "rain gauges"
-        ],
-        "gsd": [
-            0.10
         ]
     },
     "item_assets": {
