@@ -1,5 +1,5 @@
 {
-    "id": null,
+    "id": 83,
     "name": "prec_merge_hourly",
     "title": "MERGE - Hourly Gridded Precipitation over South America",
     "description": "Satellite precipitation estimates combined with surface observations over South America. Satellite estimates for the first few hours are provided by the GPM-Early product. GRIB2 format data (https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/).",
