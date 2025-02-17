@@ -2,7 +2,7 @@
     "id": 84,
     "name": "prec_merge_daily",
     "title": "MERGE - Daily Gridded Precipitation over South America",
-    "description": "Satellite precipitation estimates combined with surface observations over South America. Satellite estimates for the first few hours are provided by the GPM-Early product; more than 12 hours back, GPM-late data are used. GRIB2 format data (https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/).",
+    "description": "Satellite precipitation estimates combined with surface observations over South America. Satellite estimates for the first few hours are provided by the GPM-Early product; more than 12 hours back, GPM-late data are used. This dataset is provided in GRIB2 data format (https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/).",
     "temporal_composition_schema": {
         "step": 1,
         "unit": "day",
