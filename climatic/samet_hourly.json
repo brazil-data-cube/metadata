@@ -38,10 +38,10 @@
     },
     "keywords": [
         "temperature",
-        "daily",
+        "hourly",
         "south america"
     ],
-    "is_public": false,
+    "is_public": true,
     "is_available": true,
     "category": "eo",
     "version": 1,
@@ -65,25 +65,12 @@
             "full_width_half_max": null
         }
     ],
-    "summaries": {
-        "instruments": [
-            "",
-            ""
-        ]
-    },
     "item_assets": {
         "temperature": {
             "title": "Temperature",
             "type": "application/netcdf",
             "roles": [
                 "data"
-            ]
-        },
-        "thumbnail": {
-            "title": "Thumbnail",
-            "type": "image/png",
-            "roles": [
-                "thumbnail"
             ]
         }
     },
