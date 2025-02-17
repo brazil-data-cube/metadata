@@ -41,7 +41,7 @@
         "daily",
         "south america"
     ],
-    "is_public": false,
+    "is_public": true,
     "is_available": true,
     "category": "eo",
     "version": 1,
@@ -65,9 +65,9 @@
             "full_width_half_max": null
         },
         {
-            "name": "tmed",
-            "common_name": "tmed",
-            "description": "Daily median temperature. Unit: Celsius",
+            "name": "tmean",
+            "common_name": "tmean",
+            "description": "Daily mean temperature. Unit: Celsius",
             "min_value": 0,
             "max_value": 1000,
             "nodata": -9.99e+08,
@@ -97,12 +97,6 @@
             "full_width_half_max": null
         }
     ],
-    "summaries": {
-        "instruments": [
-            "",
-            ""
-        ]
-    },
     "item_assets": {
         "tmin": {
             "title": "Temperature minimum",
@@ -111,8 +105,8 @@
                 "data"
             ]
         },
-        "tmed": {
-            "title": "Temperature median",
+        "tmean": {
+            "title": "Temperature mean",
             "type": "application/netcdf",
             "roles": [
                 "data"
