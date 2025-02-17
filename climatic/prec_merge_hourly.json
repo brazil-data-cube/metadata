@@ -56,7 +56,7 @@
     "bands": [
         {
             "name": "prec",
-            "common_name": "1h acc. precipitation in mm/hour ",
+            "common_name": "1h acc. precipitation in mm/hour",
             "description": "The accumulated precipitation in 1 hour. The accumulation date ends on the date of the files, starting at _h-1 UTC_.  Unit: _mm/hour_",
             "min_value": 0,
             "max_value": 1000,

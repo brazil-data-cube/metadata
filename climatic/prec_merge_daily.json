@@ -60,7 +60,7 @@
     "bands": [
         {
             "name": "prec",
-            "common_name": "24h acc. precipitation in mm/day ",
+            "common_name": "24h acc. precipitation in mm/day",
             "description": "The accumulated precipitation in 24 hours. The accumulation date ends on the date of the files, starting at _d-1 13:00 UTC_ and ending at _d 12:00 UTC_.  Unit: _mm/day_",
             "min_value": 0,
             "max_value": 1000,
