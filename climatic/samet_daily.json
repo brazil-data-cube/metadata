@@ -2,7 +2,7 @@
     "id": null,
     "name": "samet_daily",
     "title": "SAMeT - Daily South American Mapping of Temperature",
-    "description": "South American Mapping of Temperature (SAMeT) s a newly developed product and operationally available for South America through the National Institute for Space Research (CPTEC / INPE) Weather Forecast and Climate Studies website. This product combines the observed data with the ERA5 reanalysis, making a correction of the temperature field using an estimated lapse rate. The Lapse Rate was estimated for four regions located over South America, and for the four seasons of the year. The estimated values for the Lapse Rate were, in all situations, lower than the standard Lapse Rate (-6.5 °C·km-¹). The combination of reanalysis and observations, together with the correction of the Lapse Rate produced more accurate temperature fields than those provided by ERA5, especially in regions with more accentuated topography.", 
+    "description": "South American Mapping of Temperature (SAMeT) is a newly developed product and operationally available for South America through the National Institute for Space Research (CPTEC / INPE) Weather Forecast and Climate Studies website. This product combines the observed data with the ERA5 reanalysis, making a correction of the temperature field using an estimated lapse rate. The Lapse Rate was estimated for four regions located over South America, and for the four seasons of the year. The estimated values for the Lapse Rate were, in all situations, lower than the standard Lapse Rate (-6.5 °C·km-¹). The combination of reanalysis and observations, together with the correction of the Lapse Rate produced more accurate temperature fields than those provided by ERA5, especially in regions with more accentuated topography.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -10,8 +10,8 @@
     "metadata": {
         "providers": [
             {
-                "url": "https://gpm.nasa.gov/data/imerg", 
-                "name": "Copernicus Climate Change Service (C3S)", 
+                "url": "https://climate.copernicus.eu/climate-reanalysis",
+                "name": "Copernicus Climate Change Service (C3S)",
                 "roles": [
                     "producer"
                 ]
@@ -32,7 +32,7 @@
             }
         ],
         "license": {
-            "type": "Creative Commons Attribution 4.0 International", 
+            "type": "Creative Commons Attribution 4.0 International",
             "uri": "https://creativecommons.org/licenses/by/4.0/"
         }
     },
@@ -58,8 +58,8 @@
             "scale": 1.0,
             "data_type": "float32",
             "mime_type": "application/octet-stream",
-            "resolution_x": 0.10,
-            "resolution_y": 0.10,
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
             "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -99,8 +99,8 @@
     ],
     "summaries": {
         "instruments": [
-            "", 
-            "" 
+            "",
+            ""
         ]
     },
     "item_assets": {
