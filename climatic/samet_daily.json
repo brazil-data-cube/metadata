@@ -74,8 +74,8 @@
             "scale": 1.0,
             "data_type": "float32",
             "mime_type": "application/octet-stream",
-            "resolution_x": 0.10,
-            "resolution_y": 0.10,
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
             "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -90,8 +90,8 @@
             "scale": 1.0,
             "data_type": "float32",
             "mime_type": "application/octet-stream",
-            "resolution_x": 0.10,
-            "resolution_y": 0.10,
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
             "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
