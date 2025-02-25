@@ -16,7 +16,7 @@
                     "producer"
                 ]
             },
-			{
+            {
                 "url": "https://www.visionaespacial.com.br/",
                 "name": "Visiona Tecnologia Espacial S.A.",
                 "roles": [
@@ -33,19 +33,19 @@
         ],
         "license": {
             "type": "Private Domain",
-			"uri": "https://www.visionaespacial.com.br/etica-e-conduta"
+            "uri": "https://www.visionaespacial.com.br/etica-e-conduta"
         }
     },
     "keywords": [
         "pleiades",
         "pleiades-1a",
-		"pleiades-1b",
+        "pleiades-1b",
         "phr",
         "high spatial resolution",
-		"surface reflectance",
-		"earth observation",
+        "surface reflectance",
+        "earth observation",
         "brazil"
-	],
+    ],
     "is_public": false,
     "is_available": true,
     "category": "eo",
@@ -141,7 +141,7 @@
             ]
         }
     },
-	"properties": {
+    "properties": {
         "sources": [
             "http://www.inpe.br"
         ]
