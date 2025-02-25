@@ -231,7 +231,7 @@
                 "metadata"
             ]
         },
-        "CCD2XS_BAND3_BAND3_xml": {
+        "CCD2XS_BAND3_xml": {
             "type": "application/xml",
             "title": "CCD2XS_BAND3 xml",
             "roles": [
