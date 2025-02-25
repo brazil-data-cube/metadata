@@ -1,0 +1,149 @@
+{
+    "id": null,
+    "name": "pleiades-phr-1a/b_boa_ortho",
+    "title": "Pléiades-PHR-1A/B Bottom-of-Atmosphere Orthorectified",
+    "description": "Pléiades-1A/B are a satellite constellation operated and distributed by AIRBUS DS, France. Lauched on 17 December 2011, it was projected for both civil or military projects. It operates in a sun-synchronous orbit. The space and ground segment have been designed to provide data in record time, ensuring daily revisit capacity anywhere on the globe and unrivaled reliability when it comes to collecting new images. Pléiades satellites are operated on the same orbit with the SPOT 6 satellites, as a 3-satellite constellation: an ideal combination of detail and broad coverage, with intraday revisit to any point on Earth and image availability within hours. Pléiades-1A/B instruments capture 3 visible channels and 1 infrared channel at spatial resolutions of 2 meters, and 1 panchromatic band with 0.5 meters of spatial resolution. The collection captures product files into individual STAC Items from the Pléiades 1A and 1B satellites. It contains cloud-optimized GeoTIFF files in a grid format for each of the 4 multispectral spectral bands enhanced by a linear contrast. The grids are distributed in 136 areas of interest, comprised of a rectangle of 5km by 5km in planimetric projection (UTM/WGS84) located in the Cerrado Biome. The images are orthorectified with RPCs (Rational Polynomial Coefficients). The radiometric resolution is 12 bits per pixel. Notes: These images were acquired in the scope of the project “Development of systems to prevent forest fires and monitor vegetation cover in the Brazilian Cerrado”, funded by the Forest Investment Program (FIP) during the year 2021, and executed by the National Institute for Space Research (INPE). The images were acquired from the Visiona Tecnologia Espacial S.A, in accordance with the ELECTRONIC BIDDING NOTICE Nº. 02/2021 – FUNDEP (Support Foundation of the Federal University of Minas Gerais – UFMG).”,
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://intelligence.airbus.com/",
+                "name": "Airbus Defence and Space (Airbus DS)",
+                "roles": [
+                    "producer"
+                ]
+            },
+			{
+                "url": "https://www.visionaespacial.com.br/",
+                "name": "Visiona Tecnologia Espacial S.A.",
+                "roles": [
+                    "processor"
+                ]
+            },
+            {
+                "url": "https://data.inpe.br/big/",
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"                    
+                ]
+            }
+        ],
+        "license": {
+            "type": "Private Domain",
+			"uri": "https://www.visionaespacial.com.br/etica-e-conduta"
+        }
+    },
+    "keywords": [
+        "pleiades",
+        "pleiades-1a",
+		"pleiades-1b",
+        "phr",
+        "high spatial resolution",
+		"surface reflectance",
+		"earth observation",
+        "brazil"
+	],
+    "is_public": false,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "B0",
+            "common_name": "blue",
+            "description": "Blue spectral band",
+            "center_wavelength": 0.49,
+            "min_value": 0.0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 0.001,
+            "data_type": "int16",
+            "mime_type": "image/tiff",
+            "resolution_x": 2,
+            "resolution_y": 2,
+            "resolution_unit": "Meter",
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "B1",
+            "common_name": "green",
+            "description": "Green spectral band",
+            "center_wavelength": 0.55,
+            "min_value": 0.0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 0.001,
+            "data_type": "int16",
+            "mime_type": "image/tiff",
+            "resolution_x": 2,
+            "resolution_y": 2,
+            "resolution_unit": "Meter",
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "B2",
+            "common_name": "red",
+            "description": "Red spectral band",
+            "center_wavelength": 0.66,
+            "min_value": 0.0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 0.001,
+            "data_type": "int16",
+            "mime_type": "image/tiff",
+            "resolution_x": 2,
+            "resolution_y": 2,
+            "resolution_unit": "Meter",
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "B3",
+            "common_name": "nir",
+            "description": "Near Infrared spectral band",
+            "center_wavelength": 0.845,
+            "min_value": 0.0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 0.001,
+            "data_type": "int16",
+            "mime_type": "image/tiff",
+            "resolution_x": 2,
+            "resolution_y": 2,
+            "resolution_unit": "Meter",
+            "full_width_half_max": 0.035
+        }
+    ],
+    "item_assets": {
+        "MS_bands": {
+            "type": "image/tiff",
+            "title": "Multispectral bands (VIS+NIR)",
+            "roles": [
+                "data"
+            ]
+        },
+        "Pan": {
+            "type": "image/tiff",
+            "title": "Panchromatic band (Pan)",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+	"properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ]
+    }
+}
