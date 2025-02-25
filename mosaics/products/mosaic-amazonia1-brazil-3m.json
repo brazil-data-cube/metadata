@@ -1,0 +1,146 @@
+{
+    "id": null,
+    "name": "mosaic-amazonia1-brazil-3m",
+    "title": "AMAZONIA-1/WFI Image Mosaic of Brazil - 3 Months",
+    "description": "AMAZONIA-1/WFI image mosaic of Brazil with 64m of spatial resolution. The mosaic was prepared in order to demonstrate the technological capabilities of the Brazil Data Cube project tools. The false color composition is based on the WFI bands 3, 4 and 1 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in May 2024 and ending in July 2024, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 1000 scenes from existing AMAZONIA-1/WFI image collection.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": null,
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Mosaic based on AMAZONIA-1 L4 Surface Reflectance in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "0.4.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "amazonia",
+        "amazonia-1",
+        "wfi",
+        "visible wavelengths",
+        "ultraviolet wavelengths",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND3",
+        "BAND4",
+        "BAND1"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "BAND1",
+            "common_name": "blue",
+            "description": "B1 blue band from 0.45 to 0.52 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND3",
+            "common_name": "red",
+            "description": "B3 red band from 0.63 to 0.69 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND4",
+            "common_name": "nir",
+            "description": "B4 nir band from 0.77 to 0.89 micrometers resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 64.0,
+            "resolution_y": 64.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "amazonia-1"
+        ],
+        "constellation": [
+            "amazonia-1"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            64
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "False Color Composition of the mosaic. Contains AMAZONIA-1/WFI Bands 3, 4 and 1.",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND3",
+                "green": "BAND4",
+                "blue": "BAND1"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
