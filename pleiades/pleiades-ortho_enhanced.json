@@ -119,14 +119,35 @@
         }
     ],
     "item_assets": {
-        "MS_bands": {
+        "blue": {
             "type": "image/tiff",
-            "title": "Multispectral bands (VIS+NIR)",
+            "title": "Multispectral blue band (B0)",
             "roles": [
                 "data"
             ]
         },
-        "Pan": {
+        "green": {
+            "type": "image/tiff",
+            "title": "Multispectral green band (B1)",
+            "roles": [
+                "data"
+            ]
+        },
+        "red": {
+            "type": "image/tiff",
+            "title": "Multispectral red band (B2)",
+            "roles": [
+                "data"
+            ]
+        },
+        "nir": {
+            "type": "image/tiff",
+            "title": "Multispectral NIR band (B3)",
+            "roles": [
+                "data"
+            ]
+        },
+        "pan": {
             "type": "image/tiff",
             "title": "Panchromatic band (Pan)",
             "roles": [
