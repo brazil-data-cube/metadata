@@ -49,7 +49,8 @@
         "gridded precipitation",
         "south america",
         "grib2",
-        "rain gauge"
+        "rain gauge",
+        "precipitation"
     ],
     "is_public": true,
     "is_available": true,
@@ -93,8 +94,9 @@
     ],
     "summaries": {
         "instruments": [
-            "pwm",
-            "rain gauges"
+            "rain gauges",
+            "dpr",
+            "gmi"
         ]
     },
     "item_assets": {
