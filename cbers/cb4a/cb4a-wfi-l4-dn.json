@@ -1,8 +1,8 @@
 {
-    "id": null,
-    "name": "CB4A-WFI-L2-DN",
-    "title": "CBERS-4A/WFI - Level-2-DN",
-    "description": "CBERS-4A/WFI Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
+    "id": 96,
+    "name": "CB4A-WFI-L4-DN",
+    "title": "CBERS-4A/WFI - Level-4-DN",
+    "description": "CBERS-4A/WFI Level-4 Digital Number product. L4 product provides orthorectified images.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -18,8 +18,8 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L2",
-                "processing:level": "L2 DN",
+                "processing:lineage": "Generation of L4",
+                "processing:level": "L4 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "ms3": "0.0.0"
@@ -35,7 +35,7 @@
         "cbers",
         "cbers-4a",
         "wfi",
-        "level-2",
+        "level-4",
         "digital number",
         "earth observation",
         "brazil",
@@ -45,9 +45,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND15",
-        "BAND16",
-        "BAND14"
+        "BAND13",
+        "BAND14",
+        "BAND15"
     ],
     "version": 1,
     "version_predecessor": null,
@@ -207,9 +207,9 @@
         ],
         "bdc:visual": {
             "rgb": [
-                "BAND15",
-                "BAND16",
-                "BAND14"
+                "BAND13",
+                "BAND14",
+                "BAND15"
             ],
             "rescale": [
                 [
