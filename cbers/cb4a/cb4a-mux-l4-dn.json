@@ -1,8 +1,8 @@
 {
-    "id": null,
-    "name": "CB4A-WPM-L2-DN",
-    "title": "CBERS-4A/WPM - Level-2-DN",
-    "description": "CBERS-4A/WPM - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
+    "id": 94,
+    "name": "CB4A-MUX-L4-DN",
+    "title": "CBERS-4A/MUX - Level-4-DN",
+    "description": "CBERS-4A/MUX - Level-4 Digital Number product. L4 product provides orthorectified images.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -18,8 +18,8 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L2",
-                "processing:level": "L2 DN",
+                "processing:lineage": "Generation of L4",
+                "processing:level": "L4 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "ms3": "0.0.0"
@@ -34,8 +34,8 @@
     "keywords": [
         "cbers",
         "cbers-4a",
-        "wpm",
-        "level-2",
+        "mux",
+        "level-4",
         "digital number",
         "earth observation",
         "brazil",
@@ -45,90 +45,74 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND3",
-        "BAND4",
-        "BAND2"
+        "BAND7",
+        "BAND8",
+        "BAND6"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "BAND0",
-            "common_name": "pan",
-            "description": "WPM - BAND0 - pan",
-            "min_value": 0,
-            "max_value": 1024,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 2,
-            "resolution_y": 2,
-            "resolution_unit": "Meter",
-            "center_wavelength": 0.675,
-            "full_width_half_max": 0.45
-        },
-        {
-            "name": "BAND1",
+            "name": "BAND5",
             "common_name": "blue",
-            "description": "WPM - BAND1 - blue",
+            "description": "MUX - BAND5 - blue",
             "min_value": 0,
-            "max_value": 1024,
+            "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 8,
-            "resolution_y": 8,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND2",
+            "name": "BAND6",
             "common_name": "green",
-            "description": "WPM - BAND2 - green",
+            "description": "MUX - BAND6 - green",
             "min_value": 0,
-            "max_value": 1024,
+            "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 8,
-            "resolution_y": 8,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
         },
         {
-            "name": "BAND3",
+            "name": "BAND7",
             "common_name": "red",
-            "description": "WPM - BAND3 - red",
+            "description": "MUX - BAND7 - red",
             "min_value": 0,
-            "max_value": 1024,
+            "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 8,
-            "resolution_y": 8,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
         },
         {
-            "name": "BAND4",
+            "name": "BAND8",
             "common_name": "nir",
-            "description": "WPM - BAND4 - nir",
+            "description": "MUX - BAND8 - nir",
             "min_value": 0,
-            "max_value": 1024,
+            "max_value": 255,
             "nodata": 0,
             "scale": 1,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 8,
-            "resolution_y": 8,
+            "resolution_x": 16,
+            "resolution_y": 16,
             "resolution_unit": "Meter",
             "center_wavelength": 0.83,
             "full_width_half_max": 0.12
@@ -142,82 +126,68 @@
             "cbers-4A"
         ],
         "instruments": [
-            "wpm"
+            "mux"
         ],
         "gsd": [
-            2
+            16
         ],
         "view:off_nadir": [
             0
         ]
     },
     "item_assets": {
-        "BAND0": {
+        "BAND5": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND0 pan",
+            "title": "BAND5 blue",
             "roles": [
                 "data"
             ]
         },
-        "BAND1": {
+        "BAND6": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND1 blue",
+            "title": "BAND6 green",
             "roles": [
                 "data"
             ]
         },
-        "BAND2": {
+        "BAND7": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND2 green",
+            "title": "BAND7 red",
             "roles": [
                 "data"
             ]
         },
-        "BAND3": {
+        "BAND8": {
             "type": "image/tiff; application=geotiff",
-            "title": "BAND3 red",
+            "title": "BAND8 nir",
             "roles": [
                 "data"
             ]
         },
-        "BAND4": {
-            "type": "image/tiff; application=geotiff",
-            "title": "BAND4 nir",
-            "roles": [
-                "data"
-            ]
-        },
-        "BAND0_xml": {
+        "BAND5_xml": {
             "type": "application/xml",
-            "title": "BAND0 xml",
+            "title": "BAND5 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND1_xml": {
+        "BAND6_xml": {
             "type": "application/xml",
-            "title": "BAND1 xml",
+            "title": "BAND6 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND2_xml": {
+        "BAND7_xml": {
             "type": "application/xml",
-            "title": "BAND2 xml",
+            "title": "BAND7 xml",
             "roles": [
                 "metadata"
             ]
         },
-        "BAND3_xml": {
+        "BAND8_xml": {
             "type": "application/xml",
-            "title": "BAND3 xml",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "BAND4_xml": {
-            "type": "application/xml",
-            "title": "BAND4 xml",
+            "title": "BAND8 xml",
             "roles": [
                 "metadata"
             ]
@@ -226,9 +196,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "BAND3",
-                "green": "BAND4",
-                "blue": "BAND2"
+                "red": "BAND7",
+                "green": "BAND8",
+                "blue": "BAND6"
             },
             "roles": [
                 "thumbnail"
