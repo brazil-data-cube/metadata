@@ -45,9 +45,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "BAND3",
-        "BAND4",
-        "BAND2"
+        "CCD1XS_BAND3",
+        "CCD1XS_BAND4",
+        "CCD1XS_BAND2"
     ],
     "version": 1,
     "version_predecessor": null,
