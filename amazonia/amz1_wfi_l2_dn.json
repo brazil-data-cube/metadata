@@ -1,8 +1,8 @@
 {
-    "id": null,
-    "name": "AMZ1-WFI-L4-DN",
-    "title": "AMAZONIA-1/WFI - Level-4-DN",
-    "description": "AMAZONIA-1/WFI - Level-4 Digital Number product.",
+    "id": 99,
+    "name": "AMZ1-WFI-L2-DN",
+    "title": "AMAZONIA-1/WFI - Level-2-DN",
+    "description": "AMAZONIA-1/WFI - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": "AMAZONIA1_WFI_GRID",
@@ -18,8 +18,8 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Generation of L4",
-                "processing:level": "L4 DN",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
                 "processing:facility": "LGI",
                 "processing:software": {
                     "ms3": "0.0.0"
@@ -35,7 +35,7 @@
         "amazonia",
         "amazonia-1",
         "wfi",
-        "level-4",
+        "level-2",
         "digital number",
         "earth observation",
         "brazil",
