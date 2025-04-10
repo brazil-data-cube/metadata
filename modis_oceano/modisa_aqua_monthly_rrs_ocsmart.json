@@ -1,0 +1,247 @@
+{
+    "id": null,
+    "name": "MODISA-OCSMART-RRS-MONTHLY",
+    "title": "MODIS-Aqua Monthly Rrs - OC-SMART AC",
+    "description": "The MODIS-Aqua Monthly Remote Sensing Reflectance (Rrs, unit sr-1) provides 8 spectral bands temporal resolution of one month and spatial resolution of 1 km over the Brazil oceanic waters and open ocean South Atlantic waters. This collection captures 7 visible, and 1 infrared channels using Level-1A images acquired from the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument onboard the NASA's Aqua satellite. The Level-1A data were processed into Level-1B and GEO using the Data Processing Tools (modis_L1B) from SeaWiFS Data Analysis System (SeaDAS) software. The Level-1B and GEO data were applied in the atmospheric correction OC-SMART (Fan et al., 2021) by the National Institute for Space Research (INPE, Brazil) and the Laboratoire d'Océanologie et de Géosciences (LOG, France) generating the Level-2 data. The Level-2 data has been mosaicked to generate daily maps capturing the complete Brazilian ocean waters. The daily mosaic data were reprojected to geographical (lat/lon) coordinates using as reference the European Space Agency (ESA) Ocean Colour - Climate Change Initiative (OC-CCI) into Level-3 grid. Both, the mosaic and the reprojection were done using the Sentinel Application Platform (SNAP) on its version 10. Finally, the daily reprojected data were temporal merged to create the monthly Rrs products using the geometric mean.",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 1,
+        "unit": "month"
+    },
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "url": "https://oceancolor.gsfc.nasa.gov/",
+                "roles": [
+                    "producer"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of monthly remote sensing reflectance estimatives based on MODIS-Aqua earth observation satellite."
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "url": "https://data.inpe.br/big/",
+                "roles": [
+                    "processor",
+                    "host"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of monthly remote sensing reflectance estimatives based on MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP":"10.0"
+                }
+            },
+            {
+                "name": "Laboratoire d'Océanologie et de Géosciences",
+                "url": "https://log.cnrs.fr/recherche",
+                "roles": [
+                    "processor"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of monthly remote sensing reflectance estimatives based on MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP":"10.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Zero (CC0)",
+            "uri": "https://creativecommons.org/public-domain/cc0/"
+        }
+    },
+    "keywords": [
+        "modis",
+        "aqua",
+        "level-3",
+        "rrs",
+        "reflectance",
+        "observation",
+        "monthly",
+        "surface",
+        "brazil",
+        "ocean"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "Rrs412",
+            "common_name": "Rrs412",
+            "description": "Remote sensing reflectance at 412 nm",
+            "center_wavelength": 0.412,
+            "full_width_half_max": 0.075,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs443",
+            "common_name": "Rrs443",
+            "description": "Remote sensing reflectance at 443 nm",
+            "center_wavelength": 0.443,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs488",
+            "common_name": "Rrs488",
+            "description": "Remote sensing reflectance at 488 nm",
+            "center_wavelength": 0.488,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs531",
+            "common_name": "Rrs531",
+            "description": "Remote sensing reflectance at 531 nm",
+            "center_wavelength": 0.531,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs547",
+            "common_name": "Rrs547",
+            "description": "Remote sensing reflectance at 547 nm",
+            "center_wavelength": 0.547,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs667",
+            "common_name": "Rrs667",
+            "description": "Remote sensing reflectance at 667 nm",
+            "center_wavelength": 0.667,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs678",
+            "common_name": "Rrs678",
+            "description": "Remote sensing reflectance at 678 nm",
+            "center_wavelength": 0.678,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Rrs748",
+            "common_name": "Rrs748",
+            "description": "Remote sensing reflectance at 748 nm",
+            "center_wavelength": 0.748,
+            "full_width_half_max": 0.005,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": "NaN",
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "constellation": [
+            "modis"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "item_assets": {
+        "RRS": {
+            "type": "application/netcdf",
+            "title": "Remote Sensing Reflectance",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br",
+            "https://seadas.gsfc.nasa.gov/",
+            "http://www.rtatmocn.com/oc-smart/"
+        ]
+    }
+}
