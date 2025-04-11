@@ -38,7 +38,7 @@
                 "processing:software": {
                     "SEADAS": "9.1.0",
                     "OCSMART": "2.2",
-                    "SNAP":"10.0"
+                    "SNAP": "10.0"
                 }
             },
             {
@@ -53,7 +53,7 @@
                 "processing:software": {
                     "SEADAS": "9.1.0",
                     "OCSMART": "2.2",
-                    "SNAP":"10.0"
+                    "SNAP": "10.0"
                 }
             }
         ],
