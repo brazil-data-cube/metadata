@@ -1,0 +1,378 @@
+{
+    "id": 50,
+    "name": "S2-AMAZON",
+    "title": "Sentinel-2 image Mosaic of Brazilian Amazon Biome - 1 Month",
+    "description": "Sentinel-2 image mosaic of Brazilian Amazon biome with 10m of spatial resolution. The mosaic was prepared to support BiomasBR Program to produce The European Union LandMark Deforestation Map 2020. The false color composition is based on the MSI bands 11, 8 and 4 assigned to RGB channels. The temporal composition encompasses 01-month of images from december 2020, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 15000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
+    "temporal_composition_schema": null,
+    "composition_function": "Identity",
+    "grid_ref_sys": "BDC_SM_V2",
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Data Cubes based on Sentinel-2 Level-2A in Cloud Optimized GeoTIFF",
+                "processing:level": "L2A",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": ""
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "sentinel-2",
+        "msi",
+        "visible wavelengths",
+        "ultraviolet wavelengths",
+        "biome",
+        "amazon",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": false,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "B11",
+        "B8A",
+        "B04"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "B01",
+            "common_name": "coastal",
+            "description": "Coastal aerosol (band 1)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.4427,
+            "full_width_half_max": 0.021
+        },
+        {
+            "name": "B02",
+            "common_name": "blue",
+            "description": "Blue (band 2)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.4924,
+            "full_width_half_max": 0.066
+        },
+        {
+            "name": "B03",
+            "common_name": "green",
+            "description": "Green (band 3)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.5598,
+            "full_width_half_max": 0.036
+        },
+        {
+            "name": "B04",
+            "common_name": "red",
+            "description": "Red (band 4)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.6646,
+            "full_width_half_max": 0.031
+        },
+        {
+            "name": "B05",
+            "common_name": "rededge",
+            "description": "Red edge 1 (band 5)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.7041,
+            "full_width_half_max": 0.015
+        },
+        {
+            "name": "B06",
+            "common_name": "rededge",
+            "description": "Red edge 2 (band 6)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.7405,
+            "full_width_half_max": 0.015
+        },
+        {
+            "name": "B07",
+            "common_name": "rededge",
+            "description": "Red edge 3 (band 7)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.7828,
+            "full_width_half_max": 0.020
+        },
+        {
+            "name": "B08",
+            "common_name": "nir",
+            "description": "NIR 1 (band 8)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.8328,
+            "full_width_half_max": 0.106
+        },
+        {
+            "name": "B8A",
+            "common_name": "nir08",
+            "description": "NIR 2 (band 8A)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.8647,
+            "full_width_half_max": 0.021
+        },
+        {
+            "name": "B09",
+            "common_name": "nir09",
+            "description": "NIR 3 (band 9)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.9451,
+            "full_width_half_max": 0.020
+        },
+        {
+            "name": "B11",
+            "common_name": "swir16",
+            "description": "SWIR 1 (band 11)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.6137,
+            "full_width_half_max": 0.091
+        },
+        {
+            "name": "B12",
+            "common_name": "swir22",
+            "description": "SWIR 2 (band 12)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.2024,
+            "full_width_half_max": 0.175
+        },
+        {
+            "name": "SCL",
+            "common_name": "quality",
+            "description": "Scene classification layer",
+            "min_value": 0,
+            "max_value": 11,
+            "nodata": 0,
+            "scale": 1.0,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2"
+        ]
+    },
+    "item_assets": {
+        "B01": {
+            "title": "Band coastal",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B02": {
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B03": {
+            "title": "Band green",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B04": {
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B05": {
+            "title": "Band rededge 1",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B06": {
+            "title": "Band rededge 2",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B07": {
+            "title": "Band rededge 3",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B08": {
+            "title": "Band nir",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B09": {
+            "title": "Band Water Vapour",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B11": {
+            "title": "Band swir16",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B12": {
+            "title": "Band swir22",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B8A": {
+            "title": "Band nir08",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "SCL": {
+            "title": "Band SCL",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "B04",
+                "green": "B03",
+                "blue": "B02"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
