@@ -210,5 +210,38 @@
                 "thumbnail"
             ]
         }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ],
+        "renders": {
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "BAND7",
+                    "BAND6",
+                    "BAND5"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

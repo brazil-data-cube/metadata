@@ -105,6 +105,9 @@
         "sources": [
             "https://dataspace.copernicus.eu/",
             "https://inthub2.copernicus.eu"
+        ],
+        "bdc:applications": [
+            "BDCExplorer"
         ]
     }
 }

@@ -205,26 +205,33 @@
         "sources": [
             "http://www.inpe.br"
         ],
-        "bdc:visual": {
-            "rgb": [
-                "BAND15",
-                "BAND16",
-                "BAND14"
-            ],
-            "rescale": [
-                [
-                    0,
-                    3000
+        "renders": {
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "BAND15",
+                    "BAND14",
+                    "BAND13"
                 ],
-                [
-                    0,
-                    3000
+                "rescale": [
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ]
                 ],
-                [
-                    0,
-                    3000
-                ]
-            ]
-        }
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

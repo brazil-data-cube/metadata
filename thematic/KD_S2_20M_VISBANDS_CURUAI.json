@@ -139,5 +139,19 @@
             ],
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
+    },
+    "properties": {
+        "renders": {
+            "kd": {
+                "title": "kd",
+                "assets": [
+                    "kd"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

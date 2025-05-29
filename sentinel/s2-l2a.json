@@ -470,18 +470,40 @@
             "https://inthub2.copernicus.eu",
             "https://scihub.copernicus.eu/"
         ],
-        "bdc:visual":{
-            "tci": "TCI",
-            "rgb": [
-                "B04",
-                "B03",
-                "B02"
-            ],
-            "rescale": [
-                [0, 2000],
-                [0, 2000],
-                [0, 2000]
-            ]
-        }
+        "renders": {
+            "tci": {
+                "title": "True Color Image",
+                "assets": [
+                    "TCI"
+                ],
+                "resampling": "nearest"
+            },
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "B04",
+                    "B03",
+                    "B02"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        5000
+                    ],
+                    [
+                        0,
+                        5000
+                    ],
+                    [
+                        0,
+                        5000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

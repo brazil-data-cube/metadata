@@ -387,17 +387,34 @@
         }
     },
     "properties": {
-        "bdc:visual":{
-            "rgb": [
-                "red",
-                "green",
-                "blue"
-            ],
-            "rescale": [
-                [0, 3000],
-                [0, 3000],
-                [0, 3000]
-            ]
-        }
+        "renders": {
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "red",
+                    "green",
+                    "blue"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer",
+            "WTSS"
+        ]
     }
 }

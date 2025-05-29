@@ -379,17 +379,34 @@
         }
     },
     "properties": {
-        "bdc:visual":{
-            "rgb": [
-                "red_reflectance",
-                "NIR_reflectance",
-                "blue_reflectance"
-            ],
-            "rescale": [
-                [0, 10000],
-                [0, 10000],
-                [0, 10000]
-            ]
-        }
+        "renders": {
+            "rnb": {
+                "title": "Red NIR Blue",
+                "assets": [
+                    "red_reflectance",
+                    "NIR_reflectance",
+                    "blue_reflectance"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        10000
+                    ],
+                    [
+                        0,
+                        10000
+                    ],
+                    [
+                        0,
+                        10000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer",
+            "WTSS"
+        ]
     }
 }

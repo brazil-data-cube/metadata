@@ -141,5 +141,18 @@
             ]
         }
     },
-    "properties": {}
+    "properties": {
+        "renders": {
+            "visual": {
+                "title": "visual",
+                "assets": [
+                    "visual"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
 }
