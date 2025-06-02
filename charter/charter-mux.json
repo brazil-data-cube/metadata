@@ -160,6 +160,9 @@
         "sources": [
             "http://www.inpe.br"
         ],
+        "bdc:visual": {
+            "tci": "visual"
+        },
         "renders": {
             "visual": {
                 "title": "True Color",

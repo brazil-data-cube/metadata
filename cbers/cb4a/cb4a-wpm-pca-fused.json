@@ -138,6 +138,9 @@
         "sources": [
             "http://www.inpe.br"
         ],
+        "bdc:visual": {
+            "tci": "tci"
+        },
         "renders": {
             "tci": {
                 "title": "True Color Image",

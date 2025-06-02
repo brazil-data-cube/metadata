@@ -334,6 +334,27 @@
         }
     },
     "properties": {
+        "bdc:visual": {
+            "rgb": [
+                "BAND15",
+                "BAND14",
+                "BAND13"
+            ],
+            "rescale": [
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ]
+            ]
+        },
         "renders": {
             "rgb": {
                 "title": "True Color",

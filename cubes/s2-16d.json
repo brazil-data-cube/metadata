@@ -534,6 +534,27 @@
         }
     },
     "properties": {
+        "bdc:visual": {
+            "rgb": [
+                "B04",
+                "B03",
+                "B02"
+            ],
+            "rescale": [
+                [
+                    0,
+                    2000
+                ],
+                [
+                    0,
+                    2000
+                ],
+                [
+                    0,
+                    2000
+                ]
+            ]
+        },
         "renders": {
             "rgb": {
                 "title": "True Color",

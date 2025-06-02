@@ -140,6 +140,18 @@
         }
     },
     "properties": {
+        "bdc:visual":{
+            "rgb": [
+                "red",
+                "green",
+                "blue"
+            ],
+            "rescale": [
+                [0, 3000],
+                [0, 3000],
+                [0, 3000]
+            ]
+        },
         "renders": {
             "visual": {
                 "title": "visual",

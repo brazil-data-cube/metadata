@@ -205,6 +205,27 @@
         "sources": [
             "http://www.inpe.br"
         ],
+        "bdc:visual": {
+            "rgb": [
+                "BAND15",
+                "BAND16",
+                "BAND14"
+            ],
+            "rescale": [
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ]
+            ]
+        },
         "renders": {
             "rgb": {
                 "title": "True Color",
