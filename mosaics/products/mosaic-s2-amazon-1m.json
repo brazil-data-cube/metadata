@@ -73,7 +73,7 @@
             "max_value": 255,
             "nodata": 0,
             "scale": 1,
-            "data_type": "int8",
+            "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -89,7 +89,7 @@
             "max_value": 255,
             "nodata": 0,
             "scale": 1,
-            "data_type": "int8",
+            "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -105,7 +105,7 @@
             "max_value": 255,
             "nodata": 0,
             "scale": 1,
-            "data_type": "int8",
+            "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -140,6 +140,18 @@
             ]
         }
     },
-    "properties": {}
+    "properties": {
+        "renders": {
+            "visual": {
+                "title": "visual",
+                "assets": [
+                    "visual"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
 }
-

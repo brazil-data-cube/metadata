@@ -138,8 +138,20 @@
         "sources": [
             "http://www.inpe.br"
         ],
-        "bdc:visual":{
+        "bdc:visual": {
             "tci": "tci"
-        }
+        },
+        "renders": {
+            "tci": {
+                "title": "True Color Image",
+                "assets": [
+                    "tci"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

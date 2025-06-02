@@ -134,5 +134,19 @@
                 "thumbnail"
             ]
         }
+    },
+    "properties": {
+        "renders": {
+            "lcc": {
+                "title": "lcc",
+                "assets": [
+                    "lcc"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

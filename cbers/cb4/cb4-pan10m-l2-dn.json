@@ -174,5 +174,38 @@
                 "thumbnail"
             ]
         }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ],
+        "renders": {
+            "nrb": {
+                "title": "Nir Red Blue",
+                "assets": [
+                    "BAND4",
+                    "BAND3",
+                    "BAND2"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ],
+                    [
+                        0,
+                        3000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
     }
 }

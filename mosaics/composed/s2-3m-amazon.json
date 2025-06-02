@@ -1,12 +1,16 @@
 {
-    "id": 4,
-    "name": "S2_L2A",
-    "title": "Sentinel-2 - Level-2A - Cloud Optimized GeoTIFF",
-    "description": "Copernicus Sentinel-2/MSI Level-2A product over Brazil. Level-2A product provides orthorectified surface reflectance images (Bottom-Of-Atmosphere - BOA). This dataset is provided as Cloud Optimized GeoTIFF (COG).",
-    "temporal_composition_schema": null,
-    "composition_function": null,
-    "grid_ref_sys": "MGRS",
-    "collection_type": "collection",
+    "id": 104,
+    "name": "S2-3M-AMAZON",
+    "title": "Sentinel-2 image Mosaic of Brazilian Amazon Biome - 3 Months",
+    "description": "Sentinel-2 image mosaic of Brazilian Amazon biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 11, 8A and 4 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in june 2022 and ending in August 2022, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 15000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": "BDC_SM_V2",
+    "collection_type": "mosaic",
     "metadata": {
         "providers": [
             {
@@ -28,8 +32,7 @@
                 "processing:level": "L2A",
                 "processing:facility": "BDC/BIG",
                 "processing:software": {
-                    "bdc-collection-builder": "1.0",
-                    "rio-cogeo": "3.0"
+                    "bdc-cube-builder": "0.8.4"
                 }
             }
         ],
@@ -39,23 +42,25 @@
         }
     },
     "keywords": [
-        "sentinel",
+        "mosaic",
         "sentinel-2",
         "msi",
-        "level-2a",
-        "surface reflectance",
+        "visible wavelengths",
+        "ultraviolet wavelengths",
+        "biome",
+        "amazon",
         "cloud optimized geotiff",
         "cog",
         "earth observation",
         "brazil"
     ],
-    "is_public": true,
+    "is_public": false,
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "B04",
-        "B03",
-        "B02"
+        "B11",
+        "B8A",
+        "B04"
     ],
     "version": 1,
     "version_predecessor": null,
@@ -71,8 +76,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 60.0,
-            "resolution_y": 60.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.4427,
             "full_width_half_max": 0.021
@@ -135,8 +140,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.7041,
             "full_width_half_max": 0.015
@@ -151,8 +156,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.7405,
             "full_width_half_max": 0.015
@@ -167,8 +172,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.7828,
             "full_width_half_max": 0.020
@@ -199,8 +204,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.8647,
             "full_width_half_max": 0.021
@@ -215,8 +220,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 60.0,
-            "resolution_y": 60.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.9451,
             "full_width_half_max": 0.020
@@ -231,8 +236,8 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 1.6137,
             "full_width_half_max": 0.091
@@ -247,59 +252,11 @@
             "scale": 0.0001,
             "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": 2.2024,
             "full_width_half_max": 0.175
-        },
-        {
-            "name": "TCI",
-            "common_name": "rgb",
-            "description": "True Color Image",
-            "min_value": 0,
-            "max_value": 255,
-            "nodata": null,
-            "scale": 1.0,
-            "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 10.0,
-            "resolution_y": 10.0,
-            "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
-        },
-        {
-            "name": "AOT",
-            "common_name": "aot",
-            "description": "Aerosol Optical Thickness",
-            "min_value": 0,
-            "max_value": 1000,
-            "nodata": 0,
-            "scale": 0.001,
-            "data_type": "uint16",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 10.0,
-            "resolution_y": 10.0,
-            "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
-        },
-        {
-            "name": "WVP",
-            "common_name": "wvp",
-            "description": "Scene average water vapour",
-            "min_value": 0,
-            "max_value": 1000,
-            "nodata": 0,
-            "scale": 0.001,
-            "data_type": "uint16",
-            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 10.0,
-            "resolution_y": 10.0,
-            "resolution_unit": "Meter",
-            "center_wavelength": null,
-            "full_width_half_max": null
         },
         {
             "name": "SCL",
@@ -311,8 +268,56 @@
             "scale": 1.0,
             "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-            "resolution_x": 20.0,
-            "resolution_y": 20.0,
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "CLEAROB",
+            "common_name": "ClearOb",
+            "description": "Clear Observation Count",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "TOTALOB",
+            "common_name": "TotalOb",
+            "description": "Total Observation Count",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "PROVENANCE",
+            "common_name": "Provenance",
+            "description": "Provenance value Day of Year",
+            "min_value": 1,
+            "max_value": 366,
+            "nodata": -1,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
             "resolution_unit": "Meter",
             "center_wavelength": null,
             "full_width_half_max": null
@@ -320,22 +325,7 @@
     ],
     "summaries": {
         "platform": [
-            "sentinel-2a",
-            "sentinel-2b"
-        ],
-        "constellation": [
             "sentinel-2"
-        ],
-        "instruments": [
-            "msi"
-        ],
-        "gsd": [
-            10,
-            20,
-            60
-        ],
-        "view:off_nadir": [
-            0
         ]
     },
     "item_assets": {
@@ -423,13 +413,6 @@
                 "data"
             ]
         },
-        "AOT": {
-            "title": "Band AOT",
-            "type": "image/tiff; application=geotiff",
-            "roles": [
-                "data"
-            ]
-        },
         "SCL": {
             "title": "Band SCL",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
@@ -437,22 +420,29 @@
                 "data"
             ]
         },
-        "WVP": {
-            "title": "Band WVP",
+        "CLEAROB": {
+            "title": "Clear observation",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "TCI": {
-            "title": "Band TCI",
+        "TOTALOB": {
+            "title": "Total observation count",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
-                "overview"
+                "data"
             ]
         },
-        "PVI": {
-            "title": "PreView Image",
+        "PROVENANCE": {
+            "title": "Day of year",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
             "type": "image/png",
             "bands": {
                 "red": "B04",
@@ -465,41 +455,7 @@
         }
     },
     "properties": {
-        "sources": [
-            "https://dataspace.copernicus.eu/",
-            "https://inthub2.copernicus.eu",
-            "https://scihub.copernicus.eu/"
-        ],
-        "bdc:visual": {
-            "tci": "TCI",
-            "rgb": [
-                "B04",
-                "B03",
-                "B02"
-            ],
-            "rescale": [
-                [
-                    0,
-                    2000
-                ],
-                [
-                    0,
-                    2000
-                ],
-                [
-                    0,
-                    2000
-                ]
-            ]
-        },
         "renders": {
-            "tci": {
-                "title": "True Color Image",
-                "assets": [
-                    "TCI"
-                ],
-                "resampling": "nearest"
-            },
             "rgb": {
                 "title": "True Color",
                 "assets": [
@@ -510,22 +466,19 @@
                 "rescale": [
                     [
                         0,
-                        5000
+                        2000
                     ],
                     [
                         0,
-                        5000
+                        2000
                     ],
                     [
                         0,
-                        5000
+                        2000
                     ]
                 ],
                 "resampling": "nearest"
             }
-        },
-        "bdc:applications": [
-            "BDCExplorer"
-        ]
+        }
     }
 }

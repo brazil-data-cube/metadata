@@ -2,7 +2,7 @@
     "id": 42,
     "name": "mosaic-s2-amazon-3m",
     "title": "Sentinel-2 image Mosaic of Brazilian Amazon Biome - 3 Months",
-    "description": "Sentinel-2 image mosaic of Brazilian Amazon biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 11, 8A and 4 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in june 2022 and ending in August 2022, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 15000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
+    "description": "Sentinel-2 image mosaic of Brazilian Amazon biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 11, 8A and 4 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in june and ending in August for the years 2022 and 2024, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 30000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
     "temporal_composition_schema": {
         "step": 3,
         "unit": "month",
@@ -74,7 +74,7 @@
             "max_value": 255,
             "nodata": 0,
             "scale": 1,
-            "data_type": "int8",
+            "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -83,20 +83,20 @@
             "full_width_half_max": 0.031
         },
         {
-            "name": "B8A",
-            "common_name": "nir08",
-            "description": "NIR 2 (band 8A) resampled to 8 bits",
+            "name": "B08",
+            "common_name": "nir",
+            "description": "NIR 1 (band 8)",
             "min_value": 0,
-            "max_value": 255,
+            "max_value": 10000,
             "nodata": 0,
-            "scale": 1,
-            "data_type": "int8",
+            "scale": 0.0001,
+            "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.8647,
-            "full_width_half_max": 0.021
+            "center_wavelength": 0.8328,
+            "full_width_half_max": 0.106
         },
         {
             "name": "B11",
@@ -106,7 +106,7 @@
             "max_value": 255,
             "nodata": 0,
             "scale": 1,
-            "data_type": "int8",
+            "data_type": "uint8",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -141,5 +141,18 @@
             ]
         }
     },
-    "properties": {}
+    "properties": {
+        "renders": {
+            "visual": {
+                "title": "visual",
+                "assets": [
+                    "visual"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
 }

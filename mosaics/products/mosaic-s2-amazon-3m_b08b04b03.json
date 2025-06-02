@@ -1,15 +1,15 @@
 {
-    "id": 26,
-    "name": "mosaic-s2-cerrado-2m",
-    "title": "Sentinel-2 Image Mosaic of Brazilian Cerrado Biome - 2 Months",
-    "description": "Sentinel-2 image mosaic of Brazilian Cerrado biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 8, 4 and 3 assigned to RGB channels. The temporal composition encompasses 02-months of images, starting in November 2023 and ending in April 2024, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 14000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
+    "id": null,
+    "name": "mosaic-s2-amazon-3m",
+    "title": "Sentinel-2 image Mosaic of Brazilian Amazon Biome - 3 Months",
+    "description": "Sentinel-2 image mosaic of Brazilian Amazon biome with 10m of spatial resolution. The mosaic was prepared in support of TerraClass project. The false color composition is based on the MSI bands 08, 04 and 03 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in june 2024 and ending in August 2024, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 15000 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
     "temporal_composition_schema": {
-        "step": 2,
+        "step": 3,
         "unit": "month",
         "schema": "Continuous"
     },
     "composition_function": "Least CC First",
-    "grid_ref_sys": "BDC_SM_V2",
+    "grid_ref_sys": null,
     "collection_type": "mosaic",
     "metadata": {
         "providers": [
@@ -32,7 +32,7 @@
                 "processing:level": "L2A",
                 "processing:facility": "BDC/BIG",
                 "processing:software": {
-                    "bdc-cube-builder": "1.0"
+                    "bdc-cube-builder": "0.8.4"
                 }
             }
         ],
@@ -48,7 +48,7 @@
         "visible wavelengths",
         "ultraviolet wavelengths",
         "biome",
-        "cerrado",
+        "amazon",
         "cloud optimized geotiff",
         "cog",
         "earth observation",
@@ -58,8 +58,8 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "B04",
         "B08",
+        "B04",
         "B03"
     ],
     "version": 1,
@@ -69,12 +69,12 @@
         {
             "name": "B03",
             "common_name": "green",
-            "description": "Green (band 3) resampled to 8 bits",
+            "description": "Green (band 3)",
             "min_value": 0,
-            "max_value": 255,
+            "max_value": 10000,
             "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
+            "scale": 0.0001,
+            "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -101,12 +101,12 @@
         {
             "name": "B08",
             "common_name": "nir",
-            "description": "NIR 1 (band 8) resampled to 8 bits",
+            "description": "NIR 1 (band 8)",
             "min_value": 0,
-            "max_value": 255,
+            "max_value": 10000,
             "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
+            "scale": 0.0001,
+            "data_type": "uint16",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 10.0,
             "resolution_y": 10.0,
@@ -122,7 +122,7 @@
     },
     "item_assets": {
         "visual": {
-            "title": "False Color Composition of the mosaic. Contains Sentinel-2 Bands B04, B08 and B03.",
+            "title": "False Color Composition of the mosaic. Contains Sentinel-2 Bands B08, B04 and B03.",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
@@ -132,8 +132,8 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "B04",
-                "green": "B08",
+                "red": "B08",
+                "green": "B04",
                 "blue": "B03"
             },
             "roles": [
