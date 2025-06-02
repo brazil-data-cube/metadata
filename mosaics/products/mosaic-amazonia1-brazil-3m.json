@@ -1,5 +1,5 @@
 {
-    "id": 56,
+    "id": null,
     "name": "mosaic-amazonia1-brazil-3m",
     "title": "AMAZONIA-1/WFI Image Mosaic of Brazil - 3 Months",
     "description": "AMAZONIA-1/WFI image mosaic of Brazil with 64m of spatial resolution. The mosaic was prepared in order to demonstrate the technological capabilities of the Brazil Data Cube project tools. The false color composition is based on the WFI bands 3, 4 and 1 assigned to RGB channels. The temporal composition encompasses 03-months of images, starting in May 2024 and ending in July 2024, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 1000 scenes from existing AMAZONIA-1/WFI image collection.",
