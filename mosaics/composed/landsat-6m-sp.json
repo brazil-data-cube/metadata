@@ -169,7 +169,7 @@
             "center_wavelength": null,
             "full_width_half_max": null
         },
-	{
+        {
             "name": "DATASOURCE",
             "common_name": "datasource",
             "data_type": "uint8",
@@ -269,6 +269,27 @@
         }
     },
     "properties": {
+        "bdc:visual": {
+            "rgb": [
+                "red",
+                "green",
+                "blue"
+            ],
+            "rescale": [
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ],
+                [
+                    0,
+                    3000
+                ]
+            ]
+        },
         "renders": {
             "rgb": {
                 "title": "True Color",
