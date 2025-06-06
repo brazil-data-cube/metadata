@@ -1,16 +1,12 @@
 {
-    "id": null,
+    "id": 103,
     "name": "EtaCCDay_CMIP5",
     "title": "Eta Model - Climate Change - CMIP5 - Day",
     "description": "High-Resolution Projections of Climate Change over South America.",
-    "temporal_composition_schema": {
-        "step": 1,
-        "unit": "day",
-        "schema": "Continuous"
-    },
+    "temporal_composition_schema": {},
     "composition_function": null,
     "grid_ref_sys": null,
-    "collection_type": "cube",
+    "collection_type": "collection",
     "metadata": {
         "providers": [
             {
