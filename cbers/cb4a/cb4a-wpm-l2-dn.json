@@ -243,9 +243,9 @@
             "rgb": {
                 "title": "True Color",
                 "assets": [
-                    "BAND15",
-                    "BAND14",
-                    "BAND13"
+                    "BAND3",
+                    "BAND4",
+                    "BAND2"
                 ],
                 "rescale": [
                     [

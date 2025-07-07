@@ -279,22 +279,22 @@
             "rgb": {
                 "title": "True Color",
                 "assets": [
-                    "BAND4",
-                    "BAND3",
-                    "BAND2"
+                    "CCD1XS_BAND4",
+                    "CCD1XS_BAND3",
+                    "CCD1XS_BAND2"
                 ],
                 "rescale": [
                     [
                         0,
-                        3000
+                        255 
                     ],
                     [
                         0,
-                        3000
+                        255
                     ],
                     [
                         0,
-                        3000
+                        255
                     ]
                 ],
                 "resampling": "nearest"
