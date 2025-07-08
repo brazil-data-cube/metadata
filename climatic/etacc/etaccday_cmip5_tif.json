@@ -1129,14 +1129,14 @@
                 "data"
             ]
         },
-        "dirWind100": {
+        "dirwind100": {
             "title": "100 m Wind Direction",
             "type": "image/tiff; application=geotiff",
             "roles": [
                 "data"
             ]
         },
-        "dirWind10": {
+        "dirwind10": {
             "title": "Near-Surface Wind Direction",
             "type": "image/tiff; application=geotiff",
             "roles": [
@@ -1269,7 +1269,7 @@
                 "data"
             ]
         },
-        "tgrs": {
+        "tgrz": {
             "title": "Soil Temperature in 10-40 cm depth",
             "type": "image/tiff; application=geotiff",
             "roles": [
