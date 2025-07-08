@@ -1,6 +1,6 @@
 {
     "id": null,
-    "name": "EtaCCDay_CMIP5 - GeoTIFF",
+    "name": "EtaCCDay_CMIP5_GeoTIFF",
     "title": "Eta Model - Climate Change - CMIP5 - Day - GeoTIFF",
     "description": "High-Resolution Projections of Climate Change over South America in GeoTIFF format.",
     "temporal_composition_schema": null,
