@@ -303,7 +303,7 @@
         {
             "name": "ABI L2+ Total Precipitable Water",
             "common_name": "lwe_thickness_of_atmosphere_mass_content_of_water_vapor",
-            "description": "The Total Precipitable Water product consists of the water depth if it were condensed in the atmospheric column between approximately 300 hPa and the surface. The product is generated using a regression retrieval followed by an iterative physical retrieval that makes use of a radiative transfer model. Product data is generated both day and night".,
+            "description": "The Total Precipitable Water product consists of the water depth if it were condensed in the atmospheric column between approximately 300 hPa and the surface. The product is generated using a regression retrieval followed by an iterative physical retrieval that makes use of a radiative transfer model. Product data is generated both day and night.",
             "center_wavelength": null,
             "min_value": 0,
             "max_value": 65530,
