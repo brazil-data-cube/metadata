@@ -1,0 +1,694 @@
+{
+    "id": null,
+    "name": "GOES19-L2-PRODUCTS",
+    "title": "GOES19-LEVEL 2+ PRODUCTS",
+    "description": "The Level 2+ products contain environmental physical quantities, such as Cloud Top Height, Land Surface (Skin) Temperature, and Hurricane Intensity. Except for the Lightning Detection product, the primary source for generating the Level 2+ products are the 16 bands of ABI Level 1b Radiances product data. In addition to the ABI Level 1b data, National Weather Prediction (NWP) forecast model output data, which is received by the GOES-R series ground system several times a day, is key ancillary source data for generating several of the Level 2+ products. Furthermore, there are a few other dynamic ancillary data sets used in the generation of Level 2+ product containing information, such as current snow and ice extents, and sea surface temperature in the western hemisphere. There are nine types of Level 2+ products. There are one or more Level 2+ products of each type. The types of Level 2+ products are as follows: • Clouds • Aerosols • Atmospheric Vertical Profiles • Precipitation • Winds • Land • Ocean • Radiation • Lightning",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://www.nasa.gov/content/goes",
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "roles": [
+                    "producer"
+                ]
+            },
+            {
+                "url": "https://www.goes-r.gov/",
+                "name": "National Oceanic and Atmospheric Administration (NOAA)",
+                "roles": [
+                    "processor",
+                    "producer",
+                    "licensor"
+                ]
+            },
+            {
+                "url": "https://data.inpe.br/big/",
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ]
+            }
+        ],
+        "license": {
+            "type": "Public Domain",
+            "uri": "https://www.nesdisia.noaa.gov/policy.html"
+        }
+    },
+    "keywords": [
+        "goes",
+        "goes-19",
+        "level-2",
+        "Cloud and Moisture Imagery",
+        "Clear Sky Masks",
+        "Cloud Top Phase",
+        "Cloud Top Height",
+        "Cloud Top Pressure",
+        "Cloud Top Temperature",
+        "Cloud Optical Depth",
+        "Cloud Particle Size Distribution",
+        "Aerosol Detection",
+        "Aerosol Optical Depth",
+        "Volcanic Ash",
+        "Legacy Vertical Temperature Profile",
+        "Legacy Vertical Moisture Profile",
+        "Total Precipitable Water",
+        "Derived Stability Indices",
+        "CAPE",
+        "Lifted Index",
+        "K-index",
+        "Showalter Index",
+        "Total Totals Index",
+        "Rainfall Rate",
+        "Derived Motion Winds",
+        "Hurricane Intensity",
+        "Fire",
+        "Land Surface (Skin) Temperature",
+        "Snow Cover",
+        "Sea Surface (Skin) Temperature",
+        "Downward Shortwave Radiation: Surface",
+        "Reflected Shortwave Radiation: TOA",
+        "Lightning Detection: Flashes",
+        "Lightning Detection: Groups",
+        "Lightning Detection: Events",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": null,
+    "version_predecessor": null,
+    "version_successor": null,
+    "extent": {
+        "spatial": {
+            "bbox": [
+            [
+              -180,
+              -81.33,
+              6.3,
+              81.33
+            ]
+          ]
+        }
+    },
+    "bands": [
+        {
+            "name": "ABI L2 Clear Sky Mask",
+            "common_name": "cloud_binary_mask",
+            "description": "The Clear Sky Mask product consists of a binary cloud mask identifying pixels as 'clear or probably clear' or 'cloudy or probably cloudy'. The binary cloud mask is generated through a series of cloud detection threshold tests that key on the spatial, spectral, and temporal characteristics associated with the cloud and clear-sky states. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": 255,
+            "scale": 1,
+            "offset": 0,   
+            "data_type": "byte",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2 Cloud Top Phase",
+            "common_name": "cloud_phase_category",
+            "description": "The Cloud Top Phase product consists of cloud classification identification information for each pixel. The cloud phase categories are clear sky, liquid water, super cooled liquid water, mixed phase, ice, and unknown. The cloud phase is determined using a physical retrieval of emissivity utilizing a radiative transfer model, followed by a series of threshold tests applied to a cloud microphysical parameter derived from the calculated emissivity. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 5,
+            "nodata": 255,
+            "scale": 1,
+            "offset": 0,
+            "data_type": "byte",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Cloud Top Height",
+            "common_name": "geopotential_height_at_cloud_top",
+            "description": "The Cloud Top Height product consists of the height at the top of clouds. The product is derived using a physical retrieval composed of a radiative transfer model that calculates clear sky radiances, which is then used to compute the air temperature at cloud top. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.30520372,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Cloud Top Pressure",
+            "common_name": "air_pressure_at_cloud_top",
+            "description": "The Cloud Top Pressure product consists of the pressure at the top of clouds. The product is derived using a physical retrieval composed of a radiative transfer model that calculates clear sky radiances, which is then used to compute the air temperature at cloud top. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.01678621,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Cloud Top Temperature",
+            "common_name": "air_temperature_at_cloud_top",
+            "description": "The Cloud Top Temperature product consists of the temperature at the top of clouds. The product is derived using a physical retrieval composed of a radiative transfer model that calculates clear sky radiances, which is then used to compute the air temperature at cloud top. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00244163,
+            "offset": 180,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "K",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Cloud Optical Depth at 640 nm",
+            "common_name": "atmosphere_optical_thickness_due_to_cloud",
+            "description": "The Cloud Optical Depth product consists of pixels containing the optical thickness along an atmospheric column, which is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient, due to cloud. The product is generated using different algorithms for day and night conditions. The day algorithm treats the cloud as a single, thin homogeneous atmospheric layer inserted between two cloud-free layers, makes atmospheric corrections for the cloud-free layers, and iteratively refines a state vector by searching cloud reflectivity, cloud transmission, cloud spherical albedo, and cloud albedo look-up-tables generated by a radiative transfer model. The night algorithm relies on the dependence of spectral absorption differences, and corresponding brightness temperature differences on cloud optical properties.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00244163,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 4.0,
+            "resolution_y": 4.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Cloud Particle Size",
+            "common_name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+            "description": "The Cloud Particle Size product consists of pixels containing the effective radius of cloud liquid and ice water particles at cloud top. The product is generated using different algorithms for day and night conditions. The day algorithm treats the cloud as a single, thin homogeneous atmospheric layer inserted between two cloud-free layers, makes atmospheric corrections for the cloud-free layers, and iteratively refines a state vector by searching cloud reflectivity, cloud transmission, cloud spherical albedo, and cloud albedo look-up-tables generated by a radiative transfer model. The night algorithm relies on the dependence of spectral absorption differences, and corresponding brightness temperature differences on cloud optical properties.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00152602,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Aerosol Detection: Aerosol", "ABI L2+ Aerosol Detection: Dust", "ABI L2+ Aerosol Detection: Smoke",
+            "common_name": "effective_radius_of_cloud_condensed_water_particles_at_cloud_top",
+            "description": "The Aerosol Detection product consists of three flags for each pixel in the image, indicating the presence of aerosol and whether the type of aerosol is dust or smoke. The three flags are generated based on the results of threshold tests applied to reflectances at ABI reflective bands with central wavelengths 0.47, 0.64, 0.87, 1.38, 1.61, and 2.25 um, and brightness temperatures at ABI emissive bands with central wavelengths 3.89, 10.33, 11.19, and 12.27 um. Product data is generated during the day.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": 255,
+            "scale": 1,
+            "offset": 0,
+            "data_type": "byte",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Aerosol Optical Depth at 550 nm",
+            "common_name": "atmosphere_extinction_optical_thickness_due_to_ambient_aerosol",
+            "description": "The Aerosol Optical Depth at 550 nm product consists of pixels containing a dimensionless quantity representing the atmospheric absorption optical thickness due to ambient aerosol. The product is derived from ABI reflectance measurements through physical retrievals that utilize a lookup table of top of the atmosphere reflectance that is calculated from a radiative transfer model. The product is reported at 0.55 um, and 10 degree latitude band statistics are included for aerosol optical depth at 0.55 um. Product data is generated during the day.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00007706,
+            "offset": -0.05,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Volcanic Ash: Ash Mass Loading",
+            "common_name": "atmosphere_mass_content_of_volcanic_ash",
+            "description": "The Aerosol Optical Depth at 550 nm product consists of pixels containing a dimensionless quantity representing the atmospheric absorption optical thickness due to ambient aerosol. The product is derived from ABI reflectance measurements through physical retrievals that utilize a lookup table of top of the atmosphere reflectance that is calculated from a radiative transfer model. The product is reported at 0.55 um, and 10 degree latitude band statistics are included for aerosol optical depth at 0.55 um. Product data is generated during the day.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.45780559,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Legacy Vertical Temperature Profile provides air temperature at 101 pressure levels in the atmosphere",
+            "common_name": "air_temperature",
+            "description": "The Legacy Vertical Temperature product consists of the air temperature at 101 standard pressure levels in the atmosphere between 0.005 and 1100.0 hPa. The product is generated using a regression retrieval followed by an iterative physical retrieval that makes use of a radiative transfer model. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00236533,
+            "offset": 165,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Legacy Vertical Moisture Profile provides relative humidity at 101 pressure levels in the atmosphere",
+            "common_name": "relative_humidity",
+            "description": "The Legacy Vertical Moisture product consists of the relative humidity at 101 standard pressure levels in the atmosphere between 0.005 and 1100.0 hPa. The product is generated using a regression retrieval followed by an iterative physical retrieval that makes use of a radiative transfer model. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00001526,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,   metadata do netcdf
+            "resolution_y": 10.0,   metadata do netcdf
+            "resolution_unit": "Kilometer",   metadata do netcdf
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Total Precipitable Water",
+            "common_name": "lwe_thickness_of_atmosphere_mass_content_of_water_vapor",
+            "description": "The Total Precipitable Water product consists of the water depth if it were condensed in the atmospheric column between approximately 300 hPa and the surface. The product is generated using a regression retrieval followed by an iterative physical retrieval that makes use of a radiative transfer model. Product data is generated both day and night".,
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00152602,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Derived Stability Indices: CAPE",
+            "common_name": "atmosphere_convective_available_potential_energy_wrt_surface",
+            "description": "The Derived Stability Indices product consists of the atmosphere convective available potential energy (CAPE) with respect to the surface, the lifted index between the surface and 500 hPa, k index, showalter index, and the total totals index. The product is generated using a regression retrieval followed by an iterative physical retrieval that makes use of a radiative transfer model. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.07630093,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Rainfall Rate - Quantitative Prediction Estimate",
+            "common_name": "rainfall_rate",
+            "description": "The Rainfall Rate - Quantitative Precipitation Estimate product consists of pixels containing the rainfall rate. This product is generated by establishing statistical relationships from matching the observed cloud top brightness temperatures with rainfall occurrence and rate as derived by microwave sensors using rainfall predictors based on brightness temperatures measured in ABI emissive bands at wavelengths of 6.17, 7.34, 8.44, 11.19, and 12.27 um. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00152602,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Derived Motion Winds: wind vector’s wind speed",
+            "common_name": "wind_speed",
+            "description": "The Derived Motion Winds product consists of wind vectors containing wind speed, wind direction, pressure, and brightness temperature. The product is generated by tracking features (i.e., clouds edges for the cloudy target scenes and, in the case of clear-sky conditions, the moisture gradients) from three time sequential ABI images at bands with central wavelengths 0.64, 3.89, 6.17, 6.93, 7.34, and 11.19 um. Reflective band product data is generated during the day. Emissive band product data is generated both day and night except for the 3.89 um band, where product data is generated during night only.",
+            "center_wavelength": null,
+            "min_value": 3.0,
+            "max_value": 155.0,
+            "nodata": -999.0,
+            "scale": 0.00152602,
+            "offset": 0,
+            "data_type": "float",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Hurricane Intensity: tropical cyclone cloud region scene type when no eye present",
+            "common_name": "scene_type_of_dvorak_tropical_cyclone_cloud_region",
+            "description": "The Hurricane Intensity product consists of records containing previous and current characteristics of a tropical cyclone over its history including its maximum sustained wind speed, intensity designation, location, and key spatial features and brightness temperatures. The product is generated using the Advanced Dvorak Technique, which uses pattern recognition in the ABI image at a band with a central wavelength of 10.33 um, microwave data received from an external source, and logic and accompanying state machine derived empirically. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": -999.0,
+            "scale": 0.00152602,
+            "offset": 0,
+            "data_type": "int",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Fire – Hot Spot Characterization: Fire Mask",
+            "common_name": null,
+            "description": "The Fire – Hot Spot Characterization product consists of a fire mask identifying pixels as one of many fire, non-fire, and obstructed view categories. In addition, the product consists of fire temperature, radiative power, and area for valid fire pixels that satisfy specific criteria. This product is generated by utilizing differences in emissive bands with wavelengths 3.89 and 11.19 um to high temperature sub pixel anomalies. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 245,
+            "nodata": -99,
+            "scale": 0.00152602,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Land Surface (Skin) Temperature",
+            "common_name": "surface_temperature",
+            "description": "The Land Surface (Skin) Temperature product consists of pixels containing the skin temperatures for each ‘clear’ or ‘probably clear’ land surface pixel. This product is generated from a regression algorithm that linearly combines ABI surface emissivity data, brightness temperature, and brightness temperature differences derived from top of atmosphere radiances from ABI bands with wavelengths 11.19 and 12.27 um. Product data is generated both day and night.",
+            "center_wavelength": null,
+            "min_value": 9200,
+            "max_value": 56000,
+            "nodata": 65535,
+            "scale": 0.0025,
+            "offset": 190.0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Snow Cover, which contains fraction of pixel covered by snow",
+            "common_name": "surface_snow_area_fraction",
+            "description": "The Snow Cover product consists of pixels containing the fractional amount of snow therein. The product is generated using spectral mixture analysis with a look-up table containing spectral reflectances of individual surfaces calculated from a radiative transfer model, and also a physical retrieval utilizing a spectral library lookup table to take into account the dependency of reflectance on snow grain size, and local and solar zenith angles. Product data is generated during the day.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00001526,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Sea Surface (Skin) Temperature",
+            "common_name": "sea_surface_skin_temperature",
+            "description": "The ABI Sea Surface Temperature (SST) is calculated using a 4-band (8.44, 10.33, 11.19, and 12.27 um) non-linear SST (NLSST) regression equation with coefficients calculated using match-ups with in situ SSTs from drifting and tropical moored buoys. Hence on average, ABI SST is close to in situ (bulk) SST, but its spatial and temporal variations are representative of skin SST (to which ABI BTs are sensitive). One regression equation, and one set of regression coefficients are used across day and night, resulting in consistent and continuous SST diurnal cycle. Note that SST is reported over all water pixels, and only data with quality flag DQF=0 should be used to select clear-sky pixels.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.00244163,
+            "offset": 180,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Downward Shortwave Radiation: Surface",
+            "common_name": "surface_downwelling_shortwave_flux_in_air",
+            "description": "The Downward Shortwave Radiation: Surface product consists of pixels containing the instantaneous total shortwave irradiance (flux) received at the Earth’s surface integrated over the 0.2 to 4.0 um wavelength interval. The product is generated by retrieving broadband transmittance and reflectance over four scene types (clear sky over no snow/ice, clear sky over snow/ice, water cloud, and ice cloud). Other derived GOES-R products, aerosol optical depth, cloud top phase, cloud optical depth, cloud effective particle size, and total precipitable water, or reflectances from ABI bands with central wavelengths of 0.47, 0.64, 0.87, 1.38, 1.61, and 2.25 um are used to directly or indirectly, respectively, generate this product. Product data is generated during the day.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.02289028,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 50.0,
+            "resolution_y": 50.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+        {
+            "name": "ABI L2+ Reflected Shortwave Radiation: TOA",
+            "common_name": "toa_outgoing_shortwave_flux",
+            "description": "The Reflected Shortwave Radiation: TOA product consists of pixels containing the instantaneous total shortwave irradiance (flux) reflected at the Earth’s top of atmosphere integrated over the 0.2 to 4.0 um wavelength interval. The product is generated by retrieving broadband transmittance and reflectance over four scene types (clear sky over no snow/ice, clear sky over snow/ice, water cloud, and ice cloud). Other derived GOES-R products, aerosol optical depth, cloud top phase, cloud optical depth, cloud effective particle size, and total precipitable water, or reflectances from ABI bands with central wavelengths of 0.47, 0.64, 0.87, 1.38, 1.61, and 2.25 um are used to directly or indirectly, respectively, generate this product. Product data is generated during the day.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.01983824,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 50.0,
+            "resolution_y": 50.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+                
+        {
+            "name": "ABI L2+ Reflected Shortwave Radiation: TOA",
+            "common_name": "toa_outgoing_shortwave_flux",
+            "description": "The Lightning Detections: Events, Groups, and Flashes product consists of a hierarchy of earth-located lightning radiant energy measures including events, groups, and flashes. Lightning events are detected by the instrument. Lightning groups are a collection of one or more lightning events that satisfy temporal and spatial coincidence thresholds. Similarly, lightning flashes are a collection of one or more lightning groups that satisfy temporal and spatial coincidence thresholds. The product includes the relationship among lightning events, groups, and flashes, and the area coverage of lightning groups and flashes. The product also includes processing and data quality metadata, and satellite state and location information.",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 65530,
+            "nodata": 65535,
+            "scale": 0.01983824,
+            "offset": 0,
+            "data_type": "short",
+            "mime_type": "application/netcdf",
+            "resolution_x": 8.0,
+            "resolution_y": 8.0,
+            "resolution_unit": "Kilometer",
+            "full_width_half_max": null
+        },
+    ],
+    "summaries": {
+        "platform": [
+            "goes-19"
+        ],
+        "constellation": [
+            "goes-r"
+        ],
+        "instruments": [
+            "abi"
+        ]
+    },
+    "item_assets": {
+        "Clear Sky Mask": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Clear Sky Mask",
+            "roles": [
+                "data"
+            ]
+        },
+         "Cloud Top Phase": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Cloud Top Phase",
+            "roles": [
+                "data"
+            ]
+        },
+         "Cloud Top Height": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Cloud Top Height",
+            "roles": [
+                "data"
+            ]
+        },
+        "Cloud Top Pressure": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Cloud Top Pressure",
+            "roles": [
+                "data"
+            ]
+        },
+        "Cloud Top Temperature": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Cloud Top Temperature",
+            "roles": [
+                "data"
+            ]
+        },
+        "Cloud Optical Depth at 640 nm": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Cloud Optical Depth at 640 nm",
+            "roles": [
+                "data"
+            ]
+        },
+        "Cloud Particle Size": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Cloud Particle Size",
+            "roles": [
+                "data"
+            ]
+        },
+        "Aerosol Detection": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Aerosol Detection",
+            "roles": [
+                "data"
+            ]
+        },
+        "Aerosol Optical Depth": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Aerosol Optical Depth",
+            "roles": [
+                "data"
+            ]
+        },
+        "Volcanic Ash: Detection and Height": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Volcanic Ash: Detection and Height",
+            "roles": [
+                "data"
+            ]
+        },
+        "Legacy Vertical Temperature Profile": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Legacy Vertical Temperature Profile",
+            "roles": [
+                "data"
+            ]
+        },
+        "Legacy Vertical Moisture Profile": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Legacy Vertical Moisture Profile",
+            "roles": [
+                "data"
+            ]
+        },
+        "Total Precipitable Water": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Total Precipitable Water",
+            "roles": [
+                "data"
+            ]
+        },
+        "Derived Stability Indices": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Derived Stability Indices",
+            "roles": [
+                "data"
+            ]
+        },
+        "Rainfall Rate - Quantitative Precipitation Estimate": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Rainfall Rate - Quantitative Precipitation Estimate",
+            "roles": [
+                "data"
+            ]
+        },
+        "Derived Motion Winds": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Derived Motion Winds",
+            "roles": [
+                "data"
+            ]
+        },
+        "Hurricane Intensity": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Hurricane Intensity",
+            "roles": [
+                "data"
+            ]
+        },
+        "Fire – Hot Spot Characterization": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Fire – Hot Spot Characterization",
+            "roles": [
+                "data"
+            ]
+        },
+        "Land Surface (Skin) Temperature": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Land Surface (Skin) Temperature",
+            "roles": [
+                "data"
+            ]
+        },
+        "Snow Cover": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Snow Cover",
+            "roles": [
+                "data"
+            ]
+        },
+        "Sea Surface (Skin) Temperature": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Sea Surface (Skin) Temperature",
+            "roles": [
+                "data"
+            ]
+        },
+        "Downward Shortwave Radiation: Surface": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Downward Shortwave Radiation: Surface",
+            "roles": [
+                "data"
+            ]
+        },
+         "Reflected Shortwave Radiation: Top Of Atmosphere (TOA)": {
+            "type": "application/netcdf",
+            "title": "ABI L2 Reflected Shortwave Radiation: Top Of Atmosphere (TOA)",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ]
+    }
+}
