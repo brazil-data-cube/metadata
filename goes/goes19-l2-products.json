@@ -83,7 +83,6 @@
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
-    
     "bands": [
         {
             "name": "ABI_L2_Clear_Sky_Mask",
@@ -94,7 +93,7 @@
             "max_value": 1,
             "nodata": 255,
             "scale": 1,
-            "offset": 0,   
+            "offset": 0,
             "data_type": "uint8",
             "mime_type": "application/netcdf",
             "resolution_x": 2.0,
@@ -404,7 +403,7 @@
             "data_type": "uint16",
             "mime_type": "application/netcdf",
             "resolution_x": 10.0,
-            "resolution_y": 10.0
+            "resolution_y": 10.0,
             "resolution_unit": "Kilometer",
             "full_width_half_max": null
         },
@@ -475,7 +474,7 @@
             "resolution_y": 50.0,
             "resolution_unit": "Kilometer",
             "full_width_half_max": null
-                
+        },
         {
             "name": "ABI_L2+_Reflected_Shortwave_Radiation:_TOA",
             "common_name": "toa_outgoing_shortwave_flux",
@@ -513,14 +512,14 @@
                 "data"
             ]
         },
-         "CloudTopPhase": {
+        "CloudTopPhase": {
             "type": "application/netcdf",
             "title": "ABI L2 Cloud Top Phase",
             "roles": [
                 "data"
             ]
         },
-         "CloudTopHeight": {
+        "CloudTopHeight": {
             "type": "application/netcdf",
             "title": "ABI L2 Cloud Top Height",
             "roles": [
@@ -569,7 +568,7 @@
                 "data"
             ]
         },
-        "VolcanicAsh:DetectionandHeight": {
+        "VolcanicAsh_DetectionandHeight": {
             "type": "application/netcdf",
             "title": "ABI L2 Volcanic Ash: Detection and Height",
             "roles": [
@@ -604,7 +603,7 @@
                 "data"
             ]
         },
-        "RainfallRate-QuantitativePrecipitationEstimate": {
+        "RainfallRate_QuantitativePrecipitationEstimate": {
             "type": "application/netcdf",
             "title": "ABI L2 Rainfall Rate - Quantitative Precipitation Estimate",
             "roles": [
@@ -625,7 +624,7 @@
                 "data"
             ]
         },
-        "Fire–HotSpotCharacterization": {
+        "Fire_HotSpotCharacterization": {
             "type": "application/netcdf",
             "title": "ABI L2 Fire – Hot Spot Characterization",
             "roles": [
@@ -653,14 +652,14 @@
                 "data"
             ]
         },
-        "DownwardShortwaveRadiation:Surface": {
+        "DownwardShortwaveRadiation_Surface": {
             "type": "application/netcdf",
             "title": "ABI L2 Downward Shortwave Radiation: Surface",
             "roles": [
                 "data"
             ]
         },
-         "ReflectedShortwaveRadiation:TopOfAtmosphere(TOA)": {
+        "ReflectedShortwaveRadiation_TopOfAtmosphere(TOA)": {
             "type": "application/netcdf",
             "title": "ABI L2 Reflected Shortwave Radiation: Top Of Atmosphere (TOA)",
             "roles": [
