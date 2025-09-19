@@ -1,0 +1,131 @@
+{
+    "id": null,
+    "name": "irradiancia_glb_media_diaria",
+    "title": "Modelo GL - Radiação Solar  Descendente a Superfície  (Média Diária)",
+    "description": "Radiação Solar descendente à superfície representa a energia solar incidente na superfície terrestre. Na literatura encontram-se diversas nomenclaturas para essa variável, entre elas radiação solar global descendente à superfície, em que o termo “global” refere-se à radiação solar total, incluindo a radiação direta (que chega em linha de visada do disco solar) e a radiação difusa (radiação solar espalhada pelos gases, nuvens e aerossóis). Outra nomenclatura associada a sua unidade física (W/m2) é a Irradiância Solar global. Os dados são gerados a partir de saídas instantâneas inferidas pelo modelo GL1.2 e imagens do canal visível de satélites GOES (GOES-10, GOES-12, GOES-13, GOES-16, GOES-19). Para cada dia, as imagens instantâneas são integradas pela regra do trapézio, e com o valor final dividido por 24 horas para representar o valor médio do dia. Cada arquivo de dados diários é uma imagem que abrange a América do Sul e os oceanos adjacentes. Cada pixel da imagem indica a média diária da radiação solar.",
+    "temporal_composition_schema": {
+        "step": 1,
+        "unit": "day",
+        "schema": "Continuous"
+    },
+    "composition_function": "Custom",
+    "grid_ref_sys": null,
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://ftp.cptec.inpe.br/goes/goes19/rad_solar/irradiancia_glb_media_diaria_nc/",
+                "processing:lineage": "A Radiação Solar Descendente à Superfície (Média Diária) é gerada a partir de um processo de modelagem que utiliza as imagens instantâneas do canal visível de satélites GOES como entrada para o Modelo GL1.2. Este processo infere um conjunto de imagens instantâneas de radiação solar, a partir das quais a média diária é calculada ao longo das 24 horas. A imagem final, que abrange a América do Sul e os oceanos adjacentes, exibe valores de pixel que representam essa média, expressos em Watts por metro quadrado (W/m²).",
+                "processing:level": null,
+                "processing:facility": "DISSM/CPTEC/INPE",
+                "processing:software": null
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "gl",
+        "irradiância",
+        "goes"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "irradiância",
+            "common_name": "irradiância global média diária",
+            "description": "Média de valores de radiação solar global descendente à superfície ao longo de um dia (24 horas). Os valores de radiação são inferidos através do modelo GL1.2 e imagens do canal visível do satélite geoestacionário GOES.",
+            "min_value": 100,
+            "max_value": 5000,
+            "nodata": NaN,
+            "scale": 0.1,
+            "data_type": "uint",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.04,
+            "resolution_y": 0.04,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "lat",
+            "common_name": "Latitude",
+            "description": "Latitude.",
+            "min_value": -50,
+            "max_value": 21.96,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "uint",
+            "mime_type": "application/netcdf",
+            "resolution_x": 0.04,
+            "resolution_y": 0.04,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+            {
+            "name": "lon",
+            "common_name": "Longitude",
+            "description": "Longitude.",
+            "min_value": -28.04,
+            "max_value": 100,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "uint",
+            "mime_type": "application/netcdf",
+            "resolution_x": 0.04,
+            "resolution_y": 0.04,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "instruments": [
+            "goes/imager",
+            "goes/abi"
+        ]
+    },
+    "item_assets": {
+        "Radiação_Solar_Global_na_América_do_Sul_NetCDF": {
+            "title": "Radiação Solar Global na América do Sul - NetCDF",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "irradiancia_diaria_GeoTIFF": {
+            "title": "GL- Radiação Solar descendente à superfície (Média Diária) - GeoTIFF",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/GeoTIFF",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://ftp.cptec.inpe.br/goes/goes19/rad_solar/irradiancia_glb_media_diaria_nc/"
+        ]
+    }
+}
