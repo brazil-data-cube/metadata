@@ -1,0 +1,155 @@
+{
+    "id": null,
+    "name": "mosaic-s2-brazil-3m",
+    "title": "Sentinel-2 image Mosaic of Brazil",
+    "description": "Sentinel-2 image mosaic of Brazil with 10m of spatial resolution. It uses True color composition based on the MSI bands 04, 03 and 02 assigned to RGB channels. It's input is the 16 days Least Cloud Cover First (LCF) datacube to generate products that include january-march, april-june, july-september, october-december. More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). Images from this mosaic are also available through OGC WMS.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": "BDC_SM_V2",
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Level-2A in Cloud Optimized GeoTIFF",
+                "processing:level": "L2A",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "1.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "sentinel-2",
+        "msi",
+        "visible wavelengths",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "B04",
+        "B03",
+        "B02"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "B02",
+            "common_name": "blue",
+            "description": "Blue (band 2)",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.4924,
+            "full_width_half_max": 0.066
+        },
+        {
+            "name": "B03",
+            "common_name": "green",
+            "description": "Green (band 3) resampled to 8 bit",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.5598,
+            "full_width_half_max": 0.036
+        },
+        {
+            "name": "B04",
+            "common_name": "red",
+            "description": "Red (band 4) resampled to 8 bits",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 10.0,
+            "resolution_y": 10.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.6646,
+            "full_width_half_max": 0.031
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2"
+        ]
+    },
+    "item_assets": {
+        "visual": {
+            "title": "True Color Composition of the mosaic. Contains Sentinel-2 Bands B04, B03 and B02.",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "B04",
+                "green": "B03",
+                "blue": "B02"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "renders": {
+            "visual": {
+                "title": "visual",
+                "assets": [
+                    "visual"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
