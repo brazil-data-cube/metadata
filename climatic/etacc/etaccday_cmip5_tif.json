@@ -1,0 +1,1344 @@
+{
+    "id": null,
+    "name": "EtaCCDay_CMIP5_GeoTIFF",
+    "title": "Eta Model - Climate Change - CMIP5 - Day - GeoTIFF",
+    "description": "High-Resolution Projections of Climate Change over South America in GeoTIFF format.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "processing:lineage": "Downscaling of Climate Change Projections.",
+                "processing:level": null,
+                "processing:facility": "CPTEC/INPE",
+                "processing:software": "eta model"
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "climate change",
+        "climate index",
+        "daily",
+        "eta model",
+        "south america",
+        "projections"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "cape_0.2",
+            "common_name": "cape",
+            "description": "CAPE",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "clh_0.2",
+            "common_name": "clh",
+            "description": "High Level Cloud Fraction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cll_0.2",
+            "common_name": "cll",
+            "description": "Low Level Cloud Fraction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "clm_0.2",
+            "common_name": "clm",
+            "description": "Mid Level Cloud Fraction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "dirWind100_0.2",
+            "common_name": "dirWind100",
+            "description": "100 m Wind Direction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "dirWind10_0.2",
+            "common_name": "dirWind10",
+            "description": "Near-Surface Wind Direction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "dp2m_0.2",
+            "common_name": "dp2m",
+            "description": "Near-Surface Dewpoint Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "evspsbl_0.2",
+            "common_name": "evspsbl",
+            "description": "Evaporation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ghfl_0.2",
+            "common_name": "ghfl",
+            "description": "Ground Heat Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "hfls_0.2",
+            "common_name": "hfls",
+            "description": "Surface Upward Latent Heat Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "hfss_0.2",
+            "common_name": "hfss",
+            "description": "Surface Upward Sensible Heat Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "hurs_0.2",
+            "common_name": "hurs",
+            "description": "Near-Surface Relative Humidity",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "mrros_0.2",
+            "common_name": "mrros",
+            "description": "Surface Runoff",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "pr_0.2",
+            "common_name": "pr",
+            "description": "Precipitation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "prsn_0.2",
+            "common_name": "prsn",
+            "description": "Snowfall Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ps_0.2",
+            "common_name": "ps",
+            "description": "Surface Air Pressure",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "psl_0.2",
+            "common_name": "psl",
+            "description": "Sea Level Pressure",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rlds_0.2",
+            "common_name": "rlds",
+            "description": "Surface Downwelling Longwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rlus_0.2",
+            "common_name": "rlus",
+            "description": "Surface Upwelling Longwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rsds_0.2",
+            "common_name": "rsds",
+            "description": "Surface Downwelling Shortwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rsus_0.2",
+            "common_name": "rsus",
+            "description": "Surface Upwelling Shortwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tas_0.2",
+            "common_name": "tas",
+            "description": "Near-Surface Air Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tasmax_0.2",
+            "common_name": "tasmax",
+            "description": "Maximum Near-Surface Air Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tasmin_0.2",
+            "common_name": "tasmin",
+            "description": "Minimum Near-Surface Air Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tgrs_0.2",
+            "common_name": "tgrs",
+            "description": "Soil Temperature in 10-40 cm depth",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tgsc_0.2",
+            "common_name": "tgsc",
+            "description": "Soil Temperature in 0-10 cm depth",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ts_0.2",
+            "common_name": "ts",
+            "description": "Surface Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ussl_0.2",
+            "common_name": "ussl",
+            "description": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "uzrs_0.2",
+            "common_name": "uzrs",
+            "description": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "wind100m_0.2",
+            "common_name": "wind100m",
+            "description": "100 m Wind Speed",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "sfcwind_0.2",
+            "common_name": "sfcwind",
+            "description": "Near-Surface Wind Speed",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "evspsblpot_0.2",
+            "common_name": "evspsblpot",
+            "description": "Potential Evapotranspiration",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "mross_0.2",
+            "common_name": "mross",
+            "description": "Subsurface runoff",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.20,
+            "resolution_y": 0.20,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cape_0.05",
+            "common_name": "cape",
+            "description": "CAPE",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "clh_0.05",
+            "common_name": "clh",
+            "description": "High Level Cloud Fraction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "cll_0.05",
+            "common_name": "cll",
+            "description": "Low Level Cloud Fraction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "clm_0.05",
+            "common_name": "clm",
+            "description": "Mid Level Cloud Fraction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "dirWind100_0.05",
+            "common_name": "dirWind100",
+            "description": "100 m Wind Direction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "dirWind10_0.05",
+            "common_name": "dirWind10",
+            "description": "Near-Surface Wind Direction",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "dp2m_0.05",
+            "common_name": "dp2m",
+            "description": "Near-Surface Dewpoint Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "evspsbl_0.05",
+            "common_name": "evspsbl",
+            "description": "Evaporation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ghfl_0.05",
+            "common_name": "ghfl",
+            "description": "Ground Heat Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "hfls_0.05",
+            "common_name": "hfls",
+            "description": "Surface Upward Latent Heat Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "hfss_0.05",
+            "common_name": "hfss",
+            "description": "Surface Upward Sensible Heat Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "hurs_0.05",
+            "common_name": "hurs",
+            "description": "Near-Surface Relative Humidity",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "mrros_0.05",
+            "common_name": "mrros",
+            "description": "Surface Runoff",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "pr_0.05",
+            "common_name": "pr",
+            "description": "Precipitation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "prsn_0.05",
+            "common_name": "prsn",
+            "description": "Snowfall Flux",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ps_0.05",
+            "common_name": "ps",
+            "description": "Surface Air Pressure",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "psl_0.05",
+            "common_name": "psl",
+            "description": "Sea Level Pressure",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rlds_0.05",
+            "common_name": "rlds",
+            "description": "Surface Downwelling Longwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rlus_0.05",
+            "common_name": "rlus",
+            "description": "Surface Upwelling Longwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rsds_0.05",
+            "common_name": "rsds",
+            "description": "Surface Downwelling Shortwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "rsus_0.05",
+            "common_name": "rsus",
+            "description": "Surface Upwelling Shortwave Radiation",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tas_0.05",
+            "common_name": "tas",
+            "description": "Near-Surface Air Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tasmax_0.05",
+            "common_name": "tasmax",
+            "description": "Maximum Near-Surface Air Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tasmin_0.05",
+            "common_name": "tasmin",
+            "description": "Minimum Near-Surface Air Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tgrs_0.05",
+            "common_name": "tgrs",
+            "description": "Soil Temperature in 10-40 cm depth",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "tgsc_0.05",
+            "common_name": "tgsc",
+            "description": "Soil Temperature in 0-10 cm depth",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ts_0.05",
+            "common_name": "ts",
+            "description": "Surface Temperature",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ussl_0.05",
+            "common_name": "ussl",
+            "description": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "uzrs_0.05",
+            "common_name": "uzrs",
+            "description": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "wind100m_0.05",
+            "common_name": "wind100m",
+            "description": "100 m Wind Speed",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "sfcwind_0.05",
+            "common_name": "sfcwind",
+            "description": "Near-Surface Wind Speed",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "evspsblpot_0.05",
+            "common_name": "evspsblpot",
+            "description": "Potential Evapotranspiration",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "mross_0.05",
+            "common_name": "mross",
+            "description": "Subsurface runoff",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9999,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 0.05,
+            "resolution_y": 0.05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "item_assets": {
+        "cape": {
+            "title": "CAPE",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh": {
+            "title": "High Level Cloud Fraction",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll": {
+            "title": "Low Level Cloud Fraction",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirwind100": {
+            "title": "100 m Wind Direction",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirwind10": {
+            "title": "Near-Surface Wind Direction",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl": {
+            "title": "Evaporation",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl": {
+            "title": "Ground Heat Flux",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros": {
+            "title": "Surface Runoff",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr": {
+            "title": "Precipitation",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn": {
+            "title": "Snowfall Flux",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps": {
+            "title": "Surface Air Pressure",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl": {
+            "title": "Sea Level Pressure",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas": {
+            "title": "Near-Surface Air Temperature",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrz": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts": {
+            "title": "Surface Temperature",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m": {
+            "title": "100 m Wind Speed",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsblpot": {
+            "title": "evspsblpot",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "mross": {
+            "title": "mross",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcwind": {
+            "title": "sfcwind",
+            "type": "image/tiff; application=geotiff",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
