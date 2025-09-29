@@ -52,7 +52,7 @@
             "description": "Mean values ​​of global solar radiation descending to the surface over a day (24 hours). Radiation values ​​are inferred using the GL1.2 model and visible channel images from the geostationary satellite GOES.",
             "min_value": 100,
             "max_value": 5000,
-            "nodata": NaN,
+            "nodata": "NaN",
             "scale": 0.1,
             "data_type": "uint",
             "mime_type": "application/x-netcdf",
