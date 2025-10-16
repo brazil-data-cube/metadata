@@ -15,7 +15,7 @@ Não sabe fazer isso? Fique tranquilo que aqui vai um passo a passo:
 
 ### Acessando o GitHub
 
-primeiro de tudo, tenha uma conta no GitHub. Você pode criar uma clicando no botão signup no canto superior direito da página ou logo aqui:
+primeiro de tudo, tenha uma conta no GitHub. Você pode criar uma clicando no botão signup no canto superior direito da página:
 
 ![https://github.com/signup](docs/images/signup.png)
 
