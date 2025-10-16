@@ -85,11 +85,17 @@ Para fazer um commit, abra um terminal, navegue até o diretório do seu `fork` 
 
 Em vermelho você verá os arquivos que foram alterados.
 
+![Git status](docs/images/git_status.png)
+
 Para cada arquivo que você queira inserir no seu commit, faça o comando
 
 ```git add nome_do_arquivo```
 
+![Git add](docs/images/git_add.png)
+
 Ao fazer um o comando `git status` novamente, você notará que agora esses arquivos aparecerão em verde.
+
+![Git status 2](docs/images/git_status2.png)
 
 Para inserir o (os) arquivo (os) no commit use o comando
 
@@ -99,9 +105,13 @@ por exemplo
 
 ```git commit -m "Adição da nova coleção de dados do Satélite XYZ em reflectância de superfície"```
 
+![Git commit](docs/images/git_commit.png)
+
 Agora você pode enviar suas alterações para o seu repositório, para isso use o comando
 
 ```git push origin master```
+
+![Git push](docs/images/git_push.png)
 
 > **Tip:** Em repositórios mais recentes o termo `main` é usado ao invés de `master`.
 
@@ -113,9 +123,15 @@ Vamos submeter então as alterações para o repositório original
 
 Ao acessar a página do seu repositório (seu fork), clique na aba `Pull requests`
 
+![Abrir PR](docs/images/abrir_PR.png)
+
 Agora clique no botão verde `New pull request`
 
+![New PR](docs/images/new_pr.png)
+
 e na próxima tela no botão verde `Create pull request`
+
+![Create PR](docs/images/create_PR.png)
 
 Pronto! Seu PR está criado. Agora os mantenedores do repositório farão uma revisão no arquivo recebido. Se estiver ok ele será aceito, o que chamamos de "mergeado", no repositório principal e sua coleção será criada logo em seguida.
 
@@ -193,8 +209,11 @@ A estrutura deste documento deve seguir os seguintes campos:
     - ``roles``: (*OBRIGATORIO*) Caracteristica do *asset*: ``thumbnail``, ``overview``, ``data``, ``metadata``.
     - ``description`` (*OPCIONAL*) Descrição detalhada do *asset* e/ou como foi processado.
 
-- ``properties``: (*OPCIONAL*) Campos opcionais sem validação que podem ser incorporados no corpo do STAC.
+- ``properties``: (*OPCIONAL*) Campos opcionais sem validação que podem ser incorporados no corpo do STAC. Alguns exemplos podem ser:
 
+    - ``sources``: (*OPCIONAL*)  Sites que ajudem na compreensão do dado;
+    - ``renders``: (*OPCIONAL*) Descrição de como o dado pode ser renderizado para visualização a partir da extensão [`render`](https://github.com/stac-extensions/render).
+    - ``bdc:applications``: (*OPCIONAL*) Descreve as aplicações Brazil Data Cube (BDC) que devem ter tratamento para essa coleção, por exemplo `"BDCExplorer"` para visualização dinâmica no [BDC Explorer](https://data.inpe.br/bdc/explorer/explore);
 
 Os campos a seguir referem-se ao *collection_type* ``cube`` ou ``mosaic``:
 
