@@ -1,11 +1,10 @@
-Catálogo e Publicação de metadados de coleções
-==============================================
+# Catálogo e Publicação de metadados de coleções
 
 Este documento demonstra como preparar as coleções de metadados em documentos JSON.
 
+Este guia orienta colaboradores a criarem e publicarem novos metadados de coleções no repositório de metadados do Brazil Data Cube, seguindo o fluxo de contribuição padrão do GitHub (fork → clone → commit → pull request).
 
-Como criar e enviar os metadados de uma nova coleção
-----------------------------------------------------
+## Como criar e enviar os metadados de uma nova coleção
 
 Para criarmos uma nova coleção o primeiro passo é enviar um Pull Request para esse repositório.
 
@@ -14,33 +13,43 @@ Não sabe fazer isso? Fique tranquilo que aqui vai um passo a passo:
 > **Tip:** Se preferir você pode ver [documentação oficial do GitHub sobre fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 
-Acessando o GitHub
-++++++++++++++++++
+### Acessando o GitHub
 
 primeiro de tudo, tenha uma conta no GitHub. Você pode criar uma clicando no botão signup no canto superior direito da página ou logo aqui:
-https://github.com/signup
+![https://github.com/signup](docs/images/signup.png)
 
 Faça login na sua conta.
 
-Criando um Fork
-+++++++++++++++
+### Criando um Fork
 
-Um fork é uma cópia de um repositório que fica na sua conta, separada do original.
+Um `fork` é uma cópia de um repositório que fica na sua conta, separada do original.
 Então você pode alterar os arquivos sem medo sem afetar os arquivos originais.
 
 Para fazer um fork clique em `Fork` e na nova janela que abrir clique em `Create fork`.
 
-Agora ao acessar os seus repositórios (clicar na sua foto de perfil no canto superior direito e em `Repositories`), você terá acesso ao seu Fork
+![Fork repository](docs/images/fork_repository.png)
 
-Criando um Clone
-++++++++++++++++
+![Create fork repository](docs/images/create_fork_repository.png)
+
+Agora ao acessar os seus repositórios (clicar na sua foto de perfil no canto superior direito e em `Repositories`), você terá acesso ao seu fork.
+
+![Profile menus](docs/images/profile_menus.png)
+
+### Criando um Clone
 
 Enquanto o `fork` é uma cópia online de um repositório, o `clone` é uma cópia local, ou seja, baixada para o seu computador.
 
 Vamos criar um `clone` do nosso `fork` no seu computador.
-Para isso acesse o seu repositório `metadata` (o fork que vc criou no passo anterior), clique no botão verde `Code` e no simbolo de copiar. Isso irá copiar a url mostrada na tela.
+Para isso acesse o seu repositório `metadata` (o fork que vc criou no passo anterior).
+metadata_repository
 
-agora em um terminal em sua máquina local, navegue até o diretório onde você quer salvar a cópia do seu repositório e execute o comando:
+![Metadata Repository](docs/images/metadata_repository.png)
+
+Clique no botão verde `Code` e no simbolo de copiar. Isso irá copiar a url mostrada na tela.
+
+![Clone repository](docs/images/metadata_repository_clone.png)
+
+Agora em um terminal em sua máquina local, navegue até o diretório onde você quer salvar a cópia do seu repositório e execute o comando:
 
 ```git clone [cole aqui a url copiada]```
 
@@ -50,8 +59,9 @@ no meu caso ficou assim:
 
 Abaixo um exemplo usando o comando `mkdir` para criar um diretório, usando o comando `cd` para acessar o diretório e realizando o git clone.
 
-Criando arquivo de metadado
-+++++++++++++++++++++++++++
+![Git clone command](docs/images/git_clone_commands.png)
+
+### Criando arquivo de metadado
 
 Agora você tem o diretório em sua máquina local!
 
@@ -59,18 +69,17 @@ Você pode criar um novo arquivo de metadados.
 
 Recomendo que você copie o arquivo `sentinel/s2-l2a.json` e edite-o.
 
-Renomeie seu arquivo, mantendo-o minisculo, e lembre-se sempre de descrever seu conjunto de dados, ele será lido por pessoas que talvez não sejam especialistas nele!
+Renomeie seu arquivo, mantendo-o minúsculo, e lembre-se sempre de descrever seu conjunto de dados, ele será lido por pessoas que talvez não sejam especialistas nele!
 
 Cada campo do arquivo .json é descrito mais abaixo neste README. Veja a descrição de cada campo, faça sua edição no seu editor de texto preferido e uma vez encerrado faça um commit (descrito na próxima sessão).
 
 Em caso de dúvidas entre em contato com os mantenedores do repositório, você pode fazer isso via email ou criar uma issue no repositório fazendo sua pergunta.
 
-Fazendo um commit
-+++++++++++++++++
+### Fazendo um commit
 
-Uma vez preparado o documento JSON, você pode fazer o *commit* (salvar a versão do seu projeto) no seu *fork* e em seguite abrir um *pull-request** (PR), ou seja fazer uma solicitação para que seus novos arquivos, ou suas edições sejam aceitas no repositorio oficial dos metadados.
+Uma vez preparado o documento JSON, você pode fazer um `commit` (salvar a versão do seu projeto) no seu `fork` e em seguida abrir um `pull-request` (PR), ou seja fazer uma solicitação para que seus novos arquivos, ou suas edições sejam aceitas no repositorio oficial dos metadados.
 
-Para fazer um commit, abra um terminal, navegue até o diretório do seu *fork* do repositório e digite o comando
+Para fazer um commit, abra um terminal, navegue até o diretório do seu `fork` do repositório e digite o comando
 
 ```git status```
 
@@ -92,20 +101,27 @@ por exemplo
 
 Agora você pode enviar suas alterações para o seu repositório, para isso use o comando
 
-```git push origin main```
+```git push origin master```
 
-> **Tip:** Em alguns repositórios mais antigos o termo `master` era usado ao invés de `main`.
+> **Tip:** Em repositórios mais recentes o termo `main` é usado ao invés de `master`.
 
 Se você acessar a página do seu repositório (seu fork do repositório), notará que ele esta 1 commit a frente.
 
 Vamos submeter então as alterações para o repositório original
 
-Abrindo um Pull-Request
-+++++++++++++++++++++++
+### Abrindo um Pull-Request
 
 Ao acessar a página do seu repositório (seu fork), clique na aba `Pull requests`
 
 Agora clique no botão verde `New pull request`
+
+e na próxima tela no botão verde `Create pull request`
+
+Pronto! Seu PR está criado. Agora os mantenedores do repositório farão uma revisão no arquivo recebido. Se estiver ok ele será aceito, o que chamamos de "mergeado", no repositório principal e sua coleção será criada logo em seguida.
+
+Se forem solicitadas correções você precisará alterar o arquivo .json para corrigi-lo e uma vez terminado enviar um novo commit, ou seja usar novamente os comandos `git add`, `git commit -m "mensagem"` e `git push`. Como seu PR já esta criado, esses commits já entrarão direto no PR á existente, então você não precisa criar um novo PR.
+
+Você pode verificar a situação de um PR, acessando a [página de PR do repositório original](https://github.com/brazil-data-cube/metadata/pulls)
 
 Metadados
 ---------
