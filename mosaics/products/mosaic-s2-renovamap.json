@@ -1,7 +1,7 @@
 {
     "id": 107,
     "name": "mosaic-s2-renovamap",
-    "title": "Sentinel-2 image Mosaic of Brazil",
+    "title": "S2 RENOVAMAP Mosaic of Brazil",
     "description": "Sentinel-2 image mosaic of Brazil with 10m of spatial resolution. It uses True color composition based on the MSI bands 04, 03 and 02 assigned to RGB channels. It's input is the 16 days Least Cloud Cover First (LCF) datacube. More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing).",
     "temporal_composition_schema": {
         "step": 1,

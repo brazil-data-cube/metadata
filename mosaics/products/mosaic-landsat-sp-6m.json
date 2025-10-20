@@ -1,7 +1,7 @@
 {
     "id": 56,
     "name": "mosaic-landsat-sp-6m",
-    "title": "Landsat Image Mosaic of São Paulo State - 6 months",
+    "title": "Landsat 6M São Paulo State Mosaic",
     "description": "Earth Observation Data Cube generated from Landsat Level-2 product over Sao Paulo State extension. This dataset is provided in Cloud Optimized GeoTIFF (COG) file format. The dataset is processed with 30 meters of spatial resolution, reprojected and cropped to BDC_MD grid Version 2 (BDC_MD V2), considering a temporal compositing function of 6 months using the Least Cloud Cover First (LCF) best pixel approach.",
     "temporal_composition_schema": {
         "schema": "Continuous",
