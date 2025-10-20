@@ -1,5 +1,5 @@
 {
-    "id": null,
+    "id": 108,
     "name": "mosaic-s2-brazil-3m",
     "title": "S2 3M Mosaic",
     "description": "Sentinel-2 image mosaic of Brazil with 10m of spatial resolution. It uses True color composition based on the MSI bands 04, 03 and 02 assigned to RGB channels. It's input is the 16 days Least Cloud Cover First (LCF) datacube to generate products that include january-march, april-june, july-september, october-december. More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). Images from this mosaic are also available through OGC WMS.",
