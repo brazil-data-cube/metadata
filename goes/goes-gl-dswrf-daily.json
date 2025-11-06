@@ -1,0 +1,105 @@
+{
+    "id": null,
+    "name": "GOES-GL-DSWRF-Daily",
+    "title": "Daily mean downward shortwave radiation flux at the surface inferred by the GL1.2 model and visible channel images from GOES satellites.",
+    "description": "Downward shortwave radiation flux (DSWRF) at the surface represents the solar energy incident on the Earth's surface. Various terms for this variable are found in the literature, including global solar radiation descending to the surface, where the term 'global' refers to total solar radiation, including direct radiation (arriving in line of sight from the solar disk) and diffuse radiation (solar radiation scattered by gases, clouds, and aerosols). Another term associated with its physical unit (W/m²) is global solar irradiance. The data are generated from instantaneous outputs inferred by GL1.2 model and visible channel images from GOES satellites (GOES-10, GOES-12, GOES-13, GOES-16, GOES-19). For each day, the instantaneous images are integrated using the trapezoidal rule, and the final value is divided by 24 hours to represent the daily mean irradiance (W/m²). Each daily data file is an image covering South America and the surrounding oceans. Each pixel in the image indicates the daily mean solar radiation. References: [G-STAR/INPE - Grupo de Radiação Solar, Terrestre e Atmosférica](https://satelite.cptec.inpe.br/gstar/GSTAR_principal.html); [GL1.2 Model](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2003JD003531).",
+    "temporal_composition_schema": {
+        "step": 1,
+        "unit": "day",
+        "schema": "Continuous"
+    },
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://satelite.cptec.inpe.br/gstar/GSTAR_principal.html",
+                "processing:lineage": "The Solar Radiation Downward to the Surface (Daily mean) is generated from a modeling process that uses snapshots of the visible channel from GOES satellites as input to the GL1.2 Model. This process involves capturing a set of snapshots of solar radiation, from which the daily mean is calculated over a 24-hour period. The final image, which covers South America and the adjacent oceans, displays pixel values representing this mean, expressed in Watts per square meter (W/m²).",
+                "processing:level": null,
+                "processing:facility": "G-STAR/DISSM/INPE",
+                "processing:software": "GL1.2"
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "goes",
+        "gl model",
+        "dswrf",
+        "downward shortwave radiation flux",
+        "irradiance",
+        "solar radiation",
+        "surface",
+        "atmosphere",
+        "brazil",
+        "south america"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "dswrf_daily_mean",
+            "common_name": "surface_solar_radiation",
+            "description": "Daily mean downward shortwave radiation flux at the surface (W/m²), inferred using the GL1.2 model and GOES visible channel data.",
+            "min_value": 100,
+            "max_value": 5000,
+            "nodata": 65535,
+            "data_type": "uint16",
+            "scale": 0.1,
+            "unit": "W/m²",
+            "mime_type": "application/netcdf",
+            "resolution_x": 0.04,
+            "resolution_y": 0.04,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "goes"
+        ],
+        "instruments": [
+            "imager",
+            "abi"
+        ]
+    },
+    "item_assets": {
+        "dswrf_daily_mean": {
+            "title": "Downward Shortwave Radiation Flux at Surface (Daily Mean) - South America",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.inpe.br",
+            "https://satelite.cptec.inpe.br/gstar/GSTAR_principal.html",
+            "https://satelite.cptec.inpe.br/home/index.jsp"
+        ]
+    }
+}
