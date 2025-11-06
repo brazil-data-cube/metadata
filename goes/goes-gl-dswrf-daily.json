@@ -1,7 +1,7 @@
 {
     "id": null,
     "name": "GOES-GL-DSWRF-Daily",
-    "title": "Daily mean downward shortwave radiation flux at the surface inferred by the GL1.2 model and visible channel images from GOES satellites.",
+    "title": "GL1.2 Model - Downward Surface Solar Radiation (Daily Mean)",
     "description": "Downward shortwave radiation flux (DSWRF) at the surface represents the solar energy incident on the Earth's surface. Various terms for this variable are found in the literature, including global solar radiation descending to the surface, where the term 'global' refers to total solar radiation, including direct radiation (arriving in line of sight from the solar disk) and diffuse radiation (solar radiation scattered by gases, clouds, and aerosols). Another term associated with its physical unit (W/m²) is global solar irradiance. The data are generated from instantaneous outputs inferred by GL1.2 model and visible channel images from GOES satellites (GOES-10, GOES-12, GOES-13, GOES-16, GOES-19). For each day, the instantaneous images are integrated using the trapezoidal rule, and the final value is divided by 24 hours to represent the daily mean irradiance (W/m²). Each daily data file is an image covering South America and the surrounding oceans. Each pixel in the image indicates the daily mean solar radiation. References: [G-STAR/INPE - Grupo de Radiação Solar, Terrestre e Atmosférica](https://satelite.cptec.inpe.br/gstar/GSTAR_principal.html); [GL1.2 Model](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2003JD003531).",
     "temporal_composition_schema": {
         "step": 1,
