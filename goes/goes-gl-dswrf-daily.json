@@ -8,7 +8,7 @@
         "unit": "day",
         "schema": "Continuous"
     },
-    "composition_function": "custom",
+    "composition_function": null,
     "grid_ref_sys": null,
     "collection_type": "cube",
     "metadata": {
@@ -22,7 +22,7 @@
                     "licensor"
                 ],
                 "url": "https://satelite.cptec.inpe.br/gstar/GSTAR_principal.html",
-                "processing:lineage": "The Solar Radiation Downward to the Surface (Daily mean) is generated from a modeling process that uses snapshots of the visible channel from GOES satellites as input to the GL1.2 Model. This process involves capturing a set of snapshots of solar radiation, from which the daily mean is calculated over a 24-hour period. The final image, which covers South America and the adjacent oceans, displays pixel values ​​representing this mean, expressed in Watts per square meter (W/m²).",
+                "processing:lineage": "The Solar Radiation Downward to the Surface (Daily mean) is generated from a modeling process that uses snapshots of the visible channel from GOES satellites as input to the GL1.2 Model. This process involves capturing a set of snapshots of solar radiation, from which the daily mean is calculated over a 24-hour period. The final image, which covers South America and the adjacent oceans, displays pixel values representing this mean, expressed in Watts per square meter (W/m²).",
                 "processing:level": null,
                 "processing:facility": "G-STAR/DISSM/INPE",
                 "processing:software": "GL1.2"
@@ -35,7 +35,7 @@
     },
     "keywords": [
         "goes",
-        "GL model",
+        "gl model",
         "dswrf",
         "downward shortwave radiation flux",
         "irradiance",
