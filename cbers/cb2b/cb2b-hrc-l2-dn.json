@@ -134,7 +134,7 @@
                 "rescale": [
                     [
                         0,
-                        3000
+                        255
                     ]
                 ],
                 "resampling": "nearest"
