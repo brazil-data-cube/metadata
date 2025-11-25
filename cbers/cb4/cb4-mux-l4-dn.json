@@ -192,12 +192,6 @@
                 "metadata"
             ]
         },
-        "image_metadata": {
-            "type": "application/json",
-            "roles": [
-                "data"
-            ]
-        },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",

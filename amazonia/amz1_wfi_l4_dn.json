@@ -166,28 +166,84 @@
         },
         "BAND1_xml": {
             "type": "application/xml",
-            "title": "BAND5 xml",
+            "title": "BAND1 xml",
             "roles": [
                 "metadata"
             ]
         },
         "BAND2_xml": {
             "type": "application/xml",
-            "title": "BAND6 xml",
+            "title": "BAND2 xml",
             "roles": [
                 "metadata"
             ]
         },
         "BAND3_xml": {
             "type": "application/xml",
-            "title": "BAND7 xml",
+            "title": "BAND3 xml",
             "roles": [
                 "metadata"
             ]
         },
         "BAND4_xml": {
             "type": "application/xml",
-            "title": "BAND8 xml",
+            "title": "BAND4 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "LEFT_BAND1_xml": {
+            "type": "application/xml",
+            "title": "LEFT BAND1 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "LEFT_BAND2_xml": {
+            "type": "application/xml",
+            "title": "LEFT BAND2 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "LEFT_BAND3_xml": {
+            "type": "application/xml",
+            "title": "LEFT BAND3 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "LEFT_BAND4_xml": {
+            "type": "application/xml",
+            "title": "LEFT BAND4 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND1_xml": {
+            "type": "application/xml",
+            "title": "RIGHT BAND1 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND2_xml": {
+            "type": "application/xml",
+            "title": "RIGHT BAND2 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND3_xml": {
+            "type": "application/xml",
+            "title": "RIGHT BAND3 xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND4_xml": {
+            "type": "application/xml",
+            "title": "RIGHT BAND4 xml",
             "roles": [
                 "metadata"
             ]

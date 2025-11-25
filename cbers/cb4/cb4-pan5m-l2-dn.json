@@ -103,12 +103,6 @@
                 "metadata"
             ]
         },
-        "image_metadata": {
-            "type": "application/json",
-            "roles": [
-                "data"
-            ]
-        },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",
@@ -135,7 +129,7 @@
                 "rescale": [
                     [
                         0,
-                        3000
+                        255
                     ]
                 ],
                 "resampling": "nearest"

@@ -98,15 +98,9 @@
         },
         "BAND1_xml": {
             "type": "application/xml",
-            "title": "BAND1 lxml",
+            "title": "BAND1 xml",
             "roles": [
                 "metadata"
-            ]
-        },
-        "image_metadata": {
-            "type": "application/json",
-            "roles": [
-                "data"
             ]
         },
         "thumbnail": {

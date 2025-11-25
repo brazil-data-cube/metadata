@@ -188,10 +188,52 @@
                 "metadata"
             ]
         },
-        "image_metadata": {
-            "type": "application/json",
+        "LEFT_BAND13_xml": {
+            "type": "application/xml",
             "roles": [
-                "data"
+                "metadata"
+            ]
+        },
+        "LEFT_BAND14_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "LEFT_BAND15_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "LEFT_BAND16_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND13_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND14_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND15_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "RIGHT_BAND16_xml": {
+            "type": "application/xml",
+            "roles": [
+                "metadata"
             ]
         },
         "thumbnail": {
