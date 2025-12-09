@@ -1,0 +1,530 @@
+{
+    "id": null,
+    "name": "S3_Rrs_ACOLITE",
+    "title": "Sentinel-3 - Remote Sensing Reflectance - Cloud Optimized GeoTIFF",
+    "description": "Copernicus Sentinel-3/OLCI remote sensing reflectance (Rrs) over Brazil. Level-2A product provides orthorectified remote sensing reflectance images (Rrs). This dataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "MGRS",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of remote sensing reflectance (Rrs) in Cloud Optimized GeoTIFF using ACOLITE atmospheric correction processor",
+                "processing:level": "Rrs",
+                "processing:facility": "LabISA/INPE",
+                "processing:software": {
+                    "bdc-collection-builder": "1.0",
+                    "mapaqualy-processor": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-3",
+        "olci",
+        "remote sensing reflectance",
+        "cloud optimized geotiff",
+        "cog",
+        "acolite",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "Oa8",
+        "Oa6",
+        "Oa4"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "Oa1",
+            "common_name": "Oa1_Rrs",
+            "description": "Band 1 - Aerosol correction, improved water constituent retrieval - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.400,
+            "full_width_half_max": 0.015
+        },
+        {
+            "name": "Oa2",
+            "common_name": "Oa2_Rrs",
+            "description": "Band 2 - Yellow substance and detrital pigments (turbidity) - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.4125,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa3",
+            "common_name": "Oa3_Rrs",
+            "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.4425,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa4",
+            "common_name": "Oa4_Rrs",
+            "description": "Band 4 - High Chlorophyll - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.490,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa5",
+            "common_name": "Oa5_Rrs",
+            "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.510,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa6",
+            "common_name": "Oa6_Rrs",
+            "description": "Band 6 - Chlorophyll reference (Chlorophyll minimum) - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.560,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa7",
+            "common_name": "Oa7_Rrs",
+            "description": "Band 7 - Sediment loading - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.620,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa8",
+            "common_name": "Oa8_Rrs",
+            "description": "Band 8 - Chlorophyll (2nd Chlorophyll absorption maximum), sediment, yellow substance/vegetation- Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.665,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa9",
+            "common_name": "Oa9_Rrs",
+            "description": "Band 9 - For improved fluorescence retrieval and to better account for smile together with the bands 665 and 680 nm - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.67375,
+            "full_width_half_max": 0.0075
+        },
+        {
+            "name": "Oa10",
+            "common_name": "Oa10_Rrs",
+            "description": "Band 10 - Chlorophyll fluorescence peak, red edge - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.68125,
+            "full_width_half_max": 0.0075
+        },
+        {
+            "name": "Oa11",
+            "common_name": "Oa11_Rrs",
+            "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.70875,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa12",
+            "common_name": "Oa12_Rrs",
+            "description": "Band 12 - O2 absorption/clouds, vegetation - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.75375,
+            "full_width_half_max": 0.0075
+        },
+        {
+            "name": "Oa15",
+            "common_name": "Oa15_Rrs",
+            "description": "Band 15 - O2A used for cloud top pressure, fluorescence over land - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.7675,
+            "full_width_half_max": 0.0025
+        },
+        {
+            "name": "Oa16",
+            "common_name": "Oa16_Rrs",
+            "description": "Band 16 - Atmos. corr./aerosol corr - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.77875,
+            "full_width_half_max": 0.015
+        },
+        {
+            "name": "Oa17",
+            "common_name": "Oa17_Rrs",
+            "description": "Band 17 - Atmospheric correction/aerosol correction, clouds, pixel co-registration - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.865,
+            "full_width_half_max": 0.020
+        },
+        {
+            "name": "Oa18",
+            "common_name": "Oa18_Rrs",
+            "description": "Band 18 - Water vapour absorption reference band. Common reference band with SLSTR instrument. Vegetation monitoring - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.885,
+            "full_width_half_max": 0.010
+        },
+        {
+            "name": "Oa21",
+            "common_name": "Oa21_Rrs",
+            "description": "Band 21 - Atmospheric correction/aerosol correction - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.020,
+            "full_width_half_max": 0.040
+        },
+        {
+            "name": "TCI",
+            "common_name": "rgb",
+            "description": "True Color Image",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-3a",
+            "sentinel-3b"
+        ],
+        "constellation": [
+            "sentinel-3"
+        ],
+        "instruments": [
+            "olci"
+        ],
+        "gsd": [
+            300
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "Oa1": {
+            "title": "Band 1 - Coastal aerosol (400 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa2": {
+            "title": "Band 2 - Blue 1 (412.5 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa3": {
+            "title": "Band 3 - Blue 2 (442.5 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa4": {
+            "title": "Band 4 - Blue/green (490 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa5": {
+            "title": "Band 5 - Green 1 (510 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa6": {
+            "title": "Band 6 - Green 2 (560 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa7": {
+            "title": "Band 7 - Red 1 (620 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa8": {
+            "title": "Band 8 - Red 2 (665 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa9": {
+            "title": "Band 9 - Red edge 1 (673.75 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa10": {
+            "title": "Band 10 - Red edge 2 (681.25 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa11": {
+            "title": "Band 11 - NIR transition (708.75 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa12": {
+            "title": "Band 12 - O₂A absorption 1 (753.75 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa15": {
+            "title": "Band 15 - O₂A absorption 4 (767.5 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa16": {
+            "title": "Band 16 - NIR (778.75 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa17": {
+            "title": "Band 17 - NIR (865 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa18": {
+            "title": "Band 18 - NIR (885 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Oa21": {
+            "title": "Band 21 - SWIR (1020 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "TCI": {
+            "title": "Band TCI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "overview"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "Oa8",
+                "green": "Oa6",
+                "blue": "Oa4"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/",
+            "https://inthub2.copernicus.eu",
+            "https://scihub.copernicus.eu/"
+        ],
+        "renders": {
+            "tci": {
+                "title": "True Color Image",
+                "assets": [
+                    "TCI"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
