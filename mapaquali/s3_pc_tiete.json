@@ -1,0 +1,142 @@
+{
+    "id": null,
+    "name": "S3_FICOCIANINA_TIETE",
+    "title": "Sentinel-3 - Phycocianin - Cloud Optimized GeoTIFF",
+    "description": "Copernicus Sentinel-3/OLCI derived Phycocianin concentration over Tietê River. [Lima et al. (2025)](https://doi.org/10.1016/j.hal.2025.102836)",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "MGRS",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Phycocianin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
+                "processing:level": "WQP",
+                "processing:facility": "LabISA/INPE",
+                "processing:software": {
+                    "bdc-collection-builder": "1.0",
+                    "mapaqualy-processor": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "pc",
+        "sentinel-3",
+        "olci",
+        "phycocianin",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "PC",
+            "common_name": "Phycocianin",
+            "description": "Phycocianin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 300.0,
+            "resolution_y": 300.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-3a",
+            "sentinel-3b"
+        ],
+        "constellation": [
+            "sentinel-3"
+        ],
+        "instruments": [
+            "olci"
+        ],
+        "gsd": [
+            300
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "PC": {
+            "title": "Phycocianin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "PC",
+                "green": "PC",
+                "blue": "PC"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/",
+            "https://inthub2.copernicus.eu",
+            "https://scihub.copernicus.eu/",
+            "https://doi.org/10.1016/j.hal.2025.102836"
+        ],
+        "renders": {
+            "PC": {
+                "title": "Phycocianin Image",
+                "assets": [
+                    "PC"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ],
+        "mq:title": "S3 FICOCIANINA TIETE",
+        "platform": "Sentinel-3/OLCI",
+        "mq:sensor": "OLCI",
+        "mq:product": "FICOCIANINA",
+        "mq:location": "Tiete",
+        "mq:platform": "Sentinel-3",
+        "mq:portal_show": true
+    }
+}
