@@ -28,6 +28,7 @@
             {
                 "name": "National Institute for Space Research (INPE)",
                 "roles": [
+                    "host",
                     "processor"
                 ],
                 "url": "https://data.inpe.br/queimadas/sisam/",
@@ -35,7 +36,7 @@
             }
         ],
         "license": {
-            "type": "This dataset is released for use under the CC-BY licence",
+            "type": "This dataset is released for use under the Creative-Commons-Attribution-4.0-International-Public-License",
             "uri": "https://ads.atmosphere.copernicus.eu/disclaimer-privacy"
         }
     },
@@ -57,18 +58,6 @@
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
-    "extent": {
-        "spatial": {
-            "bbox": [
-                [
-                    0.0, 
-                    -90.0, 
-                    359.6, 
-                    90.0
-                ]
-            ]
-        }
-    },
     "bands": [
         {
             "name": "pm10",
@@ -81,10 +70,10 @@
             "scale": null,
             "offset": null,
             "data_type": "float32",
-            "mime_type": "application/grib",
+            "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "degrees",
+            "resolution_unit": "Degrees",
             "full_width_half_max": null
         },
         {
@@ -98,10 +87,10 @@
             "scale": null,
             "offset": null,
             "data_type": "float32",
-            "mime_type": "application/grib",
+            "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "degrees",
+            "resolution_unit": "Degrees",
             "full_width_half_max": null
         },
         {
@@ -115,10 +104,10 @@
             "scale": null,
             "offset": null,
             "data_type": "float32",
-            "mime_type": "application/grib",
+            "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "degrees",
+            "resolution_unit": "Degrees",
             "full_width_half_max": null
         },
         {
@@ -132,10 +121,10 @@
             "scale": null,
             "offset": null,
             "data_type": "float32",
-            "mime_type": "application/grib",
+            "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "degrees",
+            "resolution_unit": "Degrees",
             "full_width_half_max": null
         },
         {
@@ -149,10 +138,10 @@
             "scale": null,
             "offset": null,
             "data_type": "float32",
-            "mime_type": "application/grib",
+            "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "degrees",
+            "resolution_unit": "Degrees",
             "full_width_half_max": null
         },
         {
@@ -166,54 +155,25 @@
             "scale": null,
             "offset": null,
             "data_type": "float32",
-            "mime_type": "application/grib",
+            "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "degrees",
+            "resolution_unit": "Degrees",
             "full_width_half_max": null
         }
-        
     ],
     "summaries": null,
     "item_assets": {
-        "pm2p5": {
-            "type": "application/grib",
-            "title": "Particulate matter d < 2.5 µm concentration forecast — CAMS global",
+        "single_level_vars_cams_global_acf": {
+            "type": "application/wmo-GRIB2",
+            "title": "Variables Provided on a Single Fixed Level Without Vertical Structure",
             "roles": [
                 "data"
             ]
         },
-        "pm10": {
-            "type": "application/grib",
-            "title": "Particulate matter d < 10 µm concentration forecast — CAMS global",
-            "roles": [
-                "data"
-            ]
-        },
-        "co": {
-            "type": "application/grib",
-            "title": "Carbon monoxide concentration forecast — CAMS global",
-            "roles": [
-                "data"
-            ]
-        },
-        "no2": {
-            "type": "application/grib",
-            "title": "Nitrogen dioxide concentration (CAMS forecast)",
-            "roles": [
-                "data"
-            ]
-        },
-        "go3": {
-            "type": "application/grib",
-            "title": "Carbon monoxide concentration (CAMS forecast)",
-            "roles": [
-                "data"
-            ]
-        },
-        "so2": {
-            "type": "application/grib",
-            "title": "Sulphur dioxide concentration (CAMS forecast)",
+        "mult_level_vars_cams_global_acf": {
+            "type": "application/wmo-GRIB2",
+            "title": "Atmospheric Variables Provided on Multiple Vertical Levels",
             "roles": [
                 "data"
             ]
@@ -228,7 +188,7 @@
     },
     "properties": {
         "sources": [
-            "http://www.inpe.br"
+            "https://ads.atmosphere.copernicus.eu/datasets/cams-global-atmospheric-composition-forecasts"
         ]
     }
 }
