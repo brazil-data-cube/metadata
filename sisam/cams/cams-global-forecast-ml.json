@@ -71,6 +71,40 @@
     },
     "bands": [
         {
+            "name": "pm10",
+            "common_name": "PM10",
+            "description": "Mass concentration of pm10 ambient aerosol particles in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/grib",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "degrees",
+            "full_width_half_max": null
+        },
+        {
+            "name": "pm2p5",
+            "common_name": "PM2.5",
+            "description": "Mass concentration of pm2p5 ambient aerosol particles in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/grib",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "degrees",
+            "full_width_half_max": null
+        },
+        {
             "name": "co",
             "common_name": "carbon_monoxide",
             "description": "Mass fraction of carbon monoxide in air",
@@ -142,6 +176,20 @@
     ],
     "summaries": null,
     "item_assets": {
+        "pm2p5": {
+            "type": "application/grib",
+            "title": "Particulate matter d < 2.5 µm concentration forecast — CAMS global",
+            "roles": [
+                "data"
+            ]
+        },
+        "pm10": {
+            "type": "application/grib",
+            "title": "Particulate matter d < 10 µm concentration forecast — CAMS global",
+            "roles": [
+                "data"
+            ]
+        },
         "co": {
             "type": "application/grib",
             "title": "Carbon monoxide concentration forecast — CAMS global",
