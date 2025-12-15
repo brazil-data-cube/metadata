@@ -36,7 +36,7 @@
             }
         ],
         "license": {
-            "type": "This dataset is released for use under the Creative-Commons-Attribution-4.0-International-Public-License",
+            "type": "Creative-Commons-Attribution-4.0-International",
             "uri": "https://ads.atmosphere.copernicus.eu/disclaimer-privacy"
         }
     },
@@ -73,7 +73,7 @@
             "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "Degrees",
+            "resolution_unit": "Degree",
             "full_width_half_max": null
         },
         {
@@ -90,7 +90,7 @@
             "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "Degrees",
+            "resolution_unit": "Degree",
             "full_width_half_max": null
         },
         {
@@ -107,7 +107,7 @@
             "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "Degrees",
+            "resolution_unit": "Degree",
             "full_width_half_max": null
         },
         {
@@ -124,7 +124,7 @@
             "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "Degrees",
+            "resolution_unit": "Degree",
             "full_width_half_max": null
         },
         {
@@ -141,7 +141,7 @@
             "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "Degrees",
+            "resolution_unit": "Degree",
             "full_width_half_max": null
         },
         {
@@ -158,7 +158,7 @@
             "mime_type": "application/wmo-GRIB2",
             "resolution_x": 0.4,
             "resolution_y": 0.4,
-            "resolution_unit": "Degrees",
+            "resolution_unit": "Degree",
             "full_width_half_max": null
         }
     ],
