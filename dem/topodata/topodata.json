@@ -2,7 +2,7 @@
     "id": null,
     "name": "topodata",
     "title": "TOPODATA - Banco de Dados Geomorfométricos do Brasil",
-    "description": "[EN] The TOPODATA dataset provides a Brazilian collection of geomorphometric variables derived from SRTM (Shuttle Radar Topography Mission) data. Original 3-arc second (~90 m) resolution elevation data were refined to 1 arc second (~30 m) through kriging interpolation, followed by geomorphometric derivations such as slope, aspect, profile curvature, and plan curvature. Secondary products include landform classification, dividors and drainage delineation, and shaded relief (hillshade) maps. The dataset is distributed as Cloud Optimized GeoTIFF (COG) and aims to support geosciences, environmental management, territorial planning, agriculture, hydrology, and geomorphological research across Brazil.\n[PT-BR] O conjunto de dados TOPODATA reúne, em escala nacional, variáveis geomorfométricas derivadas dos dados SRTM (Shuttle Radar Topography Mission). Os dados altimétricos originais com resolução de 3 segundos de arco (~90 m) foram refinados para 1 segundo de arco (~30 m) por krigagem, e em seguida submetidos a derivações geomorfométricas, como declividade, orientação de vertentes, curvatura vertical e curvatura horizontal. Foram também produzidos derivados secundários, incluindo classificação de formas de terreno, delineamento de bacias e drenagem, e mapas de relevo sombreado (hillshade). O conjunto é distribuído no formato Cloud Optimized GeoTIFF (COG), destinado a apoiar pesquisas em geociências, gestão ambiental, planejamento territorial, agricultura, hidrologia e estudos geomorfológicos no Brasil.",
+    "description": "The TOPODATA dataset provides a Brazilian collection of geomorphometric variables derived from SRTM (Shuttle Radar Topography Mission) data. Original 3-arc second (~90 m) resolution elevation data were refined to 1 arc second (~30 m) through kriging interpolation, followed by geomorphometric derivations such as slope, aspect, profile curvature, and plan curvature. Secondary products include landform classification, dividors and drainage delineation, and shaded relief (hillshade) maps. The dataset is distributed as Cloud Optimized GeoTIFF (COG) and aims to support geosciences, environmental management, territorial planning, agriculture, hydrology, and geomorphological research across Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -53,7 +53,7 @@
         {
             "name": "ZN",
             "common_name": "Altitude",
-            "description": "[EN] Orthometric elevation above sea level, referenced to the EGM96 geoid model. Original SRTM data at 3 arc-seconds (~90 m) resolution were interpolated by kriging to 1 arc-second (~30 m). The kriging interpolation was a necessary pre-processing step to enable geomorphometric derivations. Units: meters (m).\n[PT-BR] Altitude ortométrica em relação ao nível médio do mar, referida ao modelo geoidal EGM96. Os dados originais do SRTM com resolução de 3 segundos de arco (~90 m) foram interpolados por krigagem para 1 segundo de arco (~30 m). A krigagem foi uma etapa de pré-processamento necessária para viabilizar as derivações geomorfométricas. Unidade: metros (m).",
+            "description": "Orthometric elevation above sea level, referenced to the EGM96 geoid model. Original SRTM data at 3 arc-seconds (~90 m) resolution were interpolated by kriging to 1 arc-second (~30 m). The kriging interpolation was a necessary pre-processing step to enable geomorphometric derivations. Units: meters (m).",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -69,7 +69,7 @@
         {
             "name": "SN",
             "common_name": "Declividade",
-            "description": "[EN] Slope, representing terrain steepness, calculated as the first derivative of elevation. Units: percentage (%).\n[PT-BR] Declividade, representando a inclinação do terreno, calculada como a primeira derivada da altitude. Unidade: porcentagem (%).",
+            "description": "Slope, representing terrain steepness, calculated as the first derivative of elevation. Units: percentage (%).",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -85,7 +85,7 @@
         {
             "name": "ON",
             "common_name": "Orientacao_de_vertente",
-            "description": "[EN] Aspect, or slope orientation, indicating the compass direction of maximum slope descent. Units: degrees (0°-360°).\n[PT-BR] Orientação de vertentes, indicando a direção cardeal da máxima inclinação do terreno. Unidade: graus (0°-360°).",
+            "description": "Aspect, or slope orientation, indicating the compass direction of maximum slope descent. Units: degrees (0°-360°).",
             "min_value": 0,
             "max_value": 360,
             "nodata": -9999,
@@ -101,7 +101,7 @@
         {
             "name": "VN",
             "common_name": "Curvatura_vertical",
-            "description": "[EN] Profile curvature, second-order derivative of elevation in the vertical direction, related to flow acceleration or deceleration. Units: 1/m.\n[PT-BR] Curvatura vertical, segunda derivada da altitude na direção vertical, relacionada à aceleração ou desaceleração do fluxo. Unidade: 1/m.",
+            "description": "Profile curvature, second-order derivative of elevation in the vertical direction, related to flow acceleration or deceleration. Units: 1/m.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -117,7 +117,7 @@
         {
             "name": "HN",
             "common_name": "Curvatura_horizontal",
-            "description": "[EN] Plan curvature, second-order derivative of elevation in the horizontal direction, associated with flow convergence or divergence. Units: 1/m.\n[PT-BR] Curvatura horizontal, segunda derivada da altitude na direção horizontal, associada à convergência ou divergência de fluxos. Unidade: 1/m.",
+            "description": "Plan curvature, second-order derivative of elevation in the horizontal direction, associated with flow convergence or divergence. Units: 1/m.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -133,7 +133,7 @@
         {
             "name": "RS",
             "common_name": "Relevo_sombreado",
-            "description": "[EN] Hillshade representation generated from the digital elevation model with a 45° elevation angle, 0° azimuth, and 3x vertical exaggeration. It enhances the visualization of terrain morphology for interpretation purposes. Units: relative radiance (dimensionless).\n[PT-BR] Representação de relevo sombreado (hillshade) gerada a partir do modelo digital de elevação, com ângulo de iluminação de 45° de elevação, azimute 0° e exagero vertical de 3x. Destina-se a realçar a visualização da morfologia do terreno para fins de interpretação. Unidade: radiância relativa (adimensional).",
+            "description": "Hillshade representation generated from the digital elevation model with a 45° elevation angle, 0° azimuth, and 3x vertical exaggeration. It enhances the visualization of terrain morphology for interpretation purposes. Units: relative radiance (dimensionless).",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -149,7 +149,7 @@
         {
             "name": "SA",
             "common_name": "slope_class_marques1971",
-            "description": "[EN] Slope classified into four categories: 0-3% (gentle), 3-8% (undulating), 8-20% (strong), >20% (very strong). Classification according to Marques (1971). Units: categorical classes. [PT-BR] Declividade classificada em quatro categorias: 0-3% (suave), 3-8% (ondulado), 8-20% (forte), >20% (muito forte). Classificação segundo Marques (1971). Unidade: classes categóricas.",
+            "description": "Slope classified into four categories: 0-3% (gentle), 3-8% (undulating), 8-20% (strong), >20% (very strong). Classification according to Marques (1971). Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -165,7 +165,7 @@
         {
             "name": "SB",
             "common_name": "slope_class_lepsch1991",
-            "description": "[EN] Slope classified into seven categories: A (0-2%), B (2-5%), C (5-10%), D (10-15%), E (15-45%), F (45-70%), G (>70%). Classification according to Lepsch et al. (1991). Units: categorical classes. [PT-BR] Declividade classificada em sete categorias: A (0-2%), B (2-5%), C (5-10%), D (10-15%), E (15-45%), F (45-70%), G (>70%). Classificação segundo Lepsch et al. (1991). Unidade: classes categóricas.",
+            "description": "Slope classified into seven categories: A (0-2%), B (2-5%), C (5-10%), D (10-15%), E (15-45%), F (45-70%), G (>70%). Classification according to Lepsch et al. (1991). Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -181,7 +181,7 @@
         {
             "name": "SC",
             "common_name": "slope_class_embrapa1999",
-            "description": "[EN] Slope classified into six categories: flat (0-3%), gentle undulating (3-8%), undulating (8-20%), strong undulating (20-45%), mountainous (45-75%), escarpment (>75%). Classification according to EMBRAPA (1999). Units: categorical classes. [PT-BR] Declividade classificada em seis categorias: plano (0-3%), suave ondulado (3-8%), ondulado (8-20%), forte ondulado (20-45%), montanhoso (45-75%), escarpado (>75%). Classificação segundo EMBRAPA (1999). Unidade: classes categóricas.",
+            "description": "Slope classified into six categories: flat (0-3%), gentle undulating (3-8%), undulating (8-20%), strong undulating (20-45%), mountainous (45-75%), escarpment (>75%). Classification according to EMBRAPA (1999). Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -197,7 +197,7 @@
         {
             "name": "OC",
             "common_name": "Orientacao_octantes",
-            "description": "[EN] Aspect classified into eight octants, representing slope orientation by cardinal and intercardinal directions. Units: categorical classes (octants).\n[PT-BR] Orientação de vertentes classificada em oito octantes, representando a orientação das vertentes pelas direções cardeais e colaterais. Unidade: classes categóricas (octantes).",
+            "description": "Aspect classified into eight octants, representing slope orientation by cardinal and intercardinal directions. Units: categorical classes (octants).",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -213,7 +213,7 @@
         {
             "name": "V3",
             "common_name": "Curvatura_vertical_3_classes",
-            "description": "[EN] Profile curvature classified into 3 categories: concave, planar, convex. Units: categorical classes.\n[PT-BR] Curvatura vertical classificada em 3 categorias: côncava, planar, convexa. Unidade: classes categóricas.",
+            "description": "Profile curvature classified into 3 categories: concave, planar, convex. Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -229,7 +229,7 @@
         {
             "name": "V5",
             "common_name": "Curvatura_vertical_5_classes",
-            "description": "[EN] Profile curvature classified into 5 categories: concave, slightly concave, planar, slightly convex, convex. Units: categorical classes.\n[PT-BR] Curvatura vertical classificada em 5 categorias: côncava, levemente côncava, planar, levemente convexa, convexa. Unidade: classes categóricas.",
+            "description": "Profile curvature classified into 5 categories: concave, slightly concave, planar, slightly convex, convex. Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -245,7 +245,7 @@
         {
             "name": "H3",
             "common_name": "Curvatura_horizontal_3_classes",
-            "description": "[EN] Plan curvature classified into 3 categories: convergent, planar, divergent. Units: categorical classes.\n[PT-BR] Curvatura horizontal classificada em 3 categorias: convergente, planar, divergente. Unidade: classes categóricas.",
+            "description": "Plan curvature classified into 3 categories: convergent, planar, divergent. Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -261,7 +261,7 @@
         {
             "name": "H5",
             "common_name": "Curvatura_horizontal_5_classes",
-            "description": "[EN] Plan curvature classified into 5 categories: strongly convergent, convergent, planar, divergent, strongly divergent. Units: categorical classes.\n[PT-BR] Curvatura horizontal classificada em 5 categorias: fortemente convergente, convergente, planar, divergente, fortemente divergente. Unidade: classes categóricas.",
+            "description": "Plan curvature classified into 5 categories: strongly convergent, convergent, planar, divergent, strongly divergent. Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -277,7 +277,7 @@
         {
             "name": "FT",
             "common_name": "Forma_de_terreno",
-            "description": "[EN] Landform classification derived from the combined analysis of profile curvature (VN) and plan curvature (HN). This product synthesizes terrain morphology into categorical classes (e.g., convex tops, linear slopes, concave valleys), supporting geomorphological mapping and land evaluation. Units: categorical classes. [PT-BR] Classificação de formas de terreno obtida a partir da análise combinada da curvatura vertical (VN) e da curvatura horizontal (HN). Este produto sintetiza a morfologia do relevo em classes categóricas (ex.: topos convexos, vertentes lineares, vales côncavos), apoiando o mapeamento geomorfológico e a avaliação de terras. Unidade: classes categóricas.",
+            "description": "Landform classification derived from the combined analysis of profile curvature (VN) and plan curvature (HN). This product synthesizes terrain morphology into categorical classes (e.g., convex tops, linear slopes, concave valleys), supporting geomorphological mapping and land evaluation. Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
@@ -293,7 +293,7 @@
         {
             "name": "DD",
             "common_name": "Divisores_e_talvegues",
-            "description": "[EN] Drainage divides and thalwegs derived from second-order derivatives of elevation to support watershed delineation. Units: categorical classes.\n[PT-BR] Divisores de água e talvegues derivados de segundas derivadas da altitude para apoiar o delineamento de bacias hidrográficas. Unidade: classes categóricas.",
+            "description": "Drainage divides and thalwegs derived from second-order derivatives of elevation to support watershed delineation. Units: categorical classes.",
             "min_value": null,
             "max_value": null,
             "nodata": -9999,
