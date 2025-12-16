@@ -1,0 +1,458 @@
+{
+    "id": null,
+    "name": "topodata_bundle",
+    "title": "TOPODATA Bundle - Banco de Dados Geomorfométricos do Brasil",
+    "description": "The TOPODATA dataset provides a Brazilian collection of geomorphometric variables derived from SRTM (Shuttle Radar Topography Mission) data. Original 3-arc second (~90 m) resolution elevation data were refined to 1 arc second (~30 m) through kriging interpolation, followed by geomorphometric derivations such as slope, aspect, profile curvature, and plan curvature. Secondary products include landform classification, dividors and drainage delineation, and shaded relief (hillshade) maps. The dataset is distributed as Cloud Optimized GeoTIFF (COG) and aims to support geosciences, environmental management, territorial planning, agriculture, hydrology, and geomorphological research across Brazil.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "NASA/JPL (SRTM)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://science.jpl.nasa.gov/projects/srtm/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of TOPODATA (refinement and geomorphometric derivations)",
+                "processing:facility": "INPE",
+                "processing:software": "Idrisi 2.0"
+            }
+        ],
+        "license": {
+            "type": "CC-BY-4.0",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "dem",
+        "topodata",
+        "geomorphometry",
+        "srtm",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "ZN",
+            "common_name": "Altitude",
+            "description": "Orthometric elevation above sea level, referenced to the EGM96 geoid model. Original SRTM data at 3 arc-seconds (~90 m) resolution were interpolated by kriging to 1 arc-second (~30 m). The kriging interpolation was a necessary pre-processing step to enable geomorphometric derivations. Units: meters (m).",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SN",
+            "common_name": "Declividade",
+            "description": "Slope, representing terrain steepness, calculated as the first derivative of elevation. Units: percentage (%).",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "ON",
+            "common_name": "Orientacao_de_vertente",
+            "description": "Aspect, or slope orientation, indicating the compass direction of maximum slope descent. Units: degrees (0°-360°).",
+            "min_value": 0,
+            "max_value": 360,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "VN",
+            "common_name": "Curvatura_vertical",
+            "description": "Profile curvature, second-order derivative of elevation in the vertical direction, related to flow acceleration or deceleration. Units: 1/m.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "HN",
+            "common_name": "Curvatura_horizontal",
+            "description": "Plan curvature, second-order derivative of elevation in the horizontal direction, associated with flow convergence or divergence. Units: 1/m.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "RS",
+            "common_name": "Relevo_sombreado",
+            "description": "Hillshade representation generated from the digital elevation model with a 45° elevation angle, 0° azimuth, and 3x vertical exaggeration. It enhances the visualization of terrain morphology for interpretation purposes. Units: relative radiance (dimensionless).",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SA",
+            "common_name": "slope_class_marques1971",
+            "description": "Slope classified into four categories: 0-3% (gentle), 3-8% (undulating), 8-20% (strong), >20% (very strong). Classification according to Marques (1971). Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SB",
+            "common_name": "slope_class_lepsch1991",
+            "description": "Slope classified into seven categories: A (0-2%), B (2-5%), C (5-10%), D (10-15%), E (15-45%), F (45-70%), G (>70%). Classification according to Lepsch et al. (1991). Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "SC",
+            "common_name": "slope_class_embrapa1999",
+            "description": "Slope classified into six categories: flat (0-3%), gentle undulating (3-8%), undulating (8-20%), strong undulating (20-45%), mountainous (45-75%), escarpment (>75%). Classification according to EMBRAPA (1999). Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "OC",
+            "common_name": "Orientacao_octantes",
+            "description": "Aspect classified into eight octants, representing slope orientation by cardinal and intercardinal directions. Units: categorical classes (octants).",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "V3",
+            "common_name": "Curvatura_vertical_3_classes",
+            "description": "Profile curvature classified into 3 categories: concave, planar, convex. Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "V5",
+            "common_name": "Curvatura_vertical_5_classes",
+            "description": "Profile curvature classified into 5 categories: concave, slightly concave, planar, slightly convex, convex. Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "H3",
+            "common_name": "Curvatura_horizontal_3_classes",
+            "description": "Plan curvature classified into 3 categories: convergent, planar, divergent. Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "H5",
+            "common_name": "Curvatura_horizontal_5_classes",
+            "description": "Plan curvature classified into 5 categories: strongly convergent, convergent, planar, divergent, strongly divergent. Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "FT",
+            "common_name": "Forma_de_terreno",
+            "description": "Landform classification derived from the combined analysis of profile curvature (VN) and plan curvature (HN). This product synthesizes terrain morphology into categorical classes (e.g., convex tops, linear slopes, concave valleys), supporting geomorphological mapping and land evaluation. Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "DD",
+            "common_name": "Divisores_e_talvegues",
+            "description": "Drainage divides and thalwegs derived from second-order derivatives of elevation to support watershed delineation. Units: categorical classes.",
+            "min_value": null,
+            "max_value": null,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 0.000277778,
+            "resolution_y": 0.000277778,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "srtm"
+        ],
+        "constellation": [
+            null
+        ],
+        "instruments": [
+            "insar"
+        ],
+        "gsd": [
+            30
+        ],
+        "view:off_nadir": [
+            null
+        ]
+    },
+    "item_assets": {
+        "ZN": {
+            "title": "Altitude",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "SN": {
+            "title": "Declividade",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ON": {
+            "title": "Orientacao_de_vertente",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "VN": {
+            "title": "Curvatura_vertical",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "HN": {
+            "title": "Curvatura_horizontal",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "SA": {
+            "title": "slope_class_marques1971",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "SB": {
+            "title": "slope_class_lepsch1991",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "SC": {
+            "title": "slope_class_embrapa1999",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OC": {
+            "title": "Orientacao_octantes",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "V3": {
+            "title": "Curvatura_vertical_3_classes",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "V5": {
+            "title": "Curvatura_vertical_5_classes",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "H3": {
+            "title": "Curvatura_horizontal_3_classes",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "H5": {
+            "title": "Curvatura_horizontal_5_classes",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "FT": {
+            "title": "Forma_de_terreno",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "RS": {
+            "title": "Relevo_sombreado",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "DD": {
+            "title": "Divisores_e_talvegues",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "RS",
+                "green": "RS",
+                "blue": "RS"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.dsr.inpe.br/topodata/"
+        ]
+    }
+}
