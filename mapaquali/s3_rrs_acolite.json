@@ -53,17 +53,17 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "Oa8",
-        "Oa6",
-        "Oa4"
+        "Oa08",
+        "Oa06",
+        "Oa04"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "Oa1",
-            "common_name": "Oa1_Rrs",
+            "name": "Oa01",
+            "common_name": "Oa01_Rrs",
             "description": "Band 1 - Aerosol correction, improved water constituent retrieval - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -78,8 +78,8 @@
             "full_width_half_max": 0.015
         },
         {
-            "name": "Oa2",
-            "common_name": "Oa2_Rrs",
+            "name": "Oa02",
+            "common_name": "Oa02_Rrs",
             "description": "Band 2 - Yellow substance and detrital pigments (turbidity) - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -94,8 +94,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa3",
-            "common_name": "Oa3_Rrs",
+            "name": "Oa03",
+            "common_name": "Oa03_Rrs",
             "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -110,8 +110,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa4",
-            "common_name": "Oa4_Rrs",
+            "name": "Oa04",
+            "common_name": "Oa04_Rrs",
             "description": "Band 4 - High Chlorophyll - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -126,8 +126,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa5",
-            "common_name": "Oa5_Rrs",
+            "name": "Oa05",
+            "common_name": "Oa05_Rrs",
             "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -142,8 +142,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa6",
-            "common_name": "Oa6_Rrs",
+            "name": "Oa06",
+            "common_name": "Oa06_Rrs",
             "description": "Band 6 - Chlorophyll reference (Chlorophyll minimum) - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -158,8 +158,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa7",
-            "common_name": "Oa7_Rrs",
+            "name": "Oa07",
+            "common_name": "Oa07_Rrs",
             "description": "Band 7 - Sediment loading - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -174,8 +174,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa8",
-            "common_name": "Oa8_Rrs",
+            "name": "Oa08",
+            "common_name": "Oa08_Rrs",
             "description": "Band 8 - Chlorophyll (2nd Chlorophyll absorption maximum), sediment, yellow substance/vegetation- Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -190,8 +190,8 @@
             "full_width_half_max": 0.010
         },
         {
-            "name": "Oa9",
-            "common_name": "Oa9_Rrs",
+            "name": "Oa09",
+            "common_name": "Oa09_Rrs",
             "description": "Band 9 - For improved fluorescence retrieval and to better account for smile together with the bands 665 and 680 nm - Rrs - ACOLITE",
             "min_value": 0,
             "max_value": 1,
@@ -334,7 +334,7 @@
             "full_width_half_max": 0.040
         },
         {
-            "name": "TCI",
+            "name": "rgb",
             "common_name": "rgb",
             "description": "True Color Image",
             "min_value": 0,
@@ -369,63 +369,63 @@
         ]
     },
     "item_assets": {
-        "Oa1": {
+        "Oa01": {
             "title": "Band 1 - Coastal aerosol (400 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa2": {
+        "Oa02": {
             "title": "Band 2 - Blue 1 (412.5 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa3": {
+        "Oa03": {
             "title": "Band 3 - Blue 2 (442.5 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa4": {
+        "Oa04": {
             "title": "Band 4 - Blue/green (490 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa5": {
+        "Oa05": {
             "title": "Band 5 - Green 1 (510 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa6": {
+        "Oa06": {
             "title": "Band 6 - Green 2 (560 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa7": {
+        "Oa07": {
             "title": "Band 7 - Red 1 (620 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa8": {
+        "Oa08": {
             "title": "Band 8 - Red 2 (665 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
-        "Oa9": {
+        "Oa09": {
             "title": "Band 9 - Red edge 1 (673.75 nm) - Remote Sensing Reflectance (Rrs)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
@@ -488,8 +488,8 @@
                 "data"
             ]
         },
-        "TCI": {
-            "title": "Band TCI",
+        "rgb": {
+            "title": "Band RGB",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "overview"
@@ -499,9 +499,9 @@
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "Oa8",
-                "green": "Oa6",
-                "blue": "Oa4"
+                "red": "Oa08",
+                "green": "Oa06",
+                "blue": "Oa04"
             },
             "roles": [
                 "thumbnail"
@@ -515,10 +515,10 @@
             "https://scihub.copernicus.eu/"
         ],
         "renders": {
-            "tci": {
+            "rgb": {
                 "title": "True Color Image",
                 "assets": [
-                    "TCI"
+                    "rgb"
                 ],
                 "resampling": "nearest"
             }
@@ -528,3 +528,4 @@
         ]
     }
 }
+
