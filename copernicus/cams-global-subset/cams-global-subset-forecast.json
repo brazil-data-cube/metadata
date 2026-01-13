@@ -1,0 +1,194 @@
+{
+    "id": null,
+    "name": "cams-global-subset-acf",
+    "title": "CAMS Global Subset Atmospheric Composition Forecasts",
+    "description": "CAMS produces global forecasts for atmospheric composition twice a day. The forecasts consist of more than 50 chemical species (e.g. ozone, nitrogen dioxide, carbon monoxide) and seven different types of aerosol (desert dust, sea salt, organic matter, black carbon, sulphate, nitrate and ammonium aerosol). In addition, several meteorological variables are available as well. The initial conditions of each forecast are obtained by combining a previous forecast with current satellite observations through a process called data assimilation. This best estimate of the state of the atmosphere at the initial forecast time step, called the analysis, provides a globally complete and consistent dataset allowing for estimates at locations where observation data coverage is low or for atmospheric pollutants for which no direct observations are available. The forecast itself uses a model of the atmosphere based on the laws of physics and chemistry to determine the evolution of the concentrations of all species over time for the next five days. Apart from the required initial state, it also uses inventory-based or observation-based emission estimates as a boundary condition at the surface. The catalog provided here does not include all variables available in CAMS; instead, it offers a selected subset of variables.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://www.ecmwf.int/",
+                "name": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+                "roles": [
+                    "producer"
+                ]
+            },
+            {
+                "url": "https://atmosphere.copernicus.eu/",
+                "name": "Copernicus Atmosphere Monitoring Service (CAMS)",
+                "roles": [
+                    "processor",
+                    "producer",
+                    "licensor"
+                ]
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/queimadas/sisam/",
+                "processing:facility": "SISAM"
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://ads.atmosphere.copernicus.eu/disclaimer-privacy"
+        }
+    },
+    "keywords": [
+        "cams",
+        "atmospheric-composition",
+        "global-forecast",
+        "chemical-species",
+        "aerosols",
+        "data-assimilation",
+        "meteorological-variables",
+        "gridded-data",
+        "forecast-model",
+        "earth-system"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "pm10",
+            "common_name": "PM10",
+            "description": "Mass concentration of pm10 ambient aerosol particles in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "Degree",
+            "full_width_half_max": null
+        },
+        {
+            "name": "pm2p5",
+            "common_name": "PM2.5",
+            "description": "Mass concentration of pm2p5 ambient aerosol particles in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "Degree",
+            "full_width_half_max": null
+        },
+        {
+            "name": "co",
+            "common_name": "carbon_monoxide",
+            "description": "Mass fraction of carbon monoxide in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "Degree",
+            "full_width_half_max": null
+        },
+        {
+            "name": "no2",
+            "common_name": "nitrogen_dioxide",
+            "description": "Mass fraction of nitrogen dioxide in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "Degree",
+            "full_width_half_max": null
+        },
+        {
+            "name": "go3",
+            "common_name": "ozone",
+            "description": "Mass fraction of ozone in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "Degree",
+            "full_width_half_max": null
+        },
+        {
+            "name": "so2",
+            "common_name": "sulphur_dioxide",
+            "description": "Mass fraction of sulfur dioxide in air",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": null,
+            "offset": null,
+            "data_type": "float32",
+            "mime_type": "application/x-netcdf",
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
+            "resolution_unit": "Degree",
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": null,
+    "item_assets": {
+        "single_level_vars_cams_global_acf": {
+            "type": "application/x-netcdf",
+            "title": "Variables Provided on a Single Fixed Level Without Vertical Structure",
+            "roles": [
+                "data"
+            ]
+        },
+        "mult_level_vars_cams_global_acf": {
+            "type": "application/x-netcdf",
+            "title": "Atmospheric Variables Provided on Multiple Vertical Levels",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://ads.atmosphere.copernicus.eu/datasets/cams-global-atmospheric-composition-forecasts"
+        ]
+    }
+}
