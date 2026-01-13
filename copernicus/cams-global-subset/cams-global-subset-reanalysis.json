@@ -162,14 +162,14 @@
     ],
     "summaries": null,
     "item_assets": {
-        "single_level_reanalysis_vars_cams_global_acf": {
+        "cams_global_single_level_reanalysis_vars": {
             "type": "application/x-netcdf",
             "title": "Variables Provided on a Single Fixed Level Without Vertical Structure",
             "roles": [
                 "data"
             ]
         },
-        "mult_level_reanalysis_vars_cams_global_acf": {
+        "cams_global_multi_level_reanalysis_vars": {
             "type": "application/x-netcdf",
             "title": "Atmospheric Variables Provided on Multiple Vertical Levels",
             "roles": [
