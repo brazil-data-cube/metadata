@@ -1,0 +1,135 @@
+{
+    "id": null,
+    "name": "MODISA-OCSMART-CHL-DAILY",
+    "title": "MODIS-Aqua Daily Chlorophyll-a - OC-SMART AC",
+    "description": "The MODIS-Aqua daily Chlorophyll-a concentration (CHL, measured in mg·m-3) utilizes daily data from the MODIS sensor onboard NASA's Aqua satellite (MODIS-Aqua). This data has a nominal resolution of 1 km at nadir and is atmospherically corrected using the Ocean Color - Simultaneous Marine and Aerosol Retrieval Tool (OC-SMART) (FAN et al., 2021). The CHL estimates are obtained from daily MODIS-Aqua remote sensing reflectance via the Combination Of Neural Network models in Estimating Chlorophyll-a over Turbid and Clear Waters (CONNECT) (TRAN et al., 2025). The daily CHL products are the mosaic of several images of CHL estimates obtained for the same day and merged into daily composites utilizing the SNAP mosaicking tool.",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 1,
+        "unit": "day"
+    },
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "url": "https://oceancolor.gsfc.nasa.gov/",
+                "roles": [
+                    "producer"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily chlorophyll-a concentration estimatives based on CONNECT Neural Network models from MODIS-Aqua earth observation satellite."
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "url": "https://data.inpe.br/big/",
+                "roles": [
+                    "processor",
+                    "host"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily chlorophyll-a concentration estimatives based on CONNECT Neural Network models from MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP": "10.0"
+                }
+            },
+            {
+                "name": "Laboratoire d'Océanologie et de Géosciences",
+                "url": "https://log.cnrs.fr/recherche",
+                "roles": [
+                    "processor"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily remote sensing reflectance estimatives based on MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP": "10.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Zero (CC0)",
+            "uri": "https://oceancolor.gsfc.nasa.gov/data/10.5067/AQUA/MODIS/L2/OC/2022.0/"
+        }
+    },
+    "keywords": [
+        "modis",
+        "aqua",
+        "level-3",
+        "chlorophyll-a",
+        "chl",
+        "ocean color",
+        "observation",
+        "daily",
+        "surface",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "CHL",
+            "common_name": "Chl-a",
+            "description": "Chlorophyll-a concentration",
+            "center_wavelength": null,
+            "min_value": 0,
+            "max_value": 500,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "aqua"
+        ],
+        "constellation": [
+            "modis"
+        ],
+        "instruments": [
+            "modis"
+        ]
+    },
+    "item_assets": {
+        "CHL": {
+            "type": "application/netcdf",
+            "title": "Chlorophyll-a concentration",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br",
+            "https://seadas.gsfc.nasa.gov/",
+            "http://www.rtatmocn.com/oc-smart/",
+            "https://github.com/manhtranduy/Chl-CONNECT/"
+        ]
+    }
+}
