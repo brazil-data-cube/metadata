@@ -1,0 +1,293 @@
+{
+    "id": null,
+    "name": "landsat-tsirf-bimonthly",
+    "title": "Landsat TSIRF bimonthly",
+    "description": "Brazil, cloud-free, and reconstructed historical Landsat spectral bands are provided at a spatial resolution of 30 meters and temporal resolution of bimonthly intervals (six images per year) from 1997 onwards. The dataset was generated using the GLAD Landsat Analysis Ready Data version 2 as the primary input for temporal aggregation and the imputation of missing values. Detailed information on the data processing methodology in [Consoli et al., 2024](https://peerj.com/articles/18585/). The collection provides global mosaics for all Landsat bands (RGB, NIR, SWIR-1, SWIR-2 & Thermal) as Cloud Optimized GeoTIFF (COG).",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 2,
+        "unit": "month"
+    },
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "United States Geological Survey (USGS)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "CC-BY-4.0",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "platform": {
+            "code": [
+                "Landsat-4",
+                "Landsat-5",
+                "Landsat-7",
+                "Landsat-8",
+                "Landsat-9"
+            ],
+            "instruments": [
+                "TM",
+                "ETM",
+                "OLI",
+                "TIRS",
+                "OLI-2",
+                "TIRS-2"
+            ]
+        }
+    },
+    "keywords": [
+        "landsat",
+        "oli",
+        "tirs",
+        "etm",
+        "tm",
+        "collection-2",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "summaries": {
+        "platform": [
+            "Landsat-4",
+            "Landsat-5",
+            "Landsat-7",
+            "Landsat-8",
+            "Landsat-9"
+        ],
+        "instruments": [
+            "tm",
+            "etm",
+            "oli",
+            "tirs",
+            "oli-2",
+            "tirs-2"
+        ]
+    },
+    "is_public": true,
+    "is_available": true,
+    "version": 1,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "green",
+        "blue"
+    ],
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "blue",
+            "common_name": "blue",
+            "description": "Visible blue",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "green",
+            "common_name": "green",
+            "description": "Visible green",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "description": "Visible red",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.65,
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "nir",
+            "common_name": "nir",
+            "description": "Near infrared",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.87,
+            "full_width_half_max": 0.03
+        },
+        {
+            "name": "swir1",
+            "common_name": "swir1",
+            "description": "Short-wave infrared",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.61,
+            "full_width_half_max": 0.09
+        },
+        {
+            "name": "swir2",
+            "common_name": "swir2",
+            "description": "Short-wave infrared",
+            "min_value": 1,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.2,
+            "full_width_half_max": 0.19
+        },
+        {
+            "name": "clear",
+            "common_name": "quality",
+            "description": "",
+            "min_value": 1,
+            "max_value": 1,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "assets": {
+        "blue": {
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "green": {
+            "title": "Band green",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "red": {
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "nir": {
+            "title": "Band nir08",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "swir1": {
+            "title": "Band swir16",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "swir2": {
+            "title": "Band swir2",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "clear": {
+            "title": "Band clear",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "renders": {
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "red",
+                    "green",
+                    "blue"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
