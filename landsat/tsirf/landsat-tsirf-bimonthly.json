@@ -239,14 +239,14 @@
             ]
         },
         "nir": {
-            "title": "Band nir08",
+            "title": "Band nir",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
             ]
         },
         "swir1": {
-            "title": "Band swir16",
+            "title": "Band swir1",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
