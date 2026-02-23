@@ -1,5 +1,5 @@
 {
-    "id": null,
+    "id": 121,
     "name": "landsat-tsirf-yearly",
     "title": "Landsat TSIRF yearly",
     "description": "Brazil, cloud-free, and reconstructed historical Landsat spectral bands are provided at a spatial resolution of 30 meters and temporal resolution of yearly intervals (derived by percentile 50th aggregation of bimonthly images) spanning from 1997 onwards. The dataset was generated using the GLAD Landsat Analysis Ready Data version 2 as the primary input for temporal aggregation and the imputation of missing values. Detailed information on the data processing methodology in [Consoli et al., 2024](https://peerj.com/articles/18585/). This subset of the collection provides Brazil mosaics for all Landsat bands (RGB, NIR, SWIR-1, SWIR-2 & Thermal) as Cloud Optimized GeoTIFF (COG).",
@@ -24,6 +24,13 @@
                     "licensor"
                 ],
                 "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "OpenGeoHub Foundation",
+                "roles": [
+                    "producer"
+                ],
+                "url": "https://opengeohub.org/"
             },
             {
                 "name": "National Institute for Space Research (INPE)",
@@ -306,6 +313,20 @@
                     "red",
                     "green",
                     "blue"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        60
+                    ],
+                    [
+                        0,
+                        60
+                    ],
+                    [
+                        0,
+                        60
+                    ]
                 ],
                 "resampling": "nearest"
             }
