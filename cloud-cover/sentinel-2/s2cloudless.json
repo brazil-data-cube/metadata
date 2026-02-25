@@ -1,0 +1,162 @@
+{
+    "id": null,
+    "name": "s2cloudless_s2",
+    "title": "S2cloudless Sentinel-2 Cloud Masks",
+    "description": "S2cloudless Cloud cover masks for Copernicus Sentinel-2/MSI products over Brazil. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "MGRS",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "Sentinel-hub",
+                "roles": [
+                    "licensor"
+                ],
+                "url": "https://www.sentinel-hub.com/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "processor",
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Cloud Masks",
+                "processing:level": null,
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "s2cloudless": "1.7.3"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution Share Alike 4.0 International",
+            "uri": "https://github.com/sentinel-hub/sentinel2-cloud-detector/blob/master/LICENSE.md"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-2",
+        "msi",
+        "cloud mask",
+        "mask",
+        "cloud optimized geotiff",
+        "cog",
+        "brazil",
+        "s2cloudless"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "s2cloudless_mask",
+        "s2cloudless_mask",
+        "s2cloudless_mask"
+    ],
+    "version": 5,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "s2cloudless_mask",
+            "common_name": "s2cloudless_mask",
+            "description": "0 Not Cloud. 1 Cloud.",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 60.0,
+            "resolution_y": 60.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+
+        {
+            "name": "s2cloudless_probability",
+            "common_name": "s2cloudless_probability",
+            "description": "Cloud Probability.",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 60.0,
+            "resolution_y": 60.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2a",
+            "sentinel-2b",
+            "sentinel-2c"
+        ],
+        "constellation": [
+            "sentinel-2"
+        ],
+        "instruments": [
+            "msi"
+        ],
+        "gsd": [
+            60
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "s2cloudless_mask": {
+            "title": "s2cloudless Mask",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "s2cloudless_probability": {
+            "title": "s2cloudless Probability",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "s2cloudless_mask",
+                "green": "s2cloudless_mask",
+                "blue": "s2cloudless_mask"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://github.com/sentinel-hub/sentinel2-cloud-detector"
+        ],
+        "renders": {
+            "s2cloudless": {
+                "title": "True Color",
+                "assets": [
+                    "s2cloudless_mask",
+                    "s2cloudless_mask",
+                    "s2cloudless_mask"
+                ]
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
