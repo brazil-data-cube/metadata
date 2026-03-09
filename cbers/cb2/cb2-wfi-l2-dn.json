@@ -1,0 +1,181 @@
+{
+    "id": null,
+    "name": "CB2-WFI-L2-DN",
+    "title": "CBERS-2/WFI - Level-2-DN",
+    "description": "CBERS-2/WFI - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "cbers",
+        "cbers-2",
+        "wfi",
+        "level-2",
+        "digital number",
+        "earth observation",
+        "brazil",
+        "visible imagery"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "nir",
+        "red"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "red",
+            "common_name": "red",
+            "description": "BAND red",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 260,
+            "resolution_y": 260,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.63,
+            "full_width_half_max": 0.69
+        },
+        {
+            "name": "nir",
+            "common_name": "nir",
+            "description": "BAND - NIR",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 260,
+            "resolution_y": 260,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.77,
+            "full_width_half_max": 0.89
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-2"
+        ],
+        "constellation": [
+            "cbers-2"
+        ],
+        "instruments": [
+            "wfi"
+        ],
+        "gsd": [
+            260
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "red": {
+            "type": "image/tiff; application=geotiff",
+            "title": "CCD2XS_BAND1 blue",
+            "roles": [
+                "data"
+            ]
+        },
+        "nir": {
+            "type": "image/tiff; application=geotiff",
+            "title": "CCD1XS_BAND2 green",
+            "roles": [
+                "data"
+            ]
+        },
+        "red_xml": {
+            "type": "application/xml",
+            "title": "red_xml xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "nir_xml": {
+            "type": "application/xml",
+            "title": "nir_xml xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "red",
+                "green": "nir",
+                "blue": "red"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ],
+        "renders": {
+            "rgb": {
+                "title": "Red NIR Red",
+                "assets": [
+                    "red",
+                    "nir",
+                    "red"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        255
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
