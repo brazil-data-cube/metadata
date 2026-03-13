@@ -2,7 +2,7 @@
     "id": null,
     "name": "RESOURCESAT1_LISS3_L2_DN",
     "title": "RESOURCESAT-1/LISS3 - Level-2-DN",
-    "description": "The Resourcesat-1 satellite was launched by the Indian Space Research Organisation (ISRO) on October 17, 2003. Resourcesat-1/LISS3 - Level-2 Digital Number product. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
+    "description": "The Resourcesat-1 satellite was launched by the Indian Space Research Organisation (ISRO) on October 17, 2003. The instruments on the Resourcesat-1 (also known as IRS-P6) acquire four spectral bands ranging from Visible and Near-Infrared (VNIR) to Shortwave Infrared (SWIR) wavelengths. The satellite operates in a sun-synchronous orbit at an altitude of 817 km. The satellites take 101.35 minutes to complete one revolution around the earth and complete about 14 orbits per day. The entire earth is covered by 341 orbits during a 24-day cycle. The LISS-3 sensor covers a 140-km orbital swath at a spatial resolution of 24 meters with a 24-day repeat cycle. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
