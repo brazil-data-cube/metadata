@@ -55,18 +55,18 @@
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
-        {
+            {
             "name": "BAND5",
             "common_name": "blue",
-            "description": "MUX - BAND5 - blue",
+            "description": "B5 blue band from 0.45 to 0.52 micrometers",
             "min_value": 0,
-            "max_value": 255,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16,
-            "resolution_y": 16,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 16.0,
+            "resolution_y": 16.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.485,
             "full_width_half_max": 0.07
@@ -74,15 +74,15 @@
         {
             "name": "BAND6",
             "common_name": "green",
-            "description": "MUX - BAND6 - green",
+            "description": "B6 green band from 0.52 to 0.59 micrometers",
             "min_value": 0,
-            "max_value": 255,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16,
-            "resolution_y": 16,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 16.0,
+            "resolution_y": 16.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.555,
             "full_width_half_max": 0.07
@@ -90,15 +90,15 @@
         {
             "name": "BAND7",
             "common_name": "red",
-            "description": "MUX - BAND7 - red",
+            "description": "B7 red band from 0.63 to 0.69 micrometers",
             "min_value": 0,
-            "max_value": 255,
-            "nodata": 0,
-            "scale": 1,
-            "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16,
-            "resolution_y": 16,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 16.0,
+            "resolution_y": 16.0,
             "resolution_unit": "Meter",
             "center_wavelength": 0.66,
             "full_width_half_max": 0.06
@@ -106,18 +106,34 @@
         {
             "name": "BAND8",
             "common_name": "nir",
-            "description": "MUX - BAND8 - nir",
+            "description": "B8 nir band from 0.77 to 0.89 micrometers",
             "min_value": 0,
-            "max_value": 255,
-            "nodata": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 0.0001,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 16.0,
+            "resolution_y": 16.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.830,
+            "full_width_half_max": 0.12
+        },
+        {
+            "name": "CMASK",
+            "common_name": "quality",
+            "description": "Cloud Mask Product",
+            "min_value": 0,
+            "max_value": 4,
+            "nodata": 255,
             "scale": 1,
             "data_type": "uint8",
-            "mime_type": "image/tiff; application=geotiff",
-            "resolution_x": 16,
-            "resolution_y": 16,
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 16.0,
+            "resolution_y": 16.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.83,
-            "full_width_half_max": 0.12
+            "center_wavelength": null,
+            "full_width_half_max": null
         }
     ],
     "summaries": {
@@ -139,28 +155,28 @@
     },
     "item_assets": {
         "BAND5": {
-            "type": "image/tiff; application=geotiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "title": "BAND5 blue",
             "roles": [
                 "data"
             ]
         },
         "BAND6": {
-            "type": "image/tiff; application=geotiff",
+            "type": "image/tiff; application=geotiff"; profile=cloud-optimized,
             "title": "BAND6 green",
             "roles": [
                 "data"
             ]
         },
         "BAND7": {
-            "type": "image/tiff; application=geotiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "title": "BAND7 red",
             "roles": [
                 "data"
             ]
         },
         "BAND8": {
-            "type": "image/tiff; application=geotiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "title": "BAND8 nir",
             "roles": [
                 "data"
