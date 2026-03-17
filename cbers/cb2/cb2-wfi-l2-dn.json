@@ -54,9 +54,9 @@
     "version_successor": null,
     "bands": [
         {
-            "name": "red",
+            "name": "BAND1",
             "common_name": "red",
-            "description": "BAND red",
+            "description": "BAND1 red band from 0.63 to 0.69 micrometers",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -66,13 +66,13 @@
             "resolution_x": 260,
             "resolution_y": 260,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.63,
-            "full_width_half_max": 0.69
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
         },
         {
-            "name": "nir",
+            "name": "BAND2",
             "common_name": "nir",
-            "description": "BAND - NIR",
+            "description": "BAND2 nir band from 0.77 to 0.89 micrometers",
             "min_value": 0,
             "max_value": 255,
             "nodata": 0,
@@ -82,8 +82,8 @@
             "resolution_x": 260,
             "resolution_y": 260,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.77,
-            "full_width_half_max": 0.89
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.12
         }
     ],
     "summaries": {
@@ -104,30 +104,30 @@
         ]
     },
     "item_assets": {
-        "red": {
+        "BAND1": {
             "type": "image/tiff; application=geotiff",
-            "title": "CCD2XS_BAND1 blue",
+            "title": "Band red",
             "roles": [
                 "data"
             ]
         },
-        "nir": {
+        "BAND2": {
             "type": "image/tiff; application=geotiff",
-            "title": "CCD1XS_BAND2 green",
+            "title": "Band nir",
             "roles": [
                 "data"
             ]
         },
-        "red_xml": {
+        "BAND1_xml": {
             "type": "application/xml",
-            "title": "red_xml xml",
+            "title": "BAND1_xml xml",
             "roles": [
                 "metadata"
             ]
         },
-        "nir_xml": {
+        "BAND2_xml": {
             "type": "application/xml",
-            "title": "nir_xml xml",
+            "title": "BAND2_xml xml",
             "roles": [
                 "metadata"
             ]
