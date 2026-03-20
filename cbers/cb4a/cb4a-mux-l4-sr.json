@@ -162,7 +162,7 @@
             ]
         },
         "BAND6": {
-            "type": "image/tiff; application=geotiff"; profile=cloud-optimized,
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "title": "BAND6 green",
             "roles": [
                 "data"
