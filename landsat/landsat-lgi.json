@@ -1,7 +1,7 @@
 {
-    "id": null,
+    "id": 122,
     "name": "landsat-lgi",
-    "title": "Landsat Historical Data Archive",
+    "title": "Landsat INPE Data Archive",
     "description": "Landsat Historical Data Archive of the Image Generation Laboratory (LGI) at National Institute for Space Reaserch (INPE). This dataset includes the folliwing Landsat Missions: Landsat-1/2/3 MSS, Landsat-4/5 TM, Landsat-7 ETM and Landsat-8 OLI.",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -77,7 +77,7 @@
             "oli"
         ]
     },
-    "is_public": false,
+    "is_public": true,
     "is_available": true,
     "version": 1,
     "category": "eo",
@@ -547,42 +547,36 @@
     ],
     "assets": {
         "OLI_B1": {
-            "title": "Band coastal",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "OLI_B2": {
-            "title": "Band blue",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "OLI_B3": {
-            "title": "Band green",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "OLI_B4": {
-            "title": "Band red",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "OLI_B5": {
-            "title": "Band nir08",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "OLI_B6": {
-            "title": "Band swir16",
             "type": "application/zip",
             "roles": [
                 "data"
@@ -601,35 +595,30 @@
             ]
         },
         "OLI_B9": {
-            "title": "Band swir22",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
 	"OLI_BQA": {
-            "title": "Band BQA",
             "type": "application/zip",
             "roles": [
                 "data"
             ]
         },
         "OLI_MIN": {
-            "title": "thumbnail min",
             "type": "image/png",
             "roles": [
                 "data"
             ]
         },
         "OLI_GRD": {
-            "title": "thumbnail grd",
             "type": "image/png",
             "roles": [
                 "data"
             ]
         },
         "OLI_MTL": {
-            "title": "Metadata",
             "type": "text/plain",
             "roles": [
                 "metadata"
