@@ -1,0 +1,925 @@
+{
+    "id": null,
+    "name": "landsat-lgi",
+    "title": "Landsat Historical Data Archive",
+    "description": "Landsat Historical Data Archive of the Image Generation Laboratory (LGI) at National Institute for Space Reaserch (INPE). This dataset includes the folliwing Landsat Missions: Landsat-1/2/3 MSS, Landsat-4/5 TM, Landsat-7 ETM and Landsat-8 OLI.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "WRS2",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "United States Geological Survey (USGS)",
+                "roles": [
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf"
+        },
+        "platform": {
+            "code": [
+                "Landsat-1",
+                "Landsat-2",
+                "Landsat-3",
+                "Landsat-4",
+                "Landsat-5",
+                "Landsat-7",
+                "Landsat-8"
+            ],
+            "instruments": [
+                "MSS",
+                "TM",
+                "ETM",
+                "OLI"
+            ]
+        }
+    },
+    "keywords": [
+        "lgi",
+        "landsat",
+        "oli",
+        "etm",
+        "mss",
+        "tm",
+        "level-1",
+        "digital number",
+        "zip",
+        "earth observation",
+        "brazil"
+    ],
+    "summaries": {
+        "platform": [
+            "Landsat-1",
+            "Landsat-2",
+            "Landsat-3",
+            "Landsat-4",
+            "Landsat-5",
+            "Landsat-7",
+            "Landsat-8"
+        ],
+        "instruments": [
+            "mss",
+            "tm",
+            "etm",
+            "oli"
+        ]
+    },
+    "is_public": false,
+    "is_available": true,
+    "version": 1,
+    "category": "eo",
+    "quicklook": null,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "MSS_B4",
+            "common_name": "green",
+            "description": "Visible green (Thematic Mapper)",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint8",
+            "mime_type": "application/zip",
+            "resolution_x": 80.0,
+            "resolution_y": 80.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.14
+        },
+        {
+            "name": "MSS_B5",
+            "common_name": "red",
+            "description": "Visible red (Thematic Mapper)",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint8",
+            "mime_type": "application/zip",
+            "resolution_x": 80.0,
+            "resolution_y": 80.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.65,
+            "full_width_half_max": 0.2
+        },
+        {
+            "name": "MSS_B6",
+            "common_name": "nir08",
+            "description": "Near infrared (Thematic Mapper)",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint8",
+            "mime_type": "application/zip",
+            "resolution_x": 80.0,
+            "resolution_y": 80.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 11.45,
+            "full_width_half_max": 2.1
+        },
+        {
+            "name": "MSS_B7",
+            "common_name": "nir09",
+            "description": "Near infrared (Thematic Mapper) 0.9",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint8",
+            "mime_type": "application/zip",
+            "resolution_x": 80.0,
+            "resolution_y": 80.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.22,
+            "full_width_half_max": 0.27
+        },
+        {
+            "name": "TM_B1",
+            "common_name": "blue",
+            "description": "Visible blue (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.49,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "TM_B2",
+            "common_name": "green",
+            "description": "Visible green (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.08
+        },
+        {
+            "name": "TM_B3",
+            "common_name": "red",
+            "description": "Visible red (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "TM_B4",
+            "common_name": "nir08",
+            "description": "Near infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.83,
+            "full_width_half_max": 0.14
+        },
+        {
+            "name": "TM_B5",
+            "common_name": "swir16",
+            "description": "Short-wave infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.65,
+            "full_width_half_max": 0.2
+        },
+        {
+            "name": "TM_B6",
+            "common_name": "lwir",
+            "description": "Long-wave infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 11.45,
+            "full_width_half_max": 2.1
+        },
+        {
+            "name": "TM_B7",
+            "common_name": "swir22",
+            "description": "Short-wave infrared (Thematic Mapper)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.22,
+            "full_width_half_max": 0.27
+        },
+        {
+            "name": "ETM_B1",
+            "common_name": "blue",
+            "description": "Visible blue (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "ETM_B2",
+            "common_name": "green",
+            "description": "Visible green (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.08
+        },
+        {
+            "name": "ETM_B3",
+            "common_name": "red",
+            "description": "Visible red (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "ETM_B4",
+            "common_name": "nir08",
+            "description": "Near infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.84,
+            "full_width_half_max": 0.13
+        },
+        {
+            "name": "ETM_B5",
+            "common_name": "swir16",
+            "description": "Short-wave infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.65,
+            "full_width_half_max": 0.2
+        },
+        {
+            "name": "ETM_B6",
+            "common_name": "lwir",
+            "description": "Long-wave infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 11.34,
+            "full_width_half_max": 2.05
+        },
+        {
+            "name": "ETM_B7",
+            "common_name": "swir22",
+            "description": "Short-wave infrared (Enhanced Thematic Mapper Plus)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.2,
+            "full_width_half_max": 0.28
+        },
+        {
+            "name": "OLI_B1",
+            "common_name": "coastal",
+            "description": "Coastal/Aerosol (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.44,
+            "full_width_half_max": 0.02
+        },
+        {
+            "name": "OLI_B2",
+            "common_name": "blue",
+            "description": "Visible blue (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.48,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "OLI_B3",
+            "common_name": "green",
+            "description": "Visible green (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.56,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "OLI_B4",
+            "common_name": "red",
+            "description": "Visible red (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.65,
+            "full_width_half_max": 0.04
+        },
+        {
+            "name": "OLI_B5",
+            "common_name": "nir08",
+            "description": "Near infrared (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.87,
+            "full_width_half_max": 0.03
+        },
+        {
+            "name": "OLI_B6",
+            "common_name": "swir16",
+            "description": "Short-wave infrared (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.61,
+            "full_width_half_max": 0.09
+        },
+        {
+            "name": "OLI_B7",
+            "common_name": "swir22",
+            "description": "Short-wave infrared (Operational Land Imager)",
+            "min_value": 7273,
+            "max_value": 43636,
+            "nodata": 0,
+            "scale_mult": 1,
+            "scale_add": null,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.2,
+            "full_width_half_max": 0.19
+        },
+        {
+            "name": "OLI_B8",
+            "common_name": "pan",
+            "description": "Panchromatic",
+            "min_value": 1,
+            "max_value": 65535,
+            "nodata": 0,
+            "scale_mult": 0.00341802,
+            "scale_add": 149,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 15.0,
+            "resolution_y": 15.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 10.9,
+            "full_width_half_max": 0.59
+        },
+        {
+            "name": "OLI_B9",
+            "common_name": "cirrus",
+            "description": "",
+            "min_value": 21824,
+            "max_value": 65534,
+            "nodata": 1,
+            "scale_mult": 1,
+            "scale_add": 0,
+            "data_type": "uint16",
+            "mime_type": "application/zip",
+            "resolution_x": 30.0,
+            "resolution_y": 30.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "assets": {
+        "OLI_B1": {
+            "title": "Band coastal",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B2": {
+            "title": "Band blue",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B3": {
+            "title": "Band green",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B4": {
+            "title": "Band red",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B5": {
+            "title": "Band nir08",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B6": {
+            "title": "Band swir16",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B7": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B8": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_B9": {
+            "title": "Band swir22",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+	"OLI_BQA": {
+            "title": "Band BQA",
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_MIN": {
+            "title": "thumbnail min",
+            "type": "image/png",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_GRD": {
+            "title": "thumbnail grd",
+            "type": "image/png",
+            "roles": [
+                "data"
+            ]
+        },
+        "OLI_MTL": {
+            "title": "Metadata",
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETM_B1": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B2": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B3": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B4": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B5": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B6": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B7": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETM_B8": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "ETMXS_calibration": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMXS_attitudes": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMXS_ephemerides": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMXS_scenario": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMPAN_calibration": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMPAN_attitudes": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMPAN_ephemerides": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "ETMPAN_scenario": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_B1": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_B2": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_B3": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_B4": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_B5": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_B6": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_B7": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "TM_GRD": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_MIN": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_PEQ": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_calibration": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_attitudes": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_ephemerides": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "TM_scenario": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "MSS_B4": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "MSS_B5": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "MSS_B6": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "MSS_B7": {
+            "type": "application/zip",
+            "roles": [
+                "data"
+            ]
+        },
+        "MSS_calibration": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "MSS_attitudes": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "MSS_ephemerides": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "MSS_scenario": {
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail Large",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "bdc:visual": {
+            "rgb": [
+                "red",
+                "green",
+                "blue"
+            ],
+            "rescale": [
+                [
+                    7000,
+                    20000
+                ],
+                [
+                    7000,
+                    20000
+                ],
+                [
+                    7000,
+                    20000
+                ]
+            ]
+        },
+        "renders": {
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "red",
+                    "green",
+                    "blue"
+                ],
+                "rescale": [
+                    [
+                        7000,
+                        20000
+                    ],
+                    [
+                        7000,
+                        20000
+                    ],
+                    [
+                        7000,
+                        20000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
