@@ -2,7 +2,7 @@
     "id": 7,
     "name": "sentinel-1-grd-bundle",
     "title": "Sentinel-1 - Level-1 - Interferometric Wide Swath Ground Range Detected High Resolution",
-    "description": "Copernicus Sentinel-1 Level-1 Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model. This dataset contains interferometric wide swath ground range detected high resolution data available over Brazil.",
+    "description": "Copernicus Sentinel-1 Level-1 Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using the WGS84 Earth ellipsoid model. This dataset includes acquisitions over the Brazilian territory from all primary imaging modes, namely Stripmap (SM), Interferometric Wide Swath (IW), and Extra Wide Swath (EW). The GRD products are provided at different resolution classes depending on the acquisition mode. For Stripmap (SM), products are available in full (FR), high (HR), and medium (MR) resolutions, with pixel spacing ranging from approximately 3.5m to 40m. The IW mode, the main acquisition mode over land, is primarily available in high resolution (HR), with a typical pixel spacing of 10x10m, and in medium resolution (MR), with 40x40m. The EW mode, commonly used for wide-area and ocean applications, is provided in high (25x25m) and medium (40x40m) resolutions.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -50,7 +50,8 @@
     "summaries": {
         "platform": [
             "sentinel-1a",
-            "sentinel-1b"
+            "sentinel-1b",
+            "sentinel-1c"
         ],
         "constellation": [
             "sentinel-1"
@@ -76,7 +77,9 @@
             "1"
         ],
         "sar:instrument_mode": [
-            "IW"
+            "IW",
+            "EW",
+            "SM"
         ],
         "sar:center_frequency": [
             5.405
