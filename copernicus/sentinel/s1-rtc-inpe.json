@@ -61,7 +61,7 @@
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 8.983152925677794453e-05,
             "resolution_y": 8.983152925677794453e-05,
-            "resolution_unit": "Meter",
+            "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
         },
@@ -77,7 +77,7 @@
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 8.983152925677794453e-05,
             "resolution_y": 8.983152925677794453e-05,
-            "resolution_unit": "Meter",
+            "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
         },
@@ -93,7 +93,7 @@
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 8.983152925677794453e-05,
             "resolution_y": 8.983152925677794453e-05,
-            "resolution_unit": "Meter",
+            "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
         },
@@ -109,7 +109,7 @@
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "resolution_x": 8.983152925677794453e-05,
             "resolution_y": 8.983152925677794453e-05,
-            "resolution_unit": "Meter",
+            "resolution_unit": "Degree",
             "center_wavelength": null,
             "full_width_half_max": null
         }
