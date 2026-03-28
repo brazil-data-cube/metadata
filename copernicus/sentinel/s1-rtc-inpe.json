@@ -1,0 +1,204 @@
+{
+    "id": null,
+    "name": "sentinel-1-rtc",
+    "title": "Sentinel-1 - Level-2 - Radiometrically Terrain Corrected (RTC)",
+    "description": "The Sentinel-1 Level-2 RTC product consists of SAR backscatter values normalized with respect to topography, derived from GRD data. Pixel values are therefore provided as gamma-0 power (0). The product is analysis-ready, meaning that geometric and radiometric distortions inherent to SAR side-looking acquisition have already been corrected. The data are projected in the WGS 84 geographic coordinate system (EPSG:4326) and distributed in Cloud-Optimized GeoTIFF (COG) format. The pixel size is the same as that of the original GRD product. For example, for images acquired in IW (high-resolution) and EW (medium-resolution) modes, the pixel size is 10 m and 40 m, respectively.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "processor",
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel",
+        "sentinel-1",
+        "sar",
+        "c-band",
+        "level-1",
+        "rtc",
+        "radar",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "sar",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "Gamma0_VH",
+            "common_name": "coastal",
+            "description": "Coastal aerosol (band 1)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 8.983152925677794453e-05,
+            "resolution_y": 8.983152925677794453e-05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "Gamma0_VV",
+            "common_name": "Gamma0_VV",
+            "description": "Gamma0_VV",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 8.983152925677794453e-05,
+            "resolution_y": 8.983152925677794453e-05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "layover_shadow_mask",
+            "common_name": "layover_shadow_mask",
+            "description": "Layover and Shadow Mask",
+            "min_value": 0,
+            "max_value": 3,
+            "nodata": 255,
+            "scale": 1,
+            "data_type": "uint8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 8.983152925677794453e-05,
+            "resolution_y": 8.983152925677794453e-05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "local_incidence_angle",
+            "common_name": "local_incidence_angle",
+            "description": "Local Incidence Angle",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "int16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 8.983152925677794453e-05,
+            "resolution_y": 8.983152925677794453e-05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-1a",
+            "sentinel-1b",
+            "sentinel-1c"
+        ],
+        "constellation": [
+            "sentinel-1"
+        ],
+        "instruments": [
+            "c-sar"
+        ],
+        "sar:product_type": [
+            "RTC"
+        ],
+        "sar:polarizations": [
+            [
+                "VV"
+            ],
+            [
+                "VH"
+            ]
+        ],
+        "sar:frequency_band": [
+            "C"
+        ],
+        "s1:processing_level": [
+            "2"
+        ],
+        "sar:instrument_mode": [
+            "IW",
+            "EW",
+            "SM"
+        ],
+        "sar:center_frequency": [
+            5.405
+        ],
+        "sar:observation_direction": [
+            "right"
+        ]
+    },
+    "item_assets": {
+        "Gamma0_VH": {
+            "title": "Gamma0 VH",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Gamma0_VV": {
+            "title": "Gamma0 VV",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "layover_shadow_mask": {
+            "title": "Layover and Shadow Mask",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "local_incidence_angle": {
+            "title": "Local Incidence Angle",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/",
+            "https://inthub2.copernicus.eu"
+        ],
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
