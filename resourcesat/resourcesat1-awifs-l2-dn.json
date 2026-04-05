@@ -1,0 +1,213 @@
+{
+    "id": null,
+    "name": "RESOURCESAT1_AWIFIS_L2_DN",
+    "title": "RESOURCESAT-1/AWiFIS - Level-2-DN",
+    "description": "The Resourcesat-1 satellite was launched by the Indian Space Research Organisation (ISRO) on October 17, 2003. The instruments on the Resourcesat-1 (also known as IRS-P6) acquire four spectral bands ranging from Visible and Near-Infrared (VNIR) to Shortwave Infrared (SWIR) wavelengths. The satellite operates in a sun-synchronous orbit at an altitude of 817 km. The satellites take 101.35 minutes to complete one revolution around the earth and complete about 14 orbits per day. The entire earth is covered by 341 orbits during a 24-day cycle. AWiFS covers a 740-km orbital swath at a resolution of 56 meters with a 5-day repeat cycle. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "producer",
+                    "licensor",
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of L2",
+                "processing:level": "L2 DN",
+                "processing:facility": "LGI",
+                "processing:software": {
+                    "ms3": "0.0.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "resourcesat",
+        "resourcesat-1",
+        "awifis",
+        "level-2",
+        "digital number",
+        "earth observation",
+        "brazil",
+        "visible imagery"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "red",
+        "nir",
+        "green"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "green",
+            "common_name": "green",
+            "description": "BAND green",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 56,
+            "resolution_y": 56,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.52,
+            "full_width_half_max": 0.59
+        },
+        {
+            "name": "red",
+            "common_name": "red",
+            "description": "BAND red",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 56,
+            "resolution_y": 56,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.62,
+            "full_width_half_max": 0.68
+        },
+        {
+            "name": "nir",
+            "common_name": "nir",
+            "description": "BAND - NIR",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 56,
+            "resolution_y": 56,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.77,
+            "full_width_half_max": 0.86
+        },
+        {
+            "name": "swir",
+            "common_name": "swir",
+            "description": "BAND swir",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff",
+            "resolution_x": 56,
+            "resolution_y": 56,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.55,
+            "full_width_half_max": 1.70
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "resourcesat-1"
+        ],
+        "constellation": [
+            "resourcesat-1"
+        ],
+        "instruments": [
+            "awifis"
+        ],
+        "gsd": [
+            56
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "green": {
+            "type": "image/tiff; application=geotiff",
+            "title": "Band green",
+            "roles": [
+                "data"
+            ]
+        },
+        "red": {
+            "type": "image/tiff; application=geotiff",
+            "title": "Band red",
+            "roles": [
+                "data"
+            ]
+        },
+        "nir": {
+            "type": "image/tiff; application=geotiff",
+            "title": "Band NIR",
+            "roles": [
+                "data"
+            ]
+        },
+        "swir": {
+            "type": "image/tiff; application=geotiff",
+            "title": "Band SWIR",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "red",
+                "green": "nir",
+                "blue": "green"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br"
+        ],
+        "renders": {
+            "rgb": {
+                "title": "Red NIR Green",
+                "assets": [
+                    "red",
+                    "nir",
+                    "green"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        600
+                    ],
+                    [
+                        0,
+                        600
+                    ],
+                    [
+                        0,
+                        600
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
