@@ -1,7 +1,7 @@
 {
     "id": 125,
-    "name": "CB4A-MUX-L4-SR - Cloud Optimized GeoTIFF",
-    "title": "CBERS-4A/MUX - Level-4-SR",
+    "name": "CB4A-MUX-L4-SR",
+    "title": "CBERS-4A/MUX - Level-4-SR - Cloud Optimized GeoTIFF",
     "description": "CBERS-4A/MUX - Level-4 Surface Reflectance product over Brazil and part of South America. L4 SR product provides orthorectified surface reflectance images. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
     "temporal_composition_schema": null,
     "composition_function": null,
