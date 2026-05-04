@@ -1,7 +1,7 @@
 {
     "id": null,
-    "name": "s2cloudless_s2",
-    "title": "S2cloudless Sentinel-2 Cloud Masks",
+    "name": "sentinel-2-s2cloudless",
+    "title": "Sentinel-2 S2cloudless Cloud Masks",
     "description": "S2cloudless Cloud cover masks for Copernicus Sentinel-2/MSI products over Brazil. This dataset is provided as Cloud Optimized GeoTIFF (COG).",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -56,7 +56,7 @@
         "s2cloudless_mask",
         "s2cloudless_mask"
     ],
-    "version": 5,
+    "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
