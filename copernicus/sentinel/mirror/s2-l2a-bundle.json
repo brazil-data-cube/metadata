@@ -39,7 +39,7 @@
         "earth observation",
         "brazil"
     ],
-    "is_public": true,
+    "is_public": false,
     "is_available": true,
     "category": "eo",
     "version": 1,

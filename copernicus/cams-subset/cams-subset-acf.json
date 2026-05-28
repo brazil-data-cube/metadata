@@ -1,8 +1,8 @@
 {
-    "id": 116,
-    "name": "cams-global-subset-reanalysis-EAC4",
-    "title": "CAMS Global Subset Atmospheric Composition Reanalysis 4",
-    "description": "EAC4 (ECMWF Atmospheric Composition Reanalysis 4) is a global atmospheric composition reanalysis produced by ECMWF. It combines a numerical atmospheric model with worldwide observations through data assimilation to generate a spatially and temporally consistent dataset. The reanalysis provides regular global estimates of atmospheric composition on a fixed grid, including regions and species with limited or no direct observations. EAC4 is based on a 4D-Var assimilation system, accounting for the exact timing of observations within a 12-hour assimilation window, and delivers outputs every 3 hours. Due to limitations in the historical observing system, the dataset is available from 2003 onwards. The catalog provided here does not include all variables available in CAMS; instead, it offers a selected subset of variables. The available single-level variables are Particulate Matter 2.5 (PM2.5) and Particulate Matter 10 (PM10), while the available multi-level variables are Carbon Monoxide, Nitrogen Dioxide, Ozone, and Sulphur Dioxide.",
+    "id": 115,
+    "name": "cams-subset-acf",
+    "title": "CAMS Subset Atmospheric Composition Forecasts",
+    "description": "The Copernicus Atmosphere Monitoring Service (CAMS) produces global forecasts for atmospheric composition twice a day. However, only forecasts from subtropical South America and initialized at 00 UTC are considered. The forecasts include more than 50 chemical species and seven aerosol types, but the catalogue here provides only a subset of variables. Specifically, the available single-level variables are Particulate Matter 2.5 (PM2.5) and Particulate Matter 10 (PM10), while the available multi-level variables are Carbon Monoxide, Nitrogen Dioxide, Ozone, and Sulphur Dioxide. The initial conditions of each forecast are obtained by combining a previous forecast with current satellite observations through a process called data assimilation. This best estimate of the state of the atmosphere at the initial forecast time step, called the analysis, provides a globally complete and consistent dataset allowing for estimates at locations where observation data coverage is low or for atmospheric pollutants for which no direct observations are available. The forecast itself uses a model of the atmosphere based on the laws of physics and chemistry to determine the evolution of the concentrations of all species over time for the next five days. Apart from the required initial state, it also uses inventory-based or observation-based emission estimates as a boundary condition at the surface.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -41,14 +41,15 @@
         }
     },
     "keywords": [
-        "atmospheric-composition",
-        "gridded-data",
-        "data-assimilation",
-        "global-reanalysis",
-        "air-quality",
-        "ecmwf",
         "cams",
-        "4d-var"
+        "atmospheric-composition",
+        "chemical-species",
+        "aerosols",
+        "data-assimilation",
+        "meteorological-variables",
+        "gridded-data",
+        "forecast-model",
+        "earth-system"
     ],
     "is_public": false,
     "is_available": true,
@@ -69,8 +70,8 @@
             "offset": null,
             "data_type": "float32",
             "mime_type": "application/x-netcdf",
-            "resolution_x": 0.75,
-            "resolution_y": 0.75,
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
             "resolution_unit": "Degree",
             "full_width_half_max": null
         },
@@ -86,8 +87,8 @@
             "offset": null,
             "data_type": "float32",
             "mime_type": "application/x-netcdf",
-            "resolution_x": 0.75,
-            "resolution_y": 0.75,
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
             "resolution_unit": "Degree",
             "full_width_half_max": null
         },
@@ -103,8 +104,8 @@
             "offset": null,
             "data_type": "float32",
             "mime_type": "application/x-netcdf",
-            "resolution_x": 0.75,
-            "resolution_y": 0.75,
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
             "resolution_unit": "Degree",
             "full_width_half_max": null
         },
@@ -120,8 +121,8 @@
             "offset": null,
             "data_type": "float32",
             "mime_type": "application/x-netcdf",
-            "resolution_x": 0.75,
-            "resolution_y": 0.75,
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
             "resolution_unit": "Degree",
             "full_width_half_max": null
         },
@@ -137,8 +138,8 @@
             "offset": null,
             "data_type": "float32",
             "mime_type": "application/x-netcdf",
-            "resolution_x": 0.75,
-            "resolution_y": 0.75,
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
             "resolution_unit": "Degree",
             "full_width_half_max": null
         },
@@ -154,24 +155,52 @@
             "offset": null,
             "data_type": "float32",
             "mime_type": "application/x-netcdf",
-            "resolution_x": 0.75,
-            "resolution_y": 0.75,
+            "resolution_x": 0.4,
+            "resolution_y": 0.4,
             "resolution_unit": "Degree",
             "full_width_half_max": null
         }
     ],
     "summaries": null,
     "item_assets": {
-        "cams_global_single_level_reanalysis_vars": {
+        "single_level_vars_cams_acf_pm2p5" : {
             "type": "application/x-netcdf",
-            "title": "Variables Provided on a Single Fixed Level Without Vertical Structure",
+            "title": "PM2p5 Variable Provided on a Single Fixed Level Without Vertical Structure",
             "roles": [
                 "data"
             ]
         },
-        "cams_global_multi_level_reanalysis_vars": {
+        "single_level_vars_cams_acf_pm10" : {
             "type": "application/x-netcdf",
-            "title": "Atmospheric Variables Provided on Multiple Vertical Levels",
+            "title": "PM10 Variable Provided on a Single Fixed Level Without Vertical Structure",
+            "roles": [
+                "data"
+            ]
+        },
+        "mult_level_vars_cams_acf_co": {
+            "type": "application/x-netcdf",
+            "title": "Carbon Monoxide Variable Provided on Multiple Vertical Levels",
+            "roles": [
+                "data"
+            ]
+        },
+        "mult_level_vars_cams_acf_go3": {
+            "type": "application/x-netcdf",
+            "title": "Ozone Variable Provided on Multiple Vertical Levels",
+            "roles": [
+                "data"
+            ]
+        },
+        "mult_level_vars_cams_acf_no2": {
+            "type": "application/x-netcdf",
+            "title": "Nitrogen Dioxide Variable Provided on Multiple Vertical Levels",
+            "roles": [
+                "data"
+            ]
+        },
+        "mult_level_vars_cams_acf_so2": {
+            "type": "application/x-netcdf",
+            "title": "Sulfur Dioxide Variable Provided on Multiple Vertical Levels",
             "roles": [
                 "data"
             ]
@@ -186,7 +215,7 @@
     },
     "properties": {
         "sources": [
-            "https://ads.atmosphere.copernicus.eu/datasets/cams-global-reanalysis-eac4"
+            "https://ads.atmosphere.copernicus.eu/datasets/cams-global-atmospheric-composition-forecasts"
         ]
     }
 }

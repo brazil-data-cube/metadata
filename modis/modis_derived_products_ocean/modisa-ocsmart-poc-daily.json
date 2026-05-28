@@ -1,0 +1,135 @@
+{
+    "id": null,
+    "name": "MODISA-OCSMART-POC-DAILY",
+    "title": "MODIS-Aqua Daily Particulate Organic Carbon (POC) - OC-SMART AC",
+    "description": "The MODIS-Aqua daily Particulate Organic Carbon (POC, measured in mg·m-3) utilizes daily data from the MODIS sensor onboard NASA's Aqua satellite (MODIS-Aqua). This data has a nominal resolution of 1 km at nadir and is atmospherically corrected using the Ocean Color - Simultaneous Marine and Aerosol Retrieval Tool (OC-SMART) (FAN et al., 2021). The POC estimates are obtained from the combination of algorithms (Loisel et al., 2002, 2018; Tran et al., 2016; Le et al., 2016). The daily POC products are the mosaic of several images of POC estimates obtained for the same day and merged into daily composites utilizing the SNAP mosaicking tool.",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 1,
+        "unit": "day"
+    },
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "url": "https://oceancolor.gsfc.nasa.gov/",
+                "roles": [
+                    "producer"
+                ],
+                "processing:level": "L1",
+                "processing:lineage": "Generation and distribution of daily Level-1A radiance using the MODIS-Aqua earth observation satellite."
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "url": "https://data.inpe.br/big/",
+                "roles": [
+                    "processor",
+                    "host"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily Particulate Organic Carbon concentration estimatives based on the combination of algorithms using the MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP": "10.0"
+                }
+            },
+            {
+                "name": "Laboratoire d'Océanologie et de Géosciences",
+                "url": "https://log.cnrs.fr/recherche",
+                "roles": [
+                    "processor"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily Particulate Organic Carbon concentration estimatives based on the combination of algorithms using the MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP": "10.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Zero (CC0)",
+            "uri": "https://creativecommons.org/public-domain/cc0/"
+        }
+    },
+    "keywords": [
+        "modis",
+        "aqua",
+        "level-3",
+        "particulate organic carbon",
+        "poc",
+        "ocean color",
+        "observation",
+        "daily",
+        "surface",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "POC",
+            "common_name": "POC",
+            "description": "Particulate Organic Carbon concentration",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 650,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "aqua"
+        ],
+        "constellation": [
+            "modis"
+        ],
+        "instruments": [
+            "modis"
+        ]
+    },
+    "item_assets": {
+        "POC": {
+            "type": "application/netcdf",
+            "title": "Particulate Organic Carbon concentration",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br",
+            "https://seadas.gsfc.nasa.gov/",
+            "http://www.rtatmocn.com/oc-smart/"
+        ]
+    }
+}

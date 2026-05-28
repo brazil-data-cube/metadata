@@ -1,8 +1,8 @@
 {
-    "id": 113,
-    "name": "S3_Rrs_ACOLITE",
-    "title": "Sentinel-3 - Remote Sensing Reflectance - Cloud Optimized GeoTIFF",
-    "description": "Copernicus Sentinel-3/OLCI remote sensing reflectance (Rrs) over Brazil. Level-2A product provides orthorectified remote sensing reflectance images (Rrs). This dataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "id": null,
+    "name": "s3-olci-rrs-water",
+    "title": "Sentinel-3 - Aquatic Remote Sensing Reflectance",
+    "description": "This is a development product aimed at providing Copernicus Sentinel-3/OLCI remote sensing reflectance (Rrs) over water bodies all over Brazil.The product provides orthorectified remote sensing reflectance images (Rrs) processed with ACOLITE atmospheric correction and delivered as Cloud Optimized GeoTIFF (COG). Currently, data availability is limited to the Tietê River cascade reservoirs; future updates will progressively expand coverage to additional water bodies throughout Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": "MGRS",
@@ -28,7 +28,6 @@
                 "processing:level": "Rrs",
                 "processing:facility": "LabISA/INPE",
                 "processing:software": {
-                    "bdc-collection-builder": "1.0",
                     "mapaqualy-processor": "1.0"
                 }
             }
@@ -512,7 +511,8 @@
         "sources": [
             "https://dataspace.copernicus.eu/",
             "https://inthub2.copernicus.eu",
-            "https://scihub.copernicus.eu/"
+            "https://scihub.copernicus.eu/",
+            "http://www.dpi.inpe.br/labisa/"
         ],
         "renders": {
             "rgb": {
@@ -522,10 +522,7 @@
                 ],
                 "resampling": "nearest"
             }
-        },
-        "bdc:applications": [
-            "BDCExplorer"
-        ]
+        }
     }
 }
 

@@ -1,8 +1,8 @@
 {
     "id": null,
-    "name": "MODISA-OCSMART-CHL-DAILY",
-    "title": "MODIS-Aqua Daily Chlorophyll-a - OC-SMART AC",
-    "description": "The MODIS-Aqua daily Chlorophyll-a concentration (CHL, measured in mg·m-3) utilizes daily data from the MODIS sensor onboard NASA's Aqua satellite (MODIS-Aqua). This data has a nominal resolution of 1 km at nadir and is atmospherically corrected using the Ocean Color - Simultaneous Marine and Aerosol Retrieval Tool (OC-SMART) (FAN et al., 2021). The CHL estimates are obtained from daily MODIS-Aqua remote sensing reflectance via the Combination Of Neural Network models in Estimating Chlorophyll-a over Turbid and Clear Waters (CONNECT) (TRAN et al., 2025). The daily CHL products are the mosaic of several images of CHL estimates obtained for the same day and merged into daily composites utilizing the SNAP mosaicking tool.",
+    "name": "MODISA-OCSMART-SPM-MONTHLY",
+    "title": "MODIS-Aqua Monthly Suspended Particulate Matter - OC-SMART AC",
+    "description": "The MODIS-Aqua monthly Suspended Particulate Matter concentration (SPM, measured in g·m-3) utilizes daily data from the MODIS sensor onboard NASA's Aqua satellite (MODIS-Aqua). This data has a nominal resolution of 1 km at nadir and is atmospherically corrected through the application of the Ocean Color - Simultaneous Marine and Aerosol Retrieval Tool (OC-SMART) (FAN et al., 2021). The SPM estimates are obtained from a blend of two SPM algorithms (Salah Salah et al., 2025). Subsequently, the SPM products are aggregated into monthly averages by calculating the geometric mean of daily SPM data over the respective month.",
     "temporal_composition_schema": {
         "cycle": {
             "step": 1,
@@ -10,7 +10,7 @@
         },
         "schema": "Cyclic",
         "step": 1,
-        "unit": "day"
+        "unit": "month"
     },
     "grid_ref_sys": null,
     "collection_type": "collection",
@@ -23,7 +23,7 @@
                     "producer"
                 ],
                 "processing:level": "L3",
-                "processing:lineage": "Generation of daily chlorophyll-a concentration estimatives based on CONNECT Neural Network models from MODIS-Aqua earth observation satellite."
+                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimatives based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite."
             },
             {
                 "name": "National Institute for Space Research (INPE)",
@@ -33,7 +33,7 @@
                     "host"
                 ],
                 "processing:level": "L3",
-                "processing:lineage": "Generation of daily chlorophyll-a concentration estimatives based on CONNECT Neural Network models from MODIS-Aqua earth observation satellite.",
+                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimatives based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite.",
                 "processing:facility": "LOG",
                 "processing:software": {
                     "SEADAS": "9.1.0",
@@ -48,7 +48,7 @@
                     "processor"
                 ],
                 "processing:level": "L3",
-                "processing:lineage": "Generation of daily remote sensing reflectance estimatives based on MODIS-Aqua earth observation satellite.",
+                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimatives based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite.",
                 "processing:facility": "LOG",
                 "processing:software": {
                     "SEADAS": "9.1.0",
@@ -59,18 +59,18 @@
         ],
         "license": {
             "type": "Creative Commons Zero (CC0)",
-            "uri": "https://oceancolor.gsfc.nasa.gov/data/10.5067/AQUA/MODIS/L2/OC/2022.0/"
+            "uri": "https://creativecommons.org/public-domain/cc0/"
         }
     },
     "keywords": [
         "modis",
         "aqua",
         "level-3",
-        "chlorophyll-a",
-        "chl",
+        "suspended particulate matter",
+        "spm",
         "ocean color",
         "observation",
-        "daily",
+        "monthly",
         "surface",
         "brazil"
     ],
@@ -82,9 +82,9 @@
     "version_successor": null,
     "bands": [
         {
-            "name": "CHL",
-            "common_name": "Chl-a",
-            "description": "Chlorophyll-a concentration",
+            "name": "SPM",
+            "common_name": "SPM",
+            "description": "Suspended Particulate Matter",
             "center_wavelength": null,
             "full_width_half_max": null,
             "min_value": 0,
@@ -92,6 +92,22 @@
             "nodata": null,
             "scale": 1.0,
             "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Nobs",
+            "common_name": "Nobs",
+            "description": "Number of valid pixel observations",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 31,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "int16",
             "mime_type": "application/netcdf",
             "resolution_x": 1.0,
             "resolution_y": 1.0,
@@ -110,9 +126,9 @@
         ]
     },
     "item_assets": {
-        "CHL": {
+        "SPM": {
             "type": "application/netcdf",
-            "title": "Chlorophyll-a concentration",
+            "title": "Suspended Particulate Matter concentration",
             "roles": [
                 "data"
             ]
@@ -130,7 +146,7 @@
             "http://www.inpe.br",
             "https://seadas.gsfc.nasa.gov/",
             "http://www.rtatmocn.com/oc-smart/",
-            "https://github.com/manhtranduy/Chl-CONNECT/"
+            "Salah Salah et al., 2025 - Remote Sensing"
         ]
     }
 }

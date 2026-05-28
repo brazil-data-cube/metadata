@@ -1,8 +1,8 @@
 {
-    "id": 114,
-    "name": "S3_FICOCIANINA_TIETE",
-    "title": "Sentinel-3 - Phycocianin - Cloud Optimized GeoTIFF",
-    "description": "Copernicus Sentinel-3/OLCI derived Phycocianin concentration over Tietê River. [Lima et al. (2025)](https://doi.org/10.1016/j.hal.2025.102836)",
+    "id": null,
+    "name": "s3-olci-pc-tiete",
+    "title": "Sentinel-3 - Phycocyanin - Tietê River Cascade Reservoirs",
+    "description": "Copernicus Sentinel-3/OLCI derived Phycocyanin (PC) concentration over the Tietê River cascade reservoirs, São Paulo, Brazil. Water quality parameter estimated using ACOLITE atmospheric correction and the algorithm developed by [Lima et al. (2025)](https://doi.org/10.1016/j.hal.2025.102836). This datataset is provided as Cloud Optimized GeoTIFF (COG).",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": "MGRS",
@@ -24,11 +24,10 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Phycocianin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
+                "processing:lineage": "Phycocyanin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
                 "processing:level": "WQP",
                 "processing:facility": "LabISA/INPE",
                 "processing:software": {
-                    "bdc-collection-builder": "1.0",
                     "mapaqualy-processor": "1.0"
                 }
             }
@@ -58,8 +57,8 @@
     "bands": [
         {
             "name": "PC",
-            "common_name": "Phycocianin",
-            "description": "Phycocianin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
+            "common_name": "Phycocyanin",
+            "description": "Phycocyanin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
             "min_value": 0,
             "max_value": 1000,
             "nodata": null,
@@ -93,7 +92,7 @@
     },
     "item_assets": {
         "PC": {
-            "title": "Phycocianin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
+            "title": "Phycocyanin derived from Sentinel-3/OLCI using ACOLITE and Lima et al. (2025) algorithm",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
@@ -117,21 +116,19 @@
             "https://dataspace.copernicus.eu/",
             "https://inthub2.copernicus.eu",
             "https://scihub.copernicus.eu/",
-            "https://doi.org/10.1016/j.hal.2025.102836"
+            "https://doi.org/10.1016/j.hal.2025.102836",
+            "http://www.dpi.inpe.br/labisa/"
         ],
         "renders": {
             "PC": {
-                "title": "Phycocianin Image",
+                "title": "Phycocyanin Image",
                 "assets": [
                     "PC"
                 ],
                 "resampling": "nearest"
             }
         },
-        "bdc:applications": [
-            "BDCExplorer"
-        ],
-        "mq:title": "S3 FICOCIANINA TIETE",
+        "mq:title": "S3 Phycocyanin Tietê",
         "platform": "Sentinel-3/OLCI",
         "mq:sensor": "OLCI",
         "mq:product": "FICOCIANINA",
