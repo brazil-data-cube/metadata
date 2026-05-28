@@ -170,6 +170,20 @@
                 "data"
             ]
         },
+        "Gamma0_HH": {
+            "title": "Gamma0 HH",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Gamma0_HV": {
+            "title": "Gamma0 HV",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
         "layover_shadow_mask": {
             "title": "Layover and Shadow Mask",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
