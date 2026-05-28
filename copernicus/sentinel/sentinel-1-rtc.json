@@ -51,8 +51,8 @@
     "bands": [
         {
             "name": "Gamma0_VH",
-            "common_name": "coastal",
-            "description": "Coastal aerosol (band 1)",
+            "common_name": "Gamma0_VH",
+            "description": "Gamma0_VH",
             "min_value": 0,
             "max_value": 10000,
             "nodata": -9999,
@@ -69,6 +69,39 @@
             "name": "Gamma0_VV",
             "common_name": "Gamma0_VV",
             "description": "Gamma0_VV",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 8.983152925677794453e-05,
+            "resolution_y": 8.983152925677794453e-05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+
+        {
+            "name": "Gamma0_HH",
+            "common_name": "Gamma0_HH",
+            "description": "Gamma0_HH",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": -9999,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 8.983152925677794453e-05,
+            "resolution_y": 8.983152925677794453e-05,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "Gamma0_HV",
+            "common_name": "Gamma0_HV",
+            "description": "Gamma0_HV",
             "min_value": 0,
             "max_value": 10000,
             "nodata": -9999,
@@ -135,6 +168,12 @@
             ],
             [
                 "VH"
+            ],
+            [
+                "HH"
+            ],
+            [
+                "HV"
             ]
         ],
         "sar:frequency_band": [
