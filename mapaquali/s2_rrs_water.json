@@ -1,0 +1,398 @@
+{
+    "id": null,
+    "name": "s2_rrs_water",
+    "title": "Sentinel-2 - Aquatic Remote Sensing Reflectance",
+    "description": "This is a development product aimed at providing Copernicus Sentinel-2/MSI remote sensing reflectance (Rrs) over water bodies all over Brazil. The product provides orthorectified remote sensing reflectance images (Rrs) processed with ACOLITE atmospheric correction and delivered as Cloud Optimized GeoTIFF (COG). Cloud masking was performed using Fmask 5.0.1 (https://doi.org/10.1016/j.rse.2019.05.024). Currently, data availability is limited to the Tietê River cascade reservoirs; future updates will progressively expand coverage to additional water bodies throughout Brazil.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of aquatic Remote Sensing Reflectance (Rrs) in Cloud Optimized GeoTIFF using ACOLITE atmospheric correction processor",
+                "processing:level": "Rrs",
+                "processing:facility": "LabISA/INPE",
+                "processing:software": {
+                    "mapaquali-processor": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "sentinel-2",
+        "msi",
+        "remote sensing reflectance",
+        "Rrs",
+        "water",
+        "cloud optimized geotiff",
+        "cog",
+        "acolite",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "B4",
+        "B3",
+        "B2"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "B1",
+            "common_name": "B1_Rrs",
+            "description": "Band 1 - Coastal aerosol - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.443,
+            "full_width_half_max": 0.027
+        },
+        {
+            "name": "B2",
+            "common_name": "B2_Rrs",
+            "description": "Band 2 - Blue - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.490,
+            "full_width_half_max": 0.098
+        },
+        {
+            "name": "B3",
+            "common_name": "B3_Rrs",
+            "description": "Band 3 - Green - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.560,
+            "full_width_half_max": 0.045
+        },
+        {
+            "name": "B4",
+            "common_name": "B4_Rrs",
+            "description": "Band 4 - Red - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.665,
+            "full_width_half_max": 0.038
+        },
+        {
+            "name": "B5",
+            "common_name": "B5_Rrs",
+            "description": "Band 5 - Red edge 1 - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.705,
+            "full_width_half_max": 0.019
+        },
+        {
+            "name": "B6",
+            "common_name": "B6_Rrs",
+            "description": "Band 6 - Red edge 2 - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.740,
+            "full_width_half_max": 0.018
+        },
+        {
+            "name": "B7",
+            "common_name": "B7_Rrs",
+            "description": "Band 7 - Red edge 3 - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.783,
+            "full_width_half_max": 0.028
+        },
+        {
+            "name": "B8",
+            "common_name": "B8_Rrs",
+            "description": "Band 8 - NIR - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.842,
+            "full_width_half_max": 0.145
+        },
+        {
+            "name": "B8A",
+            "common_name": "B8A_Rrs",
+            "description": "Band 8A - NIR narrow - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.865,
+            "full_width_half_max": 0.033
+        },
+        {
+            "name": "B11",
+            "common_name": "B11_Rrs",
+            "description": "Band 11 - SWIR 1 - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 1.610,
+            "full_width_half_max": 0.143
+        },
+        {
+            "name": "B12",
+            "common_name": "B12_Rrs",
+            "description": "Band 12 - SWIR 2 - Rrs - ACOLITE",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 2.190,
+            "full_width_half_max": 0.242
+        },
+        {
+            "name": "TCI",
+            "common_name": "rgb",
+            "description": "True Color Image",
+            "min_value": 0,
+            "max_value": 1,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2a",
+            "sentinel-2b",
+            "sentinel-2c"
+        ],
+        "constellation": [
+            "sentinel-2"
+        ],
+        "instruments": [
+            "msi"
+        ],
+        "gsd": [
+            20
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "B1": {
+            "title": "Band 1 - Coastal aerosol (443 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B2": {
+            "title": "Band 2 - Blue (490 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B3": {
+            "title": "Band 3 - Green (560 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B4": {
+            "title": "Band 4 - Red (665 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B5": {
+            "title": "Band 5 - Red edge 1 (705 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B6": {
+            "title": "Band 6 - Red edge 2 (740 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B7": {
+            "title": "Band 7 - Red edge 3 (783 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B8": {
+            "title": "Band 8 - NIR (842 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B8A": {
+            "title": "Band 8A - NIR narrow (865 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B11": {
+            "title": "Band 11 - SWIR 1 (1610 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "B12": {
+            "title": "Band 12 - SWIR 2 (2190 nm) - Remote Sensing Reflectance (Rrs)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "TCI": {
+            "title": "Band TCI",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "overview"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "B4",
+                "green": "B3",
+                "blue": "B2"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/",
+            "https://inthub2.copernicus.eu",
+            "https://scihub.copernicus.eu/",
+            "http://www.dpi.inpe.br/labisa/"
+        ],
+        "renders": {
+            "tci": {
+                "title": "True Color Image",
+                "assets": [
+                    "TCI"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "mq:title": "MAPAQUALI-S2-Rrs-Water",
+        "platform": "Sentinel-2/MSI",
+        "mq:sensor": "MSI",
+        "mq:product": "Rrs",
+        "mq:location": "Brazil",
+        "mq:platform": "Sentinel-2",
+        "mq:portal_show": true
+    }
+}
