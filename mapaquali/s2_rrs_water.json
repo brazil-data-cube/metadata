@@ -239,7 +239,7 @@
         },
         {
             "name": "TCI",
-            "common_name": "rgb",
+            "common_name": "TCI",
             "description": "True Color Image",
             "min_value": 0,
             "max_value": 1,
