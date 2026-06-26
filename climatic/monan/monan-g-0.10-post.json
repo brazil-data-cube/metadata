@@ -1,0 +1,159 @@
+{
+    "id": null,
+    "name": "monan-g-0.10-post",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/version/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "title": "MONAN (Model for Ocean-LaNd-Atmosphere PredictioN)",
+    "deprecated": false,
+    "description": "Unified numerical model of the Earth system that integrates the atmosphere, oceans, and continental surface, designed to improve weather forecasting and the analysis of extreme climate events.",
+    "keywords": [
+        "numerical model",
+        "netcdf",
+        "forecast",
+        "weather forecast",
+        "precipitation"
+    ],
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://www.cptec.inpe.br/",
+                "name": "Center for Weather Forecasting and Climate Studies (CPTEC/INPE)",
+                "roles": [
+                    "producer"
+                ]
+            },
+            {
+                "url": "https://dataserver.cptec.inpe.br/dataserver_modelos//",
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "processing:level": "L4",
+                "processing:lineage": "Generation of MONAN meteorological model",
+                "processing:facility": "CPTEC/INPE"
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "summaries": {
+        "processing:facility": [
+            "INPE-MONAN"
+        ],
+        "processing:level": [
+            "L4"
+        ],
+        "netcdf:conventions": [
+            "CF-1.8"
+        ],
+        "netcdf:dimensions": [
+            {
+                "latitude": 1801,
+                "longitude": 3601,
+                "level": 18,
+                "Time": 1
+            }
+        ],
+        "netcdf:variables_with_level": [
+            "zgeo",
+            "temperature",
+            "spechum",
+            "relhum",
+            "uzonal",
+            "umeridional",
+            "w",
+            "omega"
+        ],
+        "netcdf:variables_without_level": [
+            "surface_pressure",
+            "mslp",
+            "precipw",
+            "rainnc",
+            "rainc",
+            "cape",
+            "cin",
+            "acswdnb",
+            "aclwupb",
+            "aclwupt",
+            "u10",
+            "v10",
+            "q2",
+            "t2m",
+            "hfx",
+            "lh",
+            "cldfrac_tot_UPP",
+            "ter",
+            "landmask"
+        ],
+        "netcdf:level": [
+            100000.0,
+            92500.0,
+            85000.0,
+            77500.0,
+            70000.0,
+            50000.0,
+            40000.0,
+            30000.0,
+            25000.0,
+            20000.0,
+            15000.0,
+            10000.0,
+            7000.0,
+            5000.0,
+            3000.0,
+            2000.0,
+            1000.0,
+            300.0
+        ]
+    },
+    "bands": {},
+    "item_assets": {
+        "monan-diagnostic": {
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ],
+            "title": "MONAN - (Model for Ocean-LaNd-Atmosphere PredictioN) netCDF File"
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail"
+        }
+    },
+    "properties": {},
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        }
+    }
+}
