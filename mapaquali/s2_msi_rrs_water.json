@@ -1,6 +1,6 @@
 {
     "id": null,
-    "name": "s2_rrs_water",
+    "name": "s2_msi_rrs_water",
     "title": "Sentinel-2 - Aquatic Remote Sensing Reflectance",
     "description": "This is a development product aimed at providing Copernicus Sentinel-2/MSI remote sensing reflectance (Rrs) over water bodies all over Brazil. The product provides orthorectified remote sensing reflectance images (Rrs) processed with ACOLITE atmospheric correction and delivered as Cloud Optimized GeoTIFF (COG). Cloud masking was performed using Fmask 5.0.1 (https://doi.org/10.1016/j.rse.2019.05.024). Currently, data availability is limited to the Tietê River cascade reservoirs; future updates will progressively expand coverage to additional water bodies throughout Brazil.",
     "temporal_composition_schema": null,
@@ -53,9 +53,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "B4",
-        "B3",
-        "B2"
+        "B04",
+        "B03",
+        "B02"
     ],
     "version": 1,
     "version_predecessor": null,
@@ -90,7 +90,7 @@
             "resolution_x": 20.0,
             "resolution_y": 20.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.490,
+            "center_wavelength": 0.49,
             "full_width_half_max": 0.098
         },
         {
@@ -106,7 +106,7 @@
             "resolution_x": 20.0,
             "resolution_y": 20.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.560,
+            "center_wavelength": 0.56,
             "full_width_half_max": 0.045
         },
         {
@@ -154,7 +154,7 @@
             "resolution_x": 20.0,
             "resolution_y": 20.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 0.740,
+            "center_wavelength": 0.74,
             "full_width_half_max": 0.018
         },
         {
@@ -218,7 +218,7 @@
             "resolution_x": 20.0,
             "resolution_y": 20.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 1.610,
+            "center_wavelength": 1.61,
             "full_width_half_max": 0.143
         },
         {
@@ -234,7 +234,7 @@
             "resolution_x": 20.0,
             "resolution_y": 20.0,
             "resolution_unit": "Meter",
-            "center_wavelength": 2.190,
+            "center_wavelength": 2.19,
             "full_width_half_max": 0.242
         },
         {
@@ -387,12 +387,15 @@
                 "resampling": "nearest"
             }
         },
-        "mq:title": "MAPAQUALI-S2-Rrs-Water",
-        "platform": "Sentinel-2/MSI",
+        "mq:title": "Sentinel-2/MSI - Rrs",
+        "mq:titleLong": "Sentinel-2/MSI - Remote Sensing Reflectance",
+        "mq:titleShort": "S2 - MSI - Rrs",
+        "mq:platform": "Sentinel-2",
         "mq:sensor": "MSI",
         "mq:product": "Rrs",
-        "mq:location": "Brazil",
-        "mq:platform": "Sentinel-2",
-        "mq:portal_show": true
+        "mq:cloudMask": "Fmask-5.0.1",
+        "mq:atmCorrection": "ACOLITE-20250527",
+        "mq:parentData": "S2_L1C_BUNDLE-1",
+        "mq:portalShow": true
     }
 }

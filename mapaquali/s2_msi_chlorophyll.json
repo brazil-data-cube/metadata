@@ -1,8 +1,8 @@
 {
     "id": null,
-    "name": "s2_chlorophyll_cairo_tiete",
-    "title": "Sentinel-2 - Chlorophyll-a - Tietê River Cascade Reservoirs",
-    "description": "Sentinel-2/MSI derived Chlorophyll-a (Chla) concentration over the Tietê River cascade reservoirs, São Paulo, Brazil. Water quality parameter estimated from Sentinel-2/MSI Rrs (ACOLITE) using the semi-empirical algorithm of [Cairo et al. (2020)](https://doi.org/10.3390/rs12010040). This datataset is provided as Cloud Optimized GeoTIFF (COG).",
+    "name": "s2_msi_chlorophyll",
+    "title": "Sentinel-2 - Chlorophyll-a - Brazil",
+    "description": "Copernicus Sentinel-2/MSI derived Chlorophyll-a (Chla) concentration over water bodies all over Brazil. Water quality parameter derived from Sentinel-2/MSI Rrs (ACOLITE atmospheric correction), estimated with per-area semi-empirical algorithms and delivered as Cloud Optimized GeoTIFF (COG). Each study area is computed with the algorithm best calibrated for it; see the per-area ATBDs. Currently available for the Tiete River cascade reservoirs; coverage expands per area over time.",
     "temporal_composition_schema": null,
     "composition_function": null,
     "grid_ref_sys": null,
@@ -24,7 +24,7 @@
                     "processor"
                 ],
                 "url": "https://data.inpe.br/big/",
-                "processing:lineage": "Chlorophyll-a concentration derived from Sentinel-2/MSI using ACOLITE and the Cairo et al. (2020) semi-empirical algorithm",
+                "processing:lineage": "Chlorophyll-a concentration derived from Sentinel-2/MSI Rrs (ACOLITE) using per-area semi-empirical algorithms (see study-area metadata / ATBD).",
                 "processing:level": "WQP",
                 "processing:facility": "LabISA/INPE",
                 "processing:software": {
@@ -41,14 +41,13 @@
         "chlorophyll",
         "chlorophyll-a",
         "phytoplankton",
+        "water quality",
         "sentinel-2",
         "msi",
-        "water quality",
-        "tiete",
-        "reservoirs",
-        "brazil",
-        "semi-empirical",
-        "cairo"
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
     ],
     "is_public": true,
     "is_available": true,
@@ -61,11 +60,12 @@
         {
             "name": "Chla",
             "common_name": "Chlorophyll-a",
-            "description": "Chlorophyll-a concentration derived from Sentinel-2/MSI using the Cairo et al. (2020) semi-empirical algorithm",
+            "description": "Chlorophyll-a concentration derived from Sentinel-2/MSI Rrs using per-area semi-empirical algorithms",
             "min_value": 0,
-            "max_value": 500,
+            "max_value": 2000,
             "nodata": null,
             "scale": 1,
+            "scale_add": null,
             "data_type": "float32",
             "unit": "ug/L",
             "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
@@ -97,7 +97,7 @@
     },
     "item_assets": {
         "Chla": {
-            "title": "Chlorophyll-a concentration - Cairo algorithm (Tietê Cascade)",
+            "title": "Chlorophyll-a concentration (per-area algorithm)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
                 "data"
@@ -119,29 +119,33 @@
     "properties": {
         "sources": [
             "https://dataspace.copernicus.eu/",
-            "https://inthub2.copernicus.eu",
-            "https://scihub.copernicus.eu/",
-            "https://doi.org/10.3390/rs12010040",
             "http://www.dpi.inpe.br/labisa/"
         ],
         "renders": {
             "Chla": {
-                "title": "Chlorophyll-a concentration - Cairo algorithm (Tietê Cascade)",
+                "title": "Chlorophyll-a concentration (ug/L)",
                 "assets": [
                     "Chla"
+                ],
+                "colormap_name": "rdylbu_r",
+                "rescale": [
+                    [
+                        0,
+                        75
+                    ]
                 ],
                 "resampling": "nearest"
             }
         },
-        "mq:title": "S2 Chlorophyll-a Tietê",
-        "platform": "Sentinel-2/MSI",
+        "mq:title": "Sentinel-2/MSI - Chlorophyll-a",
+        "mq:titleLong": "Sentinel-2/MSI - Chlorophyll-a Concentration",
+        "mq:titleShort": "S2 - MSI - Chla",
+        "mq:platform": "Sentinel-2",
         "mq:sensor": "MSI",
         "mq:product": "Chlorophyll-a",
-        "mq:algorithm": "Cairo",
-        "mq:location": "Tiete",
-        "mq:platform": "Sentinel-2",
-        "mq:portal_show": true,
-        "sci:doi": "10.3390/rs12010040",
-        "sci:citation": "Cairo, C.; Barbosa, C.; Lobo, F.; Novo, E.; Carlos, F.; Maciel, D.; Flores Junior, R.; Silva, E.; Curtarelli, V. (2020). Hybrid Chlorophyll-a Algorithm for Assessing Trophic States of a Tropical Brazilian Reservoir Based on MSI/Sentinel-2 Data. Remote Sensing, 12(1), 40. https://doi.org/10.3390/rs12010040"
+        "mq:cloudMask": "Fmask-5.0.1",
+        "mq:atmCorrection": "ACOLITE-20250527",
+        "mq:parentCollection": "s2_msi_rrs_water-1",
+        "mq:portalShow": true
     }
 }
