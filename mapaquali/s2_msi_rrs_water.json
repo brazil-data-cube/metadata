@@ -5,7 +5,7 @@
     "description": "This is a development product aimed at providing Copernicus Sentinel-2/MSI remote sensing reflectance (Rrs) over water bodies all over Brazil. The product provides orthorectified remote sensing reflectance images (Rrs) processed with ACOLITE atmospheric correction and delivered as Cloud Optimized GeoTIFF (COG). Cloud masking was performed using Fmask 5.0.1 (https://doi.org/10.1016/j.rse.2019.05.024). Currently, data availability is limited to the Tietê River cascade reservoirs; future updates will progressively expand coverage to additional water bodies throughout Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
-    "grid_ref_sys": null,
+    "grid_ref_sys": "MGRS",
     "collection_type": "collection",
     "metadata": {
         "providers": [
