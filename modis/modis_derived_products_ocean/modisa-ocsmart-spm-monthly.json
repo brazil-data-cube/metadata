@@ -23,7 +23,7 @@
                     "producer"
                 ],
                 "processing:level": "L3",
-                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimatives based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite."
+                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimates based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite."
             },
             {
                 "name": "National Institute for Space Research (INPE)",
@@ -48,7 +48,7 @@
                     "processor"
                 ],
                 "processing:level": "L3",
-                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimatives based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite.",
+                "processing:lineage": "Generation of monthly suspended particulate matter concentration estimates based on a blend of two SPM algorithms using the MODIS-Aqua earth observation satellite.",
                 "processing:facility": "LOG",
                 "processing:software": {
                     "SEADAS": "9.1.0",
