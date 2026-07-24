@@ -18,6 +18,13 @@
                 "url": "https://earth.esa.int/"
             },
             {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "roles": [
+                    "producer"
+                ],
+                "url": "https://oceancolor.gsfc.nasa.gov/"
+            },
+            {
                 "name": "National Institute for Space Research (INPE)",
                 "roles": [
                     "host"
@@ -27,7 +34,7 @@
         ],
         "license": {
             "type": "proprietary",
-            "uri": "https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf"
+            "uri": "https://d9-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/atoms/files/2008%20Landsat%20Data%20Distribution%20Policy.pdf"
         },
         "platform": {
             "code": [
