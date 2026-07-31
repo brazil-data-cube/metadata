@@ -28,7 +28,7 @@
             {
                 "name": "OpenGeoHub Foundation",
                 "roles": [
-                    "producer"
+                    "processor"
                 ],
                 "url": "https://opengeohub.org/"
             },
