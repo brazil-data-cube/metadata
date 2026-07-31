@@ -1,7 +1,7 @@
 {
     "id": null,
-    "name": "s2_msi_rrs_water",
-    "title": "Sentinel-2 - Aquatic Remote Sensing Reflectance",
+    "name": "s2_msi_mq_rrs",
+    "title": "Sentinel-2 - MSI - MAPAQUALI - Aquatic Remote Sensing Reflectance",
     "description": "This is a development product aimed at providing Copernicus Sentinel-2/MSI remote sensing reflectance (Rrs) over water bodies all over Brazil. The product provides orthorectified remote sensing reflectance images (Rrs) processed with ACOLITE atmospheric correction and delivered as Cloud Optimized GeoTIFF (COG). Cloud masking was performed using Fmask 5.0.1 (https://doi.org/10.1016/j.rse.2019.05.024). Currently, data availability is limited to the Tietê River cascade reservoirs; future updates will progressively expand coverage to additional water bodies throughout Brazil.",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -41,6 +41,7 @@
         "sentinel-2",
         "msi",
         "remote sensing reflectance",
+        "mapaquali",
         "Rrs",
         "water",
         "cloud optimized geotiff",
@@ -352,10 +353,10 @@
             ]
         },
         "TCI": {
-            "title": "Band TCI",
+            "title": "True Color Image (RGB composite)",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "roles": [
-                "overview"
+                "data"
             ]
         },
         "thumbnail": {
