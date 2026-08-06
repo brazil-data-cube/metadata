@@ -1,0 +1,150 @@
+{
+    "id": null,
+    "name": "s2_msi_mq_wqp",
+    "title": "Sentinel-2 - MSI - MAPAQUALI - Water Quality Parameters",
+    "description": "Water quality parameters derived from Copernicus Sentinel-2/MSI Rrs (ACOLITE atmospheric correction), and delivered as Cloud Optimized GeoTIFF (COG). Each pixel is computed with the algorithm best calibrated for it; see the per-area ATBDs. Currently available for the Tiete River cascade reservoirs; coverage will be expanded over time.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "European Space Agency (ESA)",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Water quality parameters derived from Sentinel-2/MSI Rrs (ACOLITE) using per site algorithms (see metadata / ATBD).",
+                "processing:level": "WQP",
+                "processing:facility": "LabISA/INPE",
+                "processing:software": {
+                    "mapaquali-processor": "1.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+        }
+    },
+    "keywords": [
+        "chlorophyll-a",
+        "phytoplankton",
+        "water quality",
+        "sentinel-2",
+        "msi",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": null,
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "Chla",
+            "common_name": "Chlorophyll-a",
+            "description": "Chlorophyll-a concentration derived from Sentinel-2/MSI Rrs using per-area semi-empirical algorithms",
+            "min_value": 0,
+            "max_value": 2500,
+            "nodata": null,
+            "scale": 1,
+            "scale_add": null,
+            "data_type": "float32",
+            "unit": "µg/L",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 20.0,
+            "resolution_y": 20.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "sentinel-2a",
+            "sentinel-2b",
+            "sentinel-2c"
+        ],
+        "constellation": [
+            "sentinel-2"
+        ],
+        "instruments": [
+            "msi"
+        ],
+        "gsd": [
+            20
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "Chla": {
+            "title": "Chlorophyll-a concentration (per-area algorithm)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "Chla_thumbnail": {
+            "title": "Chlorophyll-a — thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "Chla",
+                "green": "Chla",
+                "blue": "Chla"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://dataspace.copernicus.eu/",
+            "http://www.dpi.inpe.br/labisa/"
+        ],
+        "renders": {
+            "Chla": {
+                "title": "Chlorophyll-a concentration (µg/L)",
+                "assets": [
+                    "Chla"
+                ],
+                "colormap_name": "rdylbu_r",
+                "rescale": [
+                    [
+                        0,
+                        75
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "mq:title": "Sentinel-2/MSI - WQP",
+        "mq:titleLong": "Sentinel-2/MSI - Water Quality Parameters",
+        "mq:titleShort": "S2 - MSI - WQP",
+        "mq:platform": "Sentinel-2",
+        "mq:sensor": "MSI",
+        "mq:product": "WQP",
+        "mq:cloudMask": "Fmask-5.0.1",
+        "mq:atmCorrection": "ACOLITE-20250527",
+        "mq:parentCollection": "s2_msi_mq_rrs-1",
+        "mq:portalShow": true
+    }
+}
