@@ -1,0 +1,253 @@
+{
+    "id": null,
+    "name": "modisa-ocsmart-biogeochemical-daily",
+    "title": "MODIS-Aqua daily biogeochemical products",
+    "description": "The biogeochemical products (Chlorophyll-a, Suspended Particulate Matter, Particulate Organic Carbon, absorption by Colored Dissolved Organic Matter, and Dissolved Organic Carbon) are derived from remote sensing reflectance (Rrs, measured in sr^-1) retrieved from the Moderate Resolution Imaging Spectroradiometer (MODIS) onboard NASA's Aqua satellite (MODIS-Aqua) and atmospherically corrected using the Ocean Color - Simultaneous Marine and Aerosol Retrieval Tool (OC-SMART) (Fan et al., 2021). These products are generated from daily Rrs observations with a nominal spatial resolution of 1 km at nadir. For each day, multiple MODIS-Aqua swath tiles covering the study area are processed individually to produce the corresponding Rrs. The resulting Rrs tiles are then merged into a single seamless daily mosaic using the SNAP Mosaicking Tool, producing a daily Rrs composite that combines all available observations for that day. The daily Rrs composites are subsequently used as input for the retrieval of the following biogeochemical products: • Chlorophyll-a concentration (CHL, mg·m⁻³): estimated using the Combination Of Neural Network models in Estimating Chlorophyll-a over Turbid and Clear Waters (CONNECT) algorithm (Tran et al., 2025). • Suspended Particulate Matter concentration (SPM, g·m⁻³): estimated using a blend of two SPM algorithms (Salah Salah et al., 2025). • Particulate Organic Carbon (POC, mg·m⁻³): estimated by combining the algorithms proposed by Loisel et al. (2002, 2018), Tran et al. (2016), and Le et al. (2016). • Absorption by Colored Dissolved Organic Matter (aCDOM, m⁻¹): estimated from the remote sensing reflectance band centered at 443 nm using the algorithm developed by Bonelli et al. (2021). • Dissolved Organic Carbon (DOC, µmol·L⁻¹): estimated using an Artificial Neural Network (ANN) machine-learning approach (Bonelli et al., 2022).",
+    "temporal_composition_schema": {
+        "cycle": {
+            "step": 1,
+            "unit": "year"
+        },
+        "schema": "Cyclic",
+        "step": 1,
+        "unit": "day"
+    },
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Aeronautics and Space Administration (NASA)",
+                "url": "https://oceancolor.gsfc.nasa.gov/",
+                "roles": [
+                    "producer"
+                ],
+                "processing:level": "L1",
+                "processing:lineage": "Generation and distribution of daily Level-1A radiance using the MODIS-Aqua earth observation satellite."
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "url": "https://data.inpe.br/big/",
+                "roles": [
+                    "processor",
+                    "host"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily CDOM absorption at 443 nm (aCDOM_443) estimatives based on the algorithm described by Bonelli et al. (2021) using the MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP": "10.0"
+                }
+            },
+            {
+                "name": "Laboratoire d'Océanologie et de Géosciences",
+                "url": "https://log.cnrs.fr/recherche",
+                "roles": [
+                    "processor"
+                ],
+                "processing:level": "L3",
+                "processing:lineage": "Generation of daily CDOM absorption at 443 nm (aCDOM_443) estimatives based on the algorithm described by Bonelli et al. (2021) using the MODIS-Aqua earth observation satellite.",
+                "processing:facility": "LOG",
+                "processing:software": {
+                    "SEADAS": "9.1.0",
+                    "OCSMART": "2.2",
+                    "SNAP": "10.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Zero (CC0)",
+            "uri": "https://creativecommons.org/public-domain/cc0/"
+        }
+    },
+    "keywords": [
+        "modis",
+        "aqua",
+        "level-3",
+        "dissolved organic carbon",
+        "doc",
+        "suspended particulate matter",
+        "spm",
+        "particulate organic carbon",
+        "poc",
+        "chlorophyll-a",
+        "chl",
+        "colored dissolved organic matter",
+        "aCDOM",
+        "colored dissolved organic matter",
+        "aCDOM",
+        "ocean color",
+        "observation",
+        "daily",
+        "surface",
+        "brazil"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "aCDOM_443",
+            "common_name": "aCDOM_443",
+            "description": "Absorption by Colored Dissolved Organic Carbon at 443 nm",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 500,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "CHL",
+            "common_name": "Chl-a",
+            "description": "Chlorophyll-a concentration",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 500,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "DOC",
+            "common_name": "DOC",
+            "description": "Dissolved Organic Carbon concentration",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 300,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "POC",
+            "common_name": "POC",
+            "description": "Particulate Organic Carbon concentration",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 650,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "Nobs",
+            "common_name": "Nobs",
+            "description": "Number of valid pixel observations",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 31,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "int16",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        },
+        {
+            "name": "SPM",
+            "common_name": "SPM",
+            "description": "Suspended Particulate Matter concentration",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "min_value": 0,
+            "max_value": 500,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float64",
+            "mime_type": "application/netcdf",
+            "resolution_x": 1.0,
+            "resolution_y": 1.0,
+            "resolution_unit": "Kilometer"
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "aqua"
+        ],
+        "constellation": [
+            "modis"
+        ],
+        "instruments": [
+            "modis"
+        ]
+    },
+    "item_assets": {
+        "aCDOM_443": {
+            "type": "application/netcdf",
+            "title": "Absorption by Colored Dissolved Organic Carbon at 443 nm",
+            "roles": [
+                "data"
+            ]
+        },
+        "CHL": {
+            "type": "application/netcdf",
+            "title": "Chlorophyll-a concentration",
+            "roles": [
+                "data"
+            ]
+        },
+        "DOC": {
+            "type": "application/netcdf",
+            "title": "Dissolved Organic Carbon concentration",
+            "roles": [
+                "data"
+            ]
+        },
+        "POC": {
+            "type": "application/netcdf",
+            "title": "Particulate Organic Carbon concentration",
+            "roles": [
+                "data"
+            ]
+        },
+        "SPM": {
+            "type": "application/netcdf",
+            "title": "Suspended Particulate Matter concentration",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "type": "image/png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "http://www.inpe.br",
+            "https://seadas.gsfc.nasa.gov/",
+            "http://www.rtatmocn.com/oc-smart/"
+        ]
+    }
+}
