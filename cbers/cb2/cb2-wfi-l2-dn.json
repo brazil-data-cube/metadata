@@ -45,9 +45,9 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "red",
-        "nir",
-        "red"
+        "BAND1",
+        "BAND2",
+        "BAND1"
     ],
     "version": 1,
     "version_predecessor": null,
@@ -132,6 +132,13 @@
                 "metadata"
             ]
         },
+        "image_metadata": {
+            "title": "Image Metadata",
+            "type": "application/json",
+            "roles": [
+                "data"
+            ]
+        },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",
@@ -153,9 +160,9 @@
             "rgb": {
                 "title": "Red NIR Red",
                 "assets": [
-                    "red",
-                    "nir",
-                    "red"
+                    "BAND1",
+                    "BAND2",
+                    "BAND1"
                 ],
                 "rescale": [
                     [
