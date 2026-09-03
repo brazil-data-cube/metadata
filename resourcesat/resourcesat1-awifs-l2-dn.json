@@ -1,7 +1,7 @@
 {
     "id": null,
-    "name": "RESOURCESAT1_AWIFIS_L2_DN",
-    "title": "RESOURCESAT-1/AWiFIS - Level-2-DN",
+    "name": "RESOURCESAT1_AWIFS_L2_DN",
+    "title": "RESOURCESAT-1/AWiFS - Level-2-DN",
     "description": "The Resourcesat-1 satellite was launched by the Indian Space Research Organisation (ISRO) on October 17, 2003. The instruments on the Resourcesat-1 (also known as IRS-P6) acquire four spectral bands ranging from Visible and Near-Infrared (VNIR) to Shortwave Infrared (SWIR) wavelengths. The satellite operates in a sun-synchronous orbit at an altitude of 817 km. The satellites take 101.35 minutes to complete one revolution around the earth and complete about 14 orbits per day. The entire earth is covered by 341 orbits during a 24-day cycle. AWiFS covers a 740-km orbital swath at a resolution of 56 meters with a 5-day repeat cycle. Level 2 products have radiometric correction and geometric correction using satellite ephemeris and attitude data (system correction).",
     "temporal_composition_schema": null,
     "composition_function": null,
@@ -34,7 +34,7 @@
     "keywords": [
         "resourcesat",
         "resourcesat-1",
-        "awifis",
+        "awifs",
         "level-2",
         "digital number",
         "earth observation",
@@ -126,7 +126,7 @@
             "resourcesat-1"
         ],
         "instruments": [
-            "awifis"
+            "awifs"
         ],
         "gsd": [
             56
@@ -136,44 +136,57 @@
         ]
     },
     "item_assets": {
-        "green": {
+        "Band2": {
             "type": "image/tiff; application=geotiff",
             "title": "Band green",
             "roles": [
                 "data"
             ]
         },
-        "red": {
+        "Band3": {
             "type": "image/tiff; application=geotiff",
             "title": "Band red",
             "roles": [
                 "data"
             ]
         },
-        "nir": {
+        "Band4": {
             "type": "image/tiff; application=geotiff",
             "title": "Band NIR",
             "roles": [
                 "data"
             ]
         },
-        "swir": {
+        "Band5": {
             "type": "image/tiff; application=geotiff",
             "title": "Band SWIR",
             "roles": [
                 "data"
             ]
         },
+        "image_metadata": {
+            "type": "application/json",
+            "roles": [
+                "metadata"
+            ]
+        },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "red",
-                "green": "nir",
-                "blue": "green"
+                "red": "BAND3",
+                "green": "BAND4",
+                "blue": "BAND2"
             },
             "roles": [
                 "thumbnail"
+            ]
+        },
+        "thumbnail_aux": {
+            "title": "Thumbnail Aux",
+            "type": "application/xml",
+            "roles": [
+                "metadata"
             ]
         }
     },
@@ -185,9 +198,9 @@
             "rgb": {
                 "title": "Red NIR Green",
                 "assets": [
-                    "red",
-                    "nir",
-                    "green"
+                    "Band3",
+                    "Band4",
+                    "Band2"
                 ],
                 "rescale": [
                     [

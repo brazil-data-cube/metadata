@@ -45,16 +45,16 @@
     "is_available": true,
     "category": "eo",
     "quicklook": [
-        "red",
-        "nir",
-        "green"
+        "BAND3",
+        "BAND4",
+        "BAND2"
     ],
     "version": 1,
     "version_predecessor": null,
     "version_successor": null,
     "bands": [
         {
-            "name": "green",
+            "name": "BAND2",
             "common_name": "green",
             "description": "BAND green",
             "min_value": 0,
@@ -70,7 +70,7 @@
             "full_width_half_max": 0.59
         },
         {
-            "name": "red",
+            "name": "BAND3",
             "common_name": "red",
             "description": "BAND red",
             "min_value": 0,
@@ -86,7 +86,7 @@
             "full_width_half_max": 0.68
         },
         {
-            "name": "nir",
+            "name": "BAND4",
             "common_name": "nir",
             "description": "BAND - NIR",
             "min_value": 0,
@@ -102,7 +102,7 @@
             "full_width_half_max": 0.86
         },
         {
-            "name": "swir",
+            "name": "BAND5",
             "common_name": "swir",
             "description": "BAND swir",
             "min_value": 0,
@@ -136,44 +136,57 @@
         ]
     },
     "item_assets": {
-        "green": {
+        "BAND2": {
             "type": "image/tiff; application=geotiff",
             "title": "Band green",
             "roles": [
                 "data"
             ]
         },
-        "red": {
+        "BAND3": {
             "type": "image/tiff; application=geotiff",
             "title": "Band red",
             "roles": [
                 "data"
             ]
         },
-        "nir": {
+        "BAND4": {
             "type": "image/tiff; application=geotiff",
             "title": "Band NIR",
             "roles": [
                 "data"
             ]
         },
-        "swir": {
+        "BAND5": {
             "type": "image/tiff; application=geotiff",
             "title": "Band SWIR",
             "roles": [
                 "data"
             ]
         },
+        "image_metadata": {
+            "type": "application/json",
+            "roles": [
+                "metadata"
+            ]
+        },
         "thumbnail": {
             "title": "Thumbnail",
             "type": "image/png",
             "bands": {
-                "red": "red",
-                "green": "nir",
-                "blue": "green"
+                "red": "BAND3",
+                "green": "BAND4",
+                "blue": "BAND2"
             },
             "roles": [
                 "thumbnail"
+            ]
+        },
+        "thumbnail_aux": {
+            "title": "Thumbnail Aux",
+            "type": "application/xml",
+            "roles": [
+                "metadata"
             ]
         }
     },
@@ -185,9 +198,9 @@
             "rgb": {
                 "title": "Red NIR Green",
                 "assets": [
-                    "red",
-                    "nir",
-                    "green"
+                    "BAND3",
+                    "BAND4",
+                    "BAND2"
                 ],
                 "rescale": [
                     [
