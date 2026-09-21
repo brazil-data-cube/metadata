@@ -1,0 +1,296 @@
+{
+    "id": null,
+    "name": "rapideye",
+    "title": "RapidEye - Cloud Optimized GeoTIFF",
+    "description": "RapidEye product over Brazil. Launched on August 29, 2008, the RapidEye constellation consisted of five identical medium-resolution satellites, each carrying the REIS sensor. This collection provides orthorectified images with 5‑meter spatial resolution. The constellation was officially decommissioned on December 31, 2019, and no longer acquires new imagery. Brazil obtained RapidEye images for the years 2011-2015, covering the entire national territory. The data is available in Cloud Optimized GeoTIFF format, with 5-meter spatial resolution and a temporal resolution of 5 days. The collection includes the following spectral bands: Blue (B01), Green (B02), Red (B03), Red Edge (B04), and Near Infrared (B05).",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "Planet Labs",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ],
+                "url": "https://www.planet.com/"
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host"
+                ],
+                "url": "https://data.inpe.br/big/"
+            }
+        ],
+        "license": {
+            "type": "proprietary",
+            "uri": "https://www.planet.com/licensing-information/"
+        }
+    },
+    "keywords": [
+        "rapideye",
+        "reis",
+        "planet",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": false,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "b3",
+        "b2",
+        "b1"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "b1",
+            "common_name": "blue",
+            "description": "Blue (b1)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 5.0,
+            "resolution_y": 5.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.475,
+            "full_width_half_max": 0.035
+        },
+        {
+            "name": "b2",
+            "common_name": "green",
+            "description": "Green (b2)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 5.0,
+            "resolution_y": 5.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.035
+        },
+        {
+            "name": "b3",
+            "common_name": "red",
+            "description": "Red (b3)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 5.0,
+            "resolution_y": 5.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.6525,
+            "full_width_half_max": 0.0225
+        },
+        {
+            "name": "b4",
+            "common_name": "rededge",
+            "description": "Red edge (b4)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 5.0,
+            "resolution_y": 5.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.71,
+            "full_width_half_max": 0.02
+        },
+        {
+            "name": "b5",
+            "common_name": "nir",
+            "description": "NIR 1 (b5)",
+            "min_value": 0,
+            "max_value": 10000,
+            "nodata": 0,
+            "scale": 0.0001,
+            "data_type": "uint16",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 5.0,
+            "resolution_y": 5.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.805,
+            "full_width_half_max": 0.45
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "rapideye-1",
+            "rapideye-2",
+            "rapideye-3",
+            "rapideye-4",
+            "rapideye-5"
+        ],
+        "constellation": [
+            "rapideye"
+        ],
+        "instruments": [
+            "reis"
+        ],
+        "gsd": [
+            5
+        ],
+        "view:off_nadir": [
+            0
+        ]
+    },
+    "item_assets": {
+        "b1": {
+            "title": "Band blue",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "b2": {
+            "title": "Band green",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "b3": {
+            "title": "Band red",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "b4": {
+            "title": "Band rededge",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "b5": {
+            "title": "Band NIR",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "udm": {
+            "title": "Unusable Data Mask",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "browse": {
+            "title": "Browse Image File",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "browse.jpg": {
+            "title": "Browse Image File (JPG)",
+            "type": "image/png",
+            "bands": {
+                "red": "b3",
+                "green": "b2",
+                "blue": "b1"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "browse.jpg.aux.xml": {
+            "title": "browse jpg aux xml",
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "browse.tif.wld": {
+            "title": "browse world file",
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "convexhull": {
+            "title": "convex hull",
+            "type": "application/json",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "geojson": {
+            "title": "geojson",
+            "type": "application/json",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "license": {
+            "title": "license",
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "title": "metadata",
+            "type": "application/xml",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "readme": {
+            "title": "readme",
+            "type": "text/plain",
+            "roles": [
+                "metadata"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://www.planet.com/products/rapideye/"
+        ],
+        "renders": {
+            "rgb": {
+                "title": "True Color",
+                "assets": [
+                    "b3",
+                    "b2",
+                    "b1"
+                ],
+                "rescale": [
+                    [
+                        0,
+                        5000
+                    ],
+                    [
+                        0,
+                        5000
+                    ],
+                    [
+                        0,
+                        5000
+                    ]
+                ],
+                "resampling": "nearest"
+            }
+        }
+    }
+}
