@@ -1,0 +1,3568 @@
+{
+    "id": null,
+    "name": "EtaCCDay_CMIP5",
+    "title": "Eta Model - Climate Change - CMIP5 - Day",
+    "description": "High-Resolution Projections of Climate Change over South America.",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "processing:lineage": "Downscaling of Climate Change Projections.",
+                "processing:level": null,
+                "processing:facility": "CPTEC/INPE",
+                "processing:software": "eta model"
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "climate change",
+        "climate index",
+        "daily",
+        "eta model",
+        "south america",
+        "projections"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "prec",
+            "common_name": "24h acc. precipitation in mm/day",
+            "description": "The accumulated precipitation in 24 hours. The accumulation date ends on the date of the files, starting at _d-1 13:00 UTC_ and ending at _d 12:00 UTC_.  Unit: _mm/day_",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": -9.99e+08,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/wmo-GRIB2",
+            "resolution_x": 0.10,
+            "resolution_y": 0.10,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        },
+        {
+            "name": "nest",
+            "common_name": "Number of surface observations/grid point",
+            "description": "Number of surface observations incorporated into each grid point in the MERGE method.",
+            "min_value": 0,
+            "max_value": 100,
+            "nodata": -9.99e+08,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/wmo-GRIB2",
+            "resolution_x": 0.10,
+            "resolution_y": 0.10,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "summaries": {
+        "instruments": [
+            "rain gauges",
+            "dpr",
+            "gmi"
+        ]
+    },
+    "item_assets": {
+        "cape_BESM_0.2": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_BESM_0.2": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_BESM_0.2": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_BESM_0.2": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_BESM_0.2": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_BESM_0.2": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_BESM_0.2": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_BESM_0.2": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_BESM_0.2": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_BESM_0.2": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_BESM_0.2": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_BESM_0.2": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_BESM_0.2": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_BESM_0.2": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_BESM_0.2": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_BESM_0.2": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_BESM_0.2": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_BESM_0.2": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_BESM_0.2": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_BESM_0.2": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_BESM_0.2": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_BESM_0.2": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_BESM_0.2": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_BESM_0.2": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_BESM_0.2": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_BESM_0.2": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_BESM_0.2": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_BESM_0.2": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_BESM_0.2": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_BESM_0.2": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_BESM_0.2": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_BESM_0.2": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_BESM_0.2": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_BESM_0.2": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_BESM_0.2": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_BESM_0.2": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_BESM_0.2": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_BESM_0.2": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_BESM_0.2": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_BESM_0.2": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_BESM_0.2": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_BESM_0.2": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_BESM_0.2": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_BESM_0.2": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_BESM_0.2": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_BESM_0.2": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_BESM_0.2": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_BESM_0.2": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_BESM_0.2": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_BESM_0.2": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_BESM_0.2": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_BESM_0.2": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_BESM_0.2": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_BESM_0.2": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_BESM_0.2": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_BESM_0.2": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_BESM_0.2": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_BESM_0.2": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_BESM_0.2": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_BESM_0.2": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_BESM_0.2": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_BESM_0.2": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_BESM_0.05": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_BESM_0.05": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_BESM_0.05": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_BESM_0.05": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_BESM_0.05": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_BESM_0.05": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_BESM_0.05": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_BESM_0.05": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_BESM_0.05": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_BESM_0.05": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_BESM_0.05": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_BESM_0.05": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_BESM_0.05": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_BESM_0.05": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_BESM_0.05": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_BESM_0.05": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_BESM_0.05": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_BESM_0.05": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_BESM_0.05": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_BESM_0.05": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_BESM_0.05": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_BESM_0.05": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_BESM_0.05": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_BESM_0.05": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_BESM_0.05": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_BESM_0.05": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_BESM_0.05": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_BESM_0.05": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_BESM_0.05": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_BESM_0.05": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_BESM_0.05": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_BESM_0.05": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_BESM_0.05": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_BESM_0.05": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_BESM_0.05": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_BESM_0.05": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_BESM_0.05": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_BESM_0.05": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_BESM_0.05": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_BESM_0.05": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_BESM_0.05": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_BESM_0.05": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_BESM_0.05": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_BESM_0.05": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_BESM_0.05": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_BESM_0.05": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_BESM_0.05": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_BESM_0.05": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_BESM_0.05": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_BESM_0.05": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_BESM_0.05": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_BESM_0.05": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_BESM_0.05": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_BESM_0.05": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_BESM_0.05": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_BESM_0.05": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_BESM_0.05": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_BESM_0.05": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_BESM_0.05": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_BESM_0.05": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_BESM_0.05": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_BESM_0.05": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_CanESM2_0.2": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_CanESM2_0.2": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_CanESM2_0.2": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_CanESM2_0.2": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_CanESM2_0.2": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_CanESM2_0.2": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_CanESM2_0.2": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_CanESM2_0.2": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_CanESM2_0.2": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_CanESM2_0.2": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_CanESM2_0.2": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_CanESM2_0.2": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_CanESM2_0.2": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_CanESM2_0.2": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_CanESM2_0.2": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_CanESM2_0.2": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_CanESM2_0.2": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_CanESM2_0.2": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_CanESM2_0.2": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_CanESM2_0.2": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_CanESM2_0.2": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_CanESM2_0.2": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_CanESM2_0.2": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_CanESM2_0.2": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_CanESM2_0.2": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_CanESM2_0.2": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_CanESM2_0.2": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_CanESM2_0.2": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_CanESM2_0.2": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_CanESM2_0.2": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_CanESM2_0.2": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_CanESM2_0.2": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_CanESM2_0.2": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_CanESM2_0.2": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_CanESM2_0.2": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_CanESM2_0.2": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_CanESM2_0.2": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_CanESM2_0.2": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_CanESM2_0.2": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_CanESM2_0.2": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_CanESM2_0.2": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_CanESM2_0.2": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_CanESM2_0.2": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_CanESM2_0.2": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_CanESM2_0.2": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_CanESM2_0.2": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_CanESM2_0.2": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_CanESM2_0.2": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_CanESM2_0.2": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_CanESM2_0.2": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_CanESM2_0.2": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_CanESM2_0.2": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_CanESM2_0.2": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_CanESM2_0.2": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_CanESM2_0.2": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_CanESM2_0.2": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_CanESM2_0.2": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_CanESM2_0.2": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_CanESM2_0.2": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_CanESM2_0.2": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_CanESM2_0.2": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_CanESM2_0.2": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_CanESM2_0.05": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_CanESM2_0.05": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_CanESM2_0.05": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_CanESM2_0.05": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_CanESM2_0.05": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_CanESM2_0.05": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_CanESM2_0.05": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_CanESM2_0.05": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_CanESM2_0.05": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_CanESM2_0.05": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_CanESM2_0.05": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_CanESM2_0.05": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_CanESM2_0.05": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_CanESM2_0.05": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_CanESM2_0.05": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_CanESM2_0.05": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_CanESM2_0.05": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_CanESM2_0.05": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_CanESM2_0.05": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_CanESM2_0.05": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_CanESM2_0.05": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_CanESM2_0.05": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_CanESM2_0.05": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_CanESM2_0.05": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_CanESM2_0.05": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_CanESM2_0.05": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_CanESM2_0.05": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_CanESM2_0.05": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_CanESM2_0.05": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_CanESM2_0.05": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_CanESM2_0.05": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_CanESM2_0.05": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_CanESM2_0.05": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_CanESM2_0.05": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_CanESM2_0.05": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_CanESM2_0.05": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_CanESM2_0.05": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_CanESM2_0.05": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_CanESM2_0.05": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_CanESM2_0.05": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_CanESM2_0.05": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_CanESM2_0.05": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_CanESM2_0.05": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_CanESM2_0.05": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_CanESM2_0.05": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_CanESM2_0.05": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_CanESM2_0.05": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_CanESM2_0.05": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_CanESM2_0.05": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_CanESM2_0.05": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_CanESM2_0.05": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_CanESM2_0.05": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_CanESM2_0.05": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_CanESM2_0.05": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_CanESM2_0.05": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_CanESM2_0.05": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_CanESM2_0.05": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_CanESM2_0.05": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_CanESM2_0.05": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_CanESM2_0.05": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_CanESM2_0.05": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_CanESM2_0.05": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_MIROC5_0.2": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_MIROC5_0.2": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_MIROC5_0.2": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_MIROC5_0.2": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_MIROC5_0.2": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_MIROC5_0.2": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_MIROC5_0.2": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_MIROC5_0.2": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_MIROC5_0.2": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_MIROC5_0.2": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_MIROC5_0.2": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_MIROC5_0.2": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_MIROC5_0.2": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_MIROC5_0.2": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_MIROC5_0.2": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_MIROC5_0.2": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_MIROC5_0.2": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_MIROC5_0.2": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_MIROC5_0.2": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_MIROC5_0.2": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_MIROC5_0.2": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_MIROC5_0.2": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_MIROC5_0.2": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_MIROC5_0.2": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_MIROC5_0.2": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_MIROC5_0.2": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_MIROC5_0.2": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_MIROC5_0.2": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_MIROC5_0.2": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_MIROC5_0.2": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_MIROC5_0.2": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_MIROC5_0.2": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_MIROC5_0.2": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_MIROC5_0.2": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_MIROC5_0.2": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_MIROC5_0.2": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_MIROC5_0.2": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_MIROC5_0.2": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_MIROC5_0.2": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_MIROC5_0.2": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_MIROC5_0.2": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_MIROC5_0.2": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_MIROC5_0.2": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_MIROC5_0.2": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_MIROC5_0.2": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_MIROC5_0.2": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_MIROC5_0.2": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_MIROC5_0.2": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_MIROC5_0.2": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_MIROC5_0.2": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_MIROC5_0.2": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_MIROC5_0.2": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_MIROC5_0.2": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_MIROC5_0.2": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_MIROC5_0.2": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_MIROC5_0.2": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_MIROC5_0.2": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_MIROC5_0.2": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_MIROC5_0.2": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_MIROC5_0.2": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_MIROC5_0.2": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_MIROC5_0.2": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_MIROC5_0.05": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_MIROC5_0.05": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_MIROC5_0.05": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_MIROC5_0.05": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_MIROC5_0.05": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_MIROC5_0.05": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_MIROC5_0.05": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_MIROC5_0.05": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_MIROC5_0.05": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_MIROC5_0.05": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_MIROC5_0.05": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_MIROC5_0.05": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_MIROC5_0.05": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_MIROC5_0.05": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_MIROC5_0.05": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_MIROC5_0.05": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_MIROC5_0.05": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_MIROC5_0.05": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_MIROC5_0.05": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_MIROC5_0.05": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_MIROC5_0.05": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_MIROC5_0.05": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_MIROC5_0.05": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_MIROC5_0.05": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_MIROC5_0.05": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_MIROC5_0.05": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_MIROC5_0.05": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_MIROC5_0.05": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_MIROC5_0.05": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_MIROC5_0.05": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_MIROC5_0.05": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_MIROC5_0.05": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_MIROC5_0.05": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_MIROC5_0.05": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_MIROC5_0.05": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_MIROC5_0.05": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_MIROC5_0.05": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_MIROC5_0.05": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_MIROC5_0.05": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_MIROC5_0.05": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_MIROC5_0.05": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_MIROC5_0.05": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_MIROC5_0.05": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_MIROC5_0.05": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_MIROC5_0.05": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_MIROC5_0.05": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_MIROC5_0.05": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_MIROC5_0.05": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_MIROC5_0.05": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_MIROC5_0.05": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_MIROC5_0.05": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_MIROC5_0.05": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_MIROC5_0.05": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_MIROC5_0.05": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_MIROC5_0.05": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_MIROC5_0.05": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_MIROC5_0.05": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_MIROC5_0.05": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_MIROC5_0.05": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_MIROC5_0.05": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_MIROC5_0.05": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_MIROC5_0.05": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_HadGEM2-ES_0.2": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_HadGEM2-ES_0.2": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_HadGEM2-ES_0.2": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_HadGEM2-ES_0.2": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_HadGEM2-ES_0.2": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_HadGEM2-ES_0.2": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_HadGEM2-ES_0.2": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_HadGEM2-ES_0.2": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_HadGEM2-ES_0.2": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_HadGEM2-ES_0.2": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_HadGEM2-ES_0.2": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_HadGEM2-ES_0.2": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_HadGEM2-ES_0.2": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_HadGEM2-ES_0.2": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_HadGEM2-ES_0.2": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_HadGEM2-ES_0.2": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_HadGEM2-ES_0.2": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_HadGEM2-ES_0.2": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_HadGEM2-ES_0.2": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_HadGEM2-ES_0.2": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_HadGEM2-ES_0.2": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_HadGEM2-ES_0.2": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_HadGEM2-ES_0.2": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_HadGEM2-ES_0.2": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_HadGEM2-ES_0.2": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_HadGEM2-ES_0.2": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_HadGEM2-ES_0.2": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_HadGEM2-ES_0.2": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_HadGEM2-ES_0.2": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_HadGEM2-ES_0.2": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_HadGEM2-ES_0.2": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_HadGEM2-ES_0.2": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_HadGEM2-ES_0.2": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_HadGEM2-ES_0.2": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_HadGEM2-ES_0.2": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_HadGEM2-ES_0.2": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_HadGEM2-ES_0.2": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_HadGEM2-ES_0.2": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_HadGEM2-ES_0.2": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_HadGEM2-ES_0.2": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_HadGEM2-ES_0.2": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_HadGEM2-ES_0.2": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_HadGEM2-ES_0.2": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_HadGEM2-ES_0.2": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_HadGEM2-ES_0.2": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_HadGEM2-ES_0.2": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_HadGEM2-ES_0.2": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_HadGEM2-ES_0.2": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_HadGEM2-ES_0.2": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_HadGEM2-ES_0.2": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_HadGEM2-ES_0.2": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_HadGEM2-ES_0.2": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_HadGEM2-ES_0.2": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_HadGEM2-ES_0.2": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_HadGEM2-ES_0.2": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_HadGEM2-ES_0.2": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_HadGEM2-ES_0.2": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_HadGEM2-ES_0.2": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_HadGEM2-ES_0.2": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_HadGEM2-ES_0.2": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_HadGEM2-ES_0.2": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_HadGEM2-ES_0.2": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cape_HadGEM2-ES_0.05": {
+            "title": "CAPE",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clh_HadGEM2-ES_0.05": {
+            "title": "High Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "cll_HadGEM2-ES_0.05": {
+            "title": "Low Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "clm_HadGEM2-ES_0.05": {
+            "title": "Mid Level Cloud Fraction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind100_HadGEM2-ES_0.05": {
+            "title": "100 m Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dirWind10_HadGEM2-ES_0.05": {
+            "title": "Near-Surface Wind Direction",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "dp2m_HadGEM2-ES_0.05": {
+            "title": "Near-Surface Dewpoint Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "evspsbl_HadGEM2-ES_0.05": {
+            "title": "Evaporation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ghfl_HadGEM2-ES_0.05": {
+            "title": "Ground Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfls_HadGEM2-ES_0.05": {
+            "title": "Surface Upward Latent Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hfss_HadGEM2-ES_0.05": {
+            "title": "Surface Upward Sensible Heat Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "hurs_HadGEM2-ES_0.05": {
+            "title": "Near-Surface Relative Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "huss_HadGEM2-ES_0.05": {
+            "title": "Near-Surface Specific Humidity",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "mrros_HadGEM2-ES_0.05": {
+            "title": "Surface Runoff",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "pr_HadGEM2-ES_0.05": {
+            "title": "Precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "prsn_HadGEM2-ES_0.05": {
+            "title": "Snowfall Flux",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ps_HadGEM2-ES_0.05": {
+            "title": "Surface Air Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "psl_HadGEM2-ES_0.05": {
+            "title": "Sea Level Pressure",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlds_HadGEM2-ES_0.05": {
+            "title": "Surface Downwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rlus_HadGEM2-ES_0.05": {
+            "title": "Surface Upwelling Longwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsds_HadGEM2-ES_0.05": {
+            "title": "Surface Downwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "rsus_HadGEM2-ES_0.05": {
+            "title": "Surface Upwelling Shortwave Radiation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "sfcWind_HadGEM2-ES_0.05": {
+            "title": "Near-Surface Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas_HadGEM2-ES_0.05": {
+            "title": "Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax_HadGEM2-ES_0.05": {
+            "title": "Maximum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin_HadGEM2-ES_0.05": {
+            "title": "Minimum Near-Surface Air Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgrs_HadGEM2-ES_0.05": {
+            "title": "Soil Temperature in 10-40 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "tgsc_HadGEM2-ES_0.05": {
+            "title": "Soil Temperature in 0-10 cm depth",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ts_HadGEM2-ES_0.05": {
+            "title": "Surface Temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas_HadGEM2-ES_0.05": {
+            "title": "Eastward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uas100_HadGEM2-ES_0.05": {
+            "title": "Eastward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ussl_HadGEM2-ES_0.05": {
+            "title": "0-10 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "uzrs_HadGEM2-ES_0.05": {
+            "title": "10-40 cm Moisture in Upper Portion of Soil Column",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas_HadGEM2-ES_0.05": {
+            "title": "Northward Near-Surface Wind 10m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "vas100_HadGEM2-ES_0.05": {
+            "title": "Northward Near-Surface Wind 100m",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "wind100m_HadGEM2-ES_0.05": {
+            "title": "100 m Wind Speed",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CDD_HadGEM2-ES_0.05": {
+            "title": "Maximum length of dry spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CSDI_HadGEM2-ES_0.05": {
+            "title": "Cold spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "CWD_HadGEM2-ES_0.05": {
+            "title": "Maximum length of wet spell",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "DTR_HadGEM2-ES_0.05": {
+            "title": "Daily temperature range",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "FD_HadGEM2-ES_0.05": {
+            "title": "Number of frost days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "ID_HadGEM2-ES_0.05": {
+            "title": "Number of icing days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "PRCPTOT_HadGEM2-ES_0.05": {
+            "title": "Annual total precipitation on wet days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R10mm_HadGEM2-ES_0.05": {
+            "title": "Annual count of days when PRCP >= 10mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R20mm_HadGEM2-ES_0.05": {
+            "title": "Annual count of days when PRCP >= 20mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R25mm_HadGEM2-ES_0.05": {
+            "title": "Annual count of days when PRCP >= 25mm",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R95p_HadGEM2-ES_0.05": {
+            "title": "Annual total PRCP when RR > 95p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "R99p_HadGEM2-ES_0.05": {
+            "title": "Annual total PRCP when RR > 99p",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX1day_HadGEM2-ES_0.05": {
+            "title": "Monthly maximum 1-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "RX5day_HadGEM2-ES_0.05": {
+            "title": "Monthly maximum 5-day precipitation",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SDII_HadGEM2-ES_0.05": {
+            "title": "Simple pricipitation intensity index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "SU25_HadGEM2-ES_0.05": {
+            "title": "Number of summer days",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN10p_HadGEM2-ES_0.05": {
+            "title": "Percentage of days when TN < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TN90p_HadGEM2-ES_0.05": {
+            "title": "Percentage of days when TN > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNn_HadGEM2-ES_0.05": {
+            "title": "Monthly minimum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TNx_HadGEM2-ES_0.05": {
+            "title": "Monthly maximum value of daily minimum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TR_HadGEM2-ES_0.05": {
+            "title": "Number of tropical nights",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX10p_HadGEM2-ES_0.05": {
+            "title": "Percentage of days when TX < 10th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TX90p_HadGEM2-ES_0.05": {
+            "title": "Percentage of days when TX > 90th percentile",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXn_HadGEM2-ES_0.05": {
+            "title": "Monthly minimum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "TXx_HadGEM2-ES_0.05": {
+            "title": "Monthly maximum value of daily maximum temperature",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "WSDI_HadGEM2-ES_0.05": {
+            "title": "Warm spell duration index",
+            "type": "application/netcdf",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {}
+}
