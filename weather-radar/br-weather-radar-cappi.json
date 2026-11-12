@@ -116,7 +116,9 @@
             "mime_type": "application/netcdf",
             "resolution_x": 1,
             "resolution_y": 1,
-            "resolution_unit": "Kilometer"
+            "resolution_unit": "Kilometer",
+            "center_wavelength": null,
+            "full_width_half_max": null
         }
     ],
     "item_assets": {
