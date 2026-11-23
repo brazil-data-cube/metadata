@@ -1,0 +1,178 @@
+{
+    "id": null,
+    "name": "hiclim-as-daily-cmip6",
+    "title": "HiClim-AS - Daily Bias-Corrected and Statistically Downscaled CMIP6 Climate Projections for South America",
+    "description": "HiClim-AS is a daily climate projection dataset for South America built from 10 selected CMIP6 models. Each model simulation was bias-adjusted and statistically downscaled to a regular 0.1° latitude-longitude grid with ISIMIP3BASD (Lange, 2019), using MERGE (precipitation) and ERA5 (temperature) as reference datasets.\n\nVariables: precipitation (pr); daily mean, maximum and minimum near-surface (2 m) air temperature (tas, tasmax, tasmin); and potential evapotranspiration (pet), computed with the Hargreaves method (Hargreaves and Samani, 1985).\n\nExperiments: historical (1981-2014) and SSP1-2.6, SSP2-4.5 and SSP5-8.5 (2015-2100).\n\nEach model simulation is distributed individually, with its CMIP6 variant label (r*i*p*f*) preserved, as one Zarr store per variable, model, experiment and member. Each STAC Item groups one model, experiment and member, with one asset per variable.\n\nNative model calendars differ: 360-day for HadGEM3-GC31-MM and UKESM1-1-LL, 365-day (no leap) for GFDL-ESM4 and NorESM2-MM, Gregorian for the others. Check the calendar attribute of the time coordinate in each store before computing day-count indices.\n\nReference: Shimizu et al. (2026).",
+    "temporal_composition_schema": {
+        "step": 1,
+        "unit": "day",
+        "schema": "Continuous"
+    },
+    "composition_function": null,
+    "grid_ref_sys": null,
+    "collection_type": "cube",
+    "metadata": {
+        "providers": [
+            {
+                "name": "AdaptaBrasil MCTI",
+                "roles": [
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://adaptabrasil.mcti.gov.br/",
+                "processing:lineage": "Selection of 10 CMIP6 models based on the simulation of 8 atmospheric phenomena relevant to South America; bias adjustment against MERGE (pr) and ERA5 (tas, tasmax, tasmin); statistical downscaling to a regular 0.1° grid; pet computed with the Hargreaves method.",
+                "processing:software": {
+                    "ISIMIP3BASD": "3B"
+                }
+            },
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor"
+                ],
+                "processing:lineage": "Selection of 10 CMIP6 models based on the simulation of 8 atmospheric phenomena relevant to South America; bias adjustment against MERGE (pr) and ERA5 (tas, tasmax, tasmin); statistical downscaling to a regular 0.1° grid; pet computed with the Hargreaves method.",
+                "processing:level": null,
+                "processing:facility": "INPE",
+                "processing:software": {
+                    "ISIMIP3BASD": "3B"
+                }
+            },
+            {
+                "name": "CMIP6 modelling groups (WCRP Coupled Model Intercomparison Project)",
+                "description": "Source model simulations. See the model list in the summaries and the dataset documentation for individual model references.",
+                "roles": [
+                    "producer"
+                ],
+                "url": "https://wcrp-cmip.org/"
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "HiClim-AS",
+        "CMIP6",
+        "climate projections",
+        "south america",
+        "daily data",
+        "bias adjustment",
+        "statistical downscaling",
+        "ISIMIP3BASD",
+        "ensemble",
+        "precipitation",
+        "temperature",
+        "potential evapotranspiration",
+        "historical",
+        "SSP1-2.6",
+        "SSP2-4.5",
+        "SSP5-8.5",
+        "zarr"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "eo",
+    "version": "1",
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": "pr",
+            "common_name": "precipitation",
+            "description": "Daily precipitation, bias-adjusted (reference: MERGE) and statistically downscaled.",
+            "min_value": 0,
+            "max_value": 1000,
+            "nodata": null,
+            "scale": 1.0,
+            "data_type": "float32",
+            "mime_type": "application/vnd+zarr",
+            "resolution_x": 0.10,
+            "resolution_y": 0.10,
+            "resolution_unit": "Degree",
+            "center_wavelength": null,
+            "full_width_half_max": null,
+            "unit": "mm/day"
+        }
+    ],
+    "summaries": {
+        "cmip6:activity_id": [
+            "CMIP",
+            "ScenarioMIP"
+        ],
+        "cmip6:experiment_id": [
+            "historical",
+            "ssp126",
+            "ssp245",
+            "ssp585"
+        ],
+        "cmip6:source_id": [
+            "ACCESS-ESM1-5",
+            "EC-Earth3",
+            "GFDL-ESM4",
+            "HadGEM3-GC31-MM",
+            "IPSL-CM6A-LR",
+            "MIROC6",
+            "MPI-ESM1-2-HR",
+            "MRI-ESM2-0",
+            "NorESM2-MM",
+            "UKESM1-1-LL"
+        ],
+        "cmip6:frequency": [
+            "day"
+        ],
+        "proj:code": [
+            "EPSG:4326"
+        ]
+    },
+    "item_assets": {
+        "pr": {
+            "title": "Daily precipitation (pr)",
+            "type": "application/vnd+zarr",
+            "roles": [
+                "data"
+            ]
+        },
+        "tas": {
+            "title": "Daily mean near-surface air temperature (tas)",
+            "type": "application/vnd+zarr",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmax": {
+            "title": "Daily maximum near-surface air temperature (tasmax)",
+            "type": "application/vnd+zarr",
+            "roles": [
+                "data"
+            ]
+        },
+        "tasmin": {
+            "title": "Daily minimum near-surface air temperature (tasmin)",
+            "type": "application/vnd+zarr",
+            "roles": [
+                "data"
+            ]
+        },
+        "pet": {
+            "title": "Daily potential evapotranspiration (pet)",
+            "type": "application/vnd+zarr",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "sources": [
+            "https://doi.org/10.3390/cli14100221"
+        ]
+    }
+}
