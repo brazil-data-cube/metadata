@@ -58,6 +58,14 @@
                 ]
             },
             {
+                "name": "Agência Pernambucana de Águas e Clima (APAC)",
+                "url": "https://www.apac.pe.gov.br/",
+                "roles": [
+                    "producer",
+                    "licensor"
+                ]
+            },
+            {
                 "name": "National Institute for Space Research (INPE)",
                 "url": "https://www.gov.br/inpe/",
                 "roles": [
